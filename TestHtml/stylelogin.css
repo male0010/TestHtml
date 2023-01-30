@@ -1,0 +1,103 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#bad2e2,#ebe6ed) ;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius:10px ;
+
+}
+
+.container h1{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid silver;
+    padding: 0 0 20px 0;
+}
+
+.container .password input ,.email input{
+    padding: 0 41px;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 7px;
+    height: 30px;
+    border-radius:10px ;
+    
+}
+.container .submit input{
+    padding: 0 20px;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 7px;
+    height: 25px;
+    border-radius:30px ;
+    color: aliceblue;
+    background:#2691d9;
+    cursor: pointer;
+    
+}
+
+.container .submit input:hover{
+    padding: 0 20px;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 7px;
+    height: 25px;
+    border-radius:30px ;
+    color: black;
+    background:white;
+    cursor: pointer;
+    
+}
+
+.container .submit button{
+    padding: 0 20px;
+    align-items: center;
+    
+    margin-top: 7px;
+    height: 25px;
+    border-radius:30px ;
+    margin-bottom: 25px;
+    background:#2691d9;
+    
+    
+}
+.container .submit button:hover{
+    padding: 0 20px;
+    align-items: center;
+   
+    background:white;
+    
+    margin-top: 7px;
+    height: 25px;
+    border-radius:30px ;
+    margin-bottom: 25px;
+    
+    
+    
+}
+.container .submit button a{
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+}
+.container .submit button a:hover{
+    text-decoration: none;
+    color: black;
+    
+    
+}

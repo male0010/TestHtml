@@ -1,0 +1,33 @@
+.image{
+    width:100%;
+    min-width: 100%;
+}
+
+
+.h1{
+   text-align: center;
+}
+
+
+
+.top-header{
+    background: linear-gradient(120deg,#2980b9,#8e44ad) ;
+    font-size: 20px;
+
+
+}
+.menu-item{
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+   
+
+}
+
+.brand{
+    font-size: 18px;
+    font-weight: 600;
+}
+

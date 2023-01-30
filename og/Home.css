@@ -1,0 +1,29 @@
+.image{
+    width:100%;
+    min-width: 100%;
+}
+
+
+.h1{
+   text-align: center;
+}
+
+
+
+.top-header{
+    background-color: rgb(54, 48, 48);
+
+}
+.menu-item{
+    color: white;
+    padding: 15px;
+    display: inline-block;
+   
+
+}
+
+.brand{
+    font-size: 18px;
+    font-weight: 600;
+}
+
