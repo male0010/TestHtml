@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import '../styles/Home.css';
 import '../styles/stylelogin.css';
+import '../styles/register.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from 'react'
 
