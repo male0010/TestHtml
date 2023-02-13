@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="stylelogin.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="stylelogin.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"
+        integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <header class="top-header">
-        <a class="menu-item brand" style="align-items: baseline;"  href="Home.html">หน้าแรก</a>
+        <a class="menu-item brand" style="align-items: baseline;" href="Home.html">หน้าแรก</a>
         <a class="menu-item" style="align-items: baseline;" href="recommend.html">แนะนำ</a>
         <a class="menu-item" href="Food.html">ของกิน</a>
         <a class="menu-item" style="align-items: flex-end;" href="login.html">Login</a>
     </header>
 </head>
+
 <body>
-    <form onsubmit= "login(event)" > 
+    <form onsubmit="login(event)">
         <div class="container">
             <div class="bg">
-            
+
                 <h1>Login</h1>
-            <div class="email">
-                <input type="email" name="username" placeholder="email">
-            </div>
-            <div class="password">
-                <input type="password" name="password"  placeholder="password">
-            </div>
-            <div class="submit">
-                <input type="submit" value="Login">
-                <button class="col align-self-end" ><a href="register.html">register</a></button> 
-                <button class="col align-self-end" ><a href="forget.html">forget</a></button> 
-            </div>
+                <div class="email">
+                    <input type="email" name="username" placeholder="email">
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Login">
+                    <button class="col align-self-end"><a href="register.html">register</a></button>
+                    <button class="col align-self-end"><a href="forget.html">forget</a></button>
+                </div>
             </div>
         </div>
 
 </body>
 
-    <script>
-        async function login(e){
-            e.preventDefault();
-            const [username,password] = e.target.elements;
-            var formdata = new FormData;
-            formdata.append("user",username.value);
-            formdata.append("pass",password.value);
-            const config = {
-      headers: { "content-type": "multipart/form-data" },
-    };
-            await axios.post("http://localhost:8080/TestHtml/login.php",formdata,config).then((response) => {
-                var datax = response.data ;
-                if (datax.status == "success"){
-                    alert("Welcome " + datax.first_name + " " +datax.last_name);
-                } else if (datax == "no"){
-                    alert("no data")
-                }else{
-                    alert ("fail") 
-                    console.log(datax)       
-                }
- });
-}
-    </script>
+<script>
+    async function login(e) {
+        e.preventDefault();
+        const [username, password] = e.target.elements;
+        var formdata = new FormData;
+        formdata.append("user", username.value);
+        formdata.append("pass", password.value);
+        const config = {
+            headers: { "content-type": "multipart/form-data" },
+        };
+        await axios.post("http://localhost:8080/TestHtml/login.php", formdata, config).then((response) => {
+            var datax = response.data;
+            if (datax.status == "success") {
+                alert("Welcome " + datax.first_name + " " + datax.last_name);
+            } else if (datax == "no") {
+                alert("no data")
+            } else {
+                alert("fail")
+                console.log(datax)
+            }
+        });
+    }
+</script>
+
 </html>
