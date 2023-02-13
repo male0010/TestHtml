@@ -32,6 +32,12 @@ export default function Home() {
             text: "dhjshdjshdjk",
             dow: "download"
         }
+        , {
+            image: img,
+            title: "Card title",
+            text: "dhjshdjshdjk",
+            dow: "download"
+        }
         
 
     ]
