@@ -15,7 +15,7 @@ export default function header() {
                         <Image src={img1}/>
                     </div>
                     <ul>
-                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="pro">PRODUCTS</a></li>
                         <li><a href="#">CAMPAIGN</a></li>
                         <li><a href="#">MULTIPLAYER</a></li>
                         <li><a href="#">COMMUNITY</a></li>

@@ -93,6 +93,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    background-color: black !important;
 }
 
 a {
@@ -208,14 +209,29 @@ h1{
 }
 
 .lead2{
-  background-color: #27d835 !important;
+  background-color: #22b12e !important;
   border: 3rem !important;
   padding: 1em;
   border-radius: 3rem !important;
   font-size: 13px !important;
 }
+
+
+.menu2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700 !important;
+  color:rgb(252, 252, 252) !important;
+  align-items: center !important;
+  background-color: rgb(20, 19, 19);
+  padding: 0 5px;
   
+}
   
+.menu4{
+  background-color:#e6e3e3 !important;
   
+
+}
   
   
