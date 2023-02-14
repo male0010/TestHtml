@@ -17,7 +17,7 @@ export default function Home() {
     //     const config = {
     //         headers: { "content-type": "multipart/form-data" },
     //     };
-    //     await axios.get("http://localhost:8080/bpo2/d.php",config).then((response) => {
+    //     await axios.get("https://www.imgen.site/imgen2/api_male/api.php",config).then((response) => {
     //         var datax = response.data;
     //         if (datax.status == "success") {
     //             console.log(datax)
@@ -28,15 +28,24 @@ export default function Home() {
 
     //     });
     // }
-    const axios = require('axios');
-    var FormData = require('form-data');
-    // http://localhost:8080/bpo2/d.php
-    // https://www.imgen.site/shop/DB/Api.php?FN=GET_CATEGORYS
-    axios.post('http://localhost:8080/bpo2/d.php', {x: 1, buf: new Buffer(10)}, {
-      headers: {
-        'Content-Type': 'multipart/form-data'
-      }
-    }).then(({data}) => console.log(data));
+
+    
+//    const [gunlist,setgunlist] = useState([]) ;
+//    const getgun = () =>{
+//     axios.post('https://www.imgen.site/imgen2/api_male/api.php').than ((response)=>{
+//     setgunlist(response.data);    
+//     });
+//    }
+    
+    // axios.post('https://www.imgen.site/imgen2/api_male/api.php', {x: 1, buf: new Buffer(10)}, {
+    //   headers: {
+    //     'Content-Type': 'multipart/form-data'
+    //   }
+    // }).then(({data}) => console.log(data));
+
+
+
+    
     // async function getcategory() {
     //     if ((pageLoaded2) != true) {
     //         const config = {
@@ -74,7 +83,13 @@ export default function Home() {
             title: "Card title",
             text: "dhjshdjshdjk",
             dow: "download"
+        }, {
+            image: img,
+            title: "Card title",
+            text: "dhjshdjshdjk",
+            dow: "download"
         }
+        
 
 
     ]
