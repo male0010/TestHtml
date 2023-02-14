@@ -93,6 +93,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    background-color: black !important;
 }
 
 a {
@@ -144,7 +145,7 @@ a {
   height:15vh;
   margin:0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 
 }
@@ -182,15 +183,15 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(230, 230, 230);
+  color: rgb(207, 206, 206);
   text-align: center;
-  font-size: 16px !important;
-  padding: 2em;
+  font-size: 15px !important;
+  padding: 1em !important;
 }
 
 h1{
   font-size: 21px !important;
-  color:rgb(247, 245, 245);
+  color:white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 5em;
   
@@ -208,14 +209,29 @@ h1{
 }
 
 .lead2{
-  background-color: #23db32 !important;
+  background-color: #22b12e !important;
   border: 3rem !important;
   padding: 1em;
   border-radius: 3rem !important;
   font-size: 13px !important;
 }
+
+
+.menu2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700 !important;
+  color:rgb(252, 252, 252) !important;
+  align-items: center !important;
+  background-color: rgb(20, 19, 19);
+  padding: 0 5px;
   
+}
   
+.menu4{
+  background-color:#e6e3e3 !important;
   
+
+}
   
   
