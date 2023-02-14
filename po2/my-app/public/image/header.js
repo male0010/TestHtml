@@ -16,10 +16,10 @@ export default function header() {
                     </div>
                     <ul>
                         <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">COMPANY</a></li>
-                        <li><a href="#">LEARNUG</a></li>
+                        <li><a href="#">CAMPAIGN</a></li>
+                        <li><a href="#">MULTIPLAYER</a></li>
                         <li><a href="#">COMMUNITY</a></li>
-                        <li><a href ="#" class="btn btn-primary  lead3">SIGN IN</a></li>
+                        <li><a href ="#" class="btn btn-primary  lead2">SIGN IN</a></li>
                     </ul>
 
 
