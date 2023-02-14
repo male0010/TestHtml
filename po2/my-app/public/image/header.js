@@ -19,7 +19,7 @@ export default function header() {
                         <li><a href="#">COMPANY</a></li>
                         <li><a href="#">LEARNUG</a></li>
                         <li><a href="#">COMMUNITY</a></li>
-                        <li><a href ="#" class="btn btn-primary lead">SIGN IN</a></li>
+                        <li><a href ="#" class="btn btn-primary  lead3">SIGN IN</a></li>
                     </ul>
 
 
