@@ -11,10 +11,18 @@ if (!$query) {
     printf("Error: %s\n", $con->error);
     exit();
 }
+
 $resultArray = array();
 while ($result = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
     array_push($resultArray, $result);
 }
 mysqli_close($con);
 
-echo json_encode($resultArray);
+if($query){
+    echo json_encode (['status' => "success",$resultArray]);
+}
+else {
+    echo "fail";
+}
+
+?>
