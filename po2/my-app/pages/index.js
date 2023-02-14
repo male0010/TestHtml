@@ -6,7 +6,7 @@ import img1 from "../public/image/callbg.jpg"
 import Header0 from "../public/image/header"
 
 // const inter = Inter({ subsets: ['latin'] })
-
+//asdasghjdgashjdgjagdj
 export default function Home() {
   // const card = [
   //   {
