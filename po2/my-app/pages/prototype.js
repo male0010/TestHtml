@@ -132,10 +132,10 @@ export default function prototype() {
                 {gunlist?.map((item, index) => (
                     <div className="col">
                         <div className="card" >
-                            <Image width={245} height={200} src={item.path}
-                                className="card-Image-top" alt="..." />
+                            <Image  width={245} height={200} src={item.path}
+                                className={'imgBack'}  alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">{item.file_name}</h5>
+                                <h5 className="card-title">{(item.file_name).replace(".jpg",'')}</h5>
                                 <p className="card-text">{item.uploaded_on}</p>
                                 <button onClick={(e)=>{loadfile(e,item.path,item.file_name)}} className="btn btn-primary">download</button>
                             </div>
