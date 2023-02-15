@@ -130,16 +130,36 @@ export default function prototype() {
 
             <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                 {gunlist?.map((item, index) => (
-                    <div className="col">
-                        <div className="card" >
+                    <div className="col" >
+                        <div className="card" data-bs-toggle="modal" data-bs-target="#exampleModal" on >
                             <Image  width={245} height={200} src={item.path}
                                 className={'imgBack'}  alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{(item.file_name).replace(".jpg",'')}</h5>
                                 <p className="card-text">{item.uploaded_on}</p>
-                                <button onClick={(e)=>{loadfile(e,item.path,item.file_name)}} className="btn btn-primary">download</button>
+                                <button onClick={(e)=>{loadfile(e)}} className="btn btn-primary">download</button>
                             </div>
                         </div>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
+                                                        className="card-Image-top" alt="..." />
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                     </div>
 
                 ))}</div>
