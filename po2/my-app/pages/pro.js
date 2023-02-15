@@ -35,23 +35,23 @@ export default function Home() {
     //     });
     // }
 
-    
-//    const [gunlist,setgunlist] = useState([]) ;
-//    const getgun = () =>{
-//     axios.post('https://www.imgen.site/imgen2/api_male/api.php').than ((response)=>{
-//     setgunlist(response.data);    
-//     });
-//    }
-    
-    // axios.post('https://www.imgen.site/imgen2/api_male/api.php', {x: 1, buf: new Buffer(10)}, {
-    //   headers: {
-    //     'Content-Type': 'multipart/form-data'
-    //   }
-    // }).then(({data}) => console.log(data));
+
+    //    const [gunlist,setgunlist] = useState([]) ;
+    //    const getgun = () =>{
+    //     axios.post('https://www.imgen.site/imgen2/api_male/api.php').than ((response)=>{
+    //     setgunlist(response.data);    
+    //     });
+    //    }
+
+    //     axios.post('https://www.imgen.site/imgen2/api_male/api.php', {x: 1, buf: new Buffer(10)}, {
+    //       headers: {
+    //         'Content-Type': 'multipart/form-data'
+    //       }
+    //     }).then(({data}) => console.log(data));
 
 
 
-    
+
     // async function getcategory() {
     //     if ((pageLoaded2) != true) {
     //         const config = {
@@ -64,7 +64,13 @@ export default function Home() {
     //             });
     //     }
     // }
-
+    const [gunlist, setgunlist] = useState();
+    const getgunlist = () => {
+        axios.get("https://www.imgen.site/imgen2/api_male/api.php").then((response) => {
+            setgunlist(response.data.data);
+        });
+    };
+    getgunlist()
     const card = [
         {
             image: img,
@@ -95,7 +101,7 @@ export default function Home() {
             text: "dhjshdjshdjk",
             dow: "download"
         }
-        
+
 
 
     ]
@@ -113,24 +119,25 @@ export default function Home() {
 
             {/* head */}
 
-            <Header1/>
+            <Header1 />
 
 
 
             <div className='container'>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
-                    {card.map((item, index) => (
+                    {gunlist?.map((item, index) => (
                         <div className="col">
                             <div className="card" >
-                                <Image width={245} height={200} src={item.image}
+                                <Image width={245} height={200} src={item.path}
                                     className="card-Image-top" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{item.title}</h5>
-                                    <p className="card-text">{item.text}</p>
-                                    <a href="#" className="btn btn-primary">{item.dow}</a>
+                                    <h5 className="card-title">{item.file_name}</h5>
+                                    <p className="card-text">{item.uploaded_on}</p>
+                                    <a href={item.path} className="btn btn-primary">download</a>
                                 </div>
                             </div>
                         </div>
+
                     ))}
 
                 </div>
