@@ -10,11 +10,6 @@ import img2 from "../public/image/call.jpg"
 import img3 from "../public/image/3.jpg"
 import img4 from "../public/image/w2.jpg"
 import Header1 from "../public/header2"
-import img9 from "../public/image/4.png"
-import img5 from "../public/image/5.png"
-import img6 from "../public/image/6.png"
-import img7 from "../public/image/7.png"
-import img8 from "../public/image/8.jpg"
 // import styles from '@/styles/globals.css'
 
 
@@ -78,13 +73,13 @@ export default function Home() {
     getgunlist()
     const card = [
         {
-            image: img7,
+            image: img,
             title: '(data.categorys_name)',
             text: "dhjshdjshdjk",
             dow: "download"
         },
         {
-            image: img6,
+            image: img2,
             title: "Card title",
             text: "dhjshdjshdjk",
             dow: "download"
@@ -101,7 +96,7 @@ export default function Home() {
             text: "dhjshdjshdjk",
             dow: "download"
         }, {
-            image: img4,
+            image: img,
             title: "Card title",
             text: "dhjshdjshdjk",
             dow: "download"
@@ -129,19 +124,11 @@ export default function Home() {
 
 
             <div className='container'>
-<<<<<<< HEAD
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
                         <div className="col">
                             <div className="card" >
                                 <Image width={245} height={200} src={item.path}
-=======
-                <div className='row row-cols-2 row-cols-lg-5 g-3 g-lg-5'>
-                    {card.map((item, index) => (
-                        <div className="col">
-                            <div className="card" >
-                                <Image width={220} height={250} src={item.image}
->>>>>>> e8d0447c1c9f8840f536a48ea7a75bfc345e0210
                                     className="card-Image-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{item.file_name}</h5>
