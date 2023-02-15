@@ -6,6 +6,7 @@ import { useState } from "react";
 import img from "../public/image/1.png"
 import img1 from "../public/image/callbg.jpg"
 import img2 from "../public/image/call.jpg"
+import Header1 from "../public/header2"
 
 export default function prototype() {
     // const [gunlist, setgunlist] = useState();
@@ -26,9 +27,14 @@ export default function prototype() {
         axios.get("https://www.imgen.site/imgen2/api_male/api.php").then((response) => {
             setgunlist(response.data.data);
         });
-      };
+    };
     getgunlist()
 
+    // axios.post('https://www.imgen.site/imgen2/api_male/api.php', { x: 1, buf: new Buffer(10) }, {
+    //     headers: {
+    //         'Content-Type': 'multipart/form-data'
+    //     }
+    // }).then(({ data }) => console.log(data));
 
 
 
@@ -66,22 +72,78 @@ export default function prototype() {
     //         });
     //     }
     // getgun()
+    
+
+    // const config = {
+    //     headers: { "content-type": "image/jpeg" },
+    //     responseType: "blob"
+    //   };
+
+    //     const url = window.URL.createObjectURL(new Blob([response.data]));
+    //     const link = document.createElement('a');
+    //     link.href = url;
+    //     link.setAttribute(
+    //       'download',
+    //       filename,
+    //     );
+
+    //     // Append to html link element page
+    //     document.body.appendChild(link);
+
+    //     // Start download
+    //     link.click();
+
+    //     // Clean up and remove the link
+    //     link.parentNode.removeChild(link);
+
+    async function loadfile(event, urls, file_name) {
+        event.preventDefault();
+        const config = {
+            headers: { "content-type": "image/jpeg" },
+            responseType: "blob"
+        }
+       await axios.get(urls,config).then((response) => {
+            console.log(response.data)
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute(
+                'download',
+                file_name
+            );
+            // Append to html link element page
+
+            document.body.appendChild(link);
+
+            // Start download
+            link.click();
+
+            // Clean up and remove the link
+            link.parentNode.removeChild(link);
+
+        });
+
+    }
     return (
         <>
-            {gunlist?.map((item, index) => (
-                <div className="col">
-                    <div className="card" >
-                        <Image width={245} height={200} src={item.path}
-                            className="card-Image-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">{item.file_name}</h5>
-                            <p className="card-text">{item.uploaded_on}</p>
-                            <a href={item.path} className="btn btn-primary">download</a>
+            <Header1 />
+
+            <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                {gunlist?.map((item, index) => (
+                    <div className="col">
+                        <div className="card" >
+                            <Image width={245} height={200} src={item.path}
+                                className="card-Image-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">{item.file_name}</h5>
+                                <p className="card-text">{item.uploaded_on}</p>
+                                <button onClick={(e)=>{loadfile(e,item.path,item.file_name)}} className="btn btn-primary">download</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-            ))}
+
+                ))}</div>
+
 
             <div>
                 <div>ssss</div>
