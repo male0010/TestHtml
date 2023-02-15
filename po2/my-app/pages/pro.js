@@ -277,25 +277,26 @@ export default function Home() {
 
 
 
-            <div className='container my-5'>
-                <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+            <div className='container my-5 ' style={{overflowX:'hidden'}}>
+                <div className='row -2 row-cols-lg-5  '>
                     {gunlist?.map((item, index) => (
                         <div className="col">
                             <div className="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <Image width={245} height={200} src={item.path}
-                                    className="card-Image-top" alt="..." />
+                                    className="card-Image-top " alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">{(item.file_name).replace(".jpg",'')}</h5>
+                                    <h5 className="">{(item.file_name).replace(".jpg",'')}</h5>
                                     <p className="card-text">{item.uploaded_on}</p>
                                     <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
 
 
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                        <Image width={245} height={200} src={item.path}
                                                         className="card-Image-top" alt="..." />
                                                     </h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
