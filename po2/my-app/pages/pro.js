@@ -64,6 +64,34 @@ export default function Home() {
     //             });
     //     }
     // }
+    async function loadfile(event, urls, file_name) {
+        event.preventDefault();
+        const config = {
+            headers: { "content-type": "image/jpeg" },
+            responseType: "blob"
+        }
+       await axios.get(urls,config).then((response) => {
+            console.log(response.data)
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute(
+                'download',
+                file_name
+            );
+            // Append to html link element page
+
+            document.body.appendChild(link);
+
+            // Start download
+            link.click();
+
+            // Clean up and remove the link
+            link.parentNode.removeChild(link);
+
+        });
+
+    }
     const [gunlist, setgunlist] = useState();
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/api.php").then((response) => {
@@ -74,13 +102,13 @@ export default function Home() {
     const card = [
         {
             image: img,
-            title: '(data.categorys_name)',
+            title: '11111',
             text: "dhjshdjshdjk",
             dow: "download"
         },
         {
             image: img2,
-            title: "Card title",
+            title: "2222",
             text: "dhjshdjshdjk",
             dow: "download"
         }
@@ -257,7 +285,7 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">{item.file_name}</h5>
                                     <p className="card-text">{item.uploaded_on}</p>
-                                    <a href={item.path} className="btn btn-primary">download</a>
+                                    <button onClick={(e)=>{loadfile(e,item.path,item.file_name)}} className="btn btn-primary">download</button>
                                 </div>
                             </div>
                         </div>
