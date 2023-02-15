@@ -16,7 +16,7 @@ export default function header() {
     <header>
         <nav className="navbar navbar-expand-lg  menu2">
                 <div className="container-fluid menu2">
-                    <Image src={img4} alt="" width="160" height="60" />
+                    <Image src={img4} alt="" width="250" height="70" />
                    
                     <div className="collapse navbar-collapse menu2" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu2">

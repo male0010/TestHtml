@@ -20,7 +20,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    background-color: rgb(0, 0, 0) !important;
+    background-color: rgb(20, 19, 19) !important;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
 
 .container{
   position: relative;
-  min-height: 100vh;
+  
 }
 
 .bg {
@@ -150,7 +150,7 @@ h1{
   font-weight: 700 !important;
   color:rgb(252, 252, 252) !important;
   align-items: center !important;
-  background-color: rgb(20, 19, 19);
+  background-color: rgb(20, 19, 19) !important;
   padding: 0 5px;
   
 }
@@ -160,5 +160,38 @@ h1{
   
 
 }
+
+.card{
+  background-color: rgb(20, 19, 19) !important;
+}
+
+.cardtext{
+  font-size: 30px !important;
+  text-align: center !important;
+  color: white ;
+}
+
+.hh{
+  font-weight: 700 !important;
+  font-family: 'Courier New', Courier, monospace !important; 
+  font-size: 22px !important;
+  color: #bebaba  !important;
+}
+
+
+.h5{
+    color: #000 !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.h11{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  font-size: 70px;
+  color: #c7c5c5;
   
   
+}
