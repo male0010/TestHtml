@@ -281,7 +281,7 @@ export default function Home() {
                 <div className='row -2 row-cols-lg-5  '>
                     {gunlist?.map((item, index) => (
                         <div className="col">
-                            <div className="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}>
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
                                 <div className="card-body">
@@ -291,22 +291,23 @@ export default function Home() {
 
 
 
-                                    <div class="modal fade pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id={"exampleModal"+item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                        <Image width={245} height={200} src={item.path}
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
                                                         className="card-Image-top" alt="..." />
                                                     </h1>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    
                                                 </div>
                                                 <div class="modal-body">
-                                                    ...
+                                                {(item.file_name).replace(".jpg",'')}
+                                                </div>
+                                                <div class="modal-body">update on : 
+                                                {item.uploaded_on}
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">BUY</button>
                                                 </div>
                                             </div>
                                         </div>

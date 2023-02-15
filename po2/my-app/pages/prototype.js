@@ -131,7 +131,7 @@ export default function prototype() {
             <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                 {gunlist?.map((item, index) => (
                     <div className="col" >
-                        <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id} on >
+                        <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id} >
                             <Image  width={245} height={200} src={item.path}
                                 className={'imgBack'}  alt="..." />
                             <div className="card-body">
