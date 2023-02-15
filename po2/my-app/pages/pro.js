@@ -10,6 +10,11 @@ import img2 from "../public/image/call.jpg"
 import img3 from "../public/image/3.jpg"
 import img4 from "../public/image/w2.jpg"
 import Header1 from "../public/header2"
+import img9 from "../public/image/4.png"
+import img5 from "../public/image/5.png"
+import img6 from "../public/image/6.png"
+import img7 from "../public/image/7.png"
+import img8 from "../public/image/8.jpg"
 // import styles from '@/styles/globals.css'
 
 
@@ -67,13 +72,13 @@ export default function Home() {
 
     const card = [
         {
-            image: img,
+            image: img7,
             title: '(data.categorys_name)',
             text: "dhjshdjshdjk",
             dow: "download"
         },
         {
-            image: img2,
+            image: img6,
             title: "Card title",
             text: "dhjshdjshdjk",
             dow: "download"
@@ -90,7 +95,7 @@ export default function Home() {
             text: "dhjshdjshdjk",
             dow: "download"
         }, {
-            image: img,
+            image: img4,
             title: "Card title",
             text: "dhjshdjshdjk",
             dow: "download"
@@ -118,11 +123,11 @@ export default function Home() {
 
 
             <div className='container'>
-                <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                <div className='row row-cols-2 row-cols-lg-5 g-3 g-lg-5'>
                     {card.map((item, index) => (
                         <div className="col">
                             <div className="card" >
-                                <Image width={245} height={200} src={item.image}
+                                <Image width={220} height={250} src={item.image}
                                     className="card-Image-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{item.title}</h5>
