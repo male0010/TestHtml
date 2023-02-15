@@ -70,7 +70,7 @@ export default function Home() {
             headers: { "content-type": "image/jpeg" },
             responseType: "blob"
         }
-       await axios.get(urls,config).then((response) => {
+        await axios.get(urls, config).then((response) => {
             console.log(response.data)
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');
@@ -135,7 +135,6 @@ export default function Home() {
     ]
 
 
-
     return (
         <>
             <Head>
@@ -149,21 +148,21 @@ export default function Home() {
 
             <Header1 />
 
-            <div class="card text-bg-dark">
+            <div className="card text-bg-dark">
                 <img src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" class="card-img" alt="..." />
                 <div class="card-img-overlay">
-                    <h2 class=" my-4 h2">CALL OF DUTY®: WARZONE™ 2.0</h2>
-                    <h3 class="card-text h2">MODERN WARFARE® II CAMPAIGN, IMMERSIVE MULTIPLAYER </h3>
+                    <h2 className=" my-4 h2">CALL OF DUTY®: WARZONE™ 2.0</h2>
+                    <h3 className="card-text h2">MODERN WARFARE® II CAMPAIGN, IMMERSIVE MULTIPLAYER </h3>
                     <p className="lead1">
                         <a href="https://www.callofduty.com/warzone" class="btn btn-primary lead2">READ MORE</a>
                     </p>
                 </div>
             </div>
 
-            <div class="card text-center">
+            <div className="card text-center">
 
-                <div class="card-body hh">
-                    <p class="card-text hh">
+                <div className="card-body hh">
+                    <p className="card-text hh">
                         Call of Duty Modern Warfare II Logo
                         THE ULTIMATE WEAPON IS TEAM.
 
@@ -176,13 +175,13 @@ export default function Home() {
             </div>
 
 
-            <div class="row row-cols-1 row-cols-md-2 g-4 my-5">
-                <div class="col">
-                    <div class="card">
+            <div className="row row-cols-1 row-cols-md-2 g-4 my-5">
+                <div className="col">
+                    <div className="card">
                         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-campaign.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">HIGH GROUND</h5>
-                            <p class="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
+                        <div className="card-body">
+                            <h5 className="card-title">HIGH GROUND</h5>
+                            <p className="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
                         </div>
                     </div>
                 </div>
@@ -229,63 +228,88 @@ export default function Home() {
             <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
             <div class="card-group my-5">
                 <div class="card">
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title hh">John "Soap" MacTavish</h5>
-                            
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh">John "Soap" MacTavish</h5>
 
-                        </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0002_Ghost.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title hh ">Simon “Ghost” Riley. Modern</h5>
-                            
-                            
-                        </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0004_Gaz.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title hh ">Kyle “Gaz” Garrick</h5>
-                            
-                            
-                        </div>
-                        </div>
-                
-                
-                <div class="card">
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0000_Price.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title hh ">Captain John Price</h5>
-                            
-                            
-                        </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0001_Ale.png" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title hh">Colonel Alejandro Vargas</h5>   
-                        </div>
-                
-                </div>
-                
-                
 
-                
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0002_Ghost.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh ">Simon “Ghost” Riley. Modern</h5>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0004_Gaz.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh ">Kyle “Gaz” Garrick</h5>
+
+
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0000_Price.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh ">Captain John Price</h5>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0001_Ale.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh">Colonel Alejandro Vargas</h5>
+                    </div>
+
+                </div>
+
+
+
+
             </div>
+
+
+
 
             <div className='container my-5'>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
                         <div className="col">
-                            <div className="card" >
+                            <div className="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{item.file_name}</h5>
                                     <p className="card-text">{item.uploaded_on}</p>
-                                    <button onClick={(e)=>{loadfile(e,item.path,item.file_name)}} className="btn btn-primary">download</button>
+                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+
+
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
+                                                        className="card-Image-top" alt="..." />
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -294,6 +318,12 @@ export default function Home() {
 
                 </div>
             </div>
+
+
+
+
+
+
 
 
 
