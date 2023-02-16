@@ -50,7 +50,7 @@ export default function Home() {
           <h3 className="h3 centered">  MAP IN SEASON 02 OF CALL OF DUTY®: WARZONE™ </h3>
           
           <p className="lead1">
-      <a href="https://www.callofduty.com/warzone" class="btn btn-primary lead2">READ MORE</a>
+      <a href="https://www.callofduty.com/warzone" className="btn btn-primary lead2">READ MORE</a>
     </p>
         </div>
 

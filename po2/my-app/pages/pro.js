@@ -149,7 +149,7 @@ export default function Home() {
             <Header1 />
 
             <div className="card text-bg-dark">
-                <img src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" class="card-img" alt="..." />
+                <Image src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" width={1920} height class="card-img" alt="..." />
                 <div class="card-img-overlay">
                     <h2 className=" my-4 h2">CALL OF DUTY®: WARZONE™ 2.0</h2>
                     <h3 className="card-text h2">MODERN WARFARE® II CAMPAIGN, IMMERSIVE MULTIPLAYER </h3>

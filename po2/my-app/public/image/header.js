@@ -19,7 +19,7 @@ export default function header() {
                         <li><a href="#">CAMPAIGN</a></li>
                         <li><a href="#">MULTIPLAYER</a></li>
                         <li><a href="#">COMMUNITY</a></li>
-                        <li><a href ="#" class="btn btn-primary  lead2">SIGN IN</a></li>
+                        <li><a href ="#" className="btn btn-primary  lead2">SIGN IN</a></li>
                     </ul>
 
 
