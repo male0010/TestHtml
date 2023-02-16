@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from "react";
-import img from "../public/image/1.png"
+import Image from "../public/image/1.png"
 import img1 from "../public/image/callbg.jpg"
 import img2 from "../public/image/call.jpg"
 import img3 from "../public/image/3.jpg"
@@ -101,7 +101,11 @@ export default function Home() {
     getgunlist()
     // const card = [
     //     {
+<<<<<<< HEAD
     //         image: img,
+=======
+    //         image: Image,
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
     //         title: '11111',
     //         text: "dhjshdjshdjk",
     //         dow: "download"
@@ -113,18 +117,30 @@ export default function Home() {
     //         dow: "download"
     //     }
     //     , {
+<<<<<<< HEAD
     //         image: img,
+=======
+    //         image: Image,
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
     //         title: "Card title",
     //         text: "dhjshdjshdjk",
     //         dow: "download"
     //     }
     //     , {
+<<<<<<< HEAD
     //         image: img,
+=======
+    //         image: Image,
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
     //         title: "Card title",
     //         text: "dhjshdjshdjk",
     //         dow: "download"
     //     }, {
+<<<<<<< HEAD
     //         image: img,
+=======
+    //         image: Image,
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
     //         title: "Card title",
     //         text: "dhjshdjshdjk",
     //         dow: "download"
@@ -149,8 +165,13 @@ export default function Home() {
             <Header1 />
 
             <div className="card text-bg-dark">
+<<<<<<< HEAD
                 <img src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" className="card-img" alt="..." />
                 <div className="card-img-overlay">
+=======
+                <Image src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" width={1920} height className="card-Image" alt="..." />
+                <div className="card-Image-overlay">
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                     <h2 className=" my-4 h2">CALL OF DUTY®: WARZONE™ 2.0</h2>
                     <h3 className="card-text h2">MODERN WARFARE® II CAMPAIGN, IMMERSIVE MULTIPLAYER </h3>
                     <p className="lead1">
@@ -178,8 +199,13 @@ export default function Home() {
             <div className="row row-cols-1 row-cols-md-2 g-4 my-5">
                 <div className="col">
                     <div className="card">
+<<<<<<< HEAD
                         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-campaign.jpg" className="card-img-top" alt="..." />
                         <div classNameName="card-body">
+=======
+                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-campaign.jpg" className="card-Image-top" alt="..." />
+                        <div className="card-body">
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                             <h5 className="card-title">HIGH GROUND</h5>
                             <p className="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
                         </div>
@@ -187,7 +213,11 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
+<<<<<<< HEAD
                         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-multiplayer.jpg" className="card-img-top" alt="..." />
+=======
+                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-multiplayer.jpg" className="card-Image-top" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                         <div className="card-body">
                             <h5 className="card-title">DENIED AREA</h5>
                             <p className="card-text hh">Play lone-wolf or rally with your team in immersive multiplayer combat, complete with new locales and ways to play.</p>
@@ -196,7 +226,11 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
+<<<<<<< HEAD
                         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-home-spec-ops.jpg" className="card-img-top" alt="..." />
+=======
+                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-home-spec-ops.jpg" className="card-Image-top" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                         <div className="card-body">
                             <h5 className="card-title">LOW PROFILE</h5>
                             <p className="card-text hh">Expect a massive calendar of free content post-launch featuring evolving gameplay with new maps, modes, seasonal events, community celebrations and more.</p>
@@ -205,7 +239,11 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
+<<<<<<< HEAD
                         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-seasonal.jpg" className="card-img-top" alt="..." />
+=======
+                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-seasonal.jpg" className="card-Image-top" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                         <div className="card-body">
                             <h5 className="card-title">DEFENDER: MT ZAYA</h5>
                             <p className="card-text hh">Join your team for an evolved Cooperative game mode featuring tactical co-op gameplay across multiple missions and introducing new Raid missions that will continue the story of the Campaign.
@@ -222,11 +260,16 @@ export default function Home() {
                     <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                 </div>
+<<<<<<< HEAD
                 <img src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/seasons/common/features/MW2-WZ2_WZ2_Desktop.jpg" className="card-img-bottom" alt="..." />
+=======
+                <Image src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/seasons/common/features/MW2-WZ2_WZ2_Desktop.jpg" className="card-Image-bottom" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
             </div>
 
 
             <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div className="card-group my-5">
                 <div className="card">
@@ -240,22 +283,41 @@ export default function Home() {
                     <div class="card-body">
                         <h5 class="card-title hh">John Soap MacTavish</h5>
 >>>>>>> 15e544ae174b842d33e396cd463f5cb9238f5c1a
+=======
+            <div className="card-group my-5">
+                <div className="card">
+                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" className="card-Image-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title hh">John &quot;Soap&quot; MacTavish</h5>
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
 
 
                     </div>
                 </div>
                 <div className="card">
+<<<<<<< HEAD
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0002_Ghost.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh ">Simon “Ghost” Riley. Modern</h5>
+=======
+                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0002_Ghost.png" className="card-Image-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title hh ">Simon &quot;Ghost&quot; Riley. Modern</h5>
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
 
 
                     </div>
                 </div>
                 <div className="card">
+<<<<<<< HEAD
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0004_Gaz.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh ">Kyle “Gaz” Garrick</h5>
+=======
+                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0004_Gaz.png" className="card-Image-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title hh ">Kyle &quot;Gaz&quot; Garrick</h5>
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
 
 
                     </div>
@@ -263,7 +325,11 @@ export default function Home() {
 
 
                 <div className="card">
+<<<<<<< HEAD
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0000_Price.png" className="card-img-top" alt="..." />
+=======
+                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0000_Price.png" className="card-Image-top" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                     <div className="card-body">
                         <h5 className="card-title hh ">Captain John Price</h5>
 
@@ -271,7 +337,11 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="card">
+<<<<<<< HEAD
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0001_Ale.png" className="card-img-top" alt="..." />
+=======
+                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0001_Ale.png" className="card-Image-top" alt="..." />
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                     <div className="card-body">
                         <h5 className="card-title hh">Colonel Alejandro Vargas</h5>
                     </div>
@@ -303,7 +373,11 @@ export default function Home() {
                                         <div className="modal-dialog ">
                                             
                                             <div className="modal-content  text-center  ">
+<<<<<<< HEAD
                                                 <Image className=" img-fluid " width={800} height={300} src={item.path}
+=======
+                                                <Image className=" Image-fluid " width={800} height={300} src={item.path}
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
                                                     alt="..." />
 
 
@@ -323,7 +397,11 @@ export default function Home() {
                                                     {item.uploaded_on}
                                                 </div>
                                                 <div className="modal-footer  border border-0 footer">
+<<<<<<< HEAD
                                                     <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} classNameName="btn btn-primary">BUY</button>
+=======
+                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">BUY</button>
+>>>>>>> af43c838cc32532d99464eb493d725a1968e71ec
 
                                                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                 </div>
