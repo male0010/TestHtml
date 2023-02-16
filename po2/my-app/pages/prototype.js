@@ -127,7 +127,8 @@ export default function prototype() {
     return (
         <>
             <Header1 />
-
+<br>
+</br>
             <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                 {gunlist?.map((item, index) => (
                     <div className="col" >
@@ -137,7 +138,7 @@ export default function prototype() {
                             <div className="card-body">
                                 <h5 className="card-title">{(item.file_name).replace(".jpg",'')}</h5>
                                 <p className="card-text">{item.uploaded_on}</p>
-                                <button onClick={(e)=>{loadfile(e)}} className="btn btn-primary">download</button>
+                                <button onClick={(e)=>{ loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
                             </div>
                         </div>
 
