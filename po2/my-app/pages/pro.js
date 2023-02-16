@@ -4,12 +4,25 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from "react";
-import Image from "../public/image/1.png"
+import omage from "../public/image/1.png"
 import img1 from "../public/image/callbg.jpg"
 import img2 from "../public/image/call.jpg"
 import img3 from "../public/image/3.jpg"
 import img4 from "../public/image/w2.jpg"
 import Header1 from "../public/header2"
+import header from "../public/image/header.jpg"
+import boat from "../public/image/boat.jpg"
+import DENIED from "../public/image/DENIED.jpg"
+import LOW from "../public/image/LOW.jpg"
+import zaya from "../public/image/zaya.jpg"
+import wzon from "../public/image/wzon.jpg"
+import one from "../public/image/11.png"
+import two from "../public/image/22.png"
+import ooo from "../public/image/33.png"
+import oooo from "../public/image/44.png"
+import ooooo from "../public/image/55.png"
+
+
 // import styles from '@/styles/globals.css'
 
 
@@ -149,14 +162,8 @@ export default function Home() {
             <Header1 />
 
             <div className="card text-bg-dark">
-                <Image src="https://assets.xboxservices.com/assets/d2/e7/d2e74bfc-22e1-4985-860f-dc76d69e5b8f.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080.jpg" width={1920} height className="card-Image" alt="..." />
-                <div className="card-Image-overlay">
-                    <h2 className=" my-4 h2">CALL OF DUTY®: WARZONE™ 2.0</h2>
-                    <h3 className="card-text h2">MODERN WARFARE® II CAMPAIGN, IMMERSIVE MULTIPLAYER </h3>
-                    <p className="lead1">
-                        <a href="https://www.callofduty.com/warzone" className="btn btn-primary lead2">READ MORE</a>
-                    </p>
-                </div>
+                <Image src={header}  className="card-Image" alt="..." />
+               
             </div>
 
             <div className="card text-center">
@@ -178,7 +185,9 @@ export default function Home() {
             <div className="row row-cols-1 row-cols-md-2 g-4 my-5">
                 <div className="col">
                     <div className="card">
-                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-campaign.jpg" className="card-Image-top" alt="..." />
+  
+                        <Image className="img-fluid" src={boat}  alt="..."/>
+                    
                         <div className="card-body">
                             <h5 className="card-title">HIGH GROUND</h5>
                             <p className="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
@@ -187,7 +196,7 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-multiplayer.jpg" className="card-Image-top" alt="..." />
+                        <Image  src={DENIED} className="img-fluid" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">DENIED AREA</h5>
                             <p className="card-text hh">Play lone-wolf or rally with your team in immersive multiplayer combat, complete with new locales and ways to play.</p>
@@ -196,7 +205,7 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-home-spec-ops.jpg" className="card-Image-top" alt="..." />
+                        <Image src={LOW} className="img-fluid" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">LOW PROFILE</h5>
                             <p className="card-text hh">Expect a massive calendar of free content post-launch featuring evolving gameplay with new maps, modes, seasonal events, community celebrations and more.</p>
@@ -205,7 +214,7 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/day-1/mw2-seasonal.jpg" className="card-Image-top" alt="..." />
+                        <Image src={zaya} className="img-fluid" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">DEFENDER: MT ZAYA</h5>
                             <p className="card-text hh">Join your team for an evolved Cooperative game mode featuring tactical co-op gameplay across multiple missions and introducing new Raid missions that will continue the story of the Campaign.
@@ -216,20 +225,23 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="card">
+            <div className="card ">
                 <div className="card-body">
                     <h5 className="card-title hh">MODES</h5>
                     <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                 </div>
-                <Image src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/seasons/common/features/MW2-WZ2_WZ2_Desktop.jpg" className="card-Image-bottom" alt="..." />
+                <Image src={wzon} className="card-Image-bottom" alt="..." />
             </div>
+
+
+
 
 
             <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
             <div className="card-group my-5">
                 <div className="card">
-                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" className="card-Image-top" alt="..." />
+                    <Image src={one} className="card-Image-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh">John &quot;Soap&quot; MacTavish</h5>
 
@@ -237,7 +249,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="card">
-                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0002_Ghost.png" className="card-Image-top" alt="..." />
+                    <Image src={two} className="card-Image-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh ">Simon &quot;Ghost&quot; Riley. Modern</h5>
 
@@ -245,7 +257,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="card">
-                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0004_Gaz.png" className="card-Image-top" alt="..." />
+                    <Image src={ooo} className="card-Image-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh ">Kyle &quot;Gaz&quot; Garrick</h5>
 
@@ -255,7 +267,7 @@ export default function Home() {
 
 
                 <div className="card">
-                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/dtop-_0000s_0000_Price.png" className="card-Image-top" alt="..." />
+                    <Image src={oooo} className="card-Image-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh ">Captain John Price</h5>
 
@@ -263,7 +275,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="card">
-                    <Image src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0001_Ale.png" className="card-Image-top" alt="..." />
+                    <Image src={ooooo} className="card-Image-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh">Colonel Alejandro Vargas</h5>
                     </div>
