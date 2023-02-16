@@ -227,11 +227,19 @@ export default function Home() {
 
 
             <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
+<<<<<<< HEAD
             <div className="card-group my-5">
                 <div className="card">
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title hh">John "Soap" MacTavish</h5>
+=======
+            <div class="card-group my-5">
+                <div class="card">
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/task-force-141/desktop/Operators-141_0000s_0002_Soap.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title hh">John Soap MacTavish</h5>
+>>>>>>> 15e544ae174b842d33e396cd463f5cb9238f5c1a
 
 
                     </div>
@@ -281,7 +289,7 @@ export default function Home() {
             <div className='container text-center my-5 ' style={{ overflowX: 'hidden' }}>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
-                        <div className="col">
+                        <div  key = {index} className="col">
                             <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id}>
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
