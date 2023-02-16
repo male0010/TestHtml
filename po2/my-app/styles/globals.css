@@ -200,3 +200,28 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .cardd{
   background-color: rgb(20, 19, 19) !important;
 }
+
+.item{
+  font-size: 22px !important;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #b9b6b6;
+  
+}
+
+.itemm{
+    background-color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: #b9b6b6;
+
+
+}
+
+.footer{
+ background-color: #000 !important;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ 
+
+
+}

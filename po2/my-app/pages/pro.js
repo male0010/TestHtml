@@ -225,6 +225,7 @@ export default function Home() {
                 <img src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/seasons/common/features/MW2-WZ2_WZ2_Desktop.jpg" class="card-img-bottom" alt="..." />
             </div>
 
+
             <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
             <div class="card-group my-5">
                 <div class="card">
@@ -277,36 +278,45 @@ export default function Home() {
 
 
 
-            <div className='container my-5 ' style={{overflowX:'hidden'}}>
-                <div className='row -2 row-cols-lg-5  '>
+            <div className='container text-center my-5 ' style={{ overflowX: 'hidden' }}>
+                <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
                         <div className="col">
-                            <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}>
+                            <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id}>
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
                                 <div className="card-body">
-                                    <h5 className="">{(item.file_name).replace(".jpg",'')}</h5>
-                                    <p className="card-text">{item.uploaded_on}</p>
-                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                    <h5 className="item">{(item.file_name).replace(".jpg", '')}</h5>
 
 
 
-                                    <div class="modal fade" id={"exampleModal"+item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
-                                                        className="card-Image-top" alt="..." />
-                                                    </h1>
-                                                    
+
+                                    <div class="modal fade " id={"exampleModal" + item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog ">
+                                            
+                                            <div class="modal-content  text-center  ">
+                                                <Image class=" img-fluid " width={800} height={300} src={item.path}
+                                                    alt="..." />
+
+
+                                                {/* <div class="modal-header h-100 " style={{backgroundImage:`url(${item.path})`}}>
+                                                    <br/>
+                                                    <br/>
+                                                    <br/>
+                                                    <br/>
+                                                   
+                                                        
+                                                   
+                                                </div> */}
+                                                <div class="modal-body itemm">
+                                                    {(item.file_name).replace(".jpg", '')}
                                                 </div>
-                                                <div class="modal-body">
-                                                {(item.file_name).replace(".jpg",'')}
+                                                <div class="modal-body itemm">update on :
+                                                    {item.uploaded_on}
                                                 </div>
-                                                <div class="modal-body">update on : 
-                                                {item.uploaded_on}
-                                                </div>
-                                                <div class="modal-footer">
+                                                <div class="modal-footer  border border-0 footer">
+                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">BUY</button>
+
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
