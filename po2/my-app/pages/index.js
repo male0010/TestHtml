@@ -44,7 +44,7 @@ export default function Home() {
 
 
 
-      <form>
+      
         <div className="centered">
           <p className="hh1">MODERN WARFARE II CONNECTS WITH THE NEW CALL OF DUTY®  WARZONETM 2.0</p>
           <p className="h3 ">  MAP IN SEASON 02 OF CALL OF DUTY®: WARZONE™ </p>
@@ -53,7 +53,7 @@ export default function Home() {
           </p>
         </div>
 
-      </form>
+      
 
 
       {/* <div className='container'>

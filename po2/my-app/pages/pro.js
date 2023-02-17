@@ -303,7 +303,7 @@ export default function Home() {
 
 
 
-                                    <div className="modal fade " id={"exampleModal" + item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div className="modal fade p-0 " id={"exampleModal" + item.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div className="modal-dialog ">
 
                                             <div className="modal-content  text-center  ">
