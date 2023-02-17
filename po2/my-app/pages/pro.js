@@ -231,7 +231,7 @@ export default function Home() {
                     <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                 </div>
-                <Image src={wzon} className="card-Image-bottom" alt="..." />
+                <Image src={wzon} className="rounded mx-auto d-block" alt="..." />
             </div>
 
 
@@ -307,7 +307,7 @@ export default function Home() {
                                         <div className="modal-dialog ">
                                             
                                             <div className="modal-content  text-center  ">
-                                                <Image className=" Image-fluid " width={800} height={300} src={item.path}
+                                                <Image className="rounded mx-auto d-block " width={800} height={300} src={item.path}
                                                     alt="..." />
 
 
