@@ -160,10 +160,10 @@ export default function Home() {
             {/* head */}
 
             <Header1 />
-
-            <div className="card text-bg-dark">
-                <Image src={header}  className="card-Image" alt="..." />
-               
+            <div className="card text-center" >
+                <div className="card text-bg-dark">
+                    <Image src={header} className="card-Image" alt="..." />
+                </div>
             </div>
 
             <div className="card text-center">
@@ -185,9 +185,9 @@ export default function Home() {
             <div className="row row-cols-1 row-cols-md-2 g-4 my-5">
                 <div className="col">
                     <div className="card">
-  
-                        <Image className="img-fluid" src={boat}  alt="..."/>
-                    
+
+                        <Image className="img-fluid" src={boat} alt="..." />
+
                         <div className="card-body">
                             <h5 className="card-title">HIGH GROUND</h5>
                             <p className="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <Image  src={DENIED} className="img-fluid" alt="..." />
+                        <Image src={DENIED} className="img-fluid" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">DENIED AREA</h5>
                             <p className="card-text hh">Play lone-wolf or rally with your team in immersive multiplayer combat, complete with new locales and ways to play.</p>
@@ -293,7 +293,7 @@ export default function Home() {
             <div className='container text-center my-5 ' style={{ overflowX: 'hidden' }}>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
-                        <div  key = {index} className="col">
+                        <div key={index} className="col">
                             <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id}>
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
@@ -305,21 +305,14 @@ export default function Home() {
 
                                     <div className="modal fade " id={"exampleModal" + item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div className="modal-dialog ">
-                                            
+
                                             <div className="modal-content  text-center  ">
+<<<<<<< HEAD
                                                 <Image className="rounded mx-auto d-block " width={800} height={300} src={item.path}
+=======
+                                                <Image className="card" width={500} height={350} src={item.path}
+>>>>>>> 366388e119123b70ff677e9ab2e630838d144ed5
                                                     alt="..." />
-
-
-                                                {/* <div className="modal-header h-100 " style={{backgroundImage:`url(${item.path})`}}>
-                                                    <br/>
-                                                    <br/>
-                                                    <br/>
-                                                    <br/>
-                                                   
-                                                        
-                                                   
-                                                </div> */}
                                                 <div className="modal-body itemm">
                                                     {(item.file_name).replace(".jpg", '')}
                                                 </div>
@@ -327,7 +320,7 @@ export default function Home() {
                                                     {item.uploaded_on}
                                                 </div>
                                                 <div className="modal-footer  border border-0 footer">
-                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">BUY</button>
+                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
                                                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                 </div>
