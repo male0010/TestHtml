@@ -309,17 +309,6 @@ export default function Home() {
                                             <div className="modal-content  text-center  ">
                                                 <Image className="card" width={500} height={350} src={item.path}
                                                     alt="..." />
-
-
-                                                {/* <div className="modal-header h-100 " style={{backgroundImage:`url(${item.path})`}}>
-                                                    <br/>
-                                                    <br/>
-                                                    <br/>
-                                                    <br/>
-                                                   
-                                                        
-                                                   
-                                                </div> */}
                                                 <div className="modal-body itemm">
                                                     {(item.file_name).replace(".jpg", '')}
                                                 </div>
