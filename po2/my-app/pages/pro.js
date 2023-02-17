@@ -307,11 +307,7 @@ export default function Home() {
                                         <div className="modal-dialog ">
 
                                             <div className="modal-content  text-center  ">
-<<<<<<< HEAD
-                                                <Image className="rounded mx-auto d-block " width={800} height={300} src={item.path}
-=======
                                                 <Image className="card" width={500} height={350} src={item.path}
->>>>>>> 366388e119123b70ff677e9ab2e630838d144ed5
                                                     alt="..." />
                                                 <div className="modal-body itemm">
                                                     {(item.file_name).replace(".jpg", '')}
