@@ -227,7 +227,7 @@ export default function Home() {
 
             <div className="card ">
                 <div className="card-body">
-                    <h5 className="card-title hh">MODES</h5>
+                    <h5 className="card-title h55">MODES</h5>
                     <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                 </div>
