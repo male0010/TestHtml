@@ -160,9 +160,9 @@ export default function Home() {
             {/* head */}
 
             <Header1 />
-            <div className="card text-center">
+            <div className="card text-center" >
                 <div className="card text-bg-dark">
-                    <Image src={header} className="img-fluid" alt="..." />
+                    <Image src={header} className="card-Image" alt="..." />
                 </div>
             </div>
 
