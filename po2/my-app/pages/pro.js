@@ -161,8 +161,8 @@ export default function Home() {
 
             <Header1 />
             <div className="card text-center" >
-                <div className="card text-bg-dark">
-                    <Image src={header} className="card-Image" alt="..." />
+                <div className="card text-center">
+                    <Image src={header} className="img-fluid" alt="..." />
                 </div>
             </div>
 
@@ -298,7 +298,7 @@ export default function Home() {
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
                                 <div className="card-body">
-                                    <h5 className="item">{(item.file_name).replace(".jpg", '')}</h5>
+                                    <h5 className="itemm">{(item.file_name).replace(".jpg", '')}</h5>
 
 
 

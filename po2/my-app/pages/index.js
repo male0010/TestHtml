@@ -39,24 +39,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Header0/>
- 
-      
 
-     
-        <div className="centered">
-          <h1 className="h1">MODERN WARFARE II CONNECTS WITH THE NEW CALL OF DUTY®  WARZONETM 2.0</h1>
-          <h3 className="h3 centered">  MAP IN SEASON 02 OF CALL OF DUTY®: WARZONE™ </h3>
-          
-          <p className="lead1">
-      <a href="https://www.callofduty.com/warzone" class="btn btn-primary lead2">READ MORE</a>
-    </p>
-        </div>
+      <Header0 />
 
-      
 
-      
+
+
+      <div className="centered">
+        <h1 className="h1 ">MODERN WARFARE II CONNECTS WITH THE NEW CALL OF DUTY®  WARZONETM 2.0</h1>
+        <h3 className="h3 centered">  MAP IN SEASON 02 OF CALL OF DUTY®: WARZONE™ </h3>
+
+        <p className="lead1">
+          <a href="https://www.callofduty.com/warzone" class="btn btn-primary lead2">READ MORE</a>
+        </p>
+      </div>
+
+
+
+
       {/* <div className='container'>
         <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
           {card.map((item, index) => (
