@@ -180,10 +180,11 @@ h1{
 
 
 .h5{
-    color: #000 !important;
+    
     font-weight: 500 !important;
     font-size: 16px !important;
     font-family: 'Courier New', Courier, monospace !important;
+    color: rgb(145, 16, 16) !important;
 }
 
 .h11{
@@ -225,4 +226,12 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  
 
 
+}
+
+.h55{
+  font-size: 22px !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  color: rgb(145, 16, 16) !important;
+  font-weight: bold !important;
+  
 }

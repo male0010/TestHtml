@@ -189,7 +189,7 @@ export default function Home() {
                         <Image className="img-fluid" src={boat} alt="..." />
 
                         <div className="card-body">
-                            <h5 className="card-title">HIGH GROUND</h5>
+                            <h5 className="card-title h55 ">HIGH GROUND</h5>
                             <p className="card-text hh">Squad up and fight alongside Task Force 141 in a globe-trotting single-player campaign.</p>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ export default function Home() {
                     <div className="card">
                         <Image src={DENIED} className="img-fluid" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">DENIED AREA</h5>
+                            <h5 className="card-title h55">DENIED AREA</h5>
                             <p className="card-text hh">Play lone-wolf or rally with your team in immersive multiplayer combat, complete with new locales and ways to play.</p>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ export default function Home() {
                     <div className="card">
                         <Image src={LOW} className="img-fluid" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">LOW PROFILE</h5>
+                            <h5 className="card-title h55">LOW PROFILE</h5>
                             <p className="card-text hh">Expect a massive calendar of free content post-launch featuring evolving gameplay with new maps, modes, seasonal events, community celebrations and more.</p>
                         </div>
                     </div>
@@ -216,7 +216,7 @@ export default function Home() {
                     <div className="card">
                         <Image src={zaya} className="img-fluid" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">DEFENDER: MT ZAYA</h5>
+                            <h5 className="card-title h55">DEFENDER: MT ZAYA</h5>
                             <p className="card-text hh">Join your team for an evolved Cooperative game mode featuring tactical co-op gameplay across multiple missions and introducing new Raid missions that will continue the story of the Campaign.
 
                             </p>
