@@ -298,7 +298,7 @@ export default function Home() {
                                 <Image width={245} height={200} src={item.path}
                                     className="card-Image-top " alt="..." />
                                 <div className="card-body">
-                                    <h5 className="item">{(item.file_name).replace(".jpg", '')}</h5>
+                                    <h5 className="itemm">{(item.file_name).replace(".jpg", '')}</h5>
 
 
 
