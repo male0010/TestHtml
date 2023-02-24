@@ -21,6 +21,7 @@ import two from "../public/image/22.png"
 import ooo from "../public/image/33.png"
 import oooo from "../public/image/44.png"
 import ooooo from "../public/image/55.png"
+import Sidebar1 from "../public/image/Sidebar"
 
 
 // import styles from '@/styles/globals.css'
@@ -156,10 +157,23 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            
+            
+
+
 
             {/* head */}
-
+          
+            
             <Header1 />
+
+            
+          
+            {/* <Sidebar1/> */}
+        <div className='row'>
+            <div className='col-2'></div>
+            <div className='col-10'>
+        
             <div className="card text-center" >
                 <div className="card text-center">
                     <Image src={header} className="img-fluid" alt="..." />
@@ -331,9 +345,8 @@ export default function Home() {
 
                 </div>
             </div>
-
-
-
+            </div>
+            </div>
 
 
 
