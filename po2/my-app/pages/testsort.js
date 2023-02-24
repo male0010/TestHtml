@@ -5,43 +5,56 @@ import { useEffect } from 'react';
 
 
 export default function testsort() {
-
+    
     const [gunlist, setgunlist] = useState();
-    const [sort, sortlist] = useState();
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
             setgunlist(response.data);
-            sortlist(response.data.Name_data);
-            SortType(response.data)
+            Sortup(response.data)
+            Sortlow(response.data)
             // setfilterdata(response.data);
             // console.log(response.data)
         });
     };
-    getgunlist()
+
+    useEffect(() => {
+        // setdata()
+        getgunlist()
+    }, [])
 
 
-
-    function SortType(x) {
+    function Sortup(x) {
         var datax = new Array;
         var datay = gunlist;
-        datax=x.sort((a,b)=> (a.Name_data > b.Name_data ? 1:-1))
+        datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
         console.log(datax)
+    }
 
+    function Sortlow(x) {
+        var datay = new Array;
+        var datay = gunlist;
+        datay = x.sort((a, b) => (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1))
+        // console.log(datay)
+    }
+ 
+    function setsort(){
+        Sortup(x)=(1)
+        Sortlow(x)=(2)
 
 
     }
-    
 
+    return (
+        <>
+            <select className='col-12 col-sm-1' onChange={(event) => {
+                        setsort(event.target.value)
+                    }}>
+                <option value={0}>ALL</option>
+                <option value={1}>gun</option>
+                <option value={2}>character</option>
+            </select>
 
-
-
-
-
-return (
-    <>
-
-
-        {/* {gunlist?.map((item, index) => (
+            {gunlist?.map((item, index) => (
                 <div key={item.id_data} >
                     <div className="col" >
                         <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data} >
@@ -74,8 +87,8 @@ return (
                         </div>
                     </div>
                 </div>
-            ))} */}
-    </>
-)
+            ))}
+        </>
+    )
 
 };
