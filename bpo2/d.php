@@ -1,11 +1,7 @@
 <?php
-$server ="localhost";
-$username = "root";
-$password ="";
-$db_name = "gun";
-
+require "connect.php";
 $con = mysqli_connect($server, $username, $password, $db_name);
-$sql = "SELECT * FROM imggun";
+
 $query = mysqli_query($con, $sql);
 if (!$query) {
     printf("Error: %s\n", $con->error);
