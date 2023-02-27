@@ -109,6 +109,7 @@ export default function header() {
               type="search"
               class="form-control rounded"
               placeholder='Search'
+              
             // style="min-width: 225px;"
             />
 

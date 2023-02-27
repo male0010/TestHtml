@@ -156,36 +156,36 @@ export default function prototype() {
             setfilterdata(y);
         }
     }
-    function tysort(x1) {
+    // function tysort(x1) {
 
-        var datax = new Array;
-        var datay = filterdata;
-        // datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
-        // console.log(datax)
+    //     var datax = new Array;
+    //     var datay = filterdata;
+    //     // datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
+    //     // console.log(datax)
 
-        if (x1 == 1) {
-            datax = datay.sort(function (a, b) {
+    //     if (x1 == 1) {
+    //         datax = datay.sort(function (a, b) {
 
-                return (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1);
-            }); setsort(datax)
+    //             return (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1);
+    //         }); setsort(datax)
 
-        }
-        else if (x1 == 2) {
-            datax = datay.sort(function (a, b) {
+    //     }
+    //     else if (x1 == 2) {
+    //         datax = datay.sort(function (a, b) {
 
-                return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
-            }); console.log(datax); setsort(datax)
-        }
-        else {
-            setsort(datay);
+    //             return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
+    //         }); console.log(datax); setsort(datax)
+    //     }
+    //     else {
+    //         setsort(datay);
 
-        }
+    //     }
 
-    }
-    function combined(x,y){
-        const datax = sort;
-        const datay = filterdata;
-        datax = get.sort(x) }
+    // }
+    // function combined(x,y){
+    //     const datax = sort;
+    //     const datay = filterdata;
+    //  }
             
     return (
         <>
