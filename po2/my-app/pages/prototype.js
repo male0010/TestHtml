@@ -1,16 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import axios from 'axios';
 import { useState } from "react";
-import img from "../public/image/1.png"
-import img1 from "../public/image/callbg.jpg"
-import img2 from "../public/image/call.jpg"
-import Header1 from "../public/header2"
-import img4 from "../public/image/w2.jpg"
-import { useRef } from "react";
-import SearchBar from '@/public/searchBar';
-import React from 'react'
+import { useEffect } from 'react';
+
 export default function prototype() {
     // const [gunlist, setgunlist] = useState();
     // axios.post('https://www.imgen.site/imgen2/api_male/api.php', { x: 1, buf: new Buffer(10) }, {
@@ -25,13 +18,7 @@ export default function prototype() {
     //   }
     // }).then(({data}) => console.log(data));
 
-    const [gunlist, setgunlist] = useState();
-    const getgunlist = () => {
-        axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
-            setgunlist(response.data.data);
-        });
-    };
-    getgunlist()
+
 
     // axios.post('https://www.imgen.site/imgen2/api_male/api.php', { x: 1, buf: new Buffer(10) }, {
     //     headers: {
@@ -98,8 +85,18 @@ export default function prototype() {
 
     //     // Clean up and remove the link
     //     link.parentNode.removeChild(link);
-
-
+    const [filter, setfilter] = useState("1");
+    const [filterdata, setfilterdata] = useState();
+    const [sort, setsort] = useState();
+    const [search, setsearch] = useState('')
+    const [gunlist, setgunlist] = useState();
+    const getgunlist = () => {
+        axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
+            setgunlist(response.data);
+            setfilterdata(response.data);
+            setsort(response.data);
+        });
+    };
 
     //เพื่อโหลดภาพ
     async function loadfile(event, urls, file_name) {
@@ -130,40 +127,66 @@ export default function prototype() {
             link.parentNode.removeChild(link);
 
         });
-        const handleChange = (e) => {
-            e.preventDefault();
-            setSearchInput(e.target.value);
-        };
+    }
 
-        if (searchInput.length > 0) {
-            countries.filter((country) => {
-                return country.name.match(searchInput);
+    //filter
+    useEffect(() => {
+        // setdata()
+        getgunlist()
+    }, [])
+
+    function setup(x) {
+        setfilter(x)
+        filtertype(x)
+
+    }
+
+    function filtertype(x) {
+        console.log(x)
+        let y = new Array;
+        if (x == 0) {
+            setfilterdata(gunlist);
+        } else {
+            gunlist.forEach(element => {
+                if (element['id_type'] == x) {
+                    y.push(element)
+                    // console.log(element);
+                }
             });
+            setfilterdata(y);
+        }
+    }
+    function tysort(x1) {
+
+        var datax = new Array;
+        var datay = filterdata;
+        // datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
+        // console.log(datax)
+
+        if (x1 == 1) {
+            datax = datay.sort(function (a, b) {
+
+                return (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1);
+            }); setsort(datax)
+
+        }
+        else if (x1 == 2) {
+            datax = datay.sort(function (a, b) {
+
+                return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
+            }); console.log(datax); setsort(datax)
+        }
+        else {
+            setsort(datay);
+
         }
 
     }
-    //search bar
-    // async function  searchBar  (urlx,config) {
-    //     const [searchInput, setSearchInput] = useState("");
-    //     const config = {
-    //         headers: { "content-type": "image/jpeg" },
-    //         responseType: "blob"
-    //     }
-    //     var gun = axios.get(urlx, config).then((response) => {
-    //         console.log(response.data)
-    //     });
-    //     const handleChange = (e) => {
-    //         e.preventDefault();
-    //         setSearchInput(e.target.value);
-    //     };
-    //     if (searchInput.length > 0) {
-    //         gun.filter((gunlist) => {
-    //             return gunlist.name.match(searchInput);
-    //         });
-    //     }
-    // }
-
-
+    function combined(x,y){
+        const datax = sort;
+        const datay = filterdata;
+        datax = get.sort(x) }
+            
     return (
         <>
             {/* <header>
@@ -220,55 +243,85 @@ export default function prototype() {
                     </nav>
                 </div>
             </header> */}
-            {/* search */}
-            {/* <div >
-                <SearchBar />
-            </div> */}
-            {/* <input
-                type="text"
-                placeholder="Search here"
-                onChange={searchBar}
-                value={searchInput} /> */}
+            {/* //search */}
+            <div>
+                <div>
+                    <input
+                        placeholder="search...."
+                        onChange={(event) => {
+                            setsearch(event.target.value)
+                        }}
+                    />
+                </div>
+                <div className='row'>
+                    <select className='col-12 col-sm-1' onChange={(event) => {
+                        setup(event.target.value)
+                    }}>
+                        <option value={0}>ALL</option>
+                        <option value={1}>gun</option>
+                        <option value={2}>character</option>
+                        <option value={3}>car</option>
+
+                    </select>
+                    <select className='col-12 col-sm-1' onChange={(event) => {
+                        tysort(event.target.value)
+                    }}>
+                        <option value={0} >ALL</option>
+                        <option value={1}>a</option>
+                        <option value={2} >z</option>
+                    </select>
+                </div>
+                <div>
+                    <br>
+                    </br>
+                </div>
+                <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                    {filterdata?.filter((item) => {
+                        if (search == "") {
+                            return item
+                        } else if (item.file_name.toLowerCase().includes(search.toLowerCase())) {
+                            return item
+                        }
+                    }).map((item, index) => {
+                        return (
+                            <div key={index} className="col">
+                                <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                    <Image width={245} height={200} src={item.path}
+                                        className="card-Image-top " alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="itemm">{(item.file_name).replace(".jpg", '')}</h5>
 
 
-            {/* <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
-                {gunlist?.map((item, index) => (
-                    <div className="col" >
-                        <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id} >
-                            <Image width={245} height={200} src={item.path}
-                                className={'imgBack'} alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">{(item.file_name).replace(".jpg", '')}</h5>
-                                <p className="card-text">{item.uploaded_on}</p>
-                                <button onClick={(e) => { loadfile(e) }} className="btn btn-primary">download</button>
-                            </div>
-                        </div>
 
-                        <div class="modal fade" id={"exampleModal" + item.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><Image width={245} height={200} src={item.path}
-                                            className="card-Image-top" alt="..." />
-                                        </h1>
 
-                                    </div>
-                                    <div class="modal-body">
-                                        {(item.file_name).replace(".jpg", '')}
-                                    </div>
-                                    <div class="modal-body">update on :
-                                        {item.uploaded_on}
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div className="modal-dialog ">
+
+                                                <div className="modal-content  text-center  ">
+                                                    <Image className="card" width={500} height={350} src={item.path}
+                                                        alt="..." />
+                                                    <div className="modal-body itemm">
+                                                        {(item.file_name).replace(".jpg", '')}
+                                                    </div>
+
+                                                    <div className="modal-footer  border border-0 footer">
+                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+
+                                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        )
+                    })}
 
-                ))}</div> */}
 
+
+                </div>
+            </div>
 
 
         </>

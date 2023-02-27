@@ -222,13 +222,8 @@ a {
 }
 
 
-<<<<<<< HEAD
-.cardd{
-  background-color: rgb(10, 10, 10) !important;
-=======
 .cardd {
   background-color: rgb(20, 19, 19) !important;
->>>>>>> d8ce1ff8fdfb43d0a463c9cf94434df1f4fc96fa
 }
 
 .item {
@@ -238,21 +233,12 @@ a {
 
 }
 
-<<<<<<< HEAD
-.itemm{
-    background-color:rgb(54, 54, 54) !important;
-    font-family: 'Courier New', Courier, monospace !important; 
-    font-size: 22px;
-    font-weight: 520 !important;
-    color: #e4dada;
-=======
 .itemm {
   background-color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 22px;
   font-weight: 520 !important;
   color: #ffffff;
->>>>>>> d8ce1ff8fdfb43d0a463c9cf94434df1f4fc96fa
 
 
 }
@@ -271,82 +257,4 @@ a {
   font-family: 'Courier New', Courier, monospace !important;
   color: rgb(145, 16, 16) !important;
   font-weight: bold !important;
-<<<<<<< HEAD
-  
-}
-
-/* .sidebar{
-  width: 280px !important;
-  height: 100% !important;
-  --left-sidebar-width:300px !important;
-  background-color:rgb(71, 71, 71);
-
-  
-
-} */
-
-.mb{
-  color:rgb(209, 203, 203);
-  padding: 4px;
-  font-weight: 700;
-  
-}
-
-
-
-
-
-
-
-body {
-  background-color: #fbfbfb;
-}
-@media (min-width: 991.98px) {
-  main {
-    padding-left: 240px;
-  }
-}
-
-.bgg{
-  color: #000 !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-  font-size: 15px;
-}
-
-
-
-
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 315px !important;
-  z-index: 700 !important;
-  
-}
-
-@media (max-width: 991.98px) {
-  .sidebar {
-    width: 100%;
-  }
-}
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.4rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-=======
-
->>>>>>> d8ce1ff8fdfb43d0a463c9cf94434df1f4fc96fa
 }
