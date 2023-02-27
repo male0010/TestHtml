@@ -97,7 +97,7 @@ export default function header() {
           <a class="navbar-brand" href="#">
             <img
               src="https://logos-world.net/wp-content/uploads/2022/07/Modern-Warfare-Emblem.png"
-              height="50"
+              height="60"
               alt="MDB Logo"
               loading="lazy"
             />
