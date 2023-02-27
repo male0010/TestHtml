@@ -304,7 +304,7 @@ export default function Home() {
 
 
 
-            <div className='container text-center my-5 ' style={{ overflowX: 'hidden' }}>
+            <div className='container text-center my-5 ' style={{ overflowX: 'f' }}>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {gunlist?.map((item, index) => (
                         <div key={index} className="col">

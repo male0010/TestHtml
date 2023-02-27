@@ -15,7 +15,7 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  background-color: rgb(20, 19, 19) !important;
+  background-color: rgb(250, 245, 245) !important;
 }
 
 a {
@@ -257,6 +257,7 @@ a {
   font-family: 'Courier New', Courier, monospace !important;
   color: rgb(145, 16, 16) !important;
   font-weight: bold !important;
+<<<<<<< HEAD
 
   
 }
@@ -332,4 +333,6 @@ body {
   padding-top: 0.4rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+=======
+>>>>>>> 1c62117c1bd9c400081b112402f631d704a287e8
 }
