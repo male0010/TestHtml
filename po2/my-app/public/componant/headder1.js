@@ -9,7 +9,6 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from "react";
-import Sidebar1 from "../public/image/Sidebar"
 
 // import styles from '@/styles/globals.css'
 

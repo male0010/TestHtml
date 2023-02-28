@@ -21,7 +21,7 @@ import two from "../public/image/22.png"
 import ooo from "../public/image/33.png"
 import oooo from "../public/image/44.png"
 import ooooo from "../public/image/55.png"
-import Sidebar1 from "../public/image/Sidebar"
+
 
 
 // import styles from '@/styles/globals.css'
@@ -172,7 +172,7 @@ export default function Home() {
             {/* <Sidebar1/> */}
         <div className='row'>
             <div className='col-2'></div>
-            <div className='col-10'>
+            <div className='col-'>
         
             <div className="card text-center" >
                 <div className="card text-center">
