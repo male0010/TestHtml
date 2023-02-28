@@ -46,12 +46,8 @@ export default function testsort() {
 
     // }
     async function tysort(x1) {
-
         var datax = new Array;
         var datay = gunlist;
-        // datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
-        // console.log(datax)
-
         if (x1 == 1) {
             datax = datay.sort(function (a, b) {
 
@@ -63,13 +59,13 @@ export default function testsort() {
             datax = datay.sort(function (a, b) {
 
                 return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
-            }); 
+            });
             await setsort([])
         }
-        else  {
+        else {
             await setsort([]);
             datax = gunlist
-            
+
         }
         setsort(datax); console.log(gunlist);
     }
@@ -101,7 +97,7 @@ export default function testsort() {
     // }
 
     return (
-        <>
+        <>  <form>
             <div>
                 <input
                     placeholder="search...."
@@ -116,6 +112,7 @@ export default function testsort() {
                 <option value='1'>a-z</option>
                 <option value='2' >z-a</option>
             </select>
+            </form>
 
             {sort?.map((item, index) => (
 

@@ -90,11 +90,18 @@ export default function prototype() {
     const [sort, setsort] = useState();
     const [search, setsearch] = useState('')
     const [gunlist, setgunlist] = useState();
+    const [finalfilter, setfinalfilter] = useState();
+    const [finalsort, setfinalsort] = useState()
+
+
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
-            setgunlist(response.data);
-            setfilterdata(response.data);
-            setsort(response.data);
+            let datax = response.data
+            setgunlist((datax).slice(0));
+            setsort((datax).slice(0));
+            setfilterdata((datax).slice(0));
+            
+
         });
     };
 
@@ -156,94 +163,48 @@ export default function prototype() {
             setfilterdata(y);
         }
     }
-    // function tysort(x1) {
+    //sort filter
+    async function tysort(x1) {
+        var datax = new Array;
+        var datay = gunlist;
+        if (x1 == 1) {
+            datax = datay.sort(function (a, b) {
 
-    //     var datax = new Array;
-    //     var datay = filterdata;
-    //     // datax = x.sort((a, b) => (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1))
-    //     // console.log(datax)
+                return (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1);
+            });
+            await setsort([])
 
-    //     if (x1 == 1) {
-    //         datax = datay.sort(function (a, b) {
+        } else if (x1 == 2) {
+            datax = datay.sort(function (a, b) {
 
-    //             return (a.Name_data.toUpperCase() > b.Name_data.toUpperCase() ? 1 : -1);
-    //         }); setsort(datax)
+                return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
+            });
+            await setsort([])
+        } else {
+            await setsort([]);
+            datax = gunlist
 
-    //     }
-    //     else if (x1 == 2) {
-    //         datax = datay.sort(function (a, b) {
+        }
+        setsort(datax);
+        console.log(gunlist);
+    }
 
-    //             return (a.Name_data.toUpperCase() < b.Name_data.toUpperCase() ? 1 : -1);
-    //         }); console.log(datax); setsort(datax)
-    //     }
-    //     else {
-    //         setsort(datay);
+    function combile(x, y) {
+        setfinalfilter(x)
+        setfinalsort(y)
 
-    //     }
+        x = (function filter() {
+            return tysort(x1)
+        });
+        y = (function sort() {
+            return setsort(x)
+        });
+        console.log(x, y)
+    }
 
-    // }
-    // function combined(x,y){
-    //     const datax = sort;
-    //     const datay = filterdata;
-    //  }
-            
     return (
         <>
-            {/* <header>
-                <div >
 
-
-                    <nav className="navbar navbar-expand-lg  menu2">
-                        <div className="container-fluid menu2"><a href="/">
-                            <Image src={img4} alt="" width="250" height="70" /></a>
-
-
-                            <div className="collapse navbar-collapse menu2" id="navbarSupportedContent">
-                                <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu2">
-                                    <li className="nav-item dropdown menu2">
-
-                                        {gunlist?.map((item, index) => (
-                                            <li class={"nav-item dropdown" + item.id}>
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Dropdown
-                                                </a>
-                                                <ul class="dropdown-menu 2" aria-labelledby="navbarDropdown">
-                                                    <li><a class="dropdown-item" href="#">{item.file_name}</a></li>
-                                                    <li><a class="dropdown-item" href="#">{item.file_name}</a></li>
-                                                    <li><hr class="dropdown-divider" /></li>
-                                                    <li><a class="dropdown-item" href="#">{item.file_name}</a></li>
-                                                </ul>
-                                            </li>
-                                        ))} </li>
-                                    <li className="nav-item dropdown menu2">
-                                        <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            NEWS
-                                        </a>
-
-                                    </li>
-                                    <li className="nav-item dropdown menu2">
-                                        <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ESPORTS
-                                        </a>
-
-                                    </li>
-                                    <li className="nav-item dropdown menu2">
-                                        <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            SHOP
-                                        </a>
-
-                                    </li>
-                                </ul>
-                                <form className="d-flex menu2">
-                                    <input className="form-control me-2 search menu4" type="search" placeholder="Search" aria-label="Search" />
-                                    <button className="btn btn-primary lead2" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </header> */}
-            {/* //search */}
             <div>
                 <div>
                     <input
@@ -255,7 +216,7 @@ export default function prototype() {
                 </div>
                 <div className='row'>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        setup(event.target.value)
+                        setup(event.target.value, finalsort)
                     }}>
                         <option value={0}>ALL</option>
                         <option value={1}>gun</option>
@@ -264,11 +225,11 @@ export default function prototype() {
 
                     </select>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        tysort(event.target.value)
+                        tysort(finalfilter, event.target.value)
                     }}>
-                        <option value={0} >ALL</option>
-                        <option value={1}>a</option>
-                        <option value={2} >z</option>
+
+                        <option value="1">a</option>
+                        <option value="2">z</option>
                     </select>
                 </div>
                 <div>
