@@ -22,7 +22,7 @@ import two from "../public/image/22.png"
 import ooo from "../public/image/33.png"
 import oooo from "../public/image/44.png"
 import ooooo from "../public/image/55.png"
-import Sidebar1 from "../public/image/Sidebar"
+
 
 
 // import styles from '@/styles/globals.css'
@@ -203,6 +203,7 @@ export default function Home() {
 
             <Header1 />
 
+<<<<<<< HEAD
             <form class="d-none d-md-flex input-group w-auto my-auto">
                 <input
                     autocomplete="off"
@@ -234,6 +235,19 @@ export default function Home() {
                         <option value={1}>a</option>
                         <option value={2} >z</option>
                     </select> */}
+=======
+            
+          
+            {/* <Sidebar1/> */}
+        <div className='row'>
+            <div className='col-2'></div>
+            <div className='col-'>
+        
+            <div className="card text-center" >
+                <div className="card text-center">
+                    <Image src={header} className="img-fluid" alt="..." />
+                </div>
+>>>>>>> eb420e309785a1224a3f22c1d481c70f946f70b3
             </div>
 
          
