@@ -102,7 +102,7 @@ export default function header() {
                     </div>
                     <br></br>
                     <div className=''>
-                        <select className='btn btn-dark' onChange={(event) => {
+                        <select className='btn btn-dark all'  onChange={(event) => {
                             setup(event.target.value)
                         }}>
                             <option value={0}>ALL</option>
@@ -111,7 +111,7 @@ export default function header() {
                             <option value={3}>car</option>
 
                         </select>
-                        <select className='btn btn-dark ' onChange={(event) => {
+                        <select className='btn btn-dark  all' onChange={(event) => {
                             tysort( event.target.value)
                         }}>
 

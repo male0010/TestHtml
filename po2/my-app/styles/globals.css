@@ -358,3 +358,12 @@ body {
   color: #f3f2f2 !important;
   
 }
+
+.all{
+  border: 3rem !important;
+  padding: 0.5em;
+  border-radius: 1rem !important;
+  min-width: 180px !important;
+  font-size: 16px !important;
+  background-color: rgb(56, 56, 56) !important;
+}
