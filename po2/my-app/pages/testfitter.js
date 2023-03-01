@@ -66,7 +66,8 @@ export default function testfitter() {
 
             </select>
         </div>
-            {filterdata?.map((item, index) => {
+            {filterdata
+            .map((item, index) => {
                 return (
                     <div key={item.id_data}>
                         <div className="col">

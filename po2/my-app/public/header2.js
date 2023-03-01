@@ -30,8 +30,8 @@ export default function header() {
                 </a>
               </li>
               <li className="nav-item dropdown menu2">
-                <a className="nav-link dropdown-toggle menu2" href="/item#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ITEM
+                <a className="nav-link dropdown-toggle menu2" href="/item" >
+                  ITEM
                 </a>
 
               </li>
