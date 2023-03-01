@@ -78,7 +78,7 @@ export default function header() {
 
 
             <a href="#" class="list-group-item list-group-item-action py-2 ripple  bgg sin">
-              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center  bgg " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
+              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center  bgg sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
                 Type
               </button>
               <div class="collapse  " id="home-collapse">
@@ -92,7 +92,7 @@ export default function header() {
 
             </a>
             <a href="#" class="list-group-item list-group-item-action py-2 ripple bgg sin ">
-              <button class=" btn btn-toggle d-inline-flex align-items-center bgg rounded border-0 collapsed  dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              <button class=" btn btn-toggle d-inline-flex align-items-center bgg  sin rounded border-0 collapsed  dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                 Sort
               </button>
               <div class="collapse" id="dashboard-collapse">

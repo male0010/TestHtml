@@ -345,7 +345,8 @@ body {
 }
 
 .sin{
-  background-color: rgb(77, 76, 76) !important;
+  background-color: rgb(56, 56, 56) !important;
+  color: #f3f2f2 !important;
 }
 
 .search{
@@ -357,6 +358,7 @@ body {
   background-color: rgb(56, 56, 56) !important;
   color: #f3f2f2 !important;
   
+  
 }
 
 .all{
@@ -366,4 +368,6 @@ body {
   min-width: 180px !important;
   font-size: 16px !important;
   background-color: rgb(56, 56, 56) !important;
+  color: #f3f2f2 !important;
+
 }
