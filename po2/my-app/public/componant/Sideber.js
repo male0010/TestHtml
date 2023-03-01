@@ -133,7 +133,7 @@ export default function header() {
 
 
           <a class="navbar-brand" href="#">
-            <Image src={img5} alt="" height="65" /></a>
+            <Image src={img5} alt="" height="50" /></a>
 
 
 
