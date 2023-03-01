@@ -8,8 +8,8 @@ import { useEffect } from 'react';
 
 
 
-export default function header() {
-    const [filter, setfilter] = useState("1");
+export default function item() {
+    const [filters, setfilter] = useState("1");
     const [filterdata, setfilterdata] = useState();
     const [sort, setsort] = useState();
     const [search, setsearch] = useState('')
@@ -22,12 +22,41 @@ export default function header() {
             let datax = response.data
             setgunlist((datax).slice(0));
             setsort((datax).slice(0));
-            setfilterdata((datax).slice(0));
         });
     };
 
-    //console.log(sssss)
+    //เพื่อโหลดภาพ
+    async function loadfile(event, urls, file_name) {
+        event.preventDefault();
+        const config = {
+            headers: { "content-type": "image/jpeg" },
+            responseType: "blob"
+        }
+        await axios.get(urls, config).then((response) => {
+            console.log(response.data)
 
+            var url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+
+            link.setAttribute(
+                'download',
+                file_name
+            );
+            // Append to html link element page
+
+            document.body.appendChild(link);
+
+            // Start download
+            link.click();
+
+            // Clean up and remove the link
+            link.parentNode.removeChild(link);
+
+        });
+    }
+
+    //filter
     useEffect(() => {
         // setdata()
         getgunlist()
@@ -39,25 +68,26 @@ export default function header() {
 
     }
 
-    function filtertype(x) {
+    function filtertype(x, z) {
         console.log(x)
         let y = new Array;
         if (x == 0) {
             setfilterdata(gunlist);
         } else {
-
             gunlist.forEach(element => {
                 if (element['id_type'] == x) {
                     y.push(element)
                     // console.log(element);
                 }
             });
-            setfilterdata(y);
+            // setfilterdata(y); 
+            tysort(z, y)
         }
     }
-    async function tysort(x1) {
+    //sort filter
+    async function tysort(x1, y) {
         var datax = new Array;
-        var datay = gunlist;
+        var datay = y;
         if (x1 == 1) {
             datax = datay.sort(function (a, b) {
 
@@ -73,19 +103,28 @@ export default function header() {
             await setsort([])
         } else {
             await setsort([]);
-            datax = gunlist
+            datax = y
 
         }
         setsort(datax);
-        console.log(gunlist);
+        console.log(y);
+    }
+
+    function combine(z, y) {
+        setfinalfilter(z)
+        setfinalsort(y)
+
+        filtertype(z, y)
+        console.log(z)
+
     }
 
     return (
 
-        <> 
-        < Sidebar1 />
-           
-           <br></br>
+        <>
+            < Sidebar1 />
+
+            <br></br>
             <br></br>
             <div className="container  ">
                 <br></br>
@@ -93,7 +132,7 @@ export default function header() {
                 <br></br>
                 <div>
                     <div>
-                        <input className="  search" 
+                        <input className="  search"
                             placeholder="search.... "
                             onChange={(event) => {
                                 setsearch(event.target.value)
@@ -102,9 +141,10 @@ export default function header() {
                     </div>
                     <br></br>
                     <div className=''>
-                        <select className='btn btn-dark all'  onChange={(event) => {
-                            setup(event.target.value)
+                        <select className='btn btn-dark all' onChange={(event) => {
+                            combine(event.target.value, finalsort)
                         }}>
+
                             <option value={0}>ALL</option>
                             <option value={1}>gun</option>
                             <option value={2}>character</option>
@@ -112,17 +152,18 @@ export default function header() {
 
                         </select>
                         <select className='btn btn-dark  all' onChange={(event) => {
-                            tysort( event.target.value)
+                            combine(finalfilter, event.target.value)
                         }}>
 
-                            <option value="1">a</option>
-                            <option value="2">z</option>
+                            <option value="0">sort</option>
+                            <option value="1">a-z</option>
+                            <option value="2">z-a</option>
                         </select>
                     </div>
-                    <br></br>      
+                    <br></br>
                 </div>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
-                    {filterdata?.filter((item) => {
+                    {sort?.filter((item) => {
                         if (search == "") {
                             return item
                         } else if (item.file_name.toLowerCase().includes(search.toLowerCase())) {
