@@ -14,14 +14,19 @@ export default function item() {
     const [sort, setsort] = useState();
     const [search, setsearch] = useState('')
     const [gunlist, setgunlist] = useState();
-    const [finalfilter, setfinalfilter] = useState();
-    const [finalsort, setfinalsort] = useState()
+    const [finalfilter, setfinalfilter] = useState('0');
+    const [finalsort, setfinalsort] = useState('1')
+
 
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
             let datax = response.data
             setgunlist((datax).slice(0));
             setsort((datax).slice(0));
+
+
+
+
         });
     };
 
@@ -72,7 +77,7 @@ export default function item() {
         console.log(x)
         let y = new Array;
         if (x == 0) {
-            setfilterdata(gunlist);
+            tysort(z,gunlist);
         } else {
             gunlist.forEach(element => {
                 if (element['id_type'] == x) {
@@ -88,6 +93,9 @@ export default function item() {
     async function tysort(x1, y) {
         var datax = new Array;
         var datay = y;
+
+        console.log(x1);
+        console.log(y);
         if (x1 == 1) {
             datax = datay.sort(function (a, b) {
 
@@ -118,6 +126,7 @@ export default function item() {
         console.log(z)
 
     }
+
 
     return (
 

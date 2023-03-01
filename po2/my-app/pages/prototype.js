@@ -90,8 +90,8 @@ export default function prototype() {
     const [sort, setsort] = useState();
     const [search, setsearch] = useState('')
     const [gunlist, setgunlist] = useState();
-    const [finalfilter, setfinalfilter] = useState();
-    const [finalsort, setfinalsort] = useState()
+    const [finalfilter, setfinalfilter] = useState('0');
+    const [finalsort, setfinalsort] = useState('1')
 
 
     const getgunlist = () => {
@@ -99,7 +99,8 @@ export default function prototype() {
             let datax = response.data
             setgunlist((datax).slice(0));
             setsort((datax).slice(0));
-            // setfilterdata(datax)
+
+
 
 
         });
@@ -148,11 +149,11 @@ export default function prototype() {
 
     }
 
-    function filtertype(x,z) {
+    function filtertype(x, z) {
         console.log(x)
         let y = new Array;
         if (x == 0) {
-            setfilterdata(gunlist);
+            tysort(z,gunlist);
         } else {
             gunlist.forEach(element => {
                 if (element['id_type'] == x) {
@@ -161,13 +162,16 @@ export default function prototype() {
                 }
             });
             // setfilterdata(y); 
-            tysort(z,y)
+            tysort(z, y)
         }
     }
     //sort filter
-    async function tysort(x1,y) {
+    async function tysort(x1, y) {
         var datax = new Array;
         var datay = y;
+
+        console.log(x1);
+        console.log(y);
         if (x1 == 1) {
             datax = datay.sort(function (a, b) {
 
@@ -194,9 +198,9 @@ export default function prototype() {
         setfinalfilter(z)
         setfinalsort(y)
 
-        filtertype (z, y)
+        filtertype(z, y)
         console.log(z)
-       
+
     }
 
 
@@ -214,7 +218,7 @@ export default function prototype() {
                 </div>
                 <div className='row'>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        combine(event.target.value,finalsort)
+                        combine(event.target.value, finalsort)
                     }}>
                         <option value={0}>ALL</option>
                         <option value={1}>gun</option>
@@ -223,7 +227,7 @@ export default function prototype() {
 
                     </select>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        combine(finalfilter,event.target.value)
+                        combine(finalfilter, event.target.value)
                     }}>
                         <option value="0">sort</option>
                         <option value="1">a-z</option>
