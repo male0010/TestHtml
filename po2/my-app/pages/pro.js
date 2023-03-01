@@ -111,7 +111,6 @@ export default function Home() {
         axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
             let datax = response.data
             setgunlist(datax);
-            console.log(datax)
         });
     };
     getgunlist()
