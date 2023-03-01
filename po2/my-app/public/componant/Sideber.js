@@ -66,44 +66,40 @@ export default function header() {
       {/* <!--Main Navigation--> */}
 
       {/* <!-- Sidebar --> */}
-      <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse sin ">
+      <nav id="sidebarMenu" class=" d-lg-block sidebar  sin ">
+        
+        <a class="navbar-brand " href="/">
+            <Image src={img8} alt="" height="70" /></a>
+        
         <div class="position-sticky">
           <div class="list-group list-group-flush mx-3 mt-3 sin">
             <a
               href="#"
               class="list-group-item list-group-item-action py-2 ripplev sin " aria-current="true">
             </a>
-
-
-
-
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple  bgg sin">
-              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center  bgg sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
-                Type
+              
+            <a href="#" class="list-group-item list-group-item-action py-1 ripple  bgg sin">
+              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center   sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
+              Warzone™ 2.0
               </button>
               <div class="collapse  " id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small  ">
-                  <li><a href="#" class=" bgg">Overview</a></li>
-                  <li><a href="#" class="bgg">Updates</a></li>
-                  <li><a href="#" class="bgg">Reports</a></li>
+                <ul class="btn-toggle-nav  fw-normal pb-3   ">
+                  <li><a href="/" class=" bgg">HOME</a></li>
+                  <li><a href="pro" class="bgg">PRODUCTS</a></li>
+                  <li><a href="/item" class="bgg">ITEM</a></li>
                 </ul>
               </div>
 
+             
+
+              
+
 
             </a>
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple bgg sin ">
-              <button class=" btn btn-toggle d-inline-flex align-items-center bgg  sin rounded border-0 collapsed  dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                Sort
-              </button>
-              <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-
-                  <li><a href="#" class=" bgg">Weekly</a></li>
-                  <li><a href="#" class=" bgg">Monthly</a></li>
-                  <li><a href="#" class=" bgg">Annually</a></li>
-                </ul>
-              </div>
-            </a>
+            
+              
+              
+        
             <a href="#" class="list-group-item list-group-item-action py-2 ripple sin">
               <i class="fas fa-building fa-fw me-3 "></i><span></span></a>
 
@@ -115,47 +111,7 @@ export default function header() {
       {/* <!-- Sidebar -->
   
     <!-- Navbar --> */}
-      <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light  fixed-top sin">
-
-        <div class="container-fluid ">
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#sidebarMenu"
-            aria-controls="sidebarMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-
-
-          <a class="navbar-brand " href="#">
-            <Image src={img8} alt="" height="60" /></a>
-
-
-
-
-
-          {/*             
-            <form class="d-none d-md-flex input-group w-auto my-auto">
-              <input
-                autocomplete="off"
-                type="search"
-                class="form-control rounded"
-                placeholder='Search'
-              // style="min-width: 300px;"
-              />
-  
-            </form>
-   */}
-
-
-        </div>
-
-      </nav>
+     
     </header>
 
 

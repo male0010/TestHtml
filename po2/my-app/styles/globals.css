@@ -299,9 +299,10 @@ body {
 }
 
 .bgg{
-  color: #000 !important;
+  color: #faf4f4 !important;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-size: 17px !important;
+  
 }
 
 
@@ -347,13 +348,15 @@ body {
 .sin{
   background-color: rgb(56, 56, 56) !important;
   color: #f3f2f2 !important;
+  font-size: 19px !important;
+  
 }
 
 .search{
   border: 3rem !important;
   padding: 0.5em;
   border-radius: 1rem !important;
-  min-width: 500px !important;
+  min-width: 1000px !important;
   font-size: 16px !important;
   background-color: rgb(56, 56, 56) !important;
   color: #f3f2f2 !important;
@@ -363,11 +366,12 @@ body {
 
 .all{
   border: 3rem !important;
-  padding: 0.5em;
+  padding: 1.5em;
   border-radius: 1rem !important;
-  min-width: 180px !important;
-  font-size: 16px !important;
+  min-width: 150px !important;
+  font-size: 15px !important;
   background-color: rgb(56, 56, 56) !important;
   color: #f3f2f2 !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 
 }
