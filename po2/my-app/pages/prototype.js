@@ -1,14 +1,90 @@
-import Sidebar1 from "../public/componant/Sideber.js"
+import Head from 'next/head'
+import Image from 'next/image'
 import axios from 'axios';
 import { useState } from "react";
-import Image from 'next/image'
 import { useEffect } from 'react';
 
-// import styles from '@/styles/globals.css'
+export default function prototype() {
+    // const [gunlist, setgunlist] = useState();
+    // axios.post('https://www.imgen.site/imgen2/api_male/api.php', { x: 1, buf: new Buffer(10) }, {
+    //     headers: {
+    //         'Content-Type': 'multipart/form-data'
+    //     }
+    // }).then(({ data }) =>  setgunlist(data[0]));
+
+    //     axios.post('https://www.imgen.site/imgen2/api_male/api.php', {x: 1, buf: new Buffer(10)}, {
+    //   headers: {
+    //     'Content-Type': 'multipart/form-data'
+    //   }
+    // }).then(({data}) => console.log(data));
 
 
 
-export default function item() {
+    // axios.post('https://www.imgen.site/imgen2/api_male/api.php', { x: 1, buf: new Buffer(10) }, {
+    //     headers: {
+    //         'Content-Type': 'multipart/form-data'
+    //     }
+    // }).then(({ data }) => console.log(data));
+
+
+
+
+    // async function getgun() {
+    //     const config = {
+    //         headers: { "content-type": "multipart/form-data" },
+    //     };
+    //      axios.get("https://www.imgen.site/imgen2/api_male/api.php", config)
+    //         .then((response) => {
+    //             let datax = (response.data);
+    //             if (datax.status == "success") {
+    //                 console.log(datax)
+    //             } else {
+    //                 alert("fail")
+    //                 console.log(datax)
+    //             }
+
+    //         });
+
+    // }
+
+
+
+    //     const config = {
+    //                 headers: { "content-type": "multipart/form-data" },
+    //             };
+    //    async function  getgun() {
+
+    //        await axios.post('https://www.imgen.site/imgen2/api_male/api.php',config).than((response) => {
+    //             setgunlist(response.data);
+
+    //             console.log(response.data)
+
+    //         });
+    //     }
+    // getgun()
+
+
+    // const config = {
+    //     headers: { "content-type": "image/jpeg" },
+    //     responseType: "blob"
+    //   };
+
+    //     const url = window.URL.createObjectURL(new Blob([response.data]));
+    //     const link = document.createElement('a');
+    //     link.href = url;
+    //     link.setAttribute(
+    //       'download',
+    //       filename,
+    //     );
+
+    //     // Append to html link element page
+    //     document.body.appendChild(link);
+
+    //     // Start download
+    //     link.click();
+
+    //     // Clean up and remove the link
+    //     link.parentNode.removeChild(link);
     const [filters, setfilter] = useState("1");
     const [filterdata, setfilterdata] = useState();
     const [sort, setsort] = useState();
@@ -129,45 +205,38 @@ export default function item() {
 
 
     return (
-
         <>
-            < Sidebar1 />
 
-            <div className="container ">
-                
-                <br></br>
-                <br></br>
+            <div>
                 <div>
-                    <div>
-                        <input className="  search"
-                            placeholder="Search.... "
-                            onChange={(event) => {
-                                setsearch(event.target.value)
-                            }}
-                        />
-                    </div>
-                    <br></br>
-                    <div className=''>
-                        <select className='btn btn-dark all' onChange={(event) => {
-                            combine(event.target.value, finalsort)
-                        }}>
+                    <input
+                        placeholder="search...."
+                        onChange={(event) => {
+                            setsearch(event.target.value)
+                        }}
+                    />
+                </div>
+                <div className='row'>
+                    <select className='col-12 col-sm-1' onChange={(event) => {
+                        combine(event.target.value, finalsort)
+                    }}>
+                        <option value={0}>ALL</option>
+                        <option value={1}>gun</option>
+                        <option value={2}>character</option>
+                        <option value={3}>car</option>
 
-                            <option value={0}>ALL</option>
-                            <option value={1}>gun</option>
-                            <option value={2}>character</option>
-                            <option value={3}>car</option>
-
-                        </select>
-                        <select className='btn btn-dark  all' onChange={(event) => {
-                            combine(finalfilter, event.target.value)
-                        }}>
-
-                            <option value="0">Sort</option>
-                            <option value="1">a-z</option>
-                            <option value="2">z-a</option>
-                        </select>
-                    </div>
-                    <br></br>
+                    </select>
+                    <select className='col-12 col-sm-1' onChange={(event) => {
+                        combine(finalfilter, event.target.value)
+                    }}>
+                        <option value="0">sort</option>
+                        <option value="1">a-z</option>
+                        <option value="2">z-a</option>
+                    </select>
+                </div>
+                <div>
+                    <br>
+                    </br>
                 </div>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {sort?.filter((item) => {
@@ -216,14 +285,8 @@ export default function item() {
 
                 </div>
             </div>
+
+
         </>
-
-
-
-
-
-
-
-
     )
 }
