@@ -66,27 +66,27 @@ export default function header() {
       {/* <!--Main Navigation--> */}
 
       {/* <!-- Sidebar --> */}
-      <nav id="sidebarMenu" class=" d-lg-block sidebar  sin ">
+      <nav id="sidebarMenu" className=" d-lg-block sidebar  sin ">
         
-        <a class="navbar-brand " href="/">
+        <a className="navbar-brand " href="/">
             <Image src={img8} alt="" height="70" /></a>
         
-        <div class="position-sticky">
-          <div class="list-group list-group-flush mx-3 mt-3 sin">
+        <div className="position-sticky">
+          <div className="list-group list-group-flush mx-3 mt-3 sin">
             <a
               href="#"
-              class="list-group-item list-group-item-action py-2 ripplev sin " aria-current="true">
+              className="list-group-item list-group-item-action py-2 ripplev sin " aria-current="true">
             </a>
               
-            <a href="#" class="list-group-item list-group-item-action py-1 ripple  bgg sin">
-              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center   sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
+            <a href="#" className="list-group-item list-group-item-action py-1 ripple  bgg sin">
+              <button className="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center   sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
               Warzone™ 2.0
               </button>
-              <div class="collapse  " id="home-collapse">
-                <ul class="btn-toggle-nav  fw-normal pb-3   ">
-                  <li><a href="/" class=" bgg">HOME</a></li>
-                  <li><a href="pro" class="bgg">PRODUCTS</a></li>
-                  <li><a href="/item" class="bgg">ITEM</a></li>
+              <div className="collapse  " id="home-collapse">
+                <ul className="btn-toggle-nav  fw-normal pb-3   ">
+                  <li><a href="/" className=" bgg">HOME</a></li>
+                  <li><a href="pro" className="bgg">PRODUCTS</a></li>
+                  <li><a href="/item" className="bgg">ITEM</a></li>
                 </ul>
               </div>
 
@@ -100,8 +100,8 @@ export default function header() {
               
               
         
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple sin">
-              <i class="fas fa-building fa-fw me-3 "></i><span></span></a>
+            <a href="#" className="list-group-item list-group-item-action py-2 ripple sin">
+              <i className="fas fa-building fa-fw me-3 "></i><span></span></a>
 
 
 
