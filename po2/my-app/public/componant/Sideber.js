@@ -1,4 +1,5 @@
 import img8 from "../image/w2.jpg"
+import img7 from "../image/wr.png"
 
 import img5 from "../image/mw.png"
 import axios from 'axios';
@@ -65,24 +66,23 @@ export default function header() {
       {/* <!--Main Navigation--> */}
 
       {/* <!-- Sidebar --> */}
-      <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white ">
+      <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse sin ">
         <div class="position-sticky">
-          <div class="list-group list-group-flush mx-3 mt-1 ">
+          <div class="list-group list-group-flush mx-3 mt-3 sin">
             <a
               href="#"
-              class="list-group-item list-group-item-action py-2 ripple"
-              aria-current="true">
+              class="list-group-item list-group-item-action py-2 ripplev sin " aria-current="true">
             </a>
 
 
 
 
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple  bgg">
-              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple  bgg sin">
+              <button class="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center  bgg " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
                 Type
               </button>
-              <div class="collapse " id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+              <div class="collapse  " id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small  ">
                   <li><a href="#" class=" bgg">Overview</a></li>
                   <li><a href="#" class="bgg">Updates</a></li>
                   <li><a href="#" class="bgg">Reports</a></li>
@@ -91,8 +91,8 @@ export default function header() {
 
 
             </a>
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple bgg ">
-              <button class=" btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed  dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple bgg sin ">
+              <button class=" btn btn-toggle d-inline-flex align-items-center bgg rounded border-0 collapsed  dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                 Sort
               </button>
               <div class="collapse" id="dashboard-collapse">
@@ -104,7 +104,7 @@ export default function header() {
                 </ul>
               </div>
             </a>
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple sin">
               <i class="fas fa-building fa-fw me-3 "></i><span></span></a>
 
 
@@ -115,9 +115,9 @@ export default function header() {
       {/* <!-- Sidebar -->
   
     <!-- Navbar --> */}
-      <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light  fixed-top sin">
 
-        <div class="container-fluid">
+        <div class="container-fluid ">
 
           <button
             class="navbar-toggler"
@@ -132,8 +132,8 @@ export default function header() {
           </button>
 
 
-          <a class="navbar-brand" href="#">
-            <Image src={img5} alt="" height="65" /></a>
+          <a class="navbar-brand " href="#">
+            <Image src={img8} alt="" height="60" /></a>
 
 
 

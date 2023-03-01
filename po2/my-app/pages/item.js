@@ -82,24 +82,27 @@ export default function header() {
 
     return (
 
-        <> < Sidebar1 />
+        <> 
+        < Sidebar1 />
            
-
-            <div className="container overflow-hidden text-center">
+           <br></br>
+            <br></br>
+            <div className="container  ">
                 <br></br>
                 <br></br>
                 <br></br>
                 <div>
                     <div>
-                        <input
-                            placeholder="search...."
+                        <input className="  search" 
+                            placeholder="search.... "
                             onChange={(event) => {
                                 setsearch(event.target.value)
                             }}
                         />
                     </div>
-                    <div className='row'>
-                        <select className='col-12 col-sm-1' onChange={(event) => {
+                    <br></br>
+                    <div className=''>
+                        <select className='btn btn-dark' onChange={(event) => {
                             setup(event.target.value)
                         }}>
                             <option value={0}>ALL</option>
@@ -108,7 +111,7 @@ export default function header() {
                             <option value={3}>car</option>
 
                         </select>
-                        <select className='col-12 col-sm-1' onChange={(event) => {
+                        <select className='btn btn-dark ' onChange={(event) => {
                             tysort( event.target.value)
                         }}>
 
@@ -116,7 +119,7 @@ export default function header() {
                             <option value="2">z</option>
                         </select>
                     </div>
-
+                    <br></br>      
                 </div>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
                     {filterdata?.filter((item) => {
