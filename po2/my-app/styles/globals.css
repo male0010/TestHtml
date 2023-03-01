@@ -257,8 +257,6 @@ a {
   font-family: 'Courier New', Courier, monospace !important;
   color: rgb(145, 16, 16) !important;
   font-weight: bold !important;
-<<<<<<< HEAD
-=======
 
 
   
@@ -340,5 +338,4 @@ body {
 }
 .roww{
   display: flex !important;
->>>>>>> eb420e309785a1224a3f22c1d481c70f946f70b3
 }

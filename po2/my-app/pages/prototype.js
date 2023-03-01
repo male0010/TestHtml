@@ -190,17 +190,15 @@ export default function prototype() {
     }
 
     function combile(x, y) {
-        setfinalfilter(x)
+        setfinalfilter((x)=>{
+            let datax = tysort(x1,setfinalfilter
+                )
+        })
+        }
         setfinalsort(y)
-
-        x = (function filter() {
-            return tysort(x1)
-        });
-        y = (function sort() {
-            return setsort(x)
-        });
-        console.log(x, y)
+        
     }
+        
 
     return (
         <>
