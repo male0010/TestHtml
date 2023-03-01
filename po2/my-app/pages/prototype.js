@@ -85,7 +85,7 @@ export default function prototype() {
 
     //     // Clean up and remove the link
     //     link.parentNode.removeChild(link);
-    const [filter, setfilter] = useState("1");
+    const [filters, setfilter] = useState("1");
     const [filterdata, setfilterdata] = useState();
     const [sort, setsort] = useState();
     const [search, setsearch] = useState('')
@@ -99,8 +99,8 @@ export default function prototype() {
             let datax = response.data
             setgunlist((datax).slice(0));
             setsort((datax).slice(0));
-            setfilterdata((datax).slice(0));
-            
+            // setfilterdata(datax)
+
 
         });
     };
@@ -148,7 +148,7 @@ export default function prototype() {
 
     }
 
-    function filtertype(x) {
+    function filtertype(x,z) {
         console.log(x)
         let y = new Array;
         if (x == 0) {
@@ -160,13 +160,14 @@ export default function prototype() {
                     // console.log(element);
                 }
             });
-            setfilterdata(y);
+            // setfilterdata(y); 
+            tysort(z,y)
         }
     }
     //sort filter
-    async function tysort(x1) {
+    async function tysort(x1,y) {
         var datax = new Array;
-        var datay = gunlist;
+        var datay = y;
         if (x1 == 1) {
             datax = datay.sort(function (a, b) {
 
@@ -182,23 +183,22 @@ export default function prototype() {
             await setsort([])
         } else {
             await setsort([]);
-            datax = gunlist
+            datax = y
 
         }
         setsort(datax);
-        console.log(gunlist);
+        console.log(y);
     }
 
-    function combile(x, y) {
-        setfinalfilter((x)=>{
-            let datax = tysort(x1,setfinalfilter
-                )
-        })
-        }
+    function combine(z, y) {
+        setfinalfilter(z)
         setfinalsort(y)
-        
+
+        filtertype (z, y)
+        console.log(z)
+       
     }
-        
+
 
     return (
         <>
@@ -214,7 +214,7 @@ export default function prototype() {
                 </div>
                 <div className='row'>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        setup(event.target.value, finalsort)
+                        combine(event.target.value,finalsort)
                     }}>
                         <option value={0}>ALL</option>
                         <option value={1}>gun</option>
@@ -223,9 +223,9 @@ export default function prototype() {
 
                     </select>
                     <select className='col-12 col-sm-1' onChange={(event) => {
-                        tysort(finalfilter, event.target.value)
+                        combine(finalfilter,event.target.value)
                     }}>
-
+                        <option value="0">sort</option>
                         <option value="1">a</option>
                         <option value="2">z</option>
                     </select>
@@ -235,7 +235,7 @@ export default function prototype() {
                     </br>
                 </div>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
-                    {filterdata?.filter((item) => {
+                    {sort?.filter((item) => {
                         if (search == "") {
                             return item
                         } else if (item.file_name.toLowerCase().includes(search.toLowerCase())) {
