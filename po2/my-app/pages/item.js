@@ -124,16 +124,14 @@ export default function item() {
         <>
             < Sidebar1 />
 
-            <br></br>
-            <br></br>
-            <div className="container  ">
-                <br></br>
+            <div className="container ">
+                
                 <br></br>
                 <br></br>
                 <div>
                     <div>
                         <input className="  search"
-                            placeholder="search.... "
+                            placeholder="Search.... "
                             onChange={(event) => {
                                 setsearch(event.target.value)
                             }}
@@ -155,7 +153,7 @@ export default function item() {
                             combine(finalfilter, event.target.value)
                         }}>
 
-                            <option value="0">sort</option>
+                            <option value="0">Sort</option>
                             <option value="1">a-z</option>
                             <option value="2">z-a</option>
                         </select>
