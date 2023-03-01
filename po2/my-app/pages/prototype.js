@@ -226,8 +226,8 @@ export default function prototype() {
                         combine(finalfilter,event.target.value)
                     }}>
                         <option value="0">sort</option>
-                        <option value="1">a</option>
-                        <option value="2">z</option>
+                        <option value="1">a-z</option>
+                        <option value="2">z-a</option>
                     </select>
                 </div>
                 <div>
