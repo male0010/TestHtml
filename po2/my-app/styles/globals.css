@@ -238,12 +238,12 @@ a {
 }
 
 .itemm {
-  background-color: rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace !important;
+  background-color: rgb(63, 63, 63);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
   font-size: 22px;
   font-weight: 520 !important;
   color: #ffffff;
-
+ text-align: center !important;
 
 }
 
@@ -350,6 +350,8 @@ body {
   color: #f3f2f2 !important;
   font-size: 19px !important;
   
+  
+  
 }
 
 .search{
@@ -365,13 +367,21 @@ body {
 }
 
 .all{
-  border: 3rem !important;
-  padding: 1.5em;
-  border-radius: 1rem !important;
-  min-width: 150px !important;
-  font-size: 15px !important;
+  border: 2rem !important;
+  padding: .5em;
+  border-radius:1rem!important;
+  text-align: center !important;
+  font-size: 13px !important;
   background-color: rgb(56, 56, 56) !important;
   color: #f3f2f2 !important;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 
+}
+
+.call{
+  text-align: center !important;
+}
+
+.a{
+  text-decoration:none !important;
 }

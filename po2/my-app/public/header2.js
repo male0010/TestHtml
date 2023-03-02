@@ -25,24 +25,24 @@ export default function header() {
           <div className="collapse navbar-collapse menu2" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu2">
               <li className="nav-item dropdown menu2">
-                <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                   GAMES
                 </a>
               </li>
               <li className="nav-item dropdown menu2">
-                <a className="nav-link dropdown-toggle menu2" href="/item" >
+                <a className="nav-link  menu2" href="/item" >
                   ITEM
                 </a>
 
               </li>
               <li className="nav-item dropdown menu2">
-                <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   ESPORTS
                 </a>
 
               </li>
               <li className="nav-item dropdown menu2">
-                <a className="nav-link dropdown-toggle menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SHOP
                 </a>
 
