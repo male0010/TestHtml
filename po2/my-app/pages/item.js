@@ -182,7 +182,7 @@ export default function item() {
                                 <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
                                     <Image width={245} height={200} src={item.path}
                                         className="card-Image-top " alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body itemm">
                                         <h5 className="itemm">{(item.file_name).replace(".jpg", '')}</h5>
 
 
