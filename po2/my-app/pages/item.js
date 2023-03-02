@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 
 
-export default function item() {
+export default function Item() {
     const [filters, setfilter] = useState("1");
     const [filterdata, setfilterdata] = useState();
     const [sort, setsort] = useState();
