@@ -16,7 +16,8 @@ import { useState } from "react";
 export default function header() {
   return (
 <>
-
+          <div class="header___3pRcI">
+  <div class="libraryHeader___iTifW"></div></div>
 <nav className="navbar navbar-expand-lg  menu2">
 <div className="container-fluid menu2"><a href="/">
   <Image src={img4} alt="" width="240" height="70" /></a>

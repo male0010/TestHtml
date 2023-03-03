@@ -66,54 +66,80 @@ export default function header() {
       {/* <!--Main Navigation--> */}
 
       {/* <!-- Sidebar --> */}
-      <nav id="sidebarMenu" className=" d-lg-block sidebar sin">
+      <nav id="sidebarMenu" className=" d-lg-block sidebar  sin">
         
-       <div className="call">
-            <Image src={img8} alt="" height="70" /></div>
+      
+      
+      <br></br>
+        <div className="call">
+          <Image src={img8} alt="" height="70" /></div>
         
-        <div className="position-sticky">
-          <div className="list-group list-group-flush  sin ">
+        <div className="position-sticky  accordion" id="accordionExample">
+          <div className="accordion accordion-flush sin  " id="accordionFlushExample">
             <a
               href="#"
               className="list-group-item list-group-item-action py-2 ripplev sin " aria-current="true">
             </a>
-              
-            <a href="#" className="list-group-item list-group-item-action py-1   bgg sin">
-              <button className="  dropdown-toggle btn btn-toggle d-inline-flex align-items-center   sin " data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false ">
-              Warzone™ 2.0
+
+            <a href="#" className="a py-1  bgg sin " id="flush-headingOne">
+              <button className="  dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button " data-bs-toggle="collapse"  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Warzone™ 2.0
               </button>
-              <div className="collapse  " id="home-collapse">
-                <ul className="btn-toggle-nav  fw-normal pb-3 ">
+              <div className="accordion-collapse collapse pb"aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="flush-collapseOne">
+                <ul className="accordion-body fw-normal pb-2 ">
                   <li><a href="/" className=" bgg a">HOME</a></li>
                   <li><a href="pro" className="bgg a">PRODUCTS</a></li>
                   <li><a href="/item" className="bgg a">ITEM</a></li>
                 </ul>
               </div>
-
-             
-
-              
+            </a>
 
 
+
+
+            <a href="#" className="a py-1  bgg sin" id="flush-headingTwo">
+              <button className=" dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button"  data-bs-toggle="collapse"data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                SEASON 02
+              </button>
+              <div className="accordion-collapse collapse pb" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" id="flush-collapseTwo">
+                <ul className="accordion-body   fw-normal pb-2  ">
+                  <li><a href="" className=" bgg a">HOME</a></li>
+                  <li><a href="" className="bgg a">PRODUCTS</a></li>
+                  <li><a href="" className="bgg a">ITEM</a></li>
+                </ul>
+              </div>
             </a>
             
-            
-              
-              
-        
+            <a href="#" className="a py-1  bgg sin" id="flush-headingThree">
+              <button className="  dropdown-toggle btn btn-toggle d-inline-flex  accordion collapsed align-items-center   sin "type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"aria-expanded="false" aria-controls="flush-collapseThree">
+                NEW MODE
+              </button>
+              <div className="accordion-collapse collapse pb " aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" id="flush-collapseThree">
+                <ul className="accordion-body fw-normal pb-3 ">
+                  <li><a href="/" className=" bgg a">HOME</a></li>
+                    
+                  <li><a href="pro" className="bgg a">PRODUCTS</a></li>
+                  <li><a href="/item" className="bgg a">ITEM</a></li>
+                </ul>
+              </div>
+            </a>
+
+
+
+
             <a href="#" className="list-group-item list-group-item-action py-2 ripple sin">
               <i className="fas fa-building fa-fw me-3 "></i><span></span></a>
 
-            
+
 
           </div>
-          
+
         </div>
       </nav>
       {/* <!-- Sidebar -->
   
     <!-- Navbar --> */}
-     
+
     </header>
 
 

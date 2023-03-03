@@ -16,6 +16,7 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   background-color: #141414 !important;
+  margin: 0% !important;
 }
 
 a {
@@ -238,17 +239,17 @@ a {
 }
 
 .itemm {
-  background-color: rgb(63, 63, 63);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-  font-size: 22px;
+  background-color: rgb(37, 37, 37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 20px;
   font-weight: 520 !important;
-  color: #ffffff;
+  color: #b1b1b1;
  text-align: center !important;
 
 }
 
 .footer {
-  background-color: #000 !important;
+  background-color: rgb(37, 37, 37) !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
@@ -300,7 +301,7 @@ body {
 
 .bgg{
   color: #faf4f4 !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   font-size: 17px !important;
   
 }
@@ -316,7 +317,7 @@ body {
   left: 0;
   padding: 59px 0 0; /* Height of navbar */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 220px !important;
+  width: 230px !important;
   z-index: 800 !important;
   
 }
@@ -346,9 +347,10 @@ body {
 }
 
 .sin{
-  background-color: rgb(56, 56, 56) !important;
+  background-color:#2b2a2a!important;
   color: #f3f2f2 !important;
   font-size: 19px !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   
   
   
@@ -358,11 +360,11 @@ body {
   border: 3rem !important;
   padding: 0.5em;
   border-radius: 1rem !important;
-  min-width: 1000px !important;
+  min-width: 800px !important;
   font-size: 16px !important;
-  background-color: rgb(56, 56, 56) !important;
-  color: #f3f2f2 !important;
-  
+  background-color: #181818 ;
+  color: #949494 !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   
 }
 
@@ -372,9 +374,9 @@ body {
   border-radius:1rem!important;
   text-align: center !important;
   font-size: 13px !important;
-  background-color: rgb(56, 56, 56) !important;
-  color: #f3f2f2 !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  background-color: #181818 ;
+  color: #949494 !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 
 }
 
@@ -384,4 +386,18 @@ body {
 
 .a{
   text-decoration:none !important;
+}
+
+.pb{
+  background-color: #181818 ;
+
+}
+
+.navbarr{
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% ;
+  background-color:#2b2a2a!important;
+  overflow: hidden;
+  
 }

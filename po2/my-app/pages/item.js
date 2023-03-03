@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useState } from "react";
 import Image from 'next/image'
 import { useEffect } from 'react';
+import Navbar1 from "../public/componant/Navbar.js"
+
 
 // import styles from '@/styles/globals.css'
 
@@ -137,14 +139,16 @@ export default function Item() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="public\image\logo.jpg" />
             </head>
-            < Sidebar1 />
+             <Navbar1/>
+            < Sidebar1 />  
+           
 
-            <div className="container ">
+            <div className="container">
 
                 <br></br>
                 <br></br>
                 <div>
-                    <div className="row">
+                    {/* <div className="row">
                         <input className="  search col-1"
                             placeholder="Search.... "
                             onChange={(event) => {
@@ -152,9 +156,9 @@ export default function Item() {
                             }}
                         />
                     </div>
-                    <br></br>
+                    <br></br> */}
 
-                    <div className="d-flex row ">
+                    {/* <div className="d-flex row ">
                         <select className='d-flex all col-sm-2 ' onChange={(event) => {
                             combine(event.target.value, finalsort)
                         }}>
@@ -174,7 +178,9 @@ export default function Item() {
                             <option value="1">a-z</option>
                             <option value="2">z-a</option>
                         </select>
-                    </div>
+                    </div> */}
+                    <br></br>
+                    <br></br> 
                     <br></br>
                 </div>
                 <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
@@ -210,7 +216,7 @@ export default function Item() {
                                                         {item.Name_data}
                                                     </div>
 
-                                                    <div className="modal-footer  border border-0 footer">
+                                                    <div className="modal-footer   border border-0 footer ">
                                                         <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
                                                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
