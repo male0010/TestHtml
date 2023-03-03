@@ -15,8 +15,12 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+<<<<<<< HEAD
   background-color: #141414 !important;
   margin: 0% !important;
+=======
+  background-color: #141414 ;
+>>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
 }
 
 a {
@@ -388,6 +392,7 @@ body {
   text-decoration:none !important;
 }
 
+<<<<<<< HEAD
 .pb{
   background-color: #181818 ;
 
@@ -401,3 +406,5 @@ body {
   overflow: hidden;
   
 }
+=======
+>>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9

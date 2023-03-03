@@ -139,6 +139,7 @@ export default function Item() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="public\image\logo.jpg" />
             </head>
+<<<<<<< HEAD
              <Navbar1/>
             < Sidebar1 />  
            
@@ -181,59 +182,105 @@ export default function Item() {
                     </div> */}
                     <br></br>
                     <br></br> 
+=======
+            < Sidebar1 />
+            <main>
+                <div className="container ">
+
                     <br></br>
-                </div>
-                <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
-                    {sort?.filter((item) => {
-                        if (search == "") {
-                            return item
-                        } else if (item.Name_data.toLowerCase().includes(search.toLowerCase())) {
-                            return item
-                        }
-                    }).map((item, index) => {
-                        return (
-                            <div key={index} className="col">
-                                <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                    <Image width={245} height={200} src={item.path}
-                                        className="card-Image-top " alt="..." />
-                                    <div className="card-body itemm">
-                                        <h5 className="itemm">
-                                            {/* {(item.file_name).replace(".jpg", '')} */}
-                                            {item.Name_data}
+>>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
+                    <br></br>
+                    <div>
+                        <div className="row">
+                            <input className="  search col-1"
+                                placeholder="Search.... "
+                                onChange={(event) => {
+                                    setsearch(event.target.value)
+                                }}
+                            />
+                        </div>
+                        <br></br>
+
+                        <div className="d-flex row ">
+                            <select className='d-flex all col-sm-2 ' onChange={(event) => {
+                                combine(event.target.value, finalsort)
+                            }}>
+
+                                <option value={0}>ALL</option>
+                                <option value={1}>gun</option>
+                                <option value={2}>character</option>
+                                <option value={3}>car</option>
+
+                            </select>
+                            -
+                            <select className='d-flex all col-sm-2' onChange={(event) => {
+                                combine(finalfilter, event.target.value)
+                            }}>
+
+                                <option value="0">Sort</option>
+                                <option value="1">a-z</option>
+                                <option value="2">z-a</option>
+                            </select>
+                        </div>
+                        <br></br>
+                    </div>
+                    <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                        {sort?.filter((item) => {
+                            if (search == "") {
+                                return item
+                            } else if (item.Name_data.toLowerCase().includes(search.toLowerCase())) {
+                                return item
+                            }
+                        }).map((item, index) => {
+                            return (
+                                <div key={index} className="col">
+                                    <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                        <Image width={245} height={200} src={item.path}
+                                            className="card-Image-top " alt="..." />
+                                        <div className="card-body itemm">
+                                            <h5 className="itemm">
+                                                {/* {(item.file_name).replace(".jpg", '')} */}
+                                                {item.Name_data}
                                             </h5>
 
 
 
 
-                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div className="modal-dialog ">
+                                            <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div className="modal-dialog ">
 
-                                                <div className="modal-content  text-center  ">
-                                                    <Image className="card" width={500} height={350} src={item.path}
-                                                        alt="..." />
-                                                    <div className="modal-body itemm">
-                                                        {/* {(item.file_name).replace(".jpg", '')} */}
-                                                        {item.Name_data}
-                                                    </div>
+                                                    <div className="modal-content  text-center  ">
+                                                        <Image className="card" width={500} height={350} src={item.path}
+                                                            alt="..." />
+                                                        <div className="modal-body itemm">
+                                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                                            {item.Name_data}
+                                                        </div>
 
+<<<<<<< HEAD
                                                     <div className="modal-footer   border border-0 footer ">
                                                         <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+=======
+                                                        <div className="modal-footer  border border-0 footer">
+                                                            <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+>>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
 
-                                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
 
 
 
+                    </div>
                 </div>
-            </div>
+            </main>
         </>
 
 
