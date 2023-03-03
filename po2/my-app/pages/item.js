@@ -4,6 +4,11 @@ import { useState } from "react";
 import Image from 'next/image'
 import { useEffect } from 'react';
 import Navbar1 from "../public/componant/Navbar.js"
+import img8 from "../public/image/w2.jpg"
+
+
+
+
 
 
 // import styles from '@/styles/globals.css'
@@ -139,10 +144,55 @@ export default function Item() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="public\image\logo.jpg" />
             </head>
-<<<<<<< HEAD
-             <Navbar1/>
-            < Sidebar1 />  
-           
+
+            <nav class="navbar fixed-top navbarr row-4">
+                <div className=" Ima col-1 ">
+                    <Image src={img8} alt="" height="100" /></div>
+                <div class="container col-9 ">
+                    <div className="col ">
+                        <input className="  search col-2 "
+                            placeholder="Search.... "
+                            onChange={(event) => {
+                                setsearch(event.target.value)
+                            }}
+                        />
+                    </div>
+
+                    <div class="col-md-2 ">
+                        <button type="button" class="btn btn-primary me-2 but "><a href="/login" className="a">SIGN IN</a></button>
+                        <button type="button" class="btn btn-secondary but"><a href="/register " className="a">SIGN UP</a></button>
+                    </div>
+
+
+
+                    <div className="d-flex col-6 sortt">
+                        <select className='d-flex all col-sm-2 ' onChange={(event) => {
+                            combine(event.target.value, finalsort)
+                        }}>
+
+                            <option value={0}>ALL</option>
+                            <option value={1}>gun</option>
+                            <option value={2}>character</option>
+                            <option value={3}>car</option>
+
+                        </select>
+                        -
+                        <select className='d-flex all col-sm-2' onChange={(event) => {
+                            combine(finalfilter, event.target.value)
+                        }}>
+
+                            <option value="0">Sort</option>
+                            <option value="1">a-z</option>
+                            <option value="2">z-a</option>
+                        </select>
+                    </div>
+
+                </div>
+            </nav>
+
+       <Sidebar1/>
+
+
 
             <div className="container">
 
@@ -181,27 +231,20 @@ export default function Item() {
                         </select>
                     </div> */}
                     <br></br>
-                    <br></br> 
-=======
-            < Sidebar1 />
-            <main>
-                <div className="container ">
-
                     <br></br>
->>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
                     <br></br>
                     <div>
-                        <div className="row">
+                        {/* <div className="row">
                             <input className="  search col-1"
                                 placeholder="Search.... "
                                 onChange={(event) => {
                                     setsearch(event.target.value)
                                 }}
                             />
-                        </div>
+                        </div> */}
                         <br></br>
 
-                        <div className="d-flex row ">
+                        {/* <div className="d-flex row ">
                             <select className='d-flex all col-sm-2 ' onChange={(event) => {
                                 combine(event.target.value, finalsort)
                             }}>
@@ -221,7 +264,7 @@ export default function Item() {
                                 <option value="1">a-z</option>
                                 <option value="2">z-a</option>
                             </select>
-                        </div>
+                        </div> */}
                         <br></br>
                     </div>
                     <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
@@ -240,7 +283,7 @@ export default function Item() {
                                         <div className="card-body itemm">
                                             <h5 className="itemm">
                                                 {/* {(item.file_name).replace(".jpg", '')} */}
-                                                {item.Name_data}
+                                                {(item.Name_data).toUpperCase()}
                                             </h5>
 
 
@@ -254,16 +297,11 @@ export default function Item() {
                                                             alt="..." />
                                                         <div className="modal-body itemm">
                                                             {/* {(item.file_name).replace(".jpg", '')} */}
-                                                            {item.Name_data}
+                                                            {(item.Name_data).toUpperCase()}
                                                         </div>
 
-<<<<<<< HEAD
-                                                    <div className="modal-footer   border border-0 footer ">
-                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
-=======
-                                                        <div className="modal-footer  border border-0 footer">
+                                                        <div className="modal-footer   border border-0 footer ">
                                                             <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
->>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
 
                                                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                         </div>
@@ -280,7 +318,7 @@ export default function Item() {
 
                     </div>
                 </div>
-            </main>
+            </div>
         </>
 
 

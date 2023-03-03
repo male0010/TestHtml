@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useState } from "react";
 import Image from 'next/image'
 import { useEffect } from 'react';
+import Header1 from "../public/header2"
 export default function Register() {
     async function Register(e){  
     e.preventDefault();
@@ -35,44 +36,46 @@ export default function Register() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Register</title>
             </head>
-
-            <body className="register body">
+            <Header1 />
+            <body className="register body ">
                 <br></br>
                 <br></br>
-                <div className="container accordion-body  lgback">
+                <div className="container accordion-body  lgback ">
                     <div className="row lgback">
                         < br></br>
-                        <div className="col-md-8 m-auto colmd" >
-                            <h1 className="display-4 text-xl-center ">Wellcome to the Warzone™</h1>
+                        <div className="col-md-8 m-auto colmds" >
+                            <h1 className="display-4 text-center ">Warzone™</h1>
                             <h2 className="lead text-start ">Sign up to your account</h2>
                             <div class="card-body ">
-                                <div class="mb-3">
+                                <div class="mb-3 ">
                                     <label for="" class="form-label">Username</label>
-                                    <input class="form-control" type="username" name="username" placeholder="" required/>
+                                    <input class="form-control  searchh " type="username" name="username" placeholder="" required/>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Password</label>
-                                    <input class="form-control" type="password" name="password" placeholder="" required/>
+                                    <input class="form-control searchh" type="password" name="password" placeholder="" required/>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Email</label>
-                                    <input class="form-control" type="email" name="email" placeholder="" required/>
+                                    <input class="form-control searchh" type="email" name="email" placeholder="" required/>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">First name</label>
-                                    <input class="form-control" type="text" name="name" placeholder="" required/>
+                                    <input class="form-control searchh" type="text" name="name" placeholder="" required/>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Last name</label>
-                                    <input class="form-control" type="text" name="lastname" placeholder="" required/>
+                                    <input class="form-control searchh" type="text" name="lastname" placeholder="" required/>
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Number Phone</label>
-                                    <input class="form-control" type="text" name="phone" placeholder="" required/>
+                                    <input class="form-control searchh" type="text" name="phone" placeholder="" required/>
                                 </div>
-
+                                <div className=" text-end">
+                                    <a href="/login" className="a">if you have member </a>
+                                </div>
                                 <div class=" align-content-end row-8">
-                                    <button class="col-md-3 btn btn-primary  align-self-end " type="submit"
+                                    <button class="col-md-3 btn btn-primary but  align-self-end " type="submit"
                                         value="Register">Sign Up</button>
                                 </div>
                                 <br></br>

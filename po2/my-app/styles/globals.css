@@ -15,12 +15,9 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-<<<<<<< HEAD
   background-color: #141414 !important;
   margin: 0% !important;
-=======
   background-color: #141414 ;
->>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
 }
 
 a {
@@ -149,7 +146,7 @@ a {
 }
 
 .lead2 {
-  background-color: #22b12e !important;
+  background-color: #0aa517 !important;
   border: 3rem !important;
   padding: 1em;
   border-radius: 3rem !important;
@@ -321,8 +318,9 @@ body {
   left: 0;
   padding: 59px 0 0; /* Height of navbar */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 230px !important;
+  width: 240px !important;
   z-index: 800 !important;
+
   
 }
 
@@ -351,10 +349,14 @@ body {
 }
 
 .sin{
-  background-color:#2b2a2a!important;
+  background-color:rgb(36, 36, 36)!important;
   color: #f3f2f2 !important;
-  font-size: 19px !important;
+  font-size: 24px !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  padding: 9px;
+  border: #141414 ;
+  
+  
   
   
   
@@ -364,7 +366,7 @@ body {
   border: 3rem !important;
   padding: 0.5em;
   border-radius: 1rem !important;
-  min-width: 800px !important;
+  min-width: 950px !important;
   font-size: 16px !important;
   background-color: #181818 ;
   color: #949494 !important;
@@ -384,17 +386,14 @@ body {
 
 }
 
-.call{
-  text-align: center !important;
-}
+
 
 .a{
   text-decoration:none !important;
 }
 
-<<<<<<< HEAD
 .pb{
-  background-color: #181818 ;
+  background:linear-gradient(120deg,#052203,#070000)
 
 }
 
@@ -404,7 +403,28 @@ body {
   width: 100% ;
   background-color:#2b2a2a!important;
   overflow: hidden;
+  padding: 9px !important;
   
 }
-=======
->>>>>>> 10229bfd58f82979d49f1bcca961d3f4ee3075f9
+
+.sortt{
+  padding: 8px 0.5px!important;
+  
+}
+.Ima{
+  padding: 1px 1px!important;
+}
+
+.but{
+  
+  
+  background:linear-gradient(120deg,#0d7408,#030f04) ;
+  letter-spacing: 1px;
+  font-size: 15px !important;
+  font-weight: bold !important;
+  border: 3rem !important;
+  padding: 1em;
+  border-radius: 3rem !important;
+  font-size: 13px !important;
+}
+

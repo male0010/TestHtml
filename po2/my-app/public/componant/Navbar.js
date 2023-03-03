@@ -1,16 +1,19 @@
 // import styles from '@/styles/globals.css'
 import img8 from "../image/w2.jpg"
+import Image from 'next/image'
 
 
 
 export default function header() {
+    
     return (
         <>
 
-        
-            <nav class="navbar fixed-top navbarr">
-                
-                <div class="container">
+         
+            <nav class="navbar fixed-top navbarr row-4">
+            <div className=" Ima col-1 ">
+                <Image src={img8} alt="" height="110" /></div>
+                <div class="container col-9 ">
                 <div className="col ">
                         <input className="  search col-2 "
                             placeholder="Search.... "
@@ -19,11 +22,15 @@ export default function header() {
                             }}
                         />
                     </div>
-                    <br></br>
-                    <br></br>  
+            
+                    <div class="col-md-3 ">
+        <button type="button" class="btn btn-primary me-1 but ">SIGN IN</button>
+        <button type="button" class="btn btn-secondary but">SIGN UP</button>
+      </div>
+            
                     
                              
-                    <div className="d-flex col-6 ">
+                    <div className="d-flex col-6 sortt">
                         <select className='d-flex all col-sm-2 ' onChange={(event) => {
                             combine(event.target.value, finalsort)
                         }}>

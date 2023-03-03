@@ -48,10 +48,10 @@ export default function header() {
 
               </li>
             </ul>
-            <form className="d-flex menu2">
+            {/* <form className="d-flex menu2">
               <input className="form-control me-2 search menu4" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-primary lead2" type="submit">Search</button>
-            </form>
+            </form> */}
           </div>
           
 
