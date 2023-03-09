@@ -5,7 +5,7 @@ require_once "connect.php";
 // File upload path
 $targetDir = "gunimg/";
 $fileName = basename($_FILES["file"]["name"]);
-$path = "http://localhost:8080/bpo2/gunimg/".$fileName;
+$path = "/bpo2/gunimg/".$fileName;
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 

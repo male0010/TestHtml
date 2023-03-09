@@ -6,7 +6,7 @@ $acc_lastname = mysqli_real_escape_string($con,$_POST['acc_lastname']);
 $acc_email = mysqli_real_escape_string($con,$_POST['acc_email']);
 $acc_phone = mysqli_real_escape_string($con,$_POST['acc_phone']);
 
-$sql = "INSERT INTO account(`acc_username`, `acc_password`, `acc_name`, `acc_lastname`, `acc_email`, `acc_phone`) values ('$acc_username','$acc_password','$acc_name','$acc_lastname','$acc_email','$acc_phone')";
+$sql = "INSERT INTO (`acc_username`, `acc_password`, `acc_name`, `acc_lastname`, `acc_email`, `acc_phone`) values ('$acc_username','$acc_password','$acc_name','$acc_lastname','$acc_email','$acc_phone')";
 $result = mysqli_query($con,$sql);
  if ($result){
     echo "success";

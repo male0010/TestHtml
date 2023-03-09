@@ -5,28 +5,28 @@ import Image from 'next/image'
 import { useEffect } from 'react';
 import Header1 from "../public/header2"
 export default function Register() {
-    async function Register(e){  
-    e.preventDefault();
-    const [username, password, email, name, lastname, phone] = e.target.elements;
-    var formdata = new FormData;
-    formdata.append("acc_username", username.value);
-    formdata.append("acc_password", password.value);
-    formdata.append("acc_email", email.value);
-    formdata.append("acc_name", name.value);
-    formdata.append("acc_lastname", lastname.value);
-    formdata.append("acc_phone", phone.value);
-    const config = {
-        headers: { "content-type": "multipart/form-data" },
-    };
-    axios.post("http://localhost:8080/bpo2/register.php", formdata, config).then((response) => {
-        if (response.data == "success") {
-            alert("register success you can login now");
-            window.location.assign("/login")
-        } else {
-            alert("fail")
-        }
-    });
-}
+//     async function Register(e){  
+//     e.preventDefault();
+//     const [username, password, email, name, lastname, phone] = e.target.elements;
+//     var formdata = new FormData;
+//     formdata.append("acc_username", username.value);
+//     formdata.append("acc_password", password.value);
+//     formdata.append("acc_email", email.value);
+//     formdata.append("acc_name", name.value);
+//     formdata.append("acc_lastname", lastname.value);
+//     formdata.append("acc_phone", phone.value);
+//     const config = {
+//         headers: { "content-type": "multipart/form-data" },
+//     };
+//     axios.post("http://localhost:8080/bpo2/register.php", formdata, config).then((response) => {
+//         if (response.data == "success") {
+//             alert("register success you can login now");
+//             window.location.assign("/login")
+//         } else {
+//             alert("fail")
+//         }
+//     });
+// }
 
     return (
         <>

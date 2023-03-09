@@ -26,10 +26,11 @@ export default function Item() {
 
 
     const getgunlist = () => {
-        axios.get("https://www.imgen.site/imgen2/api_male/api type.php").then((response) => {
+        axios.get("https://www.imgen.site/imgen2/api_male/subtype.php").then((response) => {
             let datax = response.data
             setgunlist((datax).slice(0));
             setsort((datax).slice(0));
+            console.log(datax)
 
 
 
@@ -278,7 +279,7 @@ export default function Item() {
                             return (
                                 <div key={index} className="col">
                                     <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                        <Image width={245} height={200} src={item.path}
+                                        <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
                                             className="card-Image-top " alt="..." />
                                         <div className="card-body itemm">
                                             <h5 className="itemm">
@@ -293,7 +294,7 @@ export default function Item() {
                                                 <div className="modal-dialog ">
 
                                                     <div className="modal-content  text-center  ">
-                                                        <Image className="card" width={500} height={350} src={item.path}
+                                                        <Image className="card" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
                                                             alt="..." />
                                                         <div className="modal-body itemm">
                                                             {/* {(item.file_name).replace(".jpg", '')} */}
@@ -303,7 +304,7 @@ export default function Item() {
                                                         <div className="modal-footer   border border-0 footer ">
                                                             <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
-                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                         </div>
                                                     </div>
                                                 </div>
