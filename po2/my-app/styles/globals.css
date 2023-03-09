@@ -420,11 +420,221 @@ body {
   
   background:linear-gradient(120deg,#0d7408,#030f04) ;
   letter-spacing: 1px;
-  font-size: 15px !important;
+
   font-weight: bold !important;
   border: 3rem !important;
-  padding: 1em;
-  border-radius: 3rem !important;
-  font-size: 13px !important;
+  padding: 0.2em;
+  border-radius: 4rem !important;
+  font-size: 0.75em !important;
 }
 
+.bg-image {
+  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw-wz/MWII-S02-WZ2-POIS-002I.jpg");
+  position: absolute;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  
+}
+
+
+.bgContent{
+  position: absolute !;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.bgg{
+  position: relative;
+  height:65 vh;
+}
+
+.content{
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.contentLayoutContainer{
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+.content2{
+  max-width: 40em;
+  color: rgb(255, 255, 255);
+  padding: 3.5em;
+  letter-spacing: 1px;
+ 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  
+}
+
+.content2 h1{
+  font-size: 4em;
+  letter-spacing: -1px;
+  
+}
+
+.content2 h2{
+  font-size: 1.5em;
+}
+
+.contentButton{
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.buttong{
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height:1.5em;
+  padding: 0 1.5em;
+  background:linear-gradient(120deg,#0d7408,#030f04) ;
+  letter-spacing: 1px;
+  color: #e6e6e6f3;
+}
+
+.contentBelowBanner___1csYL{
+  margin: 56px 0;
+}
+
+.hover{
+  cursor: pointer;
+  
+}
+
+.titlePadding___2lp1P{
+  padding: 0 56px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.125em;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+}
+
+.horizontalScroll___1O_E3{
+  overflow: unset;
+  padding: 0;
+  will-change: transform;
+  position: relative;
+}
+
+.row___2fBWZ{
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.cell___3sPIk{
+  width: calc(20% * 1 - 9.6px);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.cellGuts___1TMU_{
+  padding-bottom: 20%;
+  position: relative;
+  width: 100%;
+}
+
+.clickableBox___1HFCs{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+  background-color: #202020;
+}
+
+.boxWithAspectRatioContainer___2hILe{
+  padding-bottom: 100%;
+  position: relative;
+}
+.boxWithAspectRatioInner___2gUvu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.css-1k8lzl2{
+  height: 100%;
+  text-align: center;
+}
+
+.css-2pknc3{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+.sideArrow___1s2uV{
+  opacity: 1;
+ 
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background: rgba(36, 36, 36, 0.5);
+  border: none;
+  z-index: 10;
+}
+.sideArrowRight___3W9nJ{
+  right: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.sideArrow___1s2uV svg path {
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.25s
+}
+.sideArrow___1s2uV svg {
+  width: 100%;
+  max-width: 45px;
+  transition: transform 0.25s;
+}
+.sideArrowRight___3W9nJ:hover svg {
+  transform: rotate(-180deg) scale(1.1);
+}
+.sideArrowRight___3W9nJ svg {
+  transform: rotate(-180deg);
+}
+.horizontalScroll___1O_E3 .sideArrow___1s2uV {
+  display: block;
+  
+  transition: opacity 0.25s, visibility 0.25s;
+} 
