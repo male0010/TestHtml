@@ -295,6 +295,8 @@ export default function Category() {
                                                     
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
+
+
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
 
@@ -401,8 +403,7 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> 
-                        {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
                                    
@@ -420,7 +421,7 @@ export default function Category() {
                                                 </div>
                                             </div>
                                         </span>
-                                    
+                                
                                 </div>
                             </li>))}
 
@@ -510,26 +511,25 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> 
-                        {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                   
+                                    
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                    
+                                                   
                                                     <div className="css-1k8lzl2">
-                                                        <div class="content1 ">
+                                                        <div>
+
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
-
 
                                                     </div>
                                                 </div>
                                             </div>
                                         </span>
-                                    
+                                   
                                 </div>
                             </li>))}
 
