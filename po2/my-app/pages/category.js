@@ -176,29 +176,29 @@ export default function Category() {
                 <section className="hover contentAreaNoPadding___2M1NZ">
                 <div>
                     <p>
-                        <button class="btn btn-primary"
+                        <button class="btn  btnn"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             GUN
                         </button>
                     </p>
-                    <div class="collapse  " id="collapseExample">
+                    <div class="collapse " id="collapseExample">
                         <p className="row" onClick={(event) => {
                             setup2(event.target.value)
                         }}>
-                            <button class="btn btn-primary col" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample0"
+                            <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample0"
                                 aria-expanded="true" aria-controls="multiCollapseExample0">SHOW/HIDE</button>
-                            <button class="btn btn-primary col" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+                            <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
                                 aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
-                            <button class="btn btn-primary col" value={2} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample2" aria-expanded="true"
                                 aria-controls="multiCollapseExample2">SMG</button>
-                            <button class="btn btn-primary col" value={3} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample3" aria-expanded="true"
                                 aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
-                            <button class="btn btn-primary col" value={4} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample4" aria-expanded="true"
                                 aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
-                            <button class="btn btn-primary col" value={5} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample5" aria-expanded="true"
                                 aria-controls="multiCollapseExample5">SHOTGUN</button>
                         </p>
@@ -207,14 +207,14 @@ export default function Category() {
                                 <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample0">
                                     {Categoryrdata?.map((item, index) => (
                                         <div key={item.id_subtype.value} className="col">
-                                            <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
-                                                    className="card-Image-top img-fluid " alt="..." />
+                                            <div className="card  " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                                <Image width={342} height={250} src={"https://www.imgen.site/imgen2" + item.path}
+                                                    className="card-Image-top img-fluid fluid" alt="..." />
                                                 <div className="card-body itemm">
                                                     <h5 className="itemm">
                                                         {/* {(item.file_name).replace(".jpg", '')} */}
                                                         {(item.Name_data).toUpperCase()}
-                                                        <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
+                                                        <h6 className='card-subtitle mb-2   '>{item.name_subtype}</h6>
                                                     </h5>
 
 
