@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 
 * {
@@ -246,12 +246,12 @@ a {
 
 .itemm {
   background-color: rgb(37, 37, 37);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-family: 'Bangers', cursive;
   font-size: 20px;
   font-weight: 520 !important;
   color: #b1b1b1;
- text-align: center !important;
-
+  text-align: center !important;
+ letter-spacing: 3px;
 }
 
 .footer {
@@ -415,7 +415,7 @@ body {
 }
 
 .searchh{
-  font-family: 'Creepster', cursive !important;
+  font-family: 'Bangers', cursive;
   font-size:16px !important;
   letter-spacing: 4px;
   
@@ -429,8 +429,8 @@ body {
 }
 
 .butt{
-  height: em!important;
-  font-family: 'Creepster', cursive !important;
+  height: 2em!important;
+  font-family: 'Bangers', cursive;
   background:linear-gradient(120deg,#0d7408,#030f04) ;
   letter-spacing: 2px;
   
@@ -439,12 +439,21 @@ body {
   border-radius: 4rem !important;
   font-size: 17px !important;
 }
+.btnn{
+  grid-gap: 5em !important;
+  border: 3rem !important;
+  font-size: 30px !important;
+  color: #ebeaea !important;
+  padding: 10px !important;
+  font-family: 'Bangers', cursive !important;
+}
+
 .but{
   
   
   background:linear-gradient(120deg,#0d7408,#030f04) ;
   letter-spacing: 1px;
-
+  
   font-weight: bold !important;
   border: 3rem !important;
   padding: 0.2em;
@@ -506,7 +515,7 @@ body {
   color: rgb(245, 245, 245);
   padding: 6em;
   letter-spacing: 1.5px;
-  font-family: 'Tilt Prism', cursive;
+  font-family: 'Bangers', cursive;
   
   
 }
@@ -514,7 +523,7 @@ body {
 .content2 h1{
   font-size: 5em;
   letter-spacing: 3px;
-  font-family: 'Creepster', cursive;
+  font-family: 'Bangers', cursive;
   color: #ebeaea;
 
   
@@ -523,13 +532,13 @@ body {
 .content2 h2{
   letter-spacing: 2px;
   font-size: 1.5em;
-  font-family: 'Creepster', cursive;
+  font-family: 'Bangers', cursive;
 }
 .content2 p{
  font-size: 25px;
  letter-spacing: 1px;
  
- font-family: 'Creepster', cursive;
+ font-family: 'Bangers', cursive;
  
 }
 .content1{
@@ -561,7 +570,7 @@ body {
   height:2em;
   padding: 0 1.5em;
   background:linear-gradient(120deg,#0d7408,#030f04) ;
-  font-family: 'Creepster', cursive;
+  font-family: 'Bangers', cursive;
   color: #e6e6e6f3;
   font-size: 22px;
 }
@@ -707,4 +716,14 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
   scroll-snap-type: x mandatory;
+}
+
+.collapse{
+  
+  padding: 20px;
+}
+
+.btnn{
+  grid-gap: 5em !important;
+  border: 3rem !important;
 }
