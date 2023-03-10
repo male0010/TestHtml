@@ -276,7 +276,7 @@ export default function Category() {
                     </div>
                 </div>
 
-                    {/* <div className="horizontalScroll___1O_E3" id="containersc">
+                    <div className="horizontalScroll___1O_E3" id="containersc">
                         <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -284,19 +284,17 @@ export default function Category() {
                             </svg>
 
                         </button>
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> 
+                        {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
+                                   
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
                                                     
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
-
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
 
@@ -305,12 +303,12 @@ export default function Category() {
                                                 </div>
                                             </div>
                                         </span>
-                                    </a>
+                                    
                                 </div>
                             </li>))}
 
                         </div>
-                    </div> */}
+                    </div>
                 </section>
 
 
@@ -403,19 +401,17 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> 
+                        {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
+                                   
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
                                                     
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
-
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
 
@@ -424,7 +420,7 @@ export default function Category() {
                                                 </div>
                                             </div>
                                         </span>
-                                    </a>
+                                    
                                 </div>
                             </li>))}
 
@@ -514,31 +510,26 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> 
+                        {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
+                                   
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                   
+                                                    
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
-
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
-                                                        <div>
 
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
 
                                                     </div>
                                                 </div>
                                             </div>
                                         </span>
-                                    </a>
+                                    
                                 </div>
                             </li>))}
 
