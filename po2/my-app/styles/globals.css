@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -386,7 +391,9 @@ body {
 
 }
 
-
+.bdca{
+  background-color: #dd2323;
+}
 
 .a{
   text-decoration:none !important;
@@ -407,6 +414,12 @@ body {
   
 }
 
+.searchh{
+  font-family: 'Creepster', cursive !important;
+  font-size:16px !important;
+  letter-spacing: 4px;
+  
+}
 .sortt{
   padding: 8px 0.5px!important;
   
@@ -415,6 +428,17 @@ body {
   padding: 1px 1px!important;
 }
 
+.butt{
+  height: em!important;
+  font-family: 'Creepster', cursive !important;
+  background:linear-gradient(120deg,#0d7408,#030f04) ;
+  letter-spacing: 2px;
+  
+  border: 3rem !important;
+  padding: 1em;
+  border-radius: 4rem !important;
+  font-size: 17px !important;
+}
 .but{
   
   
@@ -429,7 +453,7 @@ body {
 }
 
 .bg-image {
-  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw-wz/MWII-S02-WZ2-POIS-002I.jpg");
+  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mw-wz/WZM-LIMITEDRELEASE-1128-TOUT.jpg");
   position: absolute;
   background-size: cover;
   left: 0;
@@ -437,22 +461,25 @@ body {
   top: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  
+  padding: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 
 .bgContent{
-  position: absolute !;
+  position: absolute ;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
+  
 }
 
 .bgg{
   position: relative;
-  height:65 vh;
+  height:75vh;
 }
 
 .content{
@@ -475,43 +502,68 @@ body {
 }
 
 .content2{
-  max-width: 40em;
-  color: rgb(255, 255, 255);
-  padding: 3.5em;
-  letter-spacing: 1px;
- 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  max-width: 45em;
+  color: rgb(245, 245, 245);
+  padding: 6em;
+  letter-spacing: 1.5px;
+  font-family: 'Tilt Prism', cursive;
   
   
 }
 
 .content2 h1{
-  font-size: 4em;
-  letter-spacing: -1px;
+  font-size: 5em;
+  letter-spacing: 3px;
+  font-family: 'Creepster', cursive;
+  color: #ebeaea;
+
   
 }
 
 .content2 h2{
+  letter-spacing: 2px;
   font-size: 1.5em;
+  font-family: 'Creepster', cursive;
+}
+.content2 p{
+ font-size: 25px;
+ letter-spacing: 1px;
+ 
+ font-family: 'Creepster', cursive;
+ 
+}
+.content1{
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 50em;
+  color: rgb(255, 255, 255);
+  padding: 6em;
+  letter-spacing: 1.5px;
+  font-family: 'Creepster', cursive;
+  
 }
 
 .contentButton{
   margin-top: 2em;
   display: flex;
-  align-items: center;
+  
 }
 
 .buttong{
   border-radius: 20px;
   border: none;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
-  height:1.5em;
+  height:2em;
   padding: 0 1.5em;
   background:linear-gradient(120deg,#0d7408,#030f04) ;
-  letter-spacing: 1px;
+  font-family: 'Creepster', cursive;
   color: #e6e6e6f3;
+  font-size: 22px;
 }
 
 .contentBelowBanner___1csYL{
@@ -520,19 +572,21 @@ body {
 
 .hover{
   cursor: pointer;
+  padding: 20px;
   
 }
 
 .titlePadding___2lp1P{
-  padding: 0 56px;
+  padding: 0 40px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.125em;
+  color: rgba(226, 226, 226, 0.5);
   display: inline-flex;
-  align-items: center;
-  margin-bottom: 24px;
+  font-family: 'Creepster', cursive;
+  margin-bottom: 30px;
+  font-size: 35px;
+  letter-spacing: 2.5px;
+  
 
 }
 
@@ -544,7 +598,7 @@ body {
 }
 
 .row___2fBWZ{
-  padding: 0 24px;
+  
   white-space: nowrap;
 }
 
@@ -552,10 +606,13 @@ body {
   width: calc(20% * 1 - 9.6px);
   display: inline-block;
   margin-left: 8px;
+  height: 95%;
+  z-index: index -1;
+  
 }
 
 .cellGuts___1TMU_{
-  padding-bottom: 20%;
+
   position: relative;
   width: 100%;
 }
@@ -585,6 +642,8 @@ body {
 .css-1k8lzl2{
   height: 100%;
   text-align: center;
+  height: 95%;
+  aspect-ratio: 1/2;
 }
 
 .css-2pknc3{
@@ -638,3 +697,14 @@ body {
   
   transition: opacity 0.25s, visibility 0.25s;
 } 
+
+#containersc {
+
+
+  margin: auto;
+  
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
