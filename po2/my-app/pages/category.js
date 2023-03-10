@@ -176,13 +176,13 @@ export default function Category() {
                 <section className="hover contentAreaNoPadding___2M1NZ">
                 <div>
                     <p>
-                        <button class="btn  btnn"
+                        <button class="btn btt"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             GUN
                         </button>
                     </p>
-                    <div class="collapse " id="collapseExample">
-                        <p className="row" onClick={(event) => {
+                    <div class="collapse  " id="collapseExample">
+                        <p className="row " onClick={(event) => {
                             setup2(event.target.value)
                         }}>
                             <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample0"
@@ -208,7 +208,7 @@ export default function Category() {
                                     {Categoryrdata?.map((item, index) => (
                                         <div key={item.id_subtype.value} className="col">
                                             <div className="card  " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={342} height={250} src={"https://www.imgen.site/imgen2" + item.path}
+                                                <Image width={342} height={260} src={"https://www.imgen.site/imgen2" + item.path}
                                                     className="card-Image-top img-fluid fluid" alt="..." />
                                                 <div className="card-body itemm">
                                                     <h5 className="itemm">
@@ -276,7 +276,7 @@ export default function Category() {
                     </div>
                 </div>
 
-                    <div className="horizontalScroll___1O_E3" id="containersc">
+                    {/* <div className="horizontalScroll___1O_E3" id="containersc">
                         <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -291,7 +291,7 @@ export default function Category() {
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                    {/* index */}
+                                                    
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
 
@@ -310,7 +310,7 @@ export default function Category() {
                             </li>))}
 
                         </div>
-                    </div>
+                    </div> */}
                 </section>
 
 
@@ -322,7 +322,7 @@ export default function Category() {
                 <section className="hover contentAreaNoPadding___2M1NZ">
                 <div>
                     <p>
-                        <button class="btn btn-primary"
+                        <button class="btn btt"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                             CAR
                         </button>
@@ -331,14 +331,14 @@ export default function Category() {
                         <p className="row" onClick={(event) => {
                             setup2(event.target.value)
                         }}>
-                            <button class="btn btn-primary col" value={7} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample00"
+                            <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample00"
                                 aria-expanded="true" aria-controls="multiCollapseExample00">SHOW/HIDE</button>
-                            <button class="btn btn-primary col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+                            <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
                                 aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
-                            <button class="btn btn-primary col" value={7} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample7" aria-expanded="true"
                                 aria-controls="multiCollapseExample7">CAR</button>
-                            <button class="btn btn-primary col" value={8} type="button" data-bs-toggle="collapse"
+                            <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample8" aria-expanded="true"
                                 aria-controls="multiCollapseExample8">FLY</button>
                             
@@ -349,7 +349,7 @@ export default function Category() {
                                     {Categoryrdata?.map((item, index) => (
                                         <div key={item.id_subtype.value} className="col">
                                             <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
+                                                <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
                                                     className="card-Image-top img-fluid " alt="..." />
                                                 <div className="card-body itemm">
                                                     <h5 className="itemm">
@@ -390,22 +390,19 @@ export default function Category() {
 
                         </div>
 
-
-                       
-
-
+                                        
 
 
                     </div>
                 </div>
                     <div className="horizontalScroll___1O_E3" id="containersc">
-                        <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
+                        {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                                 <path d="M29 44L13 24L29 4"></path>
                             </svg>
 
-                        </button>
+                        </button> */}
                         <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
@@ -413,7 +410,7 @@ export default function Category() {
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                    {/* index */}
+                                                    
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
 
@@ -442,7 +439,7 @@ export default function Category() {
                 <section className="hover contentAreaNoPadding___2M1NZ">
                 <div>
                     <p>
-                        <button class="btn btn-primary"
+                        <button class="btn btt"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                             CHARACTER
                         </button>
@@ -451,11 +448,11 @@ export default function Category() {
                         <p className="row" onClick={(event) => {
                             setup2(event.target.value)
                         }}>
-                            <button class="btn btn-primary col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample000"
+                            <button class="btn btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample000"
                                 aria-expanded="true" aria-controls="multiCollapseExample000">SHOW/HIDE</button>
-                            <button class="btn btn-primary col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
+                            <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
                                 aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
-                            <button class="btn btn-primary col" value={10} type="button" data-bs-toggle="collapse"
+                            <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
                                 data-bs-target="#multiCollapseExample10" aria-expanded="true"
                                 aria-controls="multiCollapseExample10">FEMALE</button>
                         </p>
@@ -465,7 +462,7 @@ export default function Category() {
                                     {Categoryrdata?.map((item, index) => (
                                         <div key={item.id_subtype.value} className="col">
                                             <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
+                                                <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
                                                     className="card-Image-top img-fluid " alt="..." />
                                                 <div className="card-body itemm">
                                                     <h5 className="itemm">
@@ -507,21 +504,16 @@ export default function Category() {
                         </div>
 
 
-                       
-
-
-
-
                     </div>
                 </div>
                     <div className="horizontalScroll___1O_E3" id="containersc">
-                        <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
+                        {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                                 <path d="M29 44L13 24L29 4"></path>
                             </svg>
 
-                        </button>
+                        </button> */}
                         <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
@@ -529,7 +521,7 @@ export default function Category() {
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                    {/* index */}
+                                                   
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
 

@@ -430,7 +430,7 @@ body {
 
 .butt{
   height: 2em!important;
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers', cursive !important;
   background:linear-gradient(120deg,#0d7408,#030f04) ;
   letter-spacing: 2px;
   
@@ -447,7 +447,17 @@ body {
   padding: 10px !important;
   font-family: 'Bangers', cursive !important;
 }
-
+.btt{
+  grid-gap: 5em !important;
+  border: 3rem !important;
+  font-size: 40px !important;
+  color: #ebeaea !important;
+  padding: 10px !important;
+  font-family: 'Bangers', cursive !important;
+}
+.collapse{
+  background-color: #313131 !important;
+}
 .but{
   
   
@@ -601,7 +611,7 @@ body {
 
 .horizontalScroll___1O_E3{
   overflow: unset;
-  padding: 0;
+  padding: 30px;
   will-change: transform;
   position: relative;
 }
