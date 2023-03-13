@@ -188,25 +188,7 @@ export default function test() {
                         </div>
 
 
-                        {/* {filterdata?.map((item, index) => {
-                                    <div key={item.id_subtype.value} className="">
-                                        <div class="card card-body" key={index}>
-                                            
-                                                <div className='card-body'>
-
-                                                    <h5 className='card-title '>{item.Name_data}</h5>
-                                                    <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
-                                                </div>
-                                                <div className='card-body'>
-                                                    <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
-                                                        className="card-Image-top img-fluid " alt="" />
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    
-                                })} */}
+                 
 
 
 
