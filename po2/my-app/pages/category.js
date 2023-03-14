@@ -14,6 +14,7 @@ export default function Category() {
     const [Categoryr, setCategoryr] = useState("1");
     const [Categoryrdata, setCategoryrdata] = useState();
     const [gunlist, setgunlist] = useState();
+    const [Categoryrarray, setCategoryrarray] = useState([]);
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/subtype.php").then((response) => {
             let datax = response.data
@@ -26,7 +27,30 @@ export default function Category() {
     useEffect(() => {
         // setdata()
         getgunlist()
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        axios.get('https://www.imgen.site/imgen2/api_male/subtype.php')
+          .then(response => {
+            const data = response.data;
+            const mappedData = data.reduce((result, item) => {
+              const typeId = item.id_type;
+              if (!result[typeId]) {
+                result[typeId] = [];
+              }
+              result[typeId].push(item);
+              return result;
+            }, {});
+            // console.log(mappedData);
+            setCategoryrarray(mappedData);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }, []);
+    const type1Array = Categoryrarray[1] || [];
+    const type2Array = Categoryrarray[2] || [];
+    const type3Array = Categoryrarray[3] || [];
 
     function setup2(x) {
         setCategoryr(x)
@@ -55,8 +79,8 @@ export default function Category() {
         filtertype(x)
 
     }
-      //เพื่อโหลดภาพ
-      async function loadfile(event, urls, file_name) {
+    //เพื่อโหลดภาพ
+    async function loadfile(event, urls, file_name) {
         event.preventDefault();
         const config = {
             headers: { "content-type": "image/jpeg" },
@@ -85,6 +109,7 @@ export default function Category() {
 
         });
     }
+
 
     return (
         <>
@@ -174,83 +199,83 @@ export default function Category() {
 
             <div className="contentBelowBanner___1csYL">
                 <section className="hover contentAreaNoPadding___2M1NZ">
-                <div>
-                    <p>
-                        <button class="btn btt"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            GUN
-                        </button>
-                    </p>
-                    <div class="collapse  " id="collapseExample">
-                        <p className="row " onClick={(event) => {
-                            setup2(event.target.value)
-                        }}>
-                            <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample0"
-                                aria-expanded="true" aria-controls="multiCollapseExample0">SHOW/HIDE</button>
-                            <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
-                                aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
-                            <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample2" aria-expanded="true"
-                                aria-controls="multiCollapseExample2">SMG</button>
-                            <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample3" aria-expanded="true"
-                                aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
-                            <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample4" aria-expanded="true"
-                                aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
-                            <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample5" aria-expanded="true"
-                                aria-controls="multiCollapseExample5">SHOTGUN</button>
+                    <div>
+                        <p>
+                            <button class="btn btt"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                GUN
+                            </button>
                         </p>
-                        <div className="row">
-                            <div className="col">
-                                <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample0">
-                                    {Categoryrdata?.map((item, index) => (
-                                        <div key={item.id_subtype.value} className="col">
-                                            <div className="card  " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={342} height={260} src={"https://www.imgen.site/imgen2" + item.path}
-                                                    className="card-Image-top img-fluid fluid" alt="..." />
-                                                <div className="card-body itemm">
-                                                    <h5 className="itemm">
-                                                        {/* {(item.file_name).replace(".jpg", '')} */}
-                                                        {(item.Name_data).toUpperCase()}
-                                                        <h6 className='card-subtitle mb-2   '>{item.name_subtype}</h6>
-                                                    </h5>
+                        <div class="collapse  " id="collapseExample">
+                            <p className="row " onClick={(event) => {
+                                setup2(event.target.value)
+                            }}>
+                                <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample0"
+                                    aria-expanded="true" aria-controls="multiCollapseExample0">SHOW/HIDE</button>
+                                <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+                                    aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
+                                <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="true"
+                                    aria-controls="multiCollapseExample2">SMG</button>
+                                <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample3" aria-expanded="true"
+                                    aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
+                                <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample4" aria-expanded="true"
+                                    aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
+                                <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample5" aria-expanded="true"
+                                    aria-controls="multiCollapseExample5">SHOTGUN</button>
+                            </p>
+                            <div className="row">
+                                <div className="col">
+                                    <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample0">
+                                        {Categoryrdata?.map((item, index) => (
+                                            <div key={item.id_subtype.value} className="col">
+                                                <div className="card  " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                                    <Image width={342} height={260} src={"https://www.imgen.site/imgen2" + item.path}
+                                                        className="card-Image-top img-fluid fluid" alt="..." />
+                                                    <div className="card-body itemm">
+                                                        <h5 className="itemm">
+                                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                                            {(item.Name_data).toUpperCase()}
+                                                            <h6 className='card-subtitle mb-2   '>{item.name_subtype}</h6>
+                                                        </h5>
 
 
 
 
-                                                    <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div className="modal-dialog ">
+                                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div className="modal-dialog ">
 
-                                                            <div className="modal-content  text-center  ">
-                                                                <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                                    alt="..." />
-                                                                <div className="modal-body itemm">
-                                                                    {/* {(item.file_name).replace(".jpg", '')} */}
-                                                                    {(item.Name_data).toUpperCase()}
-                                                                </div>
+                                                                <div className="modal-content  text-center  ">
+                                                                    <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                                        alt="..." />
+                                                                    <div className="modal-body itemm">
+                                                                        {/* {(item.file_name).replace(".jpg", '')} */}
+                                                                        {(item.Name_data).toUpperCase()}
+                                                                    </div>
 
-                                                                <div className="modal-footer   border border-0 footer ">
-                                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                                    <div className="modal-footer   border border-0 footer ">
+                                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
-                                                                    <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                        </div>
-                                    ))}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
+
                             </div>
 
-                        </div>
 
-
-                        {/* {filterdata?.map((item, index) => {
+                            {/* {filterdata?.map((item, index) => {
                                     <div key={item.id_subtype.value} className="">
                                         <div class="card card-body" key={index}>
                                             
@@ -273,8 +298,8 @@ export default function Category() {
 
 
 
+                        </div>
                     </div>
-                </div>
 
                     <div className="horizontalScroll___1O_E3" id="containersc">
                         <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
@@ -284,19 +309,19 @@ export default function Category() {
                             </svg>
 
                         </button>
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
-                            <li className="cell___3sPIk">
-                                <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
+                        <div className="row___2fBWZ">
+                            {type1Array?.map((item, index) => (
+                                <li className="cell___3sPIk">
+                                    <div className="cellGuts___1TMU_">
+
                                         <span className="clickableBox___1HFCs">
                                             <div className="boxWithAspectRatioContainer___2hILe">
                                                 <div className="boxWithAspectRatioInner___2gUvu">
-                                                    
+
                                                     <div className="css-1k8lzl2">
                                                         <div class="content1 ">
 
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+
                                                             <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                         </div>
 
@@ -305,9 +330,9 @@ export default function Category() {
                                                 </div>
                                             </div>
                                         </span>
-                                    </a>
-                                </div>
-                            </li>))}
+
+                                    </div>
+                                </li>))}
 
                         </div>
                     </div>
@@ -320,81 +345,81 @@ export default function Category() {
 
 
                 <section className="hover contentAreaNoPadding___2M1NZ">
-                <div>
-                    <p>
-                        <button class="btn btt"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                            CAR
-                        </button>
-                    </p>
-                    <div class="collapse  " id="collapseExample1">
-                        <p className="row" onClick={(event) => {
-                            setup2(event.target.value)
-                        }}>
-                            <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample00"
-                                aria-expanded="true" aria-controls="multiCollapseExample00">SHOW/HIDE</button>
-                            <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
-                                aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
-                            <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample7" aria-expanded="true"
-                                aria-controls="multiCollapseExample7">CAR</button>
-                            <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample8" aria-expanded="true"
-                                aria-controls="multiCollapseExample8">FLY</button>
-                            
+                    <div>
+                        <p>
+                            <button class="btn btt"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                CAR
+                            </button>
                         </p>
-                        <div className="row">
-                            <div className="col">
-                                <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample00">
-                                    {Categoryrdata?.map((item, index) => (
-                                        <div key={item.id_subtype.value} className="col">
-                                            <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                    className="card-Image-top img-fluid " alt="..." />
-                                                <div className="card-body itemm">
-                                                    <h5 className="itemm">
-                                                        {/* {(item.file_name).replace(".jpg", '')} */}
-                                                        {(item.Name_data).toUpperCase()}
-                                                        <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
-                                                    </h5>
+                        <div class="collapse  " id="collapseExample1">
+                            <p className="row" onClick={(event) => {
+                                setup2(event.target.value)
+                            }}>
+                                <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample00"
+                                    aria-expanded="true" aria-controls="multiCollapseExample00">SHOW/HIDE</button>
+                                <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+                                    aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
+                                <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample7" aria-expanded="true"
+                                    aria-controls="multiCollapseExample7">CAR</button>
+                                <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample8" aria-expanded="true"
+                                    aria-controls="multiCollapseExample8">FLY</button>
+
+                            </p>
+                            <div className="row">
+                                <div className="col">
+                                    <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample00">
+                                        {Categoryrdata?.map((item, index) => (
+                                            <div key={item.id_subtype.value} className="col">
+                                                <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                                    <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                        className="card-Image-top img-fluid " alt="..." />
+                                                    <div className="card-body itemm">
+                                                        <h5 className="itemm">
+                                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                                            {(item.Name_data).toUpperCase()}
+                                                            <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
+                                                        </h5>
 
 
 
 
-                                                    <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div className="modal-dialog ">
+                                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div className="modal-dialog ">
 
-                                                            <div className="modal-content  text-center  ">
-                                                                <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                                    alt="..." />
-                                                                <div className="modal-body itemm">
-                                                                    {/* {(item.file_name).replace(".jpg", '')} */}
-                                                                    {(item.Name_data).toUpperCase()}
-                                                                </div>
+                                                                <div className="modal-content  text-center  ">
+                                                                    <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                                        alt="..." />
+                                                                    <div className="modal-body itemm">
+                                                                        {/* {(item.file_name).replace(".jpg", '')} */}
+                                                                        {(item.Name_data).toUpperCase()}
+                                                                    </div>
 
-                                                                <div className="modal-footer   border border-0 footer ">
-                                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                                    <div className="modal-footer   border border-0 footer ">
+                                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
-                                                                    <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                        </div>
-                                    ))}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
+
                             </div>
 
+
+
+
                         </div>
-
-                                        
-
-
                     </div>
-                </div>
                     <div className="horizontalScroll___1O_E3" id="containersc">
                         {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
@@ -403,28 +428,26 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> 
+                        {type3Array?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
-                                        <span className="clickableBox___1HFCs">
-                                            <div className="boxWithAspectRatioContainer___2hILe">
-                                                <div className="boxWithAspectRatioInner___2gUvu">
-                                                    
-                                                    <div className="css-1k8lzl2">
-                                                        <div class="content1 ">
 
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
+                                    <span className="clickableBox___1HFCs">
+                                        <div className="boxWithAspectRatioContainer___2hILe">
+                                            <div className="boxWithAspectRatioInner___2gUvu">
 
-
+                                                <div className="css-1k8lzl2">
+                                                    <div class="content1 ">
+                                                        <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                     </div>
+
+
                                                 </div>
                                             </div>
-                                        </span>
-                                    </a>
+                                        </div>
+                                    </span>
+
                                 </div>
                             </li>))}
 
@@ -437,75 +460,75 @@ export default function Category() {
 
 
                 <section className="hover contentAreaNoPadding___2M1NZ">
-                <div>
-                    <p>
-                        <button class="btn btt"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                            CHARACTER
-                        </button>
-                    </p>
-                    <div class="collapse  " id="collapseExample2">
-                        <p className="row" onClick={(event) => {
-                            setup2(event.target.value)
-                        }}>
-                            <button class="btn btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample000"
-                                aria-expanded="true" aria-controls="multiCollapseExample000">SHOW/HIDE</button>
-                            <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
-                                aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
-                            <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample10" aria-expanded="true"
-                                aria-controls="multiCollapseExample10">FEMALE</button>
+                    <div>
+                        <p>
+                            <button class="btn btt"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                CHARACTER
+                            </button>
                         </p>
-                        <div className="row">
-                            <div className="col">
-                                <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample000">
-                                    {Categoryrdata?.map((item, index) => (
-                                        <div key={item.id_subtype.value} className="col">
-                                            <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                                <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                    className="card-Image-top img-fluid " alt="..." />
-                                                <div className="card-body itemm">
-                                                    <h5 className="itemm">
-                                                        {/* {(item.file_name).replace(".jpg", '')} */}
-                                                        {(item.Name_data).toUpperCase()}
-                                                        <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
-                                                    </h5>
+                        <div class="collapse  " id="collapseExample2">
+                            <p className="row" onClick={(event) => {
+                                setup2(event.target.value)
+                            }}>
+                                <button class="btn btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample000"
+                                    aria-expanded="true" aria-controls="multiCollapseExample000">SHOW/HIDE</button>
+                                <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
+                                    aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
+                                <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample10" aria-expanded="true"
+                                    aria-controls="multiCollapseExample10">FEMALE</button>
+                            </p>
+                            <div className="row">
+                                <div className="col">
+                                    <div class="collapse row row-cols-2 row-cols-lg-5 g-2 g-lg-3 " id="multiCollapseExample000">
+                                        {Categoryrdata?.map((item, index) => (
+                                            <div key={item.id_subtype.value} className="col">
+                                                <div className="card " data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                                    <Image width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                        className="card-Image-top img-fluid " alt="..." />
+                                                    <div className="card-body itemm">
+                                                        <h5 className="itemm">
+                                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                                            {(item.Name_data).toUpperCase()}
+                                                            <h6 className='card-subtitle mb-2 text-muted   '>{item.name_subtype}</h6>
+                                                        </h5>
 
 
 
 
-                                                    <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div className="modal-dialog ">
+                                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div className="modal-dialog ">
 
-                                                            <div className="modal-content  text-center  ">
-                                                                <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                                    alt="..." />
-                                                                <div className="modal-body itemm">
-                                                                    {/* {(item.file_name).replace(".jpg", '')} */}
-                                                                    {(item.Name_data).toUpperCase()}
-                                                                </div>
+                                                                <div className="modal-content  text-center  ">
+                                                                    <Image className="card img-fluid" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                                        alt="..." />
+                                                                    <div className="modal-body itemm">
+                                                                        {/* {(item.file_name).replace(".jpg", '')} */}
+                                                                        {(item.Name_data).toUpperCase()}
+                                                                    </div>
 
-                                                                <div className="modal-footer   border border-0 footer ">
-                                                                    <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                                    <div className="modal-footer   border border-0 footer ">
+                                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
-                                                                    <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                        </div>
-                                    ))}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
+
                             </div>
 
+
                         </div>
-
-
                     </div>
-                </div>
                     <div className="horizontalScroll___1O_E3" id="containersc">
                         {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
@@ -514,31 +537,26 @@ export default function Category() {
                             </svg>
 
                         </button> */}
-                        <div className="row___2fBWZ"> {gunlist?.map((item, index) => (
+                        <div className="row___2fBWZ"> 
+                        {type2Array?.map((item, index) => (
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
-                                    <a href="/megascans/home?assetId=wkfkfbt">
-                                        <span className="clickableBox___1HFCs">
-                                            <div className="boxWithAspectRatioContainer___2hILe">
-                                                <div className="boxWithAspectRatioInner___2gUvu">
-                                                   
-                                                    <div className="css-1k8lzl2">
-                                                        <div class="content1 ">
 
-                                                            <h5 className='card-title '>{item.Name_data}</h5>
-                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
-                                                        <div>
+                                    <span className="clickableBox___1HFCs">
+                                        <div className="boxWithAspectRatioContainer___2hILe">
+                                            <div className="boxWithAspectRatioInner___2gUvu">
 
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
+                                                <div className="css-1k8lzl2">
+                                                    <div>
 
+                                                        <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
                                                     </div>
+
                                                 </div>
                                             </div>
-                                        </span>
-                                    </a>
+                                        </div>
+                                    </span>
+
                                 </div>
                             </li>))}
 
