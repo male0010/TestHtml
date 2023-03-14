@@ -1,42 +1,58 @@
-import Head from 'next/head';
-import { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
-export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [users, setUsers] = useState([]);
+export default function Testcatearray() {
+  const [gunlist, setGunlist] = useState([]);
 
-  const handleSearch = async () => {
-    const response = await fetch(`https://www.imgen.site/imgen2/api_male/subtype.php?q=${searchTerm}`);
-    const data = await response.json();
-    setUsers(data.items);
-  };
+  useEffect(() => {
+    axios.get('https://www.imgen.site/imgen2/api_male/subtype.php')
+      .then(response => {
+        const data = response.data;
+        const mappedData = data.reduce((result, item) => {
+          const typeId = item.id_type;
+          if (!result[typeId]) {
+            result[typeId] = [];
+          }
+          result[typeId].push(item);
+          return result;
+        }, {});
+        setGunlist(mappedData);
+      })
+      .catch(error => {
+        console.error(error);
+      });
 
-  const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
+    let params = new URL(document.location).searchParams;
+    let name = params.get("id"); // is the string "Jonathan Smith".
+   console.log(name);
+  }, []);
+
+  const handleClick = (id) => {
+    window.location.href = "http://localhost:3000/test2?id=" + id;
   };
 
   return (
-    <div>
-      <Head>
-        <title>Github User Search</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>Github User Search</h1>
-
-        <div>
-          <input type="text" onChange={handleInputChange} value={searchTerm} />
-          <button onClick={handleSearch}>Search</button>
-        </div>
-
-        {users.map((user) => (
-          <div key={user.id}>
-            <h2>{user.login}</h2>
-            <img src={user.avatar_url} alt={user.login} width={100} />
+    <>
+      {Object.entries(gunlist).map(([typeId, typeArray]) => (
+        <div key={typeId}>
+          <h3>Type {typeId}</h3>
+          <div className="row">
+            {typeArray.map((item) => (
+              <div key={item.id_data} className="col">
+                <div className="card" onClick={() => handleClick(item.id_data)}>
+                  <img width={500} height={350} src={'https://www.imgen.site/imgen2' + item.path} className="card-img-top img-fluid" alt="..." />
+                  <div className="card-body itemm">
+                    <h5 className="itemm">
+                      {(item.Name_data).toUpperCase()}
+                      <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </main>
-    </div>
+        </div>
+      ))}
+    </>
   );
 }
