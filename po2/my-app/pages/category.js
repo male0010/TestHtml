@@ -33,7 +33,7 @@ export default function Category() {
         setCategoryrx(x)
 
     }
-
+    
     function setCategoryrx(x) {
         console.log(x)
         let y = new Array;
@@ -276,7 +276,7 @@ export default function Category() {
                     </div>
                 </div>
 
-                    {/* <div className="horizontalScroll___1O_E3" id="containersc">
+                    <div className="horizontalScroll___1O_E3" id="containersc">
                         <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
 
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -310,7 +310,7 @@ export default function Category() {
                             </li>))}
 
                         </div>
-                    </div> */}
+                    </div>
                 </section>
 
 
