@@ -430,6 +430,7 @@ export default function Category() {
                         </button> */}
                         <div className="row___2fBWZ"> 
                         {type3Array?.map((item, index) => (
+                            // eslint-disable-next-line react/jsx-key
                             <li className="cell___3sPIk">
                                 <div className="cellGuts___1TMU_">
 
