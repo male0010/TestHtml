@@ -29,7 +29,7 @@ const ArrowRightMap = () => {
       <button onClick={handlePrev}>Prev</button>
       {items?.map((item, index) => (
         <div key={index} style={{ display: index === activeIndex ? 'block' : 'none' }}>
-           <img width={500} height={350} src={'https://www.imgen.site/imgen2' + item.path} className="card-img-top img-fluid" alt="..." />
+           <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
           {item.Name_data}
         </div>
       ))}

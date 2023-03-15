@@ -9,7 +9,7 @@ export default function Testcatearray () {
       .then(response => {
         const data = response.data;
         const mappedData = data.reduce((result, item) => {
-          const typeId = item.id_type;
+          const typeId = item.id_subtype;
           if (!result[typeId]) {
             result[typeId] = [];
           }
