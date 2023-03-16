@@ -333,8 +333,7 @@ export default function Category() {
                     </Swiper>
 
                     <div className="horizontalScroll___1O_E3" id="containersc">
-                                
-
+                    
 
 
                         <div className="row___2fBWZ">
