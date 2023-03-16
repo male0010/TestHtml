@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import img8 from "../public/image/w2.jpg"
 import zaya1 from "../public/image/zaya.jpg"
 import bg1 from "../public/image/bg.jpg"
@@ -9,6 +10,15 @@ import { useState } from "react";
 import axios from "axios";
 import Head from 'next/head'
 import Navbar1 from "../public/componant/Navbar.js"
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import "swiper/css/free-mode";
+import { FreeMode, Thumbs } from "swiper";
+import "swiper/css/thumbs";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function Category() {
     const [Categoryr, setCategoryr] = useState("1");
@@ -166,6 +176,9 @@ export default function Category() {
 
 
 
+    // const [swiperRef, setSwiperRef] = useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     return (
         <>
             <head>
@@ -227,6 +240,37 @@ export default function Category() {
             </div>
             <br></br>
 
+            <div>
+                {/* <Swiper
+                    onSwiper={setSwiperRef}
+                    slidesPerView={3}
+                    centeredSlides={true}
+                    spaceBetween={50}
+                    pagination={{
+                        type: "fraction",
+                    }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}
+                    className="mySwiper"
+                > {type1Array.map((item) => (
+                    <SwiperSlide key={item.id_data}>
+                        <div key={item.id_data} className="card" >
+                            <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
+                                <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                                <div className="card-body itemm">
+                                    <h5 className="itemm">
+                                        {(item.Name_data).toUpperCase()}
+                                        <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                                    </h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </SwiperSlide>))}
+                </Swiper> */}
+
+
+            </div>
 
 
             {/* <div class="card text-white bg-image">
@@ -253,209 +297,221 @@ export default function Category() {
 
 
             <div className="contentBelowBanner___1csYL" value={0} onClick={(event) => {
-                                        setuparr(event.target.value)
-                                    }}>
-                <section className="hover contentAreaNoPadding___2M1NZ">
-                    <div >
-                        <p>
-                            <button class="btn btt"
-                                type="button"  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                GUN
-                            </button>
-                        </p>
-                        <div class="collapse  " id="collapseExample" >
-                        <div class="card text-center">
-                    <div class="card-body">
-                        <p className="row " onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
+                setuparr(event.target.value)
+            }}>
 
-                            <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
-                                aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
-                            <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample2" aria-expanded="true"
-                                aria-controls="multiCollapseExample2">SMG</button>
-                            <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample3" aria-expanded="true"
-                                aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
-                            <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample4" aria-expanded="true"
-                                aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
-                            <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample5" aria-expanded="true"
-                                aria-controls="multiCollapseExample5">SHOTGUN</button>
-                        </p>
-                        <div className=' row row-cols-2 ' value={0} onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
-                            {type1.map((item) => (
-                                <div key={item.id_data} className="row" >
-                                    <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
-                                        <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
-                                        <div className="card-body itemm">
-                                            <h5 className="itemm">
-                                                {(item.Name_data).toUpperCase()}
-                                                <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
-                                            </h5>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            ))}</div>
-
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
-
-                    <div className="horizontalScroll___1O_E3" id="containersc">
-                        <button type="button"  className="sideArrow___1s2uV sideArrowRight___3W9nJ">
-
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M29 44L13 24L29 4"></path>
-                            </svg>
-
+                <div >
+                    <p>
+                        <button class="btn btt"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            GUN
                         </button>
-                        <div className="row___2fBWZ">
-                            {type1Array?.map((item) => (
-                                // eslint-disable-next-line react/jsx-key
-                                <li className="cell___3sPIk">
-                                    <div className="cellGuts___1TMU_">
+                    </p>
+                    <div class="collapse  " id="collapseExample" >
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p className="row " onClick={(event) => {
+                                    setuparr(event.target.value)
+                                }}>
 
-                                        <span className="clickableBox___1HFCs">
-                                            <div className="boxWithAspectRatioContainer___2hILe">
-                                                <div className="boxWithAspectRatioInner___2gUvu">
-
-                                                    <div className="css-1k8lzl2">
-                                                        <div class="content1 ">
-
-
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
-
-
-                                                    </div>
+                                    <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+                                        aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
+                                    <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample2" aria-expanded="true"
+                                        aria-controls="multiCollapseExample2">SMG</button>
+                                    <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample3" aria-expanded="true"
+                                        aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
+                                    <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample4" aria-expanded="true"
+                                        aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
+                                    <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample5" aria-expanded="true"
+                                        aria-controls="multiCollapseExample5">SHOTGUN</button>
+                                </p>
+                                <div className=' row row-cols-2 ' value={0} onClick={(event) => {
+                                    setuparr(event.target.value)
+                                }}>
+                                    {type1.map((item) => (
+                                        <div key={item.id_data} className="row" >
+                                            <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
+                                                <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                                                <div className="card-body itemm">
+                                                    <h5 className="itemm">
+                                                        {(item.Name_data).toUpperCase()}
+                                                        <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                                                    </h5>
                                                 </div>
                                             </div>
-                                        </span>
 
-                                    </div>
-                                </li>))}
+                                        </div>
+
+                                    ))}</div>
+
+
+                            </div>
 
                         </div>
+
+
+
+
+
+
+
+
+
                     </div>
-                </section>
-
-
-                <br></br>
-
-
-
-
-                <section className="hover contentAreaNoPadding___2M1NZ">
-                    <div>
-                        <p>
-                            <button class="btn btt"
-                                type="button" value={0} data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                                CAR
-                            </button>
-                        </p>
-                        <div class="collapse  " id="collapseExample1">
-                        <div class="card text-center">
-                    <div class="card-body">
-                        <p className="row " onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
-                            <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
-                                aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
-                            <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample7" aria-expanded="true"
-                                aria-controls="multiCollapseExample7">CAR</button>
-                            <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample8" aria-expanded="true"
-                                aria-controls="multiCollapseExample8">FLY</button>
-                        </p>
-                        <div className=' row row-cols-2 ' value={0} onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
-                            {type2.map((item) => (
-                                <div key={item.id_data} className="row" >
-                                    <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
-                                        <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                </div>
+                <div>
+                    <Swiper
+                        style={{
+                            "--swiper-navigation-color": "#fff",
+                            "--swiper-pagination-color": "#fff",
+                        }}
+                        loop={true}
+                        spaceBetween={30}
+                        slidesPerView={3}
+                        navigation={true}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        className="mySwiper2"
+                    >
+                        {type1Array.map((item) => (
+                            <SwiperSlide key={item.id_data}>
+                                <div key={item.id_data} className="card">
+                                    <div
+                                        className="card"
+                                        data-bs-toggle="modal"
+                                        data-bs-target={`#exampleModal${item.id_data}`}
+                                    >
+                                        <img
+                                            width={500}
+                                            height={350}
+                                            src={"https://www.imgen.site/imgen2" + item.path}
+                                            className="card-img-top img-fluid"
+                                            alt="..."
+                                        />
                                         <div className="card-body itemm">
                                             <h5 className="itemm">
-                                                {(item.Name_data).toUpperCase()}
-                                                <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                                                {item.Name_data.toUpperCase()}
+                                                <h6 className="card-subtitle mb-2 text-muted">
+                                                    {item.name_subtype}
+                                                </h6>
                                             </h5>
                                         </div>
                                     </div>
-
                                 </div>
-
-                            ))}</div>
-
-
-                    </div>
-
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
 
+                <br></br>
 
 
-                        </div>
-                    </div>
-                    <div className="horizontalScroll___1O_E3" id="containersc">
-                        {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
-
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M29 44L13 24L29 4"></path>
-                            </svg>
-
-                        </button> */}
-                        <div className="row___2fBWZ">
-                            {type3Array?.map((item) => (
-                                // eslint-disable-next-line react/jsx-key
-                                <li className="cell___3sPIk">
-                                    <div className="cellGuts___1TMU_">
-
-                                        <span className="clickableBox___1HFCs">
-                                            <div className="boxWithAspectRatioContainer___2hILe">
-                                                <div className="boxWithAspectRatioInner___2gUvu">
-
-                                                    <div className="css-1k8lzl2">
-                                                        <div class="content1 ">
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
 
 
-                                                    </div>
+
+                <div>
+                    <p>
+                        <button class="btn btt"
+                            type="button" value={0} data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            CAR
+                        </button>
+                    </p>
+                    <div class="collapse  " id="collapseExample1">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p className="row " onClick={(event) => {
+                                    setuparr(event.target.value)
+                                }}>
+                                    <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+                                        aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
+                                    <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample7" aria-expanded="true"
+                                        aria-controls="multiCollapseExample7">CAR</button>
+                                    <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample8" aria-expanded="true"
+                                        aria-controls="multiCollapseExample8">FLY</button>
+                                </p>
+                                <div className=' row row-cols-2 ' value={0} onClick={(event) => {
+                                    setuparr(event.target.value)
+                                }}>
+                                    {type2.map((item) => (
+                                        <div key={item.id_data} className="row" >
+                                            <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
+                                                <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                                                <div className="card-body itemm">
+                                                    <h5 className="itemm">
+                                                        {(item.Name_data).toUpperCase()}
+                                                        <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                                                    </h5>
                                                 </div>
                                             </div>
-                                        </span>
 
-                                    </div>
-                                </li>))}
+                                        </div>
+
+                                    ))}</div>
+
+
+                            </div>
 
                         </div>
+
+
+
                     </div>
-                </section>
+                </div>
+                <div>
+                    <Swiper
+                        style={{
+                            "--swiper-navigation-color": "#fff",
+                            "--swiper-pagination-color": "#fff",
+                        }}
+                        loop={true}
+                        spaceBetween={30}
+                        slidesPerView={2}
+                        navigation={true}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        className="mySwiper2"
+                    >
+                        {type3Array.map((item) => (
+                            <SwiperSlide key={item.id_data}>
+                                <div key={item.id_data} className="card">
+                                    <div
+                                        className="card"
+                                        data-bs-toggle="modal"
+                                        data-bs-target={`#exampleModal${item.id_data}`}
+                                    >
+                                        <img
+                                            width={500}
+                                            height={350}
+                                            src={"https://www.imgen.site/imgen2" + item.path}
+                                            className="card-img-top img-fluid"
+                                            alt="..."
+                                        />
+                                        <div className="card-body itemm">
+                                            <h5 className="itemm">
+                                                {item.Name_data.toUpperCase()}
+                                                <h6 className="card-subtitle mb-2 text-muted">
+                                                    {item.name_subtype}
+                                                </h6>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
 
                 <br></br>
 
 
-                <section className="hover contentAreaNoPadding___2M1NZ">
+                
                     <div>
                         <p>
                             <button class="btn btt"
@@ -464,79 +520,87 @@ export default function Category() {
                             </button>
                         </p>
                         <div class="collapse  " id="collapseExample2">
-                        <div class="card text-center">
-                    <div class="card-body">
-                        <p className="row " onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
-                                <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
-                                    aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
-                                <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#multiCollapseExample10" aria-expanded="true"
-                                    aria-controls="multiCollapseExample10">FEMALE</button>
-                        </p>
-                        <div className=' row row-cols-2 ' value={0} onClick={(event) => {
-                            setuparr(event.target.value)
-                        }}>
-                            {type3.map((item) => (
-                                <div key={item.id_data} className="row" >
-                                    <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
-                                        <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
-                                        <div className="card-body itemm">
-                                            <h5 className="itemm">
-                                                {(item.Name_data).toUpperCase()}
-                                                <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
-                                            </h5>
-                                        </div>
-                                    </div>
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p className="row " onClick={(event) => {
+                                        setuparr(event.target.value)
+                                    }}>
+                                        <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
+                                            aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
+                                        <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#multiCollapseExample10" aria-expanded="true"
+                                            aria-controls="multiCollapseExample10">FEMALE</button>
+                                    </p>
+                                    <div className=' row row-cols-2 ' value={0} onClick={(event) => {
+                                        setuparr(event.target.value)
+                                    }}>
+                                        {type3.map((item) => (
+                                            <div key={item.id_data} className="row" >
+                                                <div className="card" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
+                                                    <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                                                    <div className="card-body itemm">
+                                                        <h5 className="itemm">
+                                                            {(item.Name_data).toUpperCase()}
+                                                            <h6 className='card-subtitle mb-2 text-muted'>{item.name_subtype}</h6>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        ))}</div>
+
 
                                 </div>
 
-                            ))}</div>
-
-
-                    </div>
-
-                </div>
+                            </div>
 
 
                         </div>
                     </div>
-                    <div className="horizontalScroll___1O_E3" id="containersc">
-                        {/* <button type="button" className="sideArrow___1s2uV sideArrowRight___3W9nJ">
-
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M29 44L13 24L29 4"></path>
-                            </svg>
-
-                        </button> */}
-                        <div className="row___2fBWZ">
-                            {type2Array?.map((item) => (
-                                // eslint-disable-next-line react/jsx-key
-                                <li className="cell___3sPIk">
-                                    <div className="cellGuts___1TMU_">
-
-                                        <span className="clickableBox___1HFCs">
-                                            <div className="boxWithAspectRatioContainer___2hILe">
-                                                <div className="boxWithAspectRatioInner___2gUvu">
-
-                                                    <div className="css-1k8lzl2">
-                                                        <div>
-
-                                                            <Image className="css-2pknc3 " src={"https://www.imgen.site/imgen2" + item.path} width={355} height={355} alt="" />
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </span>
-
+                   <div>
+                   <Swiper
+                        style={{
+                            "--swiper-navigation-color": "#fff",
+                            "--swiper-pagination-color": "#fff",
+                        }}
+                      
+                        spaceBetween={30}
+                        slidesPerView={3}
+                        navigation={true}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        className="mySwiper2"
+                    >
+                        {type2Array.map((item) => (
+                            <SwiperSlide key={item.id_data}>
+                                <div key={item.id_data} className="card">
+                                    <div
+                                        className="card"
+                                        data-bs-toggle="modal"
+                                        data-bs-target={`#exampleModal${item.id_data}`}
+                                    >
+                                        <img
+                                            width={500}
+                                            height={350}
+                                            src={"https://www.imgen.site/imgen2" + item.path}
+                                            className="card-img-top img-fluid"
+                                            alt="..."
+                                        />
+                                        <div className="card-body itemm">
+                                            <h5 className="itemm">
+                                                {item.Name_data.toUpperCase()}
+                                                <h6 className="card-subtitle mb-2 text-muted">
+                                                    {item.name_subtype}
+                                                </h6>
+                                            </h5>
+                                        </div>
                                     </div>
-                                </li>))}
-
-                        </div>
-                    </div>
-                </section>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                   </div>
             </div>
 
 
