@@ -618,6 +618,9 @@ padding: 20px !important;
   padding: 30px;
   will-change: transform;
   position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+   padding: 2px 0 2px 0;
 }
 
 .row___2fBWZ{
@@ -681,13 +684,13 @@ padding: 20px !important;
 
 .sideArrow___1s2uV{
   opacity: 1;
- 
+  
   position: absolute;
   cursor: pointer;
   top: 0;
   bottom: 0;
   padding: 0;
-  background: rgba(36, 36, 36, 0.5);
+  background: 0 0;
   border: none;
   z-index: 10;
 }
@@ -695,6 +698,11 @@ padding: 20px !important;
   right: 0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+.sideArrowLeft___3E_Fq{
+  left: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .sideArrow___1s2uV svg path {
