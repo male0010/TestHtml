@@ -22,7 +22,7 @@ export default function header() {
         <div className="container-fluid menu2"><a href="/">
           <Image src={img4} alt="" width="240" height="70" /></a>
 
-          <div className="collapse navbar-collapse menu2" id="navbarSupportedContent">
+          <div className="navbar-collapse menu2" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu2">
               <li className="nav-item dropdown menu2">
                 <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
@@ -36,8 +36,8 @@ export default function header() {
 
               </li>
               <li className="nav-item dropdown menu2">
-                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  ESPORTS
+                <a className="nav-link  menu2" href="category">
+                CATEGORY
                 </a>
 
               </li>
