@@ -455,7 +455,7 @@ padding: 20px !important;
   grid-gap: 5em !important;
   border: 3rem !important;
   font-size: 40px !important;
-  color: #727070 !important;
+  color: #cac9c9 !important;
   padding: 10px !important;
   font-family: 'Bangers', cursive !important;
 }
@@ -763,4 +763,5 @@ padding: 20px !important;
 
 .sw{
   padding: 0 48px;
+  color: white !;
 }
