@@ -191,10 +191,10 @@ export default function Category() {
             </Head>
             {/* <Sidebar1/> */}
 
-            <nav class="navbar fixed-top navbarr row-4">
+            <nav className="navbar fixed-top navbarr row-4">
                 <div className=" Ima col-1 "><Link href="pro">
                     <Image src={img8} alt="" height="70" /></Link></div>
-                <div class="container col-9 ">
+                <div className="container col-9 ">
                     <div className="col ">
                         <input className="  search searchh col-2 "
                             placeholder="Search.... "
@@ -203,9 +203,9 @@ export default function Category() {
                             }} />
                     </div>
 
-                    <div class="col-md-2 ">
-                        <button type="button" class="btn btn-primary me-2 butt "><Link href="/login" className="a">SIGN IN</Link></button>
-                        <button type="button" class="btn btn-secondary butt"><Link href="/register " className="a">SIGN UP</Link></button>
+                    <div className="col-md-2 ">
+                        <button type="button" className="btn btn-primary me-2 butt "><Link href="/login" className="a">SIGN IN</Link></button>
+                        <button type="button" className="btn btn-secondary butt"><Link href="/register " className="a">SIGN UP</Link></button>
                     </div>
 
 
@@ -217,7 +217,7 @@ export default function Category() {
                     <div className="bg-image">
                         <div className="content ">
                             <div className="contentLayoutContainer ">
-                                <div class="content2 ">
+                                <div className="content2 ">
                                     <h2>UP TO 32v32</h2>
                                     <h1> BATTLE MAPS </h1>
                                     <p>CALL OF DUTY® MODERN WARFARE® II AND WARZONE™ 2.0 </p>
@@ -247,30 +247,30 @@ export default function Category() {
 
                 <div>
                     <p className="sw">
-                        <button class="btn btt"
+                        <button className="btn btt"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             GUN
                         </button>
                     </p>
-                    <div class="collapse  " id="collapseExample">
-                        <div class="card text-center">
-                            <div class="card-body">
+                    <div className="collapse  " id="collapseExample">
+                        <div className="card text-center">
+                            <div className="card-body">
                                 <p className="row " onClick={(event) => {
                                     setuparr(event.target.value)
                                 }}>
 
-                                    <button class="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+                                    <button className="btn  col btnn" value={1} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
                                         aria-expanded="true" aria-controls="multiCollapseExample1">PISTON</button>
-                                    <button class="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
+                                    <button className="btn btnn col" value={2} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#multiCollapseExample2" aria-expanded="true"
                                         aria-controls="multiCollapseExample2">SMG</button>
-                                    <button class="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
+                                    <button className="btn btnn col" value={3} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#multiCollapseExample3" aria-expanded="true"
                                         aria-controls="multiCollapseExample3">ASSAULT RIFLE</button>
-                                    <button class="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
+                                    <button className="btn btnn col" value={4} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#multiCollapseExample4" aria-expanded="true"
                                         aria-controls="multiCollapseExample4">SNIPER RIFLE</button>
-                                    <button class="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
+                                    <button className="btn btnn col" value={5} type="button" data-bs-toggle="collapse"
                                         data-bs-target="#multiCollapseExample5" aria-expanded="true"
                                         aria-controls="multiCollapseExample5">SHOTGUN</button>
                                 </p>
@@ -483,20 +483,20 @@ export default function Category() {
 
             <div>
                 <p className="sw">
-                    <button class="btn btt"
+                    <button className="btn btt"
                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                         CHARACTER
                     </button>
                 </p>
-                <div class="collapse  " id="collapseExample2">
-                    <div class="card text-center">
-                        <div class="card-body">
+                <div className="collapse  " id="collapseExample2">
+                    <div className="card text-center">
+                        <div className="card-body">
                             <p className="row " onClick={(event) => {
                                 setuparr(event.target.value)
                             }}>
-                                <button class="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
+                                <button className="btn   btnn col" value={9} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
                                     aria-expanded="true" aria-controls="multiCollapseExample9">MALE</button>
-                                <button class="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
+                                <button className="btn  btnn  col" value={10} type="button" data-bs-toggle="collapse"
                                     data-bs-target="#multiCollapseExample10" aria-expanded="true"
                                     aria-controls="multiCollapseExample10">FEMALE</button>
                             </p>
@@ -591,23 +591,23 @@ export default function Category() {
             </div>
         </><br></br><div>
                 <p className="sw">
-                    <button class="btn btt"
+                    <button className="btn btt"
                         type="button" value={0} data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                         CAR
                     </button>
                 </p>
-                <div class="collapse  " id="collapseExample1">
-                    <div class="card text-center">
-                        <div class="card-body">
+                <div className="collapse  " id="collapseExample1">
+                    <div className="card text-center">
+                        <div className="card-body">
                             <p className="row " onClick={(event) => {
                                 setuparr(event.target.value)
                             }}>
-                                <button class="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+                                <button className="btn btnn col" value={6} type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
                                     aria-expanded="true" aria-controls="multiCollapseExample6">BIKER</button>
-                                <button class="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
+                                <button className="btn btnn col" value={7} type="button" data-bs-toggle="collapse"
                                     data-bs-target="#multiCollapseExample7" aria-expanded="true"
                                     aria-controls="multiCollapseExample7">CAR</button>
-                                <button class="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
+                                <button className="btn btnn col" value={8} type="button" data-bs-toggle="collapse"
                                     data-bs-target="#multiCollapseExample8" aria-expanded="true"
                                     aria-controls="multiCollapseExample8">FLY</button>
                             </p>
