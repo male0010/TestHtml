@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import img8 from "../public/image/w2.jpg"
-import zaya1 from "../public/image/zaya.jpg"
-import bg1 from "../public/image/bg.jpg"
+import img8 from "/public/image/w2.jpg"
+import zaya1 from "/public/image/zaya.jpg"
+import bg1 from "/public/image/bg.jpg"
 import Image from 'next/image'
-import Sidebar1 from "../public/componant/Sideber.js"
+import Sidebar1 from "/public/componant/Sideber.js"
 // import styles from '@/styles/globals.css'
 import { useEffect } from 'react';
 import { useState } from "react";
 import axios from "axios";
 import Head from 'next/head'
 import Link from "next/link"
-import Navbar1 from "../public/componant/Navbar.js"
+import Navbar1 from "/public/componant/Navbar.js"
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -41,14 +41,10 @@ export default function Category() {
     };
 
     useEffect(() => {
-        getgunlist();
-        // parse the 'type' query parameter from the URL and call setuparr
-        const params = new URLSearchParams(window.location.search);
-        const type = params.get('type');
-        if (type) {
-            setuparr(type);
-        }
+        // setdata()
+        getgunlist()
     }, []);
+
     useEffect(() => {
         axios.get('https://www.imgen.site/imgen2/api_male/subtype.php')
             .then(response => {
@@ -154,11 +150,7 @@ export default function Category() {
     function setuparr(x) {
         setarr(x)
         setarrdatax(x)
-        // update query parameter 'type' in the URL with x
-        const params = new URLSearchParams(window.location.search);
-        params.get('subtype', x);
-        window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
-        console.log(params);
+
     }
     function setarrdatax(x) {
         console.log(x)
@@ -458,5 +450,6 @@ export default function Category() {
 
 
     )
+
 }
 
