@@ -192,8 +192,8 @@ export default function Category() {
             {/* <Sidebar1/> */}
 
             <nav class="navbar fixed-top navbarr row-4">
-                <div className=" Ima col-1 "><a href="pro">
-                    <Image src={img8} alt="" height="70" /></a></div>
+                <div className=" Ima col-1 "><Link href="pro">
+                    <Image src={img8} alt="" height="70" /></Link></div>
                 <div class="container col-9 ">
                     <div className="col ">
                         <input className="  search searchh col-2 "
@@ -205,7 +205,7 @@ export default function Category() {
 
                     <div class="col-md-2 ">
                         <button type="button" class="btn btn-primary me-2 butt "><Link href="/login" className="a">SIGN IN</Link></button>
-                        <button type="button" class="btn btn-secondary butt"><a href="/register " className="a">SIGN UP</a></button>
+                        <button type="button" class="btn btn-secondary butt"><Link href="/register " className="a">SIGN UP</Link></button>
                     </div>
 
 
@@ -224,9 +224,9 @@ export default function Category() {
                                     <div className="contentButton">
                                         <div className="jsx-1751277314 h-buttons-group">
                                             <span className=" h-buttons-group-button">
-                                                <a href="">
+                                                <Link href="">
                                                     <button type="button" className="buttong">go to collection</button>
-                                                </a>
+                                                </Link>
                                             </span>
                                         </div>
 
