@@ -40,7 +40,7 @@ export default function Register() {
                 <title>Register</title>
             </Head>
             <Header1 />
-            <body className="register body ">
+            {/* <body className="register body ">
                 <br></br>
                 <br></br>
                 <div className="container accordion-body  lgback ">
@@ -86,7 +86,7 @@ export default function Register() {
                         </div>
                     </div>
                 </div>
-            </body>
+            </body> */}
 
         </>
     )
