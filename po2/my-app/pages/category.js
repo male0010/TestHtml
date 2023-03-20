@@ -430,51 +430,6 @@ export default function Category() {
 
 
 
-        </div>
-    </div>
-    <div>
-        <Swiper
-            style={{
-                "--swiper-navigation-color": "#fff",
-                "--swiper-pagination-color": "#fff",
-            }}
-            loop={true}
-            spaceBetween={30}
-            slidesPerView={2}
-            navigation={true}
-            thumbs={{ swiper: thumbsSwiper }}
-            modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper2"
-        >
-            {type3Array.map((item) => (
-                <SwiperSlide key={item.id_data}>
-                    <div key={item.id_data} className="card">
-                        <div
-                            className="card"
-                            data-bs-toggle="modal"
-                            data-bs-target={`#exampleModal${item.id_data}`}
-                        >
-                            <img
-                                width={500}
-                                height={350}
-                                src={"https://www.imgen.site/imgen2" + item.path}
-                                className="card-img-top img-fluid"
-                                alt="..."
-                            />
-                            <div className="card-body itemm">
-                                <h5 className="itemm">
-                                    {item.Name_data.toUpperCase()}
-                                    <h6 className="card-subtitle mb-2 text-muted">
-                                        {item.name_subtype}
-                                    </h6>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            ))}
-        </Swiper>
-    </div> */}
 
 
             <br></br>
