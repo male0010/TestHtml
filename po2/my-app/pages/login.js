@@ -5,19 +5,19 @@ import { useState } from "react";
 import Image from 'next/image'
 import { useEffect } from 'react';
 import Register from './register';
-
+import Head from "next/head";
 
 export default function Login() {
     
 
     return (
         <>
-            <head>
+            <Head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Register</title>
-            </head>
+            </Head>
         
             <Header1 />
             <body className="login body">

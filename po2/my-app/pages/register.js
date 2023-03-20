@@ -4,7 +4,10 @@ import { useState } from "react";
 import Image from 'next/image'
 import { useEffect } from 'react';
 import Header1 from "../public/header2"
+import { Head } from 'next/head';
+import Link from "next/link.js";
 export default function Register() {
+
 //     async function Register(e){  
 //     e.preventDefault();
 //     const [username, password, email, name, lastname, phone] = e.target.elements;
@@ -30,12 +33,12 @@ export default function Register() {
 
     return (
         <>
-            <head>
+            <Head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Register</title>
-            </head>
+            </Head>
             <Header1 />
             <body className="register body ">
                 <br></br>
@@ -72,7 +75,7 @@ export default function Register() {
                                     <input class="form-control searchh" type="text" name="phone" placeholder="" required/>
                                 </div>
                                 <div className=" text-end">
-                                    <a href="/login" className="a">if you have member </a>
+                                    <Link href="/login" className="a">if you have member </Link>
                                 </div>
                                 <div class=" align-content-end row-8">
                                     <button class="col-md-3 btn btn-primary but  align-self-end " type="submit"
