@@ -1,0 +1,760 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+
+@media (max-width: 240em) {
+    .css-12eyf74,[data-css-12eyf74] {
+        margin-bottom:9px;
+    }
+
+}
+
+@media
+ (max-width: 90em) {
+    .css-12eyf74,[data-css-12eyf74] {
+        margin-top:2px;
+        margin-bottom: 7px;
+        height: 17vw;
+    }
+}
+@media (max-width: 55em) {
+    .css-12eyf74,[data-css-12eyf74] {
+        margin-top:1px;
+        flex-direction: column;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+    }
+}
+@media (max-width: 65.0625em) {
+    .css-12eyf74,[data-css-12eyf74] {
+        margin-bottom:0px;
+        height: 18vw;
+    }
+}
+
+
+.css-12eyf74,[data-css-12eyf74] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    height: 19vw;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.css-1mesriy{
+    margin: 2px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    display: -webkit-box;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    transform: sca
+    
+}
+
+.css-zvkjbf{
+    background-image: url(https://mywarzonelegacy.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-S02-RELOADED-011-B.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.css-1ugfr5s{
+    
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-LAUNCH-INTEL-008-WM.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
+    width: 100%;
+}
+
+.css-1ugfr5{
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/MWII-S01-BP-013.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.css-11ls71j{
+    position: relative;
+    text-align: left;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.css-b06u1v{
+    text-decoration: none;
+}
+
+.css-1p3f1wx{
+    padding: 3vw;
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+@media (min-width: 85.375rem) {
+    .css-2x76mi,[data-css-2x76mi] {
+        margin-top:calc(7rem + (16 - 7) * (100vw - 85.375rem) / (160 - 85.375));
+    }
+}
+
+
+@media (max-width: 65.0625em) {
+    .css-oqffr1,[data-css-oqffr1] {
+        height:auto;
+    }
+}
+
+@media (max-width: 90em) {
+    .css-oqffr1,[data-css-oqffr1] {
+        height:50vw;
+    }
+}
+
+.css-oqffr1,[data-css-oqffr1] {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: #000;
+    padding: 6vw;
+    height: 42.2vw;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        font-size:0.9375rem;
+    }
+}
+
+@media (min-width: 30.0625rem) and (max-width: 85.3125rem) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        font-size:0.9375rem;
+    }
+}
+
+@media (min-width: 85.375rem) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        font-size:calc(1rem + (1.5 - 1) * (100vw - 85.375rem) / (160 - 85.375));
+    }
+}
+
+@media (max-width: 100em) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        margin-top:-2.86vw;
+    }
+}
+
+@media (max-width: 65.0625em) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        margin-top:-2.9vw;
+    }
+}
+
+@media (max-width: 55em) {
+    .css-z6wpf2,[data-css-z6wpf2] {
+        margin-top:-4vw;
+    }
+}
+
+@media (max-width: 65.0625em) {
+    .css-goqw7i, [data-css-goqw7i] {
+        filter: blur(10px);
+    }
+}
+
+@media (max-width: 90em){
+    .css-goqw7i, [data-css-goqw7i] {
+        filter: blur(15px);
+     }
+}
+
+@media (max-width: 120em){
+    .css-goqw7i, [data-css-goqw7i] {
+        filter: blur(20px);
+    }
+}
+
+@media (max-width: 240em){
+    .css-goqw7i, [data-css-goqw7i] {
+    filter: blur(25px);
+    }
+}
+
+@media (max-width: 275em){
+
+    .css-goqw7i, [data-css-goqw7i] {
+    filter: blur(30px);
+    }
+}
+
+@media (min-width: 85.375rem){
+        .css-g7jrk6, [data-css-g7jrk6] {
+    padding-top : calc(3rem + (8.5 - 3) * (100vw - 85.375rem) / (160 - 85.375));
+    padding-bottom :  calc(3rem + (5 - 3) * (100vw - 85.375rem) / (160 - 85.375));      
+    }
+}
+
+.css-g7jrk6, [data-css-g7jrk6] {
+    position: relative;
+    background: #000;
+}
+
+.css-1gtlguw, [data-css-1gtlguw] {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.css-14ka3k5{
+    max-width: 100%;
+    margin: auto;
+}
+
+/* @media (min-width: 85.375rem)
+        .css-1i1szvg, [data-css-1i1szvg] {
+    font-size: calc(1rem + (1.5 - 1) * (100vw - 85.375rem) / (160 - 85.375));
+} */
+
+.css-1i1szvg, [data-css-1i1szvg] {
+   
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Mouse Memoirs', sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 3.25rem;
+    text-transform: uppercase;
+    color: #eee;
+    letter-spacing: 1px;
+}    
+
+
+.css-goqw7i, [data-css-goqw7i] {
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-LAUNCH-INTEL-008-WM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    filter: blur(35px);
+}
+
+
+.css-z6wpf2,[data-css-z6wpf2] {
+    letter-spacing: normal;
+    font-size: 3rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    color: #eee;
+    z-index: 1;
+    margin-top: -2.8vw;
+    position: absolute;
+}
+
+.css-9hvv{
+    width: 100%;
+    
+    
+}
+
+.css-9hvpez{
+    /* background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-SEASON-01-ROADMAP-014.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    
+    height: 30vw;
+    margin: 1em;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-a9x5ro{
+    display: inline ;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    
+    
+}
+
+.css-1cgmvzu{
+    position: relative;
+    height: 696px;
+    display: inline-block;
+    width: 311px;
+    margin-right: 5px;
+    
+}
+
+
+
+.css.active {
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+  }
+
+  .css-15lzgyg {
+    margin: 0 10px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 11));
+    }
+  }
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    animation: slide 10s linear infinite;
+  }
+   /* CSS */
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    animation: slidein 5s infinite;
+  }
+  
+  @keyframes slidein {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300px);
+    }
+  }
+  
+  .image {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+
+@media (min-width: 120em){
+.css-15lzgyg, [data-css-15lzgyg] {
+    width: 311px;
+    }
+}
+
+.css-15lzgyg, [data-css-15lzgyg] {
+   padding: 3px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    max-width: 311px;
+    
+}
+
+
+
+
+.css-1welzgn, [data-css-1welzgn] {
+    position: relative;
+}
+
+
+.css-fmpy9, [data-css-fmpy9] {
+    max-width: 75%;
+    margin: auto;
+}
+
+
+.css-11pgmqa, [data-css-11pgmqa] {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+
+.css-nvbtbj, [data-css-nvbtbj] {
+    letter-spacing:2px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Mouse Memoirs', sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: auto;
+    padding-top: 2rem;
+    margin-bottom: 2.125rem;
+    text-align: center;
+    color: #d3d3d3;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+
+
+
+.css-1x1bg8g, [data-css-1x1bg8g] {
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5.87rem;
+    text-align: center;
+    height: auto;
+    margin-top: 5.87px;
+    color: #fafafa;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+
+
+.css-u0x0j8, [data-css-u0x0j8] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin: auto;
+    min-width: 300px;
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.css-1xvx2me, [data-css-1xvx2me] {
+    margin: 5px 0px;
+    min-width: 0;
+    flex-basis: calc(33.33% - 5px);
+    -webkit-flex-basis: calc(33.33% - 5px);
+}
+
+.css-1dnwvu3, [data-css-1dnwvu3] {
+    text-decoration: none;
+}
+
+.css-6os4en, [data-css-6os4en] {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    background: rgb(26, 26, 26);
+    cursor: pointer;
+    animation: unset;
+    transition: all 0.12s ease 0s;
+}
+
+.css-1osijr9, [data-css-1osijr9] {
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-NEXT-COD-WZM-TOUT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+}
+.css-1c6tbi4{
+    opacity: 1;
+    background-image: url(https://mywarzonelegacy.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S02-BP-TOUT.jpg);
+    
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+
+}
+
+.css-12simwh{
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S01-RELOADED-WARZONE-CUP-TOUT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+
+}
+
+.css-1pkevbo{
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/S02-WZ-TAC-OVERVIEW-TOUT2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+}
+
+.css-1ke7anx{
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-CODE-Protector-001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+}
+
+.css-871aqv{
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/TPTS02-TOUT2.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: calc(15vw);
+}
+
+
+.css-1mm9hv1, [data-css-1mm9hv1] {
+    height: 8.5vw;
+    min-height: 150px;
+    padding: 6%;
+    text-align: left;
+}
+
+
+
+.css-137ghns, [data-css-137ghns] {
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: #aaa9a9;
+    display: block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.css-141i1s7, [data-css-141i1s7] {
+    font-weight: 500;
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    overflow: auto;
+    white-space: unset;
+    text-overflow: ellipsis;
+    line-height: initial;
+    font-size: 35px;
+}
+
+
+.css-h7dop2, [data-css-h7dop2] {
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    line-height: 1.5;
+    text-align: center;
+    color: #808080;
+    margin: auto;
+}
+
+.css-1k83v4m, [data-css-1k83v4m] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    color: #d72929;
+    margin-top: 6.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+.css-1hqh14k, [data-css-1hqh14k] {
+    letter-spacing: -0.4px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.css-102rvdm, [data-css-102rvdm] {
+    padding: 1px;
+    letter-spacing: -0.4px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.css-10800iq, [data-css-10800iq] {
+    background: none;
+    font-family: 'Mouse Memoirs', sans-serif !important;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    color: #3792db;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    padding: 1px;
+    transition: box-shadow 0.2s, color 0.2s ease-in-out;
+    font-size:3.5em;
+    line-height: 1.33;
+    -webkit-transition: box-shadow 0.2s, color 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s, color 0.2s ease-in-out;
+}
+
+.css-1fxl72w, [data-css-1fxl72w] {
+    opacity: 1;
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-MP-TOUT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 42.2vw;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-j34mpb, [data-css-j34mpb] {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.css-dq71mr, [data-css-dq71mr] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.css-1iwdce8{
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    z-index: 1;
+}
+
+.css-u36hqk, [data-css-u36hqk] {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 14rem;
+    height: 14rem;
+    display: inline-block;
+    margin-bottom: 5rem;
+}
+
+.css-kovv1o, [data-css-kovv1o] {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 4.5rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+    line-height: 1;
+    margin: auto;
+    max-width: 1280px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
