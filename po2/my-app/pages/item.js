@@ -7,6 +7,7 @@ import Navbar1 from "../public/componant/Navbar.js"
 import img8 from "../public/image/w2.jpg"
 import Head from "next/head.js";
 import Link from "next/link.js";
+import TESTFOOT from "./testfoot"
 
 
 
@@ -334,6 +335,11 @@ export default function Item() {
                     </div>
                 </div>
             </div>
+           
+            <br></br>
+            <br></br>
+            <TESTFOOT />
+
         </>
 
 
