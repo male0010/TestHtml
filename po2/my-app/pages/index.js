@@ -36,8 +36,8 @@ import cyy from "../public/image/cy.jpg"
 function SecondHalfImages() {
   return (
     <>
-      <Image className='css-15lzgyg' src={me} height={699} width={300} alt />
-      <Image className='css-15lzgyg' src={me} height={699} width={300} alt />
+      <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#" />
+      <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#" />
       {/* add more images */}
     </>
   );
@@ -251,7 +251,7 @@ export default function Home() {
             <div className='css-11pgmqa'>
               <div>
                 <div className='css-nvbtbj'>WARZONE BLOG</div>
-                <div className='css-1x1bg8g'>THE LATEST NEWS WHAT'S NEW</div>
+                <div className='css-1x1bg8g'>THE LATEST NEWS WHAT NEW</div>
               </div>
               <div className='css-u0x0j8'>
                 <div className='css-1xvx2me'>
