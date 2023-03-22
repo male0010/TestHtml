@@ -6,34 +6,35 @@
 import Header1 from "../public/header2"
 import Head from 'next/head';
 import Link from "next/link.js";
+import axios from "axios";
 export default function Register() {
 
-    //     async function Register(e){  
-    //     e.preventDefault();
-    //     const [username, password, email, name, lastname, phone] = e.target.elements;
-    //     var formdata = new FormData;
-    //     formdata.append("acc_username", username.value);
-    //     formdata.append("acc_password", password.value);
-    //     formdata.append("acc_email", email.value);
-    //     formdata.append("acc_name", name.value);
-    //     formdata.append("acc_lastname", lastname.value);
-    //     formdata.append("acc_phone", phone.value);
-    //     const config = {
-    //         headers: { "content-type": "multipart/form-data" },
-    //     };
-    //     axios.post("http://localhost:8080/bpo2/register.php", formdata, config).then((response) => {
-    //         if (response.data == "success") {
-    //             alert("register success you can login now");
-    //             window.location.assign("/login")
-    //         } else {
-    //             alert("fail")
-    //         }
-    //     });
-    // }
+    async function Register(e) {
+        e.preventDefault();
+        const [username, password, email, name, lastname, phone] = e.target.elements;
+        var formdata = new FormData;
+        formdata.append("acc_username", username.value);
+        formdata.append("acc_password", password.value);
+        formdata.append("acc_email", email.value);
+        formdata.append("acc_name", name.value);
+        formdata.append("acc_lastname", lastname.value);
+        formdata.append("acc_phone", phone.value);
+        const config = {
+            headers: { "content-type": "multipart/form-data" },
+        };
+        axios.post("https://www.imgen.site/imgen2/api_male/register.php", formdata, config).then((response) => {
+            if (response.data == "success") {
+                alert("register success you can login now");
+                window.location.assign("/login")
+            } else {
+                alert("fail")
+            }
+        });
+    }
 
     return (
         <>
-             <Head>
+            <Head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,12 +45,12 @@ export default function Register() {
                 <br></br>
                 <br></br>
                 <div className="container accordion-body  lgback ">
-                    <div className="row lgback">
+                    <div className="row lgback" >
                         < br></br>
                         <div className="col-md-8 m-auto colmds" >
                             <h1 className="display-4 text-center ">Warzone™</h1>
                             <h2 className="lead text-start ">Sign up to your account</h2>
-                            <div className="card-body ">
+                            <form className="card-body " onSubmit={Register}>
                                 <div className="mb-3 ">
                                     <label for="" className="form-label">Username</label>
                                     <input className="form-control  searchh " type="username" name="username" placeholder="" required />
@@ -82,11 +83,11 @@ export default function Register() {
                                         value="Register">Sign Up</button>
                                 </div>
                                 <br></br>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
-            </body>
+            </div>
+        </body>
 
         </>
     )

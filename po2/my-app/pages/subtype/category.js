@@ -220,7 +220,7 @@ export default function Category() {
                                     <div className="contentButton">
                                         <div className="jsx-1751277314 h-buttons-group">
                                             <span className=" h-buttons-group-button">
-                                                <Link href="">
+                                                <Link href="/item">
                                                     <button type="button" className="buttong">go to collection</button>
                                                 </Link>
                                             </span>
