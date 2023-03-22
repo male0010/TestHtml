@@ -33,6 +33,9 @@ import wo from "../public/image/wom.jpg"
 
 import na from "../public/image/COD.jpg"
 import cyy from "../public/image/cy.jpg"
+
+import Footer3 from "../public/componant/footer.js"
+
 function SecondHalfImages() {
   return (
     <>
@@ -383,8 +386,10 @@ export default function Home() {
       </section>
       
 
-
+      
 
     </div>
+  
+    
   )
 }

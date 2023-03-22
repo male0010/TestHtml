@@ -799,3 +799,112 @@
     right: 0;
     background: rgba(0, 0, 0, 0.25);
 }
+
+
+
+@media (min-width: 30.0625rem)
+.css-lirzhy, [data-css-lirzhy] {
+    padding-top: calc(4.5rem + (6 - 4.5) * (100vw - 30.0625rem) / (160 - 30.0625));
+    padding-bottom: calc(2.25rem + (3 - 2.25) * (100vw - 30.0625rem) / (160 - 30.0625));
+}
+
+.css-lirzhy, [data-css-lirzhy] {
+    color: #FFF;
+    background: #000000;
+    padding: 6rem 0 3rem 0;
+}
+
+.css-wby6dd, [data-css-wby6dd] {
+    margin: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    max-width: 75%;
+}
+
+.css-1ba90vd, [data-css-1ba90vd] {
+    display: none;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+@media (min-width: 45.0625em) and (min-width: 85.375rem)
+.css-14z2b88 h2, [data-css-14z2b88] h2 {
+    font-size: calc(1.25rem + (1.5 - 1.25) * (100vw - 85.375rem) / (160 - 85.375));
+}
+
+.css-14z2b88 h2, [data-css-14z2b88] h2 {
+    font-family: Open Sans Condensed;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    margin: 0 0 2em 0;
+}
+
+.css-14z2b88 ul, [data-css-14z2b88] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.css-1mizsmv, [data-css-1mizsmv] {
+    width: 50%;
+    margin: 24px 0px !important;
+}
+
+@media (max-width: 120em)
+.css-1mizsmv, [data-css-1mizsmv] {
+    margin: 18px 0px !important;
+}
+
+.css-1atoss, [data-css-1atoss] {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-transform: initial;
+    white-space: nowrap;
+}
+
+.css-glcnyc, [data-css-glcnyc] {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    color: #808080;
+    text-transform: initial;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    padding: 0.75em;
+    transition: box-shadow 0.2s, color 0.2s ease-in-out;
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    white-space: nowrap;
+    -webkit-transition: box-shadow 0.2s, color 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s, color 0.2s ease-in-out;
+}
+
+.css-uiqjwa h2, [data-css-uiqjwa] h2 {
+    font-family: Open Sans Condensed;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.0999999999999996rem;
+}
+
+@media (max-width: 120em){
+    .css-uiqjwa, [data-css-uiqjwa] {
+    flex-basis: 62%;
+    -webkit-flex-basis: 62%;
+}
+
+}
+
+.css-uiqjwa, [data-css-uiqjwa] {
+    width: 50%;
+}
