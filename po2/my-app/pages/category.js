@@ -48,7 +48,7 @@ export default function Category() {
         if (type) {
             setuparr(type);
         }
-    }, []);
+    }, );
 
     useEffect(() => {
         axios.get('https://www.imgen.site/imgen2/api_male/subtype.php')
@@ -95,12 +95,7 @@ export default function Category() {
     const subtype2Array = subtypegunlist[2] || [];
     const subtype3Array = subtypegunlist[3] || [];
 
-    function setup2(x) {
-        setCategoryr(x)
-        setCategoryrx(x)
-
-    }
-
+  
     function setCategoryrx(x) {
         console.log(x)
         let y = new Array;
@@ -117,11 +112,7 @@ export default function Category() {
             setCategoryrdata(y);
         }
     }
-    function setup1(x) {
-        setfilter(x)
-        filtertype(x)
-
-    }
+ 
     //เพื่อโหลดภาพ
     async function loadfile(event, urls, file_name) {
         event.preventDefault();
