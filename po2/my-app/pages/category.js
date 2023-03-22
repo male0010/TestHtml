@@ -159,7 +159,7 @@ export default function Category() {
         setarrdatax(x)
         // update query parameter 'type' in the URL with x
         const params = new URLSearchParams(window.location.search);
-        params.get('subtype', x);
+        params.set('type', x);
         window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
         console.log(params);
     }
