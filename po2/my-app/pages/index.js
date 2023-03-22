@@ -30,7 +30,7 @@ import ney from "../public/image/Ney.png"
 import po from "../public/image/pop.png"
 import me from "../public/image/messi.jpg"
 import wo from "../public/image/wom.jpg"
-
+import TESTFOOT from "./testfoot"
 import na from "../public/image/COD.jpg"
 import cyy from "../public/image/cy.jpg"
 function SecondHalfImages() {
@@ -148,7 +148,7 @@ export default function Home() {
       </div>
 
       <section data-reactid="288" data-css-oqffr1>
-        <div className="css-goqw7i" data-reactid="289"></div>
+        <div className="ccss-1mm9hv1" data-reactid="289"></div>
         <div className="css-z6wpf2">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</div>
         <div className='css-9hvpez' data-reactid="291" >
           <div className='css-9hvv' data-reactid="291">
@@ -224,9 +224,9 @@ export default function Home() {
               <div className='css-u0x0j8'>
                 <div className='css-1xvx2me'>
                   <a className='css-1dnwvu3' href='' >
-                    <section class="css-6os4en">
+                    <section class="css-6os4en ">
                       <div className='css-1c6tbi4'></div>
-                      <div className='css-1mm9hv1'>
+                      <div className='css-1mm9hv1 '>
                         <span className='css-137ghns'>SEPTEMBER 15, 2022</span>
                         <h1 className='css-141i1s7'> NEXT: ANNOUNCING CALL OF DUTY®: WARZONE™</h1>
                       </div>
@@ -349,8 +349,9 @@ export default function Home() {
         
       </section>
 
-
-
+<br></br>
+<br></br>
+      <TESTFOOT/>
 
     </div>
   )
