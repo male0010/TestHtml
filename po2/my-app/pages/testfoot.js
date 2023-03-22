@@ -8,9 +8,9 @@ export default function TESTFOOT() {
                 <div className="col-12 col-sm-3 card-title">
                     <h3>HOME</h3>
                     <br></br>
-                    <ul className='card-text'>
-                        <Link href={"/pro"} >
-                            <li>PRODUCTS</li></Link>
+                    <ul className='card-text linkk  link'>
+                        <Link className='link linkk2' href={"/pro"} >
+                            <li >PRODUCTS</li></Link>
                         <br></br>
                         <li>CAMPAIGN</li>
                         <br></br>
@@ -19,22 +19,22 @@ export default function TESTFOOT() {
                         <li>COMMUNITY</li>
                     </ul>
                 </div>
-                <div className="col-12 col-sm-3 card-title">
-                    <Link href={"/pro"} >
+                <div className="col-12 col-sm-3 card-title linkk">
+                    <Link  className='link' href={"/pro"} >
                         <h3>PRODUCTS</h3></Link>
                     <br></br>
                     <ul className='card-text'>
                         <li>GAMES</li>
-                        <br></br> <Link href={"/item"} >
+                        <br></br> <Link   className='link linkk2' href={"/item"} >
                             <li>ITEM</li></Link>
-                        <br></br><Link href={"/category"} >
+                        <br></br><Link   className='link linkk2' href={"/category"} >
                             <li>CATEGORY</li></Link>
                         <br></br>
                         <li>SHOP</li>
                     </ul>
                 </div>
-                <div className="col-12 col-sm-3 card-title">
-                    <Link href={"/item"} >
+                <div className="col-12 col-sm-3 card-title linkk">
+                    <Link   className='link '  href={"/item"} >
                         <h3>ITEM</h3></Link>
                     <br></br>
                     <ul className='card-text'>

@@ -107,13 +107,31 @@
 .sortt {
   justify-content: space-between;
 }
+
 .footertest{
  
-  
+  text-decoration: none !important;
   align-items: center;
   position:  relative;
   height: 400px;
   width: 100%;
-  background-color: #111111;
+  font-size: 17px;
   color: #ffffff;
+  font-weight: 700;
+  
+  letter-spacing: 1px;
+}
+.link{
+  text-decoration: none !important;
+  color: white;
+  
+  
+}
+
+.linkk{
+  color: #bbbbbb;
+}
+.linkk2{
+  text-decoration: none !important;
+  color: #bbbbbb;
 }
