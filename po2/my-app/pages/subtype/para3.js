@@ -68,7 +68,7 @@ export default function MyPage() {
                         {subtype1Array.map((item) => (
                             <div key={item.id_data} className="row" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
                                 <div className=" card-body" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
-                                    <img width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
+                                    <Image width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
                                     <div className="card-body itemm">
                                         <h5 className="itemm">
                                             {(item.Name_data).toUpperCase()}
@@ -78,7 +78,7 @@ export default function MyPage() {
                                             <div className="modal-dialog ">
 
                                                 <div className="modal-content  text-center  ">
-                                                    <img className="card" width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`}
+                                                    <Image className="card" width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`}
                                                         alt="..." />
                                                     <div className="modal-body itemm">
                                                         {(item.file_name).replace(".jpg", '')}

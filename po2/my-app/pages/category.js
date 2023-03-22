@@ -49,6 +49,7 @@ export default function Category() {
             setuparr(type);
         }
     }, []);
+
     useEffect(() => {
         axios.get('https://www.imgen.site/imgen2/api_male/subtype.php')
             .then(response => {
@@ -151,6 +152,8 @@ export default function Category() {
 
         });
     }
+
+
     function setuparr(x) {
         setarr(x)
         setarrdatax(x)
@@ -176,9 +179,9 @@ export default function Category() {
             setarrdata(y);
         }
     }
-    const type1 = arrdata.filter(item => item.id_subtype >= 1 && item.id_subtype <= 5) || [];
-    const type2 = arrdata.filter(item => item.id_subtype >= 6 && item.id_subtype <= 8) || [];
-    const type3 = arrdata.filter(item => item.id_subtype >= 9 && item.id_subtype <= 10) || [];
+    // const type1 = arrdata.filter(item => item.id_subtype >= 1 && item.id_subtype <= 5) || [];
+    // const type2 = arrdata.filter(item => item.id_subtype >= 6 && item.id_subtype <= 8) || [];
+    // const type3 = arrdata.filter(item => item.id_subtype >= 9 && item.id_subtype <= 10) || [];
 
 
 
