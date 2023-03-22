@@ -747,3 +747,32 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
+
+.css-1ojjt41, [data-css-1ojjt41] {
+    text-align: center;
+    margin: 20px;
+
+}
+
+.css-1lmvk87, [data-css-1lmvk87] {
+    
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 20px !important;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+    color: #FFF;
+    background:linear-gradient(120deg,#0d7408,#030f04) ;
+    
+}
+
+
+
