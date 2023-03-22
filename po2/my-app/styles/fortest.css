@@ -49,3 +49,61 @@
     padding:80px;
     width: 600px !important;
 }
+
+.header {
+  display: flex;
+  
+  align-items: center;
+  position:  relative;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #111111;
+  
+}
+.header {
+  display: flex;
+  
+  align-items: center;
+  position:  relative;
+  top: 0;
+  left: 1190px;
+  height: 100px;
+  width: 100%;
+  background-color: #111111;
+  
+}.headerr {
+  display: flex;
+  
+  align-items: center;
+  position:  relative;
+
+ 
+  
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #eadfdf; 
+}
+
+.logout-btn {
+  margin-right: 20px;
+}
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.sortt {
+  justify-content: space-between;
+}

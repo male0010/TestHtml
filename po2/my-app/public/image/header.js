@@ -10,7 +10,7 @@ export default function header() {
         <header className="container-fluid  vh-100 bg">
             <nav className="navbar  navbar-expand-lg   ">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                <div className="menu">
+                <div className="menu accordion-header">
                     <div className="logo">
                         <Image src={img1} />
                     </div>
