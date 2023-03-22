@@ -36,8 +36,8 @@ import cyy from "../public/image/cy.jpg"
 function SecondHalfImages() {
   return (
     <>
-      <Image className='css-15lzgyg' src={me} height={699} width={300} alt />
-      <Image className='css-15lzgyg' src={me} height={699} width={300} alt />
+      <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#" />
+      <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#" />
       {/* add more images */}
     </>
   );
@@ -165,34 +165,34 @@ export default function Home() {
               <span className='css-1i1szvg'>featured in MODERN  Warzone</span>
               <div className='css-a9x5ro' >
                 <div className='css active' >
-                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={kk} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={ff} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={v} height={699} width={300} alt="" />
+                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#" />
+                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={kk} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={ff} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={v} height={699} width={300} alt="#"/>
                   {/* //เพื่อต่อ */}
-                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={v} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt =""/>
-                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={kk} height={699} width={300} alt =""/>
-                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={ff} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="" />
-                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="" />
+                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={v} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={kk} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={ff} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
 
 
 
