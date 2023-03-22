@@ -84,7 +84,20 @@ export default function Home() {
       </Head>
 
       <Header0 />
+      {/* <section className='css-bfjn8h'>
+        
+        <div className= "css-j34mpb"></div>
+        <video autoPlay loop muted className='css-dq71mr' poster="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-LAUNCH-MP-003-.jpg" id="vid" >
+          <source src="https://www.callofduty.com/cdn/wzm/videos/wzm-cinematic.mp4" type="video/mp4"></source>
+          </video>
+      </section> */}
+      
+      
+      
+      
       <div>
+
+
         <div className="centered">
           <p className="hh1">MODERN WARFARE II THE NEW CALL OF DUTY®  WARZONETM 2.0</p>
           <p className="h3 ">  MAP IN SEASON 02 OF CALL OF DUTY®: WARZONE™ </p>
@@ -147,6 +160,10 @@ export default function Home() {
         </div>
       </div>
 
+
+
+
+
       <section data-reactid="288" data-css-oqffr1>
         <div className="ccss-1mm9hv1" data-reactid="289"></div>
         <div className="css-z6wpf2">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</div>
@@ -158,6 +175,12 @@ export default function Home() {
       </section>
 
 
+
+
+      
+     
+
+
       <section className="css-g7jrk6" >
         <div id="xxx" className="css-14ka3k5" >
           <div className="false">
@@ -165,7 +188,7 @@ export default function Home() {
               <span className='css-1i1szvg'>featured in MODERN  Warzone</span>
               <div className='css-a9x5ro' >
                 <div className='css active' >
-                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#" />
+                <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#" />
                   <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="#"/>
@@ -178,10 +201,10 @@ export default function Home() {
                   <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={v} height={699} width={300} alt="#"/>
                   {/* //เพื่อต่อ */}
-                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
-                  <Image className='css-15lzgyg' src={v} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={po} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
@@ -190,9 +213,15 @@ export default function Home() {
                   <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={ff} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={po} height={699} width={300} alt="#"/>
-                  <Image className='css-15lzgyg' src={vvvv} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg ' src={me} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={vvv} height={699} width={300} alt="#"/>
                   <Image className='css-15lzgyg' src={dd} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={ney} height={699} width={300} alt="#"/>
+                  <Image className='css-15lzgyg' src={me} height={699} width={300} alt="#"/>
+
+
+
+                  
 
 
 
@@ -211,6 +240,9 @@ export default function Home() {
         </div>
 
       </section>
+
+      
+
 
 
       <section className='css-1welzgn'>
@@ -319,8 +351,9 @@ export default function Home() {
 
       <section className='css-1fxl72w'>
         <div className='css-j34mpb'> <video autoPlay loop muted className='css-dq71mr' poster="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-LAUNCH-MP-003-.jpg" id="vid" >
-          <source src="https://www.activision.com/cdn/cod/cod-3-20.mp4" type="video/mp4"></source>
-        </video></div>
+          <source src="https://www.callofduty.com/cdn/wzm/videos/wzm-cinematic.mp4" type="video/mp4"></source>
+          </video>
+        </div>
        
         <div className='css-1iwdce8'>
           <span className='css-u36hqk'></span>
@@ -346,8 +379,6 @@ export default function Home() {
 
         
 
-        
-      </section>
 
 <br></br>
 <br></br>
