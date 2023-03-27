@@ -135,3 +135,17 @@
   text-decoration: none !important;
   color: #bbbbbb;
 }
+.cam1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffefe;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.imgg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
