@@ -143,9 +143,14 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .imgg{
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.camtextsm{
+  color: #ada7a7;
 }

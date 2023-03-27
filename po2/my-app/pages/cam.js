@@ -20,7 +20,7 @@ export default function cam() {
                         <Image className=" accordion-flush imgg" src={cam1} height={500} width={1200} alt="#" ></Image>
                         <div class="card-body">
                             <h4 class="card-title">CALL OF DUTY®: MODERN WARFARE® II CAMPAIGN REWARDS: EARN DURING EARLY ACCESS FOR A HEAD START AT LAUNCH</h4>
-                            <p class="card-text">Text</p>
+                            <p class="card-text camtextsm">Play the Modern Warfare® II Campaign to get Captain Price’s signature Weapon Blueprint and over a dozen other rewards for use in Multiplayer, Special Ops, and Call of Duty®: Warzone™ 2.0. Preorder to get Campaign Early Access for a head start on unlocking all of these before launch.</p>
                         </div>
                     </div>
 
