@@ -134,12 +134,11 @@
 .linkk2{
   text-decoration: none !important;
   color: #bbbbbb;
-<<<<<<< HEAD
 }
 .cam1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   color: #fffefe;
   object-fit: cover;
   width: 100%;
@@ -154,20 +153,12 @@
 }
 .camtextsm{
   color: #ada7a7;
-=======
-  
 }
-
-ol, ul {
-  padding-left: 0rem;
-}
-
-.linkk3{
-  font-family: 'Mouse Memoirs', sans-serif !important;
-   font-size: 20px !important;
-   font-weight: 600;
-   letter-spacing: 2px;
-   
-
->>>>>>> 603286cdf6161ce1710de05674f6a682c8fc5a65
+.divider {
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
 }

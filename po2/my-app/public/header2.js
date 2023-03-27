@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import img from "../public/image/1.png"
 import img1 from "../public/image/callbg.jpg"
 import img2 from "../public/image/call.jpg"
@@ -18,30 +19,30 @@ export default function header() {
   return (
     <>
 
-      <nav className="navbar navbar-expand-lg  menu2">
-        <div className="container-fluid menu2"><a href="/">
+      <nav className="menu accordion-header menu2">
+        <div className="container-fluid navbar navbar-expand-lg menu2"><a href="/">
           <Image src={img4} alt="" width="240" height="70" /></a>
 
-          <div className="navbar-collapse menu2" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu2">
-              <li className="nav-item dropdown menu2">
+          <div className="menu accordion-header menu2" id="navbarSupportedContent">
+            <ul className="navbar navbar-expand-lg ">
+              <li className="">
                 <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                   GAMES
                 </a>
               </li>
-              <li className="nav-item dropdown menu2">
-                <a className="nav-link  menu2" href="/item" >
+              <li className=" ">
+                <a className="" href="/item" >
                   ITEM
                 </a>
 
               </li>
-              <li className="nav-item dropdown menu2">
+              <li className="">
                 <a className="nav-link  menu2" href="category">
                 CATEGORY
                 </a>
 
               </li>
-              <li className="nav-item dropdown menu2">
+              <li className="">
                 <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SHOP
                 </a>
