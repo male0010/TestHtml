@@ -802,11 +802,7 @@
 
 
 
-@media (min-width: 30.0625rem)
-.css-lirzhy, [data-css-lirzhy] {
-    padding-top: calc(4.5rem + (6 - 4.5) * (100vw - 30.0625rem) / (160 - 30.0625));
-    padding-bottom: calc(2.25rem + (3 - 2.25) * (100vw - 30.0625rem) / (160 - 30.0625));
-}
+
 
 .css-lirzhy, [data-css-lirzhy] {
     color: #FFF;
@@ -828,10 +824,7 @@
     -webkit-justify-content: space-between;
 }
 
-@media (min-width: 45.0625em) and (min-width: 85.375rem)
-.css-14z2b88 h2, [data-css-14z2b88] h2 {
-    font-size: calc(1.25rem + (1.5 - 1.25) * (100vw - 85.375rem) / (160 - 85.375));
-}
+
 
 .css-14z2b88 h2, [data-css-14z2b88] h2 {
     font-family: Open Sans Condensed;
@@ -851,10 +844,7 @@
     margin: 24px 0px !important;
 }
 
-@media (max-width: 120em)
-.css-1mizsmv, [data-css-1mizsmv] {
-    margin: 18px 0px !important;
-}
+
 
 .css-1atoss, [data-css-1atoss] {
     padding-left: 0;
@@ -907,4 +897,16 @@
 
 .css-uiqjwa, [data-css-uiqjwa] {
     width: 50%;
+}
+
+
+.stylee{
+    overflow: hidden;
+}
+
+._2yWxQtB7xJRsFyvEkRLyW_{
+        width: 100%;
+        height: max(20em,45vw);
+        object-fit: cover;
+    
 }

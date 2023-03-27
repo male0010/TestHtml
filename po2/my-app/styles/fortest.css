@@ -134,4 +134,18 @@
 .linkk2{
   text-decoration: none !important;
   color: #bbbbbb;
+  
+}
+
+ol, ul {
+  padding-left: 0rem;
+}
+
+.linkk3{
+  font-family: 'Mouse Memoirs', sans-serif !important;
+   font-size: 20px !important;
+   font-weight: 600;
+   letter-spacing: 2px;
+   
+
 }
