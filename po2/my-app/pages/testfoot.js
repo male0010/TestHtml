@@ -6,7 +6,7 @@ export default function TESTFOOT() {
         <footer className="container footertest card-footer ">
             <div className="row card-body  ">
                 <div className="col-12 col-sm-3 card-title">
-                    <h3>HOME</h3>
+                    <h3 className='link '>HOME</h3>
                     <br></br>
                     <ul className='card-text linkk  link'>
                         <Link className='link linkk2' href={"/pro"} >
@@ -20,21 +20,21 @@ export default function TESTFOOT() {
                     </ul>
                 </div>
                 <div className="col-12 col-sm-3 card-title linkk">
-                    <Link  className='link' href={"/pro"} >
+                    <Link className='link' href={"/pro"} >
                         <h3>PRODUCTS</h3></Link>
                     <br></br>
                     <ul className='card-text'>
                         <li>GAMES</li>
-                        <br></br> <Link   className='link linkk2' href={"/item"} >
+                        <br></br> <Link className='link linkk2' href={"/item"} >
                             <li>ITEM</li></Link>
-                        <br></br><Link   className='link linkk2' href={"/category"} >
+                        <br></br><Link className='link linkk2' href={"/category"} >
                             <li>CATEGORY</li></Link>
                         <br></br>
                         <li>SHOP</li>
                     </ul>
                 </div>
                 <div className="col-12 col-sm-3 card-title linkk">
-                    <Link   className='link '  href={"/item"} >
+                    <Link className='link ' href={"/item"} >
                         <h3>ITEM</h3></Link>
                     <br></br>
                     <ul className='card-text'>
@@ -47,10 +47,24 @@ export default function TESTFOOT() {
                     </ul>
                 </div>
                 <div className="col-12 col-sm-3">
-                    <h3>COMING SOON...</h3>
-
+                    <h3 className='link '>COMING SOON...</h3>
+                    <form>
+          
+        </form>
+                
                 </div>
             </div>
+
+
+            <div class="d-flex flex-column flex-sm-row  py-3 my-5 border-top linkk3">
+                <p>© 2023, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks  trademarks of Epic Games, Inc. in the USA and .</p>
+                <ul class="list-unstyled d-flex">
+
+                </ul>
+            </div>
         </footer>
+
+
+
     );
 }
