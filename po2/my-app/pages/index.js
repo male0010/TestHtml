@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import img1 from "../public/image/callbg.jpg"
-import Header0 from "../public/image/header"
+  import Header0 from "../public/image/header"
 import img10 from "../public/image/black-panther.jpg"
 import img11 from "../public/image/jumanji.jpg"
 import img12 from "../public/image/q.jpg"
