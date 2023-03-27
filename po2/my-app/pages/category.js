@@ -20,6 +20,8 @@ import "swiper/css/thumbs";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import TESTFOOT from "./testfoot"
+
 
 
 export default function Category() {
@@ -444,8 +446,12 @@ export default function Category() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
+            </div> <br></br>
+ <br></br>
+ <TESTFOOT />
+
         </>
+
 
 
 

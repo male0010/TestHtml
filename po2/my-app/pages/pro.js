@@ -21,6 +21,7 @@ import two from "../public/image/22.png"
 import ooo from "../public/image/33.png"
 import oooo from "../public/image/44.png"
 import ooooo from "../public/image/55.png"
+import TESTFOOT from "./testfoot"
 
 
 
@@ -149,7 +150,7 @@ export default function Home() {
 
     // ]
 
- 
+
     return (
         <>
             <Head>
@@ -159,7 +160,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            
+
 
 
 
@@ -343,8 +344,10 @@ export default function Home() {
                 </div>
             </div>
 
-
-
+       
+            <br></br>
+            <br></br>
+            <TESTFOOT />
 
 
 
