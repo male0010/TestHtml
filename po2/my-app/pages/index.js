@@ -150,7 +150,7 @@ export default function Home() {
         <div className="css-1mesriy" data-reactid="270">
           <section className='css-1ugfr5'>
             <div className="css-11ls71j">
-              <a className='css-b06u1v' href=''>
+              <a className='css-b06u1v' href='skin'>
                 <div className="css-1p3f1wx">
                   <div className='css-2x76mi'>
                     <h1>SKINS In MODERN WARFARE 2</h1>
