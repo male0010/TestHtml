@@ -116,6 +116,7 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .footertest {
 
   text-decoration: none !important;
@@ -123,6 +124,15 @@
   position: relative;
   height: 100%;
   width: 100%;
+=======
+.footertest{
+  
+  text-decoration: none !important;
+  
+  position:  relative;
+  height: 400px;
+  width: 100%!important;
+>>>>>>> f3bfa6a085eab8b250cd0b58ae92a84d7f7aaf4c
   font-size: 17px;
   color: #ffffff;
   font-weight: 700;
@@ -174,6 +184,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  padding: 2px;
 }
 
 .imggg {
@@ -239,6 +250,7 @@
   height: 100%;
 }
 
+<<<<<<< HEAD
 .bggmui {
   background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/multiplayer/Hero.jpg");
   background-repeat: no-repeat;
@@ -275,4 +287,8 @@
   padding-top: 5%;
   padding-bottom: 5%;
 
+=======
+ol, ul {
+  padding-left: 0rem;
+>>>>>>> f3bfa6a085eab8b250cd0b58ae92a84d7f7aaf4c
 }

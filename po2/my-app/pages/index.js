@@ -119,7 +119,7 @@ export default function Home() {
         <div className="css-1mesriy" data-reactid="261">
           <section className='css-zvkjbf'>
             <div className="css-11ls71j">
-              <a className='css-b06u1v' href=''>
+              <a className='css-b06u1v' href='warfare'>
                 <div className="css-1p3f1wx">
                   <div className='css-2x76mi'>
                     <h1>WARFARE® II </h1>
@@ -135,7 +135,7 @@ export default function Home() {
         <div className="css-1mesriy" data-reactid="270">
           <section className='css-1ugfr5s'>
             <div className="css-11ls71j">
-              <a className='css-b06u1v' href=''>
+              <a className='css-b06u1v' href='full'>
                 <div className="css-1p3f1wx">
                   <div className='css-2x76mi'>
                     <h1>Full AWARENES</h1>
@@ -170,6 +170,7 @@ export default function Home() {
       <section data-reactid="288" data-css-oqffr1>
         <div className="ccss-1mm9hv1" data-reactid="289"></div>
         <div className="css-z6wpf2">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</div>
+        <div className='css-1hxbrw'></div>
         <div className='css-9hvpez' data-reactid="291" >
           <div className='css-9hvv' data-reactid="291">
             <iframe width="1000" height="550" src="https://www.youtube.com/embed/EwoXZw1RKUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -258,31 +259,31 @@ export default function Home() {
               </div>
               <div className='css-u0x0j8'>
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='battle' >
                     <section class="css-6os4en ">
                       <div className='css-1c6tbi4'></div>
                       <div className='css-1mm9hv1 '>
                         <span className='css-137ghns'>SEPTEMBER 15, 2022</span>
-                        <h1 className='css-141i1s7'> NEXT: ANNOUNCING CALL OF DUTY®: WARZONE™</h1>
+                        <h1 className='css-141i1s7'>  BATTLE PASS AND BUNDLES FOR CALL OF DUTY® </h1>
                       </div>
                     </section>
                   </a>
                 </div>
 
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='next' >
                     <section class="css-6os4en">
                       <div className='css-1osijr9'></div>
                       <div className='css-1mm9hv1'>
                         <span className='css-137ghns'>FEBRUARY 14, 2023</span>
-                        <h1 className='css-141i1s7'>  BATTLE PASS AND BUNDLES FOR CALL OF DUTY®</h1>
+                        <h1 className='css-141i1s7'>NEXT: ANNOUNCING CALL OF DUTY®: WARZONE™</h1>
                       </div>
                     </section>
                   </a>
                 </div>
 
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='Reloaded' >
                     <section class="css-6os4en">
                       <div className='css-12simwh'></div>
                       <div className='css-1mm9hv1'>
@@ -295,7 +296,7 @@ export default function Home() {
 
 
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='Ashika' >
                     <section class="css-6os4en">
                       <div className='css-1pkevbo'></div>
                       <div className='css-1mm9hv1'>
@@ -309,7 +310,7 @@ export default function Home() {
 
 
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='Protector' >
                     <section class="css-6os4en">
                       <div className='css-1ke7anx'></div>
                       <div className='css-1mm9hv1'>
@@ -321,7 +322,7 @@ export default function Home() {
                 </div>
 
                 <div className='css-1xvx2me'>
-                  <a className='css-1dnwvu3' href='' >
+                  <a className='css-1dnwvu3' href='Multiplater' >
                     <section class="css-6os4en">
                       <div className='css-871aqv'></div>
                       <div className='css-1mm9hv1'>
