@@ -17,8 +17,8 @@ export default function header() {
                     <ul className="navbar navbar-expand-lg  ">
                         <li><a href="pro">PRODUCTS</a></li>
                         <li><a href="cam">CAMPAIGN</a></li>
-                        <li><a href="#">MULTIPLAYER</a></li>
-                        <li><a href="#">COMMUNITY</a></li>
+                        <li><a href="multi">MULTIPLAYER</a></li>
+                        <li><a href="commu">COMMUNITY</a></li>
                         <li><a href="#" class="btn btn-primary  lead2">SIGN IN</a></li>
                     </ul>
                 </div>

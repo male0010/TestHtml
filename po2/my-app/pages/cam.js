@@ -4,6 +4,8 @@ import cam1 from "../public/image/cam1.jpg"
 import cam2 from "../public/image/cam2.jpg"
 import Header1 from "../public/header2";
 import TESTFOOT from "./testfoot"
+import Link from 'next/link';
+
 export default function cam() {
     return (
         <>
@@ -38,7 +40,7 @@ export default function cam() {
                         </div>
                         <Image className=" accordion-flush imgg" src={cam2} height={500} width={1200} alt="#" ></Image>
                         <div className="card-body">
-                            <p className="card-text textcam ">
+                            <div className="card-text textcam ">
                                 <ul>
                                     <li >
                                        -Calling Card: Soap s Determination
@@ -60,11 +62,23 @@ export default function cam() {
                                     </li>
 
                                 </ul>
-                            </p>
-                        </div>
+                            </div>
+                           
+                        </div> 
+                        <div className="row">
+                        <div className="col"></div>
+
+                        <div className="col"> </div>
+                        <div className="col"> <Link href="/" className="btnnn text-lg-end">back to home</Link></div>
                     </div>
+                    </div>
+                    
+                </div>
+                <div className="cam2">
+                
                 </div>
                 <hr className="divider" />
+               
             </body>
             
             <TESTFOOT/>

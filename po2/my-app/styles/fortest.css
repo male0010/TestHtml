@@ -1,40 +1,44 @@
-.lgbackground{
-    background-color: azure;
+.lgbackground {
+  background-color: azure;
 }
 
-.lg{
-   
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-INTEL-TOUT.jpg");
+.lg {
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-INTEL-TOUT.jpg");
 }
+
 .register body {
-    background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-INTEL-TOUT.jpg");
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-INTEL-TOUT.jpg");
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
+
 .colmd {
-    /* background-color: rgb(161, 159, 159); */
-    padding: 50px;
-    
-    
-    
+  /* background-color: rgb(161, 159, 159); */
+  padding: 50px;
+
+
+
 }
-.a{
-    text-decoration:none !important;
-    
-    color: #ffffff;
-  }
-  .stest {
-    background-color: #141313;
-    
-  }
+
+.a {
+  text-decoration: none !important;
+
+  color: #ffffff;
+}
+
+.stest {
+  background-color: #141313;
+
+}
 
 /* .searchh{
     
@@ -45,60 +49,64 @@
   background-color: #504f4f ;
 } */
 
-.colmds{
-    padding:80px;
-    width: 600px !important;
+.colmds {
+  padding: 80px;
+  width: 600px !important;
 }
 
 .header {
   display: flex;
-  
+
   align-items: center;
-  position:  relative;
+  position: relative;
   top: 0;
   right: 0;
   height: 60px;
   width: 100%;
   background-color: #111111;
-  
+
 }
+
 .header {
   display: flex;
-  
+
   align-items: center;
-  position:  relative;
+  position: relative;
   top: 0;
   left: 1190px;
   height: 100px;
   width: 100%;
   background-color: #111111;
-  
-}.headerr {
-  display: flex;
-  
-  align-items: center;
-  position:  relative;
 
- 
-  
+}
+
+.headerr {
+  display: flex;
+
+  align-items: center;
+  position: relative;
+
+
+
 }
 
 .profile {
   display: flex;
   align-items: center;
   margin-right: 20px;
-  
+
 }
 
 .username {
   font-weight: bold;
   margin-right: 5px;
-  color: #eadfdf; 
+  color: #eadfdf;
 }
 
 .logout-btn {
   margin-right: 20px;
 }
+
 .col {
   display: flex;
   align-items: center;
@@ -108,37 +116,41 @@
   justify-content: space-between;
 }
 
-.footertest{
- 
+.footertest {
+
   text-decoration: none !important;
-  
-  position:  relative;
-  height: 400px;
+
+  position: relative;
+  height: 100%;
   width: 100%;
   font-size: 17px;
   color: #ffffff;
   font-weight: 700;
-  
+
   letter-spacing: 1px;
 }
-.link{
+
+.link {
   text-decoration: none !important;
   color: white;
-  
-  
+
+
 }
 
-.linkk{
+.linkk {
   color: #bbbbbb;
 }
-.linkk2{
+
+.linkk2 {
   text-decoration: none !important;
   color: #bbbbbb;
 }
-.cam1 {
-  display: flex;
-  justify-content: center;
 
+.cam1 {
+  
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
   color: #fffefe;
   object-fit: cover;
   width: 100%;
@@ -146,14 +158,78 @@
   padding-left: 5%;
   padding-right: 5%;
 }
-.imgg{
+.cam2 {
+  display : flex !important;
+  justify-content: end;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: #fffefe;
+  object-fit: cover;
+
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.imgg {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.camtextsm{
+
+.imggg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.imgggg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 4%;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+
+.imggmulti {
+  object-fit: cover;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: center;
+
+}
+
+.imggmul {
+  object-fit: cover;
+
+
+}
+
+.coo {
+  display: flex;
+  /* ใช้ flexbox */
+  flex-direction: row;
+  /* จัดให้ element เรียงตัวอยู่ข้างๆกัน */
+  align-items: center;
+  /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
+  justify-content: center;
+  /* จัดให้ element อยู่ตรงกลางแนวนอน */
+  grid-template-columns:auto auto ;
+
+}
+
+.camtextsm {
   color: #ada7a7;
 }
+
 .divider {
   border-top: 1px solid #eee;
   margin: 20px 0;
@@ -161,4 +237,42 @@
   padding-right: 5%;
   width: 100%;
   height: 100%;
+}
+
+.bggmui {
+  background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/multiplayer/Hero.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  padding: 10%;
+  background-position: center center;
+
+
+}
+
+.btnnn {
+  grid-gap: 5em !important;
+  border: 3rem !important;
+  font-size: 30px !important;
+  color: #eaebea !important;
+  font-family: 'Bangers', cursive !important;
+  background: linear-gradient(120deg, #0d7408, #030f04);
+  padding: 20px !important;
+  align-items: flex-end;
+  /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
+  justify-content: flex-end;
+  padding-left: 100%;
+ 
+}
+.btnnn:hover {
+    color: white;
+  box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
+  box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
+}
+.rowcc {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
 }
