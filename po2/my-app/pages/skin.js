@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from 'next/image';
-import cam111 from "../public/image/s1.jpg"
+import cam111 from "../public/image/cam1.jpg"
 import cam2 from "../public/image/s2.jpg"
 import s3 from "../public/image/s3.jpg"
 import s4 from "../public/image/s4.jpg"
