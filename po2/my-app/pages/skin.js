@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from 'next/image';
-import cam1 from "../public/image/s1.jpg"
+import cam111 from "../public/image/s1.jpg"
 import cam2 from "../public/image/s2.jpg"
 import s3 from "../public/image/s3.jpg"
 import s4 from "../public/image/s4.jpg"
@@ -22,7 +22,7 @@ export default function skin() {
             <body>
                 <div className="container accordion-body cam1">
                     <div className="card cam1">
-                        <Image className=" accordion-flush imgg" src={cam1} height={500} width={1200} alt="#" ></Image>
+                        <Image className=" accordion-flush imgg" src={cam111} height={500} width={1200} alt="#" ></Image>
                         <div className="card-body">
                             <h3 className="card-title">Season 02’s Ronin-themed Battle Pass allows players to choose their own path of the warrior as they navigate the newly updated Battle Pass System, inspired by the seven Bushido virtues.</h3>
                             <p className="card-text camtextsm">Battle Pass and Tier skips, or equivalent versions, will be accessible in Modern Warfare II once the season 1 Battle Pass, or equivalent system, is made available in game. Battle Pass redemption applies to one season of Modern Warfare II Battle Pass, or equivalent system only. For more information</p>
