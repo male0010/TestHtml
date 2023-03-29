@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Header0 from "../public/image/header"
 import TESTFOOT from "./testfoot"
-
+import Link from 'next/link'
 
 export default function Warfare() {
     return (
@@ -27,7 +27,7 @@ export default function Warfare() {
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <a className="css-1lmvk87" href='/'>Learn More</a>
+                                    <Link className="css-1lmvk87" href='/'>Learn More</Link>
                                 </span>
 
                             </span>
@@ -52,21 +52,21 @@ export default function Warfare() {
                                         <div className='css-5crigr'>
                                             <span className='css-jpy5xg'>GENERAL OVERVIEW </span>
                                         </div>
-                                        <span className='css-etavmd'>Raid Episode 02. Take control of Captain Price, Farah, and Gaz as <a href=''>they progress through Atomgrad</a> in search of a deadly warhead.</span>
+                                        <span className='css-etavmd'>Raid Episode 02. Take control of Captain Price, Farah, and Gaz as <Link href=''>they progress through Atomgrad</Link> in search of a deadly warhead.</span>
                                     </div>
 
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
                                             <span className='css-jpy5xg'>Premium quality</span>
                                         </div>
-                                        <span className='css-etavmd'>Thanks to its incredible quality and depth, Megascans makes work fun & easy for the world s top AAA and <a href=''>VFX studios..</a></span>
+                                        <span className='css-etavmd'>Thanks to its incredible quality and depth, Megascans makes work fun & easy for the world s top AAA and <Link href=''>VFX studios..</Link></span>
 
                                     </div>
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
                                             <span className='css-jpy5xg'>Warzone Third Anniversary</span>
                                         </div>
-                                        <span className='css-etavmd'>Check the in-game Store daily to claim your rewards throughout <a href=' '>Season 02 Reloaded</a>. Here's to many more years of Warzone!</span>
+                                        <span className='css-etavmd'>Check the in-game Store daily to claim your rewards throughout <Link href=' '>Season 02 Reloaded</Link>. Here s to many more years of Warzone!</span>
                                     </div>
                                 </div>
                             </div>
@@ -103,9 +103,9 @@ export default function Warfare() {
                                     <p className='css-1hf3yam'>Whether you re finished with the journey to Orion or only have a few weapons with Gold camouflage, there are some new Camo Challenges for you to complete with the Path of the Ronin event expansion, available in both </p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -145,9 +145,9 @@ export default function Warfare() {
                                     <p className='css-1hf3yam'>Making his deadly debut in the first Teenage Mutant Ninja Turtles comic in 1984, Shredder is the notorious leader of the Foot Clan that uses his bladed armor to empower his expert ninjutsu and martial arts techniques. Now he is coming to Call of Duty, ready to slice and dice any Operator who stands in his way of victory.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -177,9 +177,9 @@ export default function Warfare() {
                                     <p className='css-1hf3yam'>What else is in Store for Season 02 Reloaded? The first-ever Bundles for some Task Force 141 Operators outside of the Vault Edition, a golden opportunity to get a badass weapon blueprint and new Ghost skin, and a Bundle that will more than prepare you for the green rivers flowing in Al Mazrah to celebrate a mid-March feast day.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -291,9 +291,9 @@ export default function Warfare() {
                                     <p className='css-1hf3yam'>Season 02 Reloaded brings a new Marksman Rifle to the table — the Tempus Torrent. This weapon offers impressive damage and a fast-firing mechanism, making it a great Primary Weapon choice when deploying to the new Himmelmatt Expo Multiplayer map or to Ashika Island.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -323,9 +323,9 @@ export default function Warfare() {
                                     <p className='css-1hf3yam'> Party queuing allows players to automatically join a friend s party once they are finished with their active match. Just like inviting friends to a party or channel, you can access party queuing via the in-game social menu.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -359,7 +359,7 @@ export default function Warfare() {
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <a className="css-1lmvk87" href=''>Learn More</a>
+                                    <Link className="css-1lmvk87" href=''>Learn More</Link>
                                 </span>
 
                             </span>

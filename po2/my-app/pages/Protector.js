@@ -11,7 +11,7 @@ import aa from "../public/image/00.jpg"
 import bb from "../public/image/888.jpg"
 import k from "../public/image/k1.jpg"
 import ak from "../public/image/ka.jpg"
-
+import Link from 'next/link'
 
 
 
@@ -46,8 +46,8 @@ export default function Protector() {
                             <p>Support U.S. and U.K. military veterans by purchasing the ten-item Call of Duty Endowment Protector Pack for Modern Warfare® II and Warzone 2.0, available now.</p>
 
 
-                            <p>With the launch of Season 02 of Call of Duty®: Modern Warfare® II and <a href=''>Call of Duty®: Warzone™ 2.0</a>, you ll need all the gear you can get your hands on to battle it out across new Multiplayer maps and Ashika Island, a brand-new environment in Warzone 2.0. So why not gear up and support a good cause while doing so?</p>
-                            <p>Support military veterans by purchasing the Call of Duty Endowment <a href=''>(C.O.D.E.) Protector Pack</a> for use in Modern Warfare II, and purchasable for the first time, in Warzone 2.0. By buying the Protector Pack, you will be directly contributing to the Endowment s mission to place unemployed and underemployed veterans in the U.S. and U.K. into high-quality jobs.</p>
+                            <p>With the launch of Season 02 of Call of Duty®: Modern Warfare® II and <Link href=''>Call of Duty®: Warzone™ 2.0</Link>, you ll need all the gear you can get your hands on to battle it out across new Multiplayer maps and Ashika Island, a brand-new environment in Warzone 2.0. So why not gear up and support a good cause while doing so?</p>
+                            <p>Support military veterans by purchasing the Call of Duty Endowment <Link href=''>(C.O.D.E.) Protector Pack</Link> for use in Modern Warfare II, and purchasable for the first time, in Warzone 2.0. By buying the Protector Pack, you will be directly contributing to the Endowment s mission to place unemployed and underemployed veterans in the U.S. and U.K. into high-quality jobs.</p>
                             <h5>The C.O.D.E. Protector Pack</h5>
                             <Image className='imgg' src={a} height={500} width={1200} alt="#" />
                             <p></p>
@@ -91,23 +91,23 @@ export default function Protector() {
                             <iframe width="850" height="500" src="https://www.youtube.com/embed/Foca7Pa4AF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </p>
                             <p></p>
-                            <p>The Call of Duty Endowment is a nonprofit organization that seeks to help U.S. and U.K. veterans find high-quality careers by supporting groups that prepare them for the job market and by raising awareness of the value vets bring to the workplace. To date, the Endowment has funded the placement of more than 110,000 veterans into good jobs. For more information about the Call of Duty Endowment, please visit <a href=''>www.callofdutyendowment.org. </a></p>
+                            <p>The Call of Duty Endowment is a nonprofit organization that seeks to help U.S. and U.K. veterans find high-quality careers by supporting groups that prepare them for the job market and by raising awareness of the value vets bring to the workplace. To date, the Endowment has funded the placement of more than 110,000 veterans into good jobs. For more information about the Call of Duty Endowment, please visit <Link href=''>www.callofdutyendowment.org. </Link></p>
                             <p>Season 02 Now Live</p>
 
-                            <p>Season 02 of Modern Warfare II and Warzone 2.0 is now live. In addition to a <a href=''>new WarzoneTM 2.0 map</a>, which is featured in Resurgence and DMZ game modes, this update brings Ranked Play to Multiplayer along with four additional maps plus returning modes from the franchise s storied past. Expect plenty of new features across both games, including four new free functional weapons and the return of the modern samurai Daniel “Ronin” Shinoda.</p>
+                            <p>Season 02 of Modern Warfare II and Warzone 2.0 is now live. In addition to a <Link href=''>new WarzoneTM 2.0 map</Link>, which is featured in Resurgence and DMZ game modes, this update brings Ranked Play to Multiplayer along with four additional maps plus returning modes from the franchise s storied past. Expect plenty of new features across both games, including four new free functional weapons and the return of the modern samurai Daniel “Ronin” Shinoda.</p>
 
                             <p>Stay frosty.</p>
                             <p>© 2019-2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
                             
-                            <p>For more information, please visit<a href=''> www.callofduty.com</a> and <a href=''>www.youtube.com</a>/callofduty, and follow <a href=' '>@Activision</a> and <a href=''>@CallofDuty</a> on Twitter, Instagram, and Facebook.</p>
+                            <p>For more information, please visit<Link href=''> www.callofduty.com</Link> and <Link href=''>www.youtube.com</Link>/callofduty, and follow <Link href=' '>@Activision</Link> and <Link href=''>@CallofDuty</Link> on Twitter, Instagram, and Facebook.</p>
 
 
                             <hr className='hr' ></hr>
                             <div>
                                 <span className='spann'>
-                                    <a className='spann' href='/'>
+                                    <Link className='spann' href='/'>
                                         <span>Back to Blog Index</span>
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
 

@@ -10,7 +10,7 @@ import x from "../public/image/xc.jpg"
 import z from "../public/image/zx.jpg"
 import xx from "../public/image/xxx.jpg"
 import xz from "../public/image/zz.jpg"
-
+import Link from 'next/link'
 
 
 
@@ -34,7 +34,7 @@ export default function Full() {
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <a className="css-1lmvk87" href='/'>Learn More</a>
+                                    <Link className="css-1lmvk87" href='/'>Learn More</Link>
                                 </span>
 
                             </span>
@@ -67,7 +67,7 @@ export default function Full() {
 
                                             </span>
                                         </div>
-                                        <span className='css-etavmd'>In DMZ, use the final extract helicopter with at least <a href=' '>$30,000 in Cash.</a> Place within the top 20 in any Warzone 2.0 Battle Royale Playlist.</span>
+                                        <span className='css-etavmd'>In DMZ, use the final extract helicopter with at least <Link href=' '>$30,000 in Cash.</Link> Place within the top 20 in any Warzone 2.0 Battle Royale Playlist.</span>
 
                                     </div>
 
@@ -109,7 +109,7 @@ export default function Full() {
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <a className="css-1lmvk87" href='/'>Learn More</a>
+                                    <Link className="css-1lmvk87" href='/'>Learn More</Link>
                                 </span>
 
                             </span>
@@ -139,9 +139,9 @@ export default function Full() {
                                     <p className='css-1hf3yam'>Decorated in the holiday spirit across its main deck, Shipment will receive a temporary festive visual overhaul from December 21, 2022 though the new year to January 4, 2023.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -185,9 +185,9 @@ export default function Full() {
                                     </p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -233,9 +233,9 @@ export default function Full() {
                                     <p className='css-1hf3yam'>Warzone 2.0 Combat Records will come online with Season 01 Reloaded. The statistics present in the Warzone 2.0 Combat Record will only be from the activation date forward, and will not include statistics from Season 01 launch through Season 01 Reloaded (November 16 to December 14).</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -270,9 +270,9 @@ export default function Full() {
                                     <p className='css-1hf3yam'> Price s right-hand man, Gaz became legend in 2019 when his valor during an attack on Piccadilly Circus grabbed the attention of the formidable SAS Bravo Team captain. He ultimately joined Price’s elite unit, known as Task Force 141.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -308,9 +308,9 @@ export default function Full() {
                                     <p className='css-1hf3yam'>  Warzone Cup, Mini Royale available for a limited time. Get those #SquadGoals in on a virtual pitch or feel the intensity of a more condensed Battle Royale in these limited-time Playlist offerings.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -343,9 +343,9 @@ export default function Full() {
                                     </p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -408,9 +408,9 @@ export default function Full() {
                                     <p className='css-1hf3yam'> Ranked Play competitors know some of the most frustrating times are when a random teammate decides to quit at the beginning of a match or right in the middle of the action. While it is impossible to prevent players from disconnecting, there are a few new features being introduced with this version of Ranked Play to make those moments more manageable:</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -445,9 +445,9 @@ export default function Full() {
                                     </p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
-                                            <a href=' ' className='css-1c5mzpc'>
+                                            <Link href=' ' className='css-1c5mzpc'>
                                                 <span className='label'>EXPERIENCE Warzone 2.0. </span>
-                                            </a>
+                                            </Link>
                                         </span>
                                     </div>
                                 </div>
@@ -485,7 +485,7 @@ export default function Full() {
                     <div>
                         <span className='css-1ojjt41'>
                             <span >
-                                <a className="css-1lmvk87" href='/'>Learn More</a>
+                                <Link className="css-1lmvk87" href='/'>Learn More</Link>
                             </span>
 
                         </span>

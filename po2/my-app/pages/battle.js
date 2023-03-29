@@ -10,7 +10,7 @@ import b44 from "../public/image/b4.jpg"
 import b55 from "../public/image/b5.jpg"
 import a from "../public/image/2222.png"
 import b from "../public/image/kkpp.jpg"
-
+import Link from 'next/link'
 import n from "../public/image/kz.jpg"
 
 
@@ -47,7 +47,7 @@ export default function BATTLE() {
                             <p>Even in the face of chaos, the modern warrior walks an honorable path, one of integrity, respect, courage, honor, compassion, sincerity, and loyalty. Learning these ways of the warrior will separate the elite Operators from the rest of the pack, as the global conflict calls for a swift resurgence to an island off the coast of Japan. </p>
                             <Image  className='imgg'  src={b}  height={500} width={1200} alt="#" />
 
-                            <p>The <a href=''>new Battle Pass for Season 02</a> features 100+ rewards across 20 Sectors, including three new functional weapons and the Operator Ronin The Season 02 Battle Pass launches at the start of the season on February 15. Upgrade to the full Battle Pass for access to all of Season 02 s Battle Pass items or purchase the Battle Pass Bundle to earn additional Battle Token Tier Skips and get a head start on conquering the map</p>
+                            <p>The <Link href=''>new Battle Pass for Season 02</Link> features 100+ rewards across 20 Sectors, including three new functional weapons and the Operator Ronin The Season 02 Battle Pass launches at the start of the season on February 15. Upgrade to the full Battle Pass for access to all of Season 02 s Battle Pass items or purchase the Battle Pass Bundle to earn additional Battle Token Tier Skips and get a head start on conquering the map</p>
                             <p>Players who purchase the Season 02 Battle Pass or Battle Pass Bundle will gain immediate access to the B0 Bonus Sector featuring Ronin </p>
                             <p>
                             <iframe width="850" height="500" src="https://www.youtube.com/embed/dm7cJsTXm0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -58,7 +58,7 @@ export default function BATTLE() {
                             <Image  className='imgg'  src={batt}  height={500} width={1200} alt="#" />
                             <p></p>
                             <p>© 2023 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
-                            <p>For more information, please visit <a href=''>www.callofduty.com</a> and <a href=''>www.youtube.com/callofduty</a>, and follow <a href=''>@Activision</a> and <a href=''>@CallofDuty on Twitter, Instagram, and Facebook.</a></p>
+                            <p>For more information, please visit <Link href=''>www.callofduty.com</Link> and <Link href=''>www.youtube.com/callofduty</Link>, and follow <Link href=''>@Activision</Link> and <Link href=''>@CallofDuty on Twitter, Instagram, and Facebook.</Link></p>
                             <h5>New HVT Operator Skins at Sectors B3, B8, B10</h5>
                             <Image  className='imgg'  src={b33}  height={500} width={1200} alt="#" />
                             <p></p>
@@ -102,7 +102,7 @@ export default function BATTLE() {
                             <p>Save up for the next Battle Pass or put those points toward the purchase of a new Store Bundle.
 
 </p>                    
-                            <p>For more information, please visit<a href=''> www.callofduty.com</a> and <a href=''>www.youtube.com</a>/callofduty, and follow <a href=' '>@Activision</a> and <a href=''>@CallofDuty</a> on Twitter, Instagram, and Facebook.</p>
+                            <p>For more information, please visit<Link href=''> www.callofduty.com</Link> and <Link href=''>www.youtube.com</Link>/callofduty, and follow <Link href=' '>@Activision</Link> and <Link href=''>@CallofDuty</Link> on Twitter, Instagram, and Facebook.</p>
 
                             <hr className='hr' ></hr>
                             
@@ -110,9 +110,9 @@ export default function BATTLE() {
 
                             <div>
                                 <span className='spann'>
-                                    <a className='spann' href='/'>
+                                    <Link className='spann' href='/'>
                                         <span>Back to Blog Index</span>
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
                             
