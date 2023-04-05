@@ -116,13 +116,13 @@
   justify-content: space-between;
 }
 
-.footertest{
-  
+.footertest {
+
   text-decoration: none !important;
-  
-  position:  relative;
+
+  position: relative;
   height: 400px;
-  width: 100%!important;
+  width: 100% !important;
   font-size: 17px;
   color: #ffffff;
   font-weight: 700;
@@ -139,6 +139,7 @@
 
 .linkk {
   color: #bbbbbb;
+  padding-bottom: 10px;
 }
 
 .linkk2 {
@@ -147,7 +148,7 @@
 }
 
 .cam1 {
-  
+
   justify-content: center;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -158,8 +159,9 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .cam2 {
-  display : flex !important;
+  display: flex !important;
   justify-content: end;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -186,6 +188,7 @@
   justify-content: center;
   padding-bottom: 2%;
 }
+
 .imgggg {
   object-fit: cover;
   width: 100%;
@@ -223,7 +226,7 @@
   /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
   justify-content: center;
   /* จัดให้ element อยู่ตรงกลางแนวนอน */
-  grid-template-columns:auto auto ;
+  grid-template-columns: auto auto;
 
 }
 
@@ -265,17 +268,57 @@
   /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
   justify-content: flex-end;
   padding-left: 100%;
- 
+
 }
+
 .btnnn:hover {
-    color: white;
+  color: white;
   box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
   box-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
 }
+
 .rowcc {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.ol, ul {
+
+.ol,
+ul {
   padding-left: 0rem;
 }
+
+@media (max-width: 767px) {
+  div.aaa {
+    font-size: 10px  !important;
+    padding: 22px;
+    display:grid ;
+    
+  }
+}
+@media (min-width: 767px){
+  div.iii {
+    display:grid ;
+    font-size: 1px  !important;
+    padding: 22px;
+    border: 1px solid ;
+    justify-content: center;
+    width: 100%;
+    height: 10% !important;   
+  }
+}
+@media (max-width: 767px) {
+  footer.fff {
+    font-size: 14px  !important;
+    padding: 22px;
+    max-width: 720px !important;
+      
+  }
+}
+
+/* @include media-breakpoint-only(xl) {  
+  div.aaa {
+  font-size: 10px  !important;
+  padding: 50px;
+  border: 8px solid rgb(255, 255, 255);
+  
+} } */

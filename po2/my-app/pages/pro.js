@@ -182,10 +182,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="card text-center">
+                    <div className="card text-center aaa">
 
-                        <div className="card-body hh">
-                            <p className="card-text hh">
+                        <div className="card-body hh aaa">
+                            <p className="card-text hh aaa">
                                 Call of Duty Modern Warfare II Logo
                                 THE ULTIMATE WEAPON IS TEAM.
 
@@ -198,7 +198,7 @@ export default function Home() {
                     </div>
 
 
-                    <div className="row row-cols-1 row-cols-md-2 g-4 my-5">
+                    <div className="row row-cols-1 row-cols-md-2 g-4 my-5 aaa">
                         <div className="col">
                             <div className="card">
 
@@ -247,7 +247,7 @@ export default function Home() {
                             <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                         </div>
-                        <Image src={wzon} className="rounded mx-auto d-block" alt="..." />
+                        <Image src={wzon} className="rounded mx-auto d-block img-fluid  " alt="..." />
                     </div>
 
 
@@ -255,9 +255,9 @@ export default function Home() {
 
 
                     <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
-                    <div className="card-group my-5">
+                    <div className="card-group my-5 iii">
                         <div className="card">
-                            <Image src={one} className="card-Image-top" alt="..." />
+                            <Image src={one} className="card-Image-top img-fluid " alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title hh">John &quot;Soap&quot; MacTavish</h5>
 
@@ -265,7 +265,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="card">
-                            <Image src={two} className="card-Image-top" alt="..." />
+                            <Image src={two} className="card-Image-top img-fluid " alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title hh ">Simon &quot;Ghost&quot; Riley. Modern</h5>
 
@@ -273,7 +273,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="card">
-                            <Image src={ooo} className="card-Image-top" alt="..." />
+                            <Image src={ooo} className="card-Image-top img-fluid " alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title hh ">Kyle &quot;Gaz&quot; Garrick</h5>
 
@@ -283,7 +283,7 @@ export default function Home() {
 
 
                         <div className="card">
-                            <Image src={oooo} className="card-Image-top" alt="..." />
+                            <Image src={oooo} className="card-Image-top img-fluid " alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title hh ">Captain John Price</h5>
 
@@ -291,7 +291,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="card">
-                            <Image src={ooooo} className="card-Image-top" alt="..." />
+                            <Image src={ooooo} className="card-Image-top img-fluid " alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title hh">Colonel Alejandro Vargas</h5>
                             </div>
