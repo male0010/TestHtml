@@ -5,7 +5,7 @@ export default function TESTFOOT() {
     return (
         <footer className="container footertest card-footer fff ">
             <div className="row card-body  ">
-                <div className=" col-sm-3 card-title lll">
+                <div className="grid col-sm-3 card-title lll">
                     <h3 className='link '>HOME</h3>
                     <br></br>
                     <ul className='card-text linkk  link lll'>
@@ -20,7 +20,7 @@ export default function TESTFOOT() {
                     </ul>
                 </div>
                 
-                <div className=" col-sm-3 card-title linkk lll">
+                <div className="grid col-sm-3 card-title linkk lll">
                     <Link className='link' href={"/pro"} >
                         <h3>PRODUCTS</h3></Link>
                     <br></br>
@@ -34,7 +34,7 @@ export default function TESTFOOT() {
                         <li>SHOP</li>
                     </ul>
                 </div>
-                <div className=" col-sm-3 card-title linkk lll">
+                <div className="grid col-sm-3 card-title linkk lll">
                     <Link className='link ' href={"/item"} >
                         <h3>ITEM</h3></Link>
                     <br></br>
@@ -47,7 +47,7 @@ export default function TESTFOOT() {
                         <br></br>
                     </ul>
                 </div>
-                <div className=" col-sm-3 ">
+                <div className="grid col-sm-3 ">
                     <h3 className='link '>COMING SOON...</h3>
                     <form>
           
