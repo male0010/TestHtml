@@ -307,14 +307,14 @@ export default function Home() {
                             <p className="card-text hh">Infinity Ward is bringing back signature Multiplayer game modes as well as introducing new modes. Leave no one behind in the new Prisoner Rescue mode, secure the bag in the new Knock Ou the new third-person playlist coming to MWII.</p>
 
                         </div>
-                        <Image src={wzon} className="rounded mx-auto d-block" alt="..." />
+                        <Image src={wzon} className="carddd img-fluid" alt="..." />
                     </div>
 
 
 
 
 
-                    <p className=' my-5 h11'>WELCOME TO TASK FORCE 141</p>
+                    <h5 className=' carddd my-5 h11'>WELCOME TO TASK FORCE 141</h5>
                     <div className="card-group my-5">
                         <div className="card">
                             <Image src={one} className="card-Image-top" alt="..." />
