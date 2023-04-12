@@ -315,7 +315,7 @@ export default function Home() {
 
 
                     <h5 className=' carddd my-5 h11'>WELCOME TO TASK FORCE 141</h5>
-                    <div className="card-group my-5">
+                    <div className="card-group my-5 iii">
                         <div className="card">
                             <Image src={one} className="card-Image-top" alt="..." />
                             <div className="card-body">
