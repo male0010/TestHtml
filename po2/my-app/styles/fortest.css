@@ -322,7 +322,7 @@ ul {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
 
   .grid.col-sm-3.card-title{
     
