@@ -11,7 +11,7 @@ import na from "../public/image/naa.jpg"
 import aan from "../public/image/an.jpg"
 import b from "../public/image/ann.jpg"
 import av from "../public/image/at.jpg"
-
+import Link from 'next/link'
 
 
 
@@ -35,7 +35,7 @@ export default function Next() {
                                     Mode Recon
                                 </li>
                             </ul>
-                            <p>Call of Duty®: Warzone™ Mobile redefines Battle Royale on the go with an all-new unique <a  href=''>Call of Duty</a>:Warzone experience for 120 live players and cross-progression with Call of Duty®: Warzone™ 2.0 and Call of Duty®: Modern Warfare® II. Pre-register now!</p>
+                            <p>Call of Duty®: Warzone™ Mobile redefines Battle Royale on the go with an all-new unique <Link  href=''>Call of Duty</Link>:Warzone experience for 120 live players and cross-progression with Call of Duty®: Warzone™ 2.0 and Call of Duty®: Modern Warfare® II. Pre-register now!</p>
                             <hr className='hr' ></hr>
                             <h5>Announcing Call of Duty®: Warzone™ Mobile</h5>
                             <p>Just revealed at Call of Duty: Next, Call of Duty®: Warzone™ Mobile will join Call of Duty®: Modern Warfare® II and Call of Duty®: Warzone™ 2.0 to usher in a new era of Call of Duty®.  With a thrilling Battle Royale gameplay, authentic content like Operators, Weapons, locations, and Call of Duty: Warzone combat with up to 120 live players in a match on mobile, the free-to-play Call of Duty: Warzone Mobile is set to redefine the Battle Royale on the go.  </p>
@@ -44,7 +44,7 @@ export default function Next() {
                             <Image  className='imgg'  src={naa}  height={500} width={1200} alt="#" />
                             <p>In collaboration with Call of Duty studios and technology teams across Activision, Call of Duty: Warzone Mobile is being co-developed by a multi-studio mobile organization that includes teams from Activision Shanghai Studio, Beenox, Digital Legends, and Solid State Studios.</p>
                             <p>Need a deeper dive into the game? Be sure you re watching the Official Call of Duty Twitch® Channel or Call of Duty YouTube® Channel for real-time gameplay or a rewatching of the Next event, then read on for further intel:</p>
-                            <p>Need a deeper dive into the game? Be sure you re watching the Official <a href=''>Call of Duty Twitch® Channel</a> or <a href=''>Call of Duty YouTube® Channel</a> for real-time gameplay or a rewatching of the Next event, then read on for further intel:</p>
+                            <p>Need a deeper dive into the game? Be sure you re watching the Official <Link href=''>Call of Duty Twitch® Channel</Link> or <Link href=''>Call of Duty YouTube® Channel</Link> for real-time gameplay or a rewatching of the Next event, then read on for further intel:</p>
                             <h5>Details: The Call of Duty: Warzone Experience on Your Mobile Device</h5>
                             <Image  className='imgg'  src={na}  height={500} width={1200} alt="#" />
                             <br></br>
@@ -55,7 +55,7 @@ export default function Next() {
                             <p>What should you expect when Call of Duty: Warzone Mobile launches next year? A return to a familiar battleground, using new weaponry, uniting Call of Duty: Warzone Mobile to Call of Duty: Modern Warfare II and Call of Duty: Warzone 2.0. Here s the initial intel you need to know now:</p>
                             <p>Every aspect of the games development is customized for mobile gamers:</p>
                             <ul>
-                                <li className='lii'><a href=''>Head to the Google Play Store now to pre-register!</a></li>
+                                <li className='lii'><Link href=''>Head to the Google Play Store now to pre-register!</Link></li>
                                 <li  className='lii'>Built for the Way You Play: With deep control customization options for mobile devices, you re able to pick up and play no matter your skill level. Mobile gaming professionals, PC and console players who want to sneak in a few more matches, and even new recruits who just need a little extra help getting into the flow of the game: We have you covered.</li>
                                 <li className='lii'>Customized Content: The game will also feature a robust selection of mobile-specific events, customized playlists, and a variety of special content that you can t find anywhere else.</li>
                                 <li className='lii'>Mobile Optimization: Everything from movement, aiming and weapon handling, to physics, animations and sound have been optimized for mobile gaming in order to deliver the ultimate accuracy, authenticity and performance you expect from Call of Duty.</li>
@@ -72,9 +72,9 @@ export default function Next() {
 
                             <div>
                                 <span className='spann'>
-                                    <a className='spann' href='/'>
+                                    <Link className='spann' href='/'>
                                         <span>Back to Blog Index</span>
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
                             

@@ -14,7 +14,7 @@ import f from "../public/image/as.jpg"
 import g from "../public/image/i.jpg"
 import s from "../public/image/akk.jpg"
 import x from "../public/image/45.jpg"
-
+import Link from 'next/link'
 
 export default function Ashika() {
     return (
@@ -30,8 +30,8 @@ export default function Ashika() {
                 </header>
                 <div className='nOk1K0s0zezhHodo4OuM3'>
                     <div>
-                        <p>The new Ashika Island map debuts in Battle Royale Resurgence and DMZ, the 1v1 Gulag returns, and more challenges and rewards await you in Season 02. Get a tactical grip on what s coming to <a href=''>WarzoneTM 2.0</a> when the season launches February 15.</p>
-                        <ul>
+                        <p>The new Ashika Island map debuts in Battle Royale Resurgence and DMZ, the 1v1 Gulag returns, and more challenges and rewards await you in Season 02. Get a tactical grip on what s coming to <Link href=''>WarzoneTM 2.0</Link> when the season launches February 15.</p>
+                         <ul>
                                 <li className='tag-item'>
                                     Mode Recon
                                 </li>
@@ -53,7 +53,7 @@ export default function Ashika() {
                         <p></p>
                         <p>Welcome to Ashika Island, aka “Isle of the Sea Lion.” What was once planned as a resort destination is now under siege by Shadow Company, whose forces are looking for local members of the Ultranationalist Konni Group.</p>
                         <p>A compact, medium-sized map designed for Resurgence, Ashika Island includes various locales such as the Town Center, Beach Club, Tsuki Castle, Port Ashika, and river channels and bridges spread throughout the environment.</p>
-                        <p>See our <a href=''>Deep Dive on Ashika Island</a> for a rundown of the new Resurgence map s seven major points of interest.</p>
+                        <p>See our <Link href=''>Deep Dive on Ashika Island</Link> for a rundown of the new Resurgence map s seven major points of interest.</p>
                         <h5>New Feature: Restore Honor</h5>
                         <Image className='imgg' src={d} height={500} width={1200} alt="#" />
                         <p></p>
@@ -87,9 +87,9 @@ export default function Ashika() {
                         <Image className='imgg' src={e} height={500} width={1200} alt="#" />
 
                         <p></p>
-                        <p>Infiltrate Ashika Island, the third Exclusion Zone to be added to <a href=''>DMZ</a> after Al Mazrah and Building 21. Unlike Building 21, which requires that you first acquire a keycard, Ashika Island can be chosen as your DMZ destination at any time.</p>
+                        <p>Infiltrate Ashika Island, the third Exclusion Zone to be added to <Link href=''>DMZ</Link> after Al Mazrah and Building 21. Unlike Building 21, which requires that you first acquire a keycard, Ashika Island can be chosen as your DMZ destination at any time.</p>
                         <p>Infiltrating Ashika Island will be crucial to faction progress, with multiple missions across all factions involving Operators who must perform tasks on the island. However, you can also complete more generic missions that do not require deployment to a specific region on the island. If you find more success in eliminating enemies and gathering items on here compared to other exclusion zones, then feel free to drop back in here and use the new space to your advantage.</p>
-                        <p>For more information about this reset, <a href=''>read Infinity Wards DMZ blog here.</a></p>
+                        <p>For more information about this reset, <Link href=''>read Infinity Wards DMZ blog here.</Link></p>
                         <p>Each player additionally begins the season with a fresh slate. Though you ll retain any permanent items you unlocked in the previous season, all earned Contraband and Keys will be reset from the inventory. Season 01 Faction Missions will be reset to make room for the new Season 02 Faction Missions, tasking players with assignments across all three Exclusion Zones.</p>
                         <h5>Walk the Path of the Ronin</h5>
                         <Image className='imgg' src={s} height={500} width={1200} alt="#" />
@@ -103,11 +103,11 @@ export default function Ashika() {
                         <p>Warzone 2.0: Get five Top 10 finishes.</p>
                         <p>Advice: Get a great squad going — either with existing friends or by using the new social features — to tally up those wins in no time.</p>
                         <h5>Honor</h5>
-                        <p>Multiplayer: <a href=''>Get 100 objective</a> defense kills.</p>
+                        <p>Multiplayer: <Link href=''>Get 100 objective</Link> defense kills.</p>
                         <p>Warzone 2.0: Collect your dog tag (Restore Honor) 5 times.</p>
-                        <p>Advice: For Multiplayer Operators, Hardpoint can be a great <a href=''>game mode to sit on the point and eliminate enemies.</a>As for Restoring Honor, it only needs to be done five times; do it only when you are certain enemies are not nearby and ready to pounce.</p>
+                        <p>Advice: For Multiplayer Operators, Hardpoint can be a great <Link href=''>game mode to sit on the point and eliminate enemies.</Link>As for Restoring Honor, it only needs to be done five times; do it only when you are certain enemies are not nearby and ready to pounce.</p>
                         <h5>Sincerity</h5>
-                        <p>Multiplayer:<a href=''> Get 50 kills</a> using Battle Rage.</p>
+                        <p>Multiplayer:<Link href=''> Get 50 kills</Link> using Battle Rage.</p>
                         <p>Warzone 2.0: Complete five Assassination Contracts.</p>
                         <p>Expect more challenges to activate throughout the season, each gifting unique rewards upon completion, whether you perform the assigned Multiplayer or Battle Royale task. Complete all seven in either Warzone 2.0 or Modern Warfare II to unlock the Crossbow!</p>
                         
@@ -115,7 +115,7 @@ export default function Ashika() {
                         <p>Stay frosty.</p>
                             <p>© 2019-2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
                             
-                            <p>For more information, please visit<a href=''> www.callofduty.com</a> and <a href=''>www.youtube.com</a>/callofduty, and follow <a href=' '>@Activision</a> and <a href=''>@CallofDuty</a> on Twitter, Instagram, and Facebook.</p>
+                            <p>For more information, please visit<Link href=''> www.callofduty.com</Link> and <Link href=''>www.youtube.com</Link>/callofduty, and follow <Link href=' '>@Activision</Link> and <Link href=''>@CallofDuty</Link> on Twitter, Instagram, and Facebook.</p>
 
 
 
@@ -128,9 +128,9 @@ export default function Ashika() {
                         <div>
 
                             <span className='spann'>
-                                <a className='spann' href='/'>
+                                <Link className='spann' href='/'>
                                     <span>Back to Blog Index</span>
-                                </a>
+                                </Link>
                             </span>
                         </div>
                         

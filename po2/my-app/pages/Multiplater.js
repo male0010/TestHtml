@@ -16,7 +16,7 @@ import a from "../public/image/p6.jpg"
 import d from "../public/image/k5.jpg"
 import e from "../public/image/k6.jpg"
 import f from "../public/image/k7.jpg"
-
+import Link from 'next/link'
 
 
 
@@ -50,7 +50,7 @@ export default function Multiplayer() {
                                 </li>
                             </ul>
                             <h5>Prepare for the Next Era of Multiplayer</h5>
-                            <p>Infinity Ward developed a finely tuned  innovative Multiplayer experience for <a href=''>Call of Duty®: Modern Warfare® II</a>.
+                            <p>Infinity Ward developed a finely tuned  innovative Multiplayer experience for <Link href=''>Call of Duty®: Modern Warfare® II</Link>.
 
                             </p>
                             <p>Continuing the legacy of the Call of Duty®: Modern Warfare® series, Modern Warfare® II will have a robust Multiplayer offering at launch, from classic 6v6 modes and new favorites to the addition of Battle Maps featuring large player counts and vehicular combat.</p>
@@ -65,7 +65,7 @@ export default function Multiplayer() {
                             <h5>Core Map Modes (6v6)</h5>
                             <Image className='imgg' src={k} height={500} width={1200} alt="#" />
                             <p></p>
-                            <p>Team Deathmatch: Call of Duty® in its purest form. Use teamwork to <a href=''>eliminate enemy players</a> and reach the score limit. The first team to obtain 75 eliminations wins the match. </p>
+                            <p>Team Deathmatch: Call of Duty® in its purest form. Use teamwork to <Link href=''>eliminate enemy players</Link> and reach the score limit. The first team to obtain 75 eliminations wins the match. </p>
                             <p></p>
                             <Image className='imgg' src={kk} height={500} width={1200} alt="#" />
                             <p></p>
@@ -95,13 +95,13 @@ export default function Multiplayer() {
 
                             </p>
 
-                            <p>Core Maps support traditional <a href=''>6v6 play</a> while Battle Maps support up<a href=''> to 32v32</a>.
+                            <p>Core Maps support traditional <Link href=''>6v6 play</Link> while Battle Maps support up<Link href=''> to 32v32</Link>.
 
                             </p>
                             <p>Stay frosty.</p>
                             <p>© 2019-2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
                             
-                            <p>For more information, please visit<a href=''> www.callofduty.com</a> and <a href=''>www.youtube.com</a>/callofduty, and follow <a href=' '>@Activision</a> and <a href=''>@CallofDuty</a> on Twitter, Instagram, and Facebook.</p>
+                            <p>For more information, please visit<Link href=''> www.callofduty.com</Link> and <Link href=''>www.youtube.com</Link>/callofduty, and follow <Link href=' '>@Activision</Link> and <Link href=''>@CallofDuty</Link> on Twitter, Instagram, and Facebook.</p>
 
 
 
@@ -120,9 +120,9 @@ export default function Multiplayer() {
 
                             <div>
                                 <span className='spann'>
-                                    <a className='spann' href='/'>
+                                    <Link className='spann' href='/'>
                                         <span>Back to Blog Index</span>
-                                    </a>
+                                    </Link>
                                 </span>
                             </div>
 
