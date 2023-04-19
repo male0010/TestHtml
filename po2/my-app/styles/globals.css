@@ -218,9 +218,51 @@ a {
 
 }
 
+.carddd{
+  padding: 10px !important;
+}
+
+
+.card.text-center{
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+}
+
+
+.card-group .my-5{
+  justify-content: center !important; 
+  align-items: center !important ;
+  display: flex !important;
+}
+
 .card {
   background-color: rgb(15, 15, 15) !important;
 }
+
+.img{
+  display: flex;
+  justify-content: center;
+}
+.img1{
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 400px) {
+  .img {
+    display: block;
+
+
+  }
+  .img1{
+    display: block;
+    width: 400px;
+
+
+  }
+}
+
+
 
 .cardtext {
   font-size: 30px !important;
