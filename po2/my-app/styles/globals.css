@@ -220,27 +220,24 @@ a {
 
 .carddd{
   padding: 10px !important;
+  
+ 
 }
 
-<<<<<<< HEAD
 
 .card.text-center{
-  justify-content: center; 
-  align-items: center;
+  justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 
-.card-group .my-5{
-  justify-content: center !important; 
-  align-items: center !important ;
-  display: flex !important;
-}
 
-=======
->>>>>>> 0b8b6de47c2076635cd41900f8faa5258b36ac12
 .card {
   background-color: rgb(15, 15, 15) !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .img{
