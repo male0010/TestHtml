@@ -174,7 +174,7 @@ export default function Home() {
 
 
 
-            {/* <Sidebar1/> */}
+            
             <div className='row'>
                 <div className='col-2'></div>
                 <div className='col-'>

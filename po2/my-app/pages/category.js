@@ -21,6 +21,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import TESTFOOT from "./testfoot"
+import Header1 from "../public/header2"
+import header from "../public/image/nee.jpg"
 
 
 
@@ -191,54 +193,15 @@ export default function Category() {
             </Head>
             {/* <Sidebar1/> */}
 
-            <nav className="navbar fixed-top navbarr row-4">
-                <div className=" Ima col-1 "><Link href="pro">
-                    <Image src={img8} alt="" height="70" /></Link></div>
-                <div className="container col-9 ">
-                    <div className="col ">
-                        <input className="  search searchh col-2 "
-                            placeholder="Search.... "
-                            onChange={(event) => {
-                                setsearch(event.target.value)
-                            }} />
-                    </div>
-
-                    <div className="col-md-2 ">
-                        <button type="button" className="btn btn-primary me-2 butt "><Link href="/login" className="a">SIGN IN</Link></button>
-                        <button type="button" className="btn btn-secondary butt"><Link href="/register " className="a">SIGN UP</Link></button>
-                    </div>
-
-
-                </div>
-            </nav>
-
-            <div className=" bgg">
-                <div className="bgContent">
-                    <div className="bg-image">
-                        <div className="content ">
-                            <div className="contentLayoutContainer ">
-                                <div className="content2 ">
-                                    <h2>UP TO 32v32</h2>
-                                    <h1> BATTLE MAPS </h1>
-                                    <p>CALL OF DUTY® MODERN WARFARE® II AND WARZONE™ 2.0 </p>
-                                    <div className="contentButton">
-                                        <div className="jsx-1751277314 h-buttons-group">
-                                            <span className=" h-buttons-group-button">
-                                                <Link href="">
-                                                    <button type="button" className="buttong">go to collection</button>
-                                                </Link>
-                                            </span>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
+            <Header1 />
+            <div className="card text-center" >
+                        <div className="card text-center">
+                            <Image src={header} className="img-fluid" alt="..." />
                         </div>
                     </div>
-                </div>
-            </div>
+
+
+           
             <br></br>
 
             <div className="contentBelowBanner___1csYL"  >
@@ -356,7 +319,7 @@ export default function Category() {
                             data-bs-target={`#exampleModal${item.id_data}`}>
                             <div key={item.id_data} className="card">
                                 <div
-                                    className="card"
+                                    className="card b"
                                     data-bs-toggle="modal"
                                     data-bs-target={`#exampleModal${item.id_data}`}
                                 >
@@ -369,7 +332,7 @@ export default function Category() {
                                     <div className="card-body itemm">
                                         <h5 className="itemm">
                                             {item.Name_data.toUpperCase()}
-                                            <h6 className="card-subtitle mb-2 text-muted">
+                                            <h6 className="card-title mb-2 text-muted ">
                                                 {item.name_subtype}
                                             </h6>
                                         </h5>
@@ -425,7 +388,7 @@ export default function Category() {
                             data-bs-target={`#exampleModal${item.id_data}`}>
                             <div key={item.id_data} className="card">
                                 <div
-                                    className="card"
+                                    className="card "
                                 >
                                     <img
                                         width={500}
