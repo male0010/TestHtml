@@ -37,7 +37,7 @@ export default function header() {
 
               </li>
               <li className="">
-                <a className="nav-link  menu2" href="pages/category">
+                <a className="nav-link  menu2" href="category">
                 CATEGORY
                 </a>
 
