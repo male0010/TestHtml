@@ -393,7 +393,7 @@ export default function Category() {
                                         width={500}
                                         height={350}
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid-d"
+                                        className="card-img-top img-fluid dd"
                                         alt="..." />
                                     <div className="card-body itemm">
                                         <h5 className="itemm">
