@@ -331,7 +331,7 @@ export default function Category() {
                                     <div className="card-body itemm">
                                         <h5 className="itemm">
                                             {item.Name_data.toUpperCase()}
-                                            <h6 className="card-title mb-2 text-muted ">
+                                            <h6 className="card-subtitle mb-2 text-muted">
                                                 {item.name_subtype}
                                             </h6>
                                         </h5>
