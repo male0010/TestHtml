@@ -202,7 +202,7 @@ export default function Category() {
 
 
            
-            <br></br>
+           
 
             <div className="contentBelowBanner___1csYL"  >
                 <div>
@@ -250,16 +250,15 @@ export default function Category() {
                     {type1Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card">
+                            <div key={item.id_data} className="card-a">
                                 <div
                                     className="card"
 
                                 >
                                     <img
-                                        width={500}
-                                        height={350}
+                                        
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid"
+                                        className="card-img-top img-fluid dd"
                                         alt="..." />
 
                                     <div className="card-body itemm">
@@ -306,7 +305,7 @@ export default function Category() {
                         "--swiper-navigation-color": "#fff",
                         "--swiper-pagination-color": "#fff"
                     }}
-
+                   
                     spaceBetween={30}
                     slidesPerView={3}
                     navigation={true}
@@ -317,7 +316,7 @@ export default function Category() {
                     {type2Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card">
+                            <div key={item.id_data} className="card-a">
                                 <div
                                     className="card b"
                                     data-bs-toggle="modal"
@@ -371,22 +370,22 @@ export default function Category() {
                 </div>
             </div><div className="sw">
                 <Swiper
-                    style={{
-                        "--swiper-navigation-color": "#fff",
-                        "--swiper-pagination-color": "#fff"
-                    }}
-                    loop={true}
-                    spaceBetween={30}
-                    slidesPerView={2}
-                    navigation={true}
-                    thumbs={{ swiper: thumbsSwiper }}
-                    modules={[FreeMode, Navigation, Thumbs]}
+                   style={{
+                    "--swiper-navigation-color": "#fff",
+                    "--swiper-pagination-color": "#fff"
+                }}
+                loop={true}
+                spaceBetween={30}
+                slidesPerView={3}
+                navigation={true}
+                thumbs={{ swiper: thumbsSwiper }}
+                modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper2"
                 >
                     {type3Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card">
+                            <div key={item.id_data} className="card-a">
                                 <div
                                     className="card "
                                 >
@@ -394,7 +393,7 @@ export default function Category() {
                                         width={500}
                                         height={350}
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid"
+                                        className="card-img-top img-fluid-d"
                                         alt="..." />
                                     <div className="card-body itemm">
                                         <h5 className="itemm">
