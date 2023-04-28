@@ -65,11 +65,13 @@ export default function cam() {
                             </div>
                            
                         </div> 
-                        <div className="row">
-                        <div className="col"></div>
+                        <div className="row flex-end">
+                        
 
-                        <div className="col"> </div>
-                        <div className="col"> <Link href="/" className="btnnn text-lg-end">back to home</Link></div>
+                       
+                       
+                        
+                        <Link href="/" className="btnnn text-lg-center">back to home</Link>
                     </div>
                     </div>
                     

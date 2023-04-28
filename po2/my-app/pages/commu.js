@@ -159,7 +159,7 @@ export default function cam() {
                             <div className="col"></div>
 
                             <div className="col"> </div>
-                            <div className="col"> <Link href="/" className="btnnn text-lg-end">back to home</Link></div>
+                            <div className="col"> <Link href="/" className="btnnn text-lg-center">back to home</Link></div>
                         </div>
                     </div>
                     <hr className="divider" />

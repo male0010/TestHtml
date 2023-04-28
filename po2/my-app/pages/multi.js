@@ -26,7 +26,9 @@ export default function multi() {
             <body >
                 <div className=" accordion-body">
                     <div className="bggmui">
-                        <Image className=" accordion-flush imggmul" src={aaa} height={250} width={400} alt="#" ></Image>
+                        <div className="mm">
+                        <Image className=" accordion-flush imggmul" src={aaa}  height={250} width={400} alt="#" ></Image>
+                        </div>
                     </div>
                 </div>
                 <div className="container accordion-body cam1">
@@ -76,7 +78,7 @@ export default function multi() {
                             <div className="col"></div>
 
                             <div className="col"> </div>
-                            <div className="col"> <Link href="/" className="btnnn text-lg-end">back to home</Link></div>
+                            <div className="col"> <Link href="/" className="btnnn text-lg-center">back to home</Link></div>
                         </div>
 
                     </div>
