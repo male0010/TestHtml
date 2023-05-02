@@ -174,7 +174,7 @@ export default function Item() {
                         />
                     </div>
 
-                    <div class="col-md-2 ">
+                    <div class="col-md-3 ">
                         <button type="button" class="btn btn-primary me-2 but "><Link href="/login" className="a">SIGN IN</Link></button>
                         <button type="button" class="btn btn-secondary but"><Link href="/register " className="a">SIGN UP</Link></button>
                     </div>
