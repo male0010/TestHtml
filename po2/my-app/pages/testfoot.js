@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function TESTFOOT() {
     return (
         <footer className="container footertest card-footer fff ">
-            <div className="row card-body  ">
+            <div className="row card-body  text-lg-center ">
                 <div className="grid col-sm-3 card-title lll">
                     <h3 className='link '>HOME</h3>
                     <br></br>

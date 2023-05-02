@@ -161,6 +161,9 @@ export default function Item() {
                 <link rel="icon" href="public\image\logo.jpg" />
             </Head>
 
+
+        
+   
             <nav class="navbar fixed-top navbarr row-4">
                 <div className=" Ima col-1 ">
                     <Image src={img8} alt="" height="100" /></div>
@@ -186,6 +189,10 @@ export default function Item() {
                             combine(event.target.value, finalsort)
                         }}>
 
+                            <option value={0}>ALL</option>
+                            <option value={1}>gun</option>
+                            <option value={2}>character</option>
+                            <option value={3}>car</option>
 
                         </select>
                         -
@@ -325,7 +332,6 @@ export default function Item() {
                                
                             )
                         })}
-
 
 
                     </div>

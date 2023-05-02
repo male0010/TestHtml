@@ -20,10 +20,20 @@
     }
 }
 
+@media (max-width: 55em)
+.css-12eyf74, [data-css-12eyf74] {
+    margin-top: 1px;
+    flex-direction: column;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+}
+
 @media (max-width: 55em) {
 
     .css-12eyf74,
-    [data-css-12eyf74] {
+   {
         margin-top: 1px;
         flex-direction: column;
         height: auto;

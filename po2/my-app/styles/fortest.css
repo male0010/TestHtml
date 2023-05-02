@@ -325,7 +325,8 @@ ul {
   footer.fff {
     font-size: 14px !important;
     padding: 22px;
-    max-width: 720px !important;
+    
+    text-align: center !important;
 
   }
 
@@ -349,7 +350,7 @@ ul {
   .grid.col-sm-3.card-title {
 
     padding: 2px;
-    padding-left: 5px;
+    padding-left: 60px;
     font-size: 12px;
     text-align: start;
     width: 120px;
