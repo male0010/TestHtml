@@ -24,7 +24,7 @@ export default function header() {
       {/* <!--Main Navigation--> */}
 
       {/* <!-- Sidebar --> */}
-      <nav id="sidebarMenu" className=" d-lg-block sidebar  sin">
+      <nav id="sidebarMenu" className=" navs d-lg-block d-sm-block sidebar  sin">
         
       
         <br></br>
@@ -41,7 +41,7 @@ export default function header() {
             </a>
 
             <a href="#" className="a py-1  bgg sin " id="flush-headingOne">
-              <button className="  dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button " data-bs-toggle="collapse"  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button className=" sia dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button " data-bs-toggle="collapse"  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 WARZONE™ 2.0
               </button>
               <div className="accordion-collapse collapse pb"aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" id="flush-collapseOne">
@@ -57,7 +57,7 @@ export default function header() {
 
 
             <a href="#" className="a py-1  bgg sin" id="flush-headingTwo">
-              <button className=" dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button"  data-bs-toggle="collapse"data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button className=" sia dropdown-toggle btn btn-toggle d-inline-flex accordion collapsed align-items-center accordion collapsed sin " type="button"  data-bs-toggle="collapse"data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 SEASON 02
               </button>
               <div className="accordion-collapse collapse pb" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" id="flush-collapseTwo">
@@ -70,7 +70,7 @@ export default function header() {
             </a>
             
             <a href="#" className="a py-1  bgg sin" id="flush-headingThree">
-              <button className="  dropdown-toggle btn btn-toggle d-inline-flex  accordion collapsed align-items-center   sin "type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"aria-expanded="false" aria-controls="flush-collapseThree">
+              <button className=" sia dropdown-toggle btn btn-toggle d-inline-flex  accordion collapsed align-items-center   sin "type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"aria-expanded="false" aria-controls="flush-collapseThree">
                 NEW MODE
               </button>
               <div className="accordion-collapse collapse pb " aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" id="flush-collapseThree">

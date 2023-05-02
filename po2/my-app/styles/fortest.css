@@ -271,10 +271,10 @@
   width: 200px;
   height: 75px;
   text-decoration: none;
-  text-align:center !important;
+  text-align: center !important;
 
-  
-  
+
+
 
 }
 
@@ -314,7 +314,8 @@ ul {
     height: 10% !important;
     align-items: center;
   }
-  div.card{
+
+  div.card {
     justify-content: center;
     align-items: center;
   }
@@ -327,24 +328,26 @@ ul {
     max-width: 720px !important;
 
   }
-  Img.accordion-flush.imggmul{
-    justify-self:center !important;
+
+  Img.accordion-flush.imggmul {
+    justify-self: center !important;
     height: 150px !important;
     width: 250px !important;
     align-items: center !important;
   }
-  div.mm{
-    justify-self:center !important;
-    
+
+  div.mm {
+    justify-self: center !important;
+
     align-items: center !important;
   }
-  
+
 }
 
 @media (max-width: 767px) {
 
-  .grid.col-sm-3.card-title{
-    
+  .grid.col-sm-3.card-title {
+
     padding: 2px;
     padding-left: 5px;
     font-size: 12px;
@@ -352,19 +355,97 @@ ul {
     width: 120px;
 
   }
-  .grid.col-sm-3.card-title h3{
-    
+
+  .grid.col-sm-3.card-title h3 {
+
     padding: 2px;
     font-size: 18px;
     text-align: start;
     width: 100px;
 
   }
-  .card-text , li{
+
+  .card-text,
+  li {
     color: gray;
   }
 }
 
+.its {
+  padding-left: 20px !important;
+  padding-right: 30px !important;
+  padding-bottom: 20px !important;
+}
+
+.itemss {
+  padding-left: 225px;
+
+  flex: none !important;
+}
+
+.imgite {
+  height: 160px !important;
+  width: 180px !important;
+
+}
+
+@media (max-width: 768px) {
+
+ .navs {
+    width: 180px !important;
+    
+
+  }
+  .sia{
+    font-size: 18px !important;
+    padding-bottom: 6px;
+    padding-top: 14px;
+    
+}
+
+.its {
+  padding-left: 20px !important;
+  padding-right: 30px !important;
+  padding-bottom: 8px !important;
+}
+
+.itemss {
+  padding-left: 195px;
+
+  flex: none !important;
+}
+.imgite {
+  height: 160px !important;
+  width: 160px !important;
+
+}
+
+
+  }
+  @media (min-width: 769px) and (max-width: 991px) {
+    .con {
+      width:800px !important;
+  
+    }
+  
+     }
+     @media (min-width: 992px) and (max-width: 1199px) {
+      .con {
+        width: 1099px !important;
+        padding-right: 0.2px !important;
+      }
+      .its {
+        padding-left: 20px !important;
+        padding-right: 30px !important;
+        padding-bottom: 8px !important;
+      }
+      .imgite {
+        height: 140px !important;
+        width: 150px !important;
+        padding-right: 4px;
+      }
+       }
+  
 
 /* @include media-breakpoint-only(xl) {  
   div.aaa {

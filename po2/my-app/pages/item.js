@@ -210,7 +210,7 @@ export default function Item() {
 
 
 
-            <div className="container">
+            <div className="container con">
 
                 <br></br>
                 <br></br>
@@ -283,7 +283,7 @@ export default function Item() {
                         </div> */}
                         <br></br>
                     </div>
-                    <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                    <div className='row row-cols-sm-2 row-cols-md-3 row-cols-lg-5  row-cols-xl-5  row-cols-xxl-6 g-2 g-lg-5 itemss'>
                         {sort?.filter((item) => {
                             if (search == "") {
                                 return item
@@ -292,12 +292,12 @@ export default function Item() {
                             }
                         }).map((item, index) => {
                             return (
-                                <div key={index} className="col">
-                                    <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                               
+                                    <div className="card its" key={index} data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
                                         <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
-                                            className="card-Image-top " alt="..." />
+                                            className="card-Image-top  imgite   " alt="..." />
                                         <div className="card-body itemm">
-                                            <h5 className="itemm">
+                                            <h5 className="itemm ">
                                                 {/* {(item.file_name).replace(".jpg", '')} */}
                                                 {(item.Name_data).toUpperCase()}
                                             </h5>
@@ -326,7 +326,7 @@ export default function Item() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                               
                             )
                         })}
 
