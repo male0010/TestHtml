@@ -346,10 +346,10 @@ a {
 
   font-family: 'Bangers', cursive;
   font-size: 20px;
-  font-weight: 520 !important;
+  font-weight: 400 !important;
   color: #b1b1b1;
   text-align: center !important;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .footer {
@@ -456,8 +456,13 @@ body {
   padding-left: 1%;
 }
 
+<<<<<<< HEAD
 .sin {
   background-color: rgb(36, 36, 36) !important;
+=======
+.sin{
+  
+>>>>>>> e1fbcce02f0633167e633a90f3ee29c7ef621f07
   color: #f3f2f2 !important;
   font-size: 24px !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
