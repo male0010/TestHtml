@@ -113,7 +113,9 @@
 }
 
 .sortt {
-  justify-content: space-between;
+  justify-content: space-between !important;
+  align-items: center;
+
 }
 
 .footertest {
@@ -326,6 +328,7 @@ ul {
     font-size: 14px !important;
     padding: 22px;
     max-width: 720px !important;
+    align-items: center;
 
   }
 
@@ -419,15 +422,33 @@ ul {
   width: 160px !important;
 
 }
+.sin{
+  
+  color: #f3f2f2 !important;
+  font-size: 24px !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  padding : 9px;
+  padding-top:1px !important ;
+  border: #141414 ;
+  
+  
+  
+  
+  
+}
 
 
   }
   @media (min-width: 769px) and (max-width: 991px) {
     .con {
       width:800px !important;
-  
+      
     }
-  
+    .imgite {
+      height: 160px !important;
+      width: 150px !important;
+    
+    }
      }
      @media (min-width: 992px) and (max-width: 1199px) {
       .con {
@@ -446,7 +467,30 @@ ul {
       }
        }
   
-
+      .da{
+        background-color: rgb(40, 39, 39) !important;
+      }
+      .nt{
+        background-color: #fffefe !important;
+      }
+      .nti{
+        color: #eee !important;
+      }
+      @media (max-width: 768px){
+        li.nav-item{
+          padding-bottom: 10px !important;
+        }
+        .oos{
+          width: 150px !important;
+          height: 70px !important;
+        }
+      }
+      li.nav-item{
+        padding-right: 10px !important;
+      }
+      .bg-black{
+        background-color: rgb(40, 39, 39) !important;
+      }
 /* @include media-breakpoint-only(xl) {  
   div.aaa {
   font-size: 10px  !important;

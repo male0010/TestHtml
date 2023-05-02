@@ -27,19 +27,19 @@ export default function Item() {
 
 
     useEffect(() => {
-                 // เช็คว่าผู้ใช้ล็อกอินเข้าสู่ระบบหรือไม่
-                 const isLoggedIn = localStorage.getItem("isLoggedIn");
-        
-                if (isLoggedIn === "true") {
-                     // ถ้าผู้ใช้ล็อกอินเข้าสู่ระบบแล้ว ให้ดึงข้อมูล username และ name จาก localStorage
-                     const username = localStorage.getItem("username");
-                    const name = localStorage.getItem("name");
-        
-                    console.log(`Welcome back player ${username} (${name})`);
-                    window.location.href = "/afterlogin";
-                    // ทำอย่างอื่นต่อไป...
-                } 
-            }, []);
+        // เช็คว่าผู้ใช้ล็อกอินเข้าสู่ระบบหรือไม่
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+        if (isLoggedIn === "true") {
+            // ถ้าผู้ใช้ล็อกอินเข้าสู่ระบบแล้ว ให้ดึงข้อมูล username และ name จาก localStorage
+            const username = localStorage.getItem("username");
+            const name = localStorage.getItem("name");
+
+            console.log(`Welcome back player ${username} (${name})`);
+            window.location.href = "/afterlogin";
+            // ทำอย่างอื่นต่อไป...
+        }
+    }, []);
     const getgunlist = () => {
         axios.get("https://www.imgen.site/imgen2/api_male/subtype.php").then((response) => {
             let datax = response.data
@@ -161,11 +161,11 @@ export default function Item() {
                 <link rel="icon" href="public\image\logo.jpg" />
             </Head>
 
-            <nav class="navbar fixed-top navbarr row-4">
-                <div className=" Ima col-1 ">
-                    <Image src={img8} alt="" height="100" /></div>
-                <div class="container col-9 ">
-                    <div className="col ">
+            {/* <nav class="navbar fixed-top navbarr ">
+                <div className=" Ima ">
+                    <Image className="oos" src={img8} alt="" height="100" /></div>
+                <div class="container col-9 ssa">
+                    <div className=" ">
                         <input className="  search col-2 "
                             placeholder="Search.... "
                             onChange={(event) => {
@@ -174,15 +174,12 @@ export default function Item() {
                         />
                     </div>
 
-                    <div class="col-md-2 ">
-                        <button type="button" class="btn btn-primary me-2 but "><Link href="/login" className="a">SIGN IN</Link></button>
-                        <button type="button" class="btn btn-secondary but"><Link href="/register " className="a">SIGN UP</Link></button>
-                    </div>
 
 
 
-                    <div className="d-flex col-6 sortt">
-                        <select className='d-flex all col-sm-2 ' onChange={(event) => {
+
+                    <div className=" row sortt">
+                        <select className='d-flex all col-1  ' onChange={(event) => {
                             combine(event.target.value, finalsort)
                         }}>
 
@@ -193,7 +190,8 @@ export default function Item() {
 
                         </select>
                         -
-                        <select className='d-flex all col-sm-2' onChange={(event) => {
+
+                        <select className='d-flex all col-2 ' onChange={(event) => {
                             combine(finalfilter, event.target.value)
                         }}>
 
@@ -201,8 +199,65 @@ export default function Item() {
                             <option value="1">a-z</option>
                             <option value="2">z-a</option>
                         </select>
+                        <div className="fas col-3">
+                            <div class="col-md-2 ">
+                                <button type="button" class="btn btn-primary me-2 but "><Link href="/login" className="a">SIGN IN</Link></button>
+                                <button type="button" class="btn btn-secondary but"><Link href="/register " className="a">SIGN UP</Link></button>
+                            </div>
+                        </div>
                     </div>
 
+
+
+                </div>
+
+            </nav> */}
+            <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
+                <div class="container-fluid">
+                    <Image className="oos" src={img8} alt="" height="85" />
+                    <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon nti"></span>
+                    </button>
+                    <div class="collapse navbar-collapse da" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <input className="  search col-2 "
+                                    placeholder="Search.... "
+                                    onChange={(event) => {
+                                        setsearch(event.target.value)
+                                    }}
+                                />
+                            </li>
+                            <li class="nav-item">
+                                <select className='d-flex all col-1  ' onChange={(event) => {
+                                    combine(event.target.value, finalsort)
+                                }}>
+
+                                    <option value={0}>ALL</option>
+                                    <option value={1}>gun</option>
+                                    <option value={2}>character</option>
+                                    <option value={3}>car</option>
+
+                                </select>
+                            </li>
+                            <li class="nav-item">
+                                <select className='d-flex all col-2 ' onChange={(event) => {
+                                    combine(finalfilter, event.target.value)
+                                }}>
+
+                                    <option value="0">Sort</option>
+                                    <option value="1">a-z</option>
+                                    <option value="2">z-a</option>
+                                </select>
+                            </li>
+                            
+                            
+                        </ul>
+                        <form class="d-flex">
+                            <button type="button" class="btn btn-primary me-2 but "><Link href="/login" className="a">SIGN IN</Link></button>
+                            <button type="button" class="btn btn-secondary but"><Link href="/register " className="a">SIGN UP</Link></button>
+                        </form>
+                    </div>
                 </div>
             </nav>
 
@@ -292,41 +347,41 @@ export default function Item() {
                             }
                         }).map((item, index) => {
                             return (
-                               
-                                    <div className="card its" key={index} data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                        <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
-                                            className="card-Image-top  imgite   " alt="..." />
-                                        <div className="card-body itemm">
-                                            <h5 className="itemm ">
-                                                {/* {(item.file_name).replace(".jpg", '')} */}
-                                                {(item.Name_data).toUpperCase()}
-                                            </h5>
+
+                                <div className="card its" key={index} data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                    <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
+                                        className="card-Image-top  imgite   " alt="..." />
+                                    <div className="card-body itemm">
+                                        <h5 className="itemm ">
+                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                            {(item.Name_data).toUpperCase()}
+                                        </h5>
 
 
 
 
-                                            <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div className="modal-dialog ">
+                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div className="modal-dialog ">
 
-                                                    <div className="modal-content  text-center  ">
-                                                        <Image className="card" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                            alt="..." />
-                                                        <div className="modal-body itemm">
-                                                            {/* {(item.file_name).replace(".jpg", '')} */}
-                                                            {(item.Name_data).toUpperCase()}
-                                                        </div>
+                                                <div className="modal-content  text-center  ">
+                                                    <Image className="card" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                        alt="..." />
+                                                    <div className="modal-body itemm">
+                                                        {/* {(item.file_name).replace(".jpg", '')} */}
+                                                        {(item.Name_data).toUpperCase()}
+                                                    </div>
 
-                                                        <div className="modal-footer   border border-0 footer ">
-                                                            <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                    <div className="modal-footer   border border-0 footer ">
+                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
 
-                                                            <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        </div>
+                                                        <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                               
+                                </div>
+
                             )
                         })}
 
@@ -335,7 +390,7 @@ export default function Item() {
                     </div>
                 </div>
             </div>
-           
+
             <br></br>
             <br></br>
             <TESTFOOT />
