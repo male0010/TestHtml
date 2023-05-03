@@ -57,8 +57,13 @@ export default function TESTFOOT() {
             </div>
 
 
+<<<<<<< HEAD
             <div class="d-flex flex-column flex-sm-row  py-3 my-5 border-top linkk3  justify-content-center text-center">
                 <p>© 2023, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks  trademarks of Epic Games, Inc. in the USA .</p>
+=======
+            <div class="d-flex flex-column flex-sm-row  py-3 my-5 border-top linkk3 align-items-center">
+                <p>© 2023, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks  trademarks of Epic Games, Inc. in the USA</p>
+>>>>>>> 6797c3714a2c1ff8e23c7d7bc3ff3251fafd6f79
                 <ul class="list-unstyled d-flex">
 
                 </ul>
