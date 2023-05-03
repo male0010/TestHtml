@@ -393,6 +393,9 @@ ul {
 
 }
 
+.its{
+  background-color: #111111 !important;
+}
 @media (max-width: 768px) {
 
  .navs {
@@ -411,6 +414,7 @@ ul {
   padding-left: 20px !important;
   padding-right: 30px !important;
   padding-bottom: 8px !important;
+
 }
 
 .itemss {
