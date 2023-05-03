@@ -102,7 +102,7 @@ export default function cam() {
                             </h3>
                         </div>
 
-                        <Image className=" accordion-flush imgg  text-e" src={cam2} height={500} width={1200} alt="#" ></Image>
+                        <Image className=" accordion-flush imgg  " src={cam2} height={500} width={1200} alt="#" ></Image>
                         <div className="card-body">
                             <h4 className="card-title">The Gulag</h4>
                             <p className="card-text camtextsm">1v1 Gulag will be returning with the launch of Season 02.

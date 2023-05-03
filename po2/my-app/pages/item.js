@@ -214,22 +214,23 @@ export default function Item() {
             </nav> */}
             <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
                 <div class="container-fluid">
-                    <Image className="oos" src={img8} alt="" height="85" />
+                   <Link href="/"> <Image className="oos" src={img8} alt="" height="85"  /></Link>
                     <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon nti"></span>
                     </button>
                     <div class="collapse navbar-collapse da" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <input className="  search col-2 "
+                            <li class="d-flex justify-content-end
+                             ">
+                                <input className="  search col-2 justify-content-end "
                                     placeholder="Search.... "
                                     onChange={(event) => {
                                         setsearch(event.target.value)
                                     }}
                                 />
                             </li>
-                            <li class="nav-item">
-                                <select className='d-flex all col-1  ' onChange={(event) => {
+                            <li class="d-flex justify-content-end">
+                                <select className='d-flex  all col-1  ' onChange={(event) => {
                                     combine(event.target.value, finalsort)
                                 }}>
 
@@ -239,8 +240,6 @@ export default function Item() {
                                     <option value={3}>car</option>
 
                                 </select>
-                            </li>
-                            <li class="nav-item">
                                 <select className='d-flex all col-2 ' onChange={(event) => {
                                     combine(finalfilter, event.target.value)
                                 }}>
@@ -249,11 +248,10 @@ export default function Item() {
                                     <option value="1">a-z</option>
                                     <option value="2">z-a</option>
                                 </select>
-                            </li>
-                            
+                            </li> 
                             
                         </ul>
-                        <form class="d-flex">
+                        <form class="d-flex justify-content-end">
                             <button type="button" class="btn btn-primary me-2 but "><Link href="/login" className="a">SIGN IN</Link></button>
                             <button type="button" class="btn btn-secondary but"><Link href="/register " className="a">SIGN UP</Link></button>
                         </form>

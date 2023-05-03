@@ -260,20 +260,20 @@
 
 .btnnn {
   grid-gap: 4em !important;
-  border: 3rem !important;
-  font-size: 25px !important;
+  border: 1rem !important;
+  font-size: 2rem !important;
   color: #eaebea !important;
   font-family: 'Bangers', cursive !important;
-  background: linear-gradient(120deg, #0d7408, #030f04);
+  background-color: rgb(82, 159, 6);
   padding: 15px !important;
   align-items: center !important;
   /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
-  justify-content: flex-end;
-  padding-left: 100%;
-  width: 200px;
-  height: 75px;
+  width: auto;
+  height: auto;
   text-decoration: none;
   text-align: center !important;
+  justify-content: center;
+  border-radius: 50px;
 
 
 
@@ -332,8 +332,9 @@ ul {
 
   }
 
+
   Img.accordion-flush.imggmul {
-    justify-self: center !important;
+    justify-items: center !important;
     height: 150px !important;
     width: 250px !important;
     align-items: center !important;
@@ -476,9 +477,13 @@ ul {
       .nti{
         color: #eee !important;
       }
-      @media (max-width: 768px){
-        li.nav-item{
+      @media (max-width: 991px){
+        li.d-flex{
           padding-bottom: 10px !important;
+          
+        }
+        .da{
+          align-items: end !important;
         }
         .oos{
           width: 150px !important;

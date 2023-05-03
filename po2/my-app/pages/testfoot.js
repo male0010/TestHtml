@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function TESTFOOT() {
     return (
         <footer className="container footertest card-footer fff ">
-            <div className="row card-body  ">
+            <div className="row card-body  justify-content-between ">
                 <div className="grid col-sm-3 card-title lll">
                     <h3 className='link '>HOME</h3>
                     <br></br>
@@ -57,8 +57,8 @@ export default function TESTFOOT() {
             </div>
 
 
-            <div class="d-flex flex-column flex-sm-row  py-3 my-5 border-top linkk3">
-                <p>© 2023, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks  trademarks of Epic Games, Inc. in the USA and .</p>
+            <div class="d-flex flex-column flex-sm-row  py-3 my-5 border-top linkk3  justify-content-center text-center">
+                <p>© 2023, Epic Games, Inc. Quixel, Megascans, and Unreal Engine are trademarks  trademarks of Epic Games, Inc. in the USA .</p>
                 <ul class="list-unstyled d-flex">
 
                 </ul>

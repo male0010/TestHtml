@@ -89,19 +89,14 @@ export default function skin() {
 
                     </div>
                    
-                    <div className="row">
-                        <div className="col"></div>
-
-                        <div className="col"> </div>
-                        <div className="col"> <Link href="/" className="btnnn text-lg-end">back to home</Link></div>
-                    </div>
+                   
 
 
                 </div>
                 <div className="cam2">
-
-                </div>
-                <hr className="divider" />
+                        <Link href="/" className="btnnn text-center justify-content-end ">back to home</Link>
+                    </div>
+                    <hr className="divider" />
 
             </body>
 

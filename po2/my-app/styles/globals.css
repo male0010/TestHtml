@@ -442,7 +442,7 @@ body {
   background-color: #181818 ;
   color: #949494 !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  
+  justify-items: end !important;
 }
 
 .all{

@@ -27,7 +27,7 @@ export default function multi() {
                 <div className=" accordion-body">
                     <div className="bggmui">
                         <div className="mm">
-                        <Image className=" accordion-flush imggmul" src={aaa}  height={250} width={400} alt="#" ></Image>
+                            <Image className=" accordion-flush imggmul" src={aaa} height={250} width={400} alt="#" ></Image>
                         </div>
                     </div>
                 </div>
@@ -74,14 +74,16 @@ export default function multi() {
                             </div>
 
                         </div>
-                        <div className="row rowcc">
-                            <div className="col"></div>
 
-                            <div className="col"> </div>
-                            <div className="col"> <Link href="/" className="btnnn text-lg-center">back to home</Link></div>
-                        </div>
+
+
+
 
                     </div>
+                    <div className="cam2">
+                        <Link href="/" className="btnnn text-center justify-content-end ">back to home</Link>
+                    </div>
+                    <hr className="divider" />
                 </div>
 
             </body>
