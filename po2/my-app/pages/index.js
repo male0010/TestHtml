@@ -90,7 +90,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
          <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet"></link>
-          </Head>
+        </Head>
 
           <Header0 />
           {/* <section className='css-bfjn8h'>
