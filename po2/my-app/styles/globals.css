@@ -352,9 +352,10 @@ a {
   font-family: 'Bangers', cursive;
   font-size: 20px;
   font-weight: 400 !important;
-  color: #b1b1b1;
+  color: #f0f0f0;
   text-align: center !important;
   letter-spacing: 1px;
+  background-color:#111111 ;
 }
 
 .footer {
@@ -480,7 +481,7 @@ body {
   border: 3rem !important;
   padding: 0.5em;
   border-radius: 1rem !important;
-  min-width: 420px !important;
+  width: 340px !important;
   font-size: 16px !important;
   background-color: #181818 ;
   color: #949494 !important;
@@ -932,7 +933,10 @@ body {
   grid-gap: 5em !important;
   border: 3rem !important;
 }
-
+.bta{
+  background-color: #0aa517 !important;
+  border-color: #030f04  !important;
+}
 
 .img-fluid-d {}
 

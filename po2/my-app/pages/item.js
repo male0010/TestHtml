@@ -214,7 +214,7 @@ export default function Item() {
             </nav> */}
             <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
                 <div class="container-fluid">
-                   <Link href="/"> <Image className="oos" src={img8} alt="" height="85"  /></Link>
+                   <Link href='/'> <Image className="oos" src={img8} alt="" height="85"  /></Link>
                     <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon nti"></span>
                     </button>
@@ -230,14 +230,14 @@ export default function Item() {
                                 />
                             </li>
                             <li class="d-flex justify-content-end">
-                                <select className='d-flex  all col-1  ' onChange={(event) => {
+                                <select className='d-flex  all col-1  mx-2 ' onChange={(event) => {
                                     combine(event.target.value, finalsort)
                                 }}>
 
                                     <option value={0}>ALL</option>
-                                    <option value={1}>gun</option>
-                                    <option value={2}>character</option>
-                                    <option value={3}>car</option>
+                                    <option value={1}>GUN</option>
+                                    <option value={2}>CHARACTER</option>
+                                    <option value={3}>CAR</option>
 
                                 </select>
                                 <select className='d-flex all col-2 ' onChange={(event) => {
@@ -359,10 +359,10 @@ export default function Item() {
 
 
                                         <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div className="modal-dialog ">
+                                            <div className="modal-dialog modal-dialog-centered ">
 
-                                                <div className="modal-content  text-center  ">
-                                                    <Image className="card" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                <div className="modal-content   text-center  ">
+                                                    <Image className=" card-img" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
                                                         alt="..." />
                                                     <div className="modal-body itemm">
                                                         {/* {(item.file_name).replace(".jpg", '')} */}
@@ -370,7 +370,7 @@ export default function Item() {
                                                     </div>
 
                                                     <div className="modal-footer   border border-0 footer ">
-                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn bta  btn-primary">Download</button>
 
                                                         <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                     </div>
