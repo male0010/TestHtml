@@ -10,6 +10,12 @@
 
 }
 
+
+.mi {
+    font-size: 1.2rem;
+}
+
+
 @media (max-width: 90em) {
 
     .css-12eyf74,
@@ -20,28 +26,37 @@
     }
 }
 
-@media (max-width: 55em)
-.css-12eyf74, [data-css-12eyf74] {
-    margin-top: 1px;
-    flex-direction: column;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
+@media (max-width: 65.0625em) {
+
+    .css-12eyf74,
+    [data-css-12eyf74] {
+        margin-bottom: 0px;
+        height: 18vw;
+    }
+
+}
+
+@media (max-width: 120em) {
+
+    .css-12eyf74,
+    [data-css-12eyf74] {
+        margin-bottom: 8px;
+    }
 }
 
 @media (max-width: 55em) {
 
     .css-12eyf74,
-   {
-        margin-top: 1px;
-        flex-direction: column;
-        height: auto;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-    }
+    {
+
+    margin-top: 1px;
+    flex-direction: column;
+    height: auto;
+
 }
+}
+
+
 
 @media (max-width: 65.0625em) {
 
@@ -66,6 +81,7 @@
     height: 19vw;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+
 }
 
 .css-1mesriy {
@@ -125,7 +141,7 @@
 }
 
 .css-1p3f1wx {
-    padding: 3vw;
+    padding: 1.8vw;
     position: relative;
     text-align: left;
     color: #ffffff;
@@ -133,18 +149,26 @@
     z-index: 1;
     height: 100%;
     display: flex;
-    font-family: 'Mouse Memoirs', sans-serif;
-    letter-spacing: 1px;
+    
+    letter-spacing: 0.5px;
 
 }
 
-@media (min-width: 85.375rem) {
+@media (max-width: 55em) {
 
-    .css-2x76mi,
-    [data-css-2x76mi] {
-        margin-top: calc(7rem + (16 - 7) * (100vw - 85.375rem) / (160 - 85.375));
+    .css-12eyf74,
+    [data-css-12eyf74] {
+        margin-top: 1px;
+        flex-direction: column;
+        height: 550px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+
     }
+
 }
+
 
 
 @media (max-width: 65.0625em) {
@@ -318,8 +342,229 @@
     color: #eee;
     letter-spacing: 1px;
 }
+@media  (min-width: 1800px){
+    .css-kovv1o{
+        
+        height: 302px !important;
+    }
+}
+@media  (min-width: 1200px)and (max-width: 1400px) {
+    .you{
+height: 370px;
+padding-top: 1px;
+    }
+    .css-z6wpf2, [data-css-z6wpf2] {
+        font-size: xx-large !important;
+    }
+    .css-kovv1o{
+        font-size:  xx-large !important;
+        height: 302px !important;
+    }
+     
+}
+@media  (min-width: 992px)and (max-width: 1200px) {
+    .you{
+height: 320px;
+padding-top: 1px;
+    }
+    .css-z6wpf2, [data-css-z6wpf2] {
+        font-size: x-large !important;
+    }
+    .css-137ghns{
+        font-size:  x-large !important;
+    }
+    .css-141i1s7{
+        font-size:  x-large !important;
+    }
+    .css-1mm9hv1{
+        min-height: 155px !important;
+    }
+    .css-kovv1o{
+        font-size:  xx-large !important;
+        height: 302px !important;
+    }
+    p.hh1{
+        font-size:32px !important;
+    }
+    p.h3{
+        font-size:24px !important;
+    }
+}
 
+@media  (min-width: 768px)and (max-width: 992px) {
+    .you{
+height: 245px;
+    }
+    .css-z6wpf2, [data-css-z6wpf2] {
+        font-size: large !important;
+    }
+    .css-137ghns{
+        font-size:  large !important;
+    }
+    .css-141i1s7{
+        font-size:  large !important;
+    }
+    .css-1mm9hv1{
+        min-height: 125px !important;
+    }
+    .css-kovv1o{
+        font-size:  larger !important;
+        height: 302px !important;
+    }
+    .menu ul a{
+        font-size: xx-small;
 
+    }
+    .menu ul li{
+        padding: 6px;
+    }
+    p.hh1{
+        font-size:30px !important;
+    }
+    p.h3{
+        font-size:20px !important;
+    }
+     
+}
+
+@media  (min-width: 576px)and (max-width: 768px) {
+    .you{
+height: 190px;
+    }
+    .css-z6wpf2, [data-css-z6wpf2] {
+        font-size: small !important;
+    }
+    .css-137ghns{
+        font-size:  small !important;
+    }
+    .css-141i1s7{
+        font-size:  small !important;
+    }
+    .css-1mm9hv1{
+        min-height: 95px !important;
+    }
+    .css-kovv1o{
+        font-size:  medium !important;
+        height: 302px !important;
+    }
+    .menu ul a{
+        font-size:1px !important;
+
+    }
+    .menu ul li{
+        padding: 6px;
+    }
+    .menu ul a{
+        font-size: xx-small;
+
+    }
+    .menu ul li{
+        padding: 1.5px !important;
+    }
+    .menu{
+        width: 95%;
+    }
+    .neno{width: 55%;}
+    p.hh1{
+        font-size:smaller !important;
+    }
+    .menu ul a{
+        font-size: xx-small;
+
+    }
+    .menu ul li{
+        padding: 6px;
+    }
+    p.hh1{
+        font-size:25px !important;
+        
+    }
+    .centered{
+        padding: 1px !important;
+    }
+    p.h3{
+        font-size:20px !important;
+    }
+    .indlogo{
+        width:190px !important;
+    }
+     
+}
+@media  (max-width: 576px){
+    .you{
+        height: 120px;
+            }
+            .css-z6wpf2, [data-css-z6wpf2] {
+                font-size: 10px !important;
+            }
+
+            .css-1i1szvg{
+                font-size: 30px;
+            }
+            .css-137ghns{
+                font-size: xx-small !important;
+            }
+            .css-141i1s7{
+                font-size: xx-small !important;
+            }
+            .css-1mm9hv1{
+                min-height: 90px !important;
+            }
+            .css-10800iq{
+                font-size: large !important;
+            }
+            .css-kovv1o{
+                font-size:  small !important;
+                height: 302px !important;
+            }
+            .menu ul a{
+                font-size: xx-small !important;
+        
+            }
+            .menu ul li{
+                padding: 6px;
+            }
+            .menu ul a{
+                font-size: xx-small;
+        
+            }
+            .menu ul li{
+                padding: 1px !important;
+                margin-right: 1px;
+            }
+            .menu{
+                width: 95%;
+            }
+            .neno{width: 250px;
+            }
+            p.hh1{
+                font-size:smaller !important;
+            }
+            .menu ul a{
+                font-size: xx-small;
+        
+            }
+            .menu ul li{
+                padding: 3px;
+            }
+            p.hh1{
+                font-size:22px !important;
+                
+            }
+            .centered{
+                padding: 1px !important;
+            }
+            p.h3{
+                font-size:16px !important;
+            }
+            .indlogo{
+                width:110px !important;
+                height: 190px;
+            }
+           
+        }
+
+            
 .css-goqw7i,
 [data-css-goqw7i] {
     background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-LAUNCH-INTEL-008-WM.jpg);
@@ -353,6 +598,60 @@
     width: 100%;
 
 
+}
+
+@media (max-width: 65.0625em) {
+
+    .css-9hvpez,
+    [data-css-9hvpez] {
+        width: 81vw;
+        height: 45vw;
+    }
+}
+
+@media (max-width: 90em) {
+
+    .css-9hvpez,
+    [data-css-9hvpez] {
+        width: 72vw;
+        height: 40vw;
+    }
+
+}
+
+@media  (min-width: 1441px){
+        .you{
+            height: 450px;
+            width: 900px;
+
+        }
+
+    
+}
+
+@media (max-width: 120em) {
+
+    .css-goqw7i,
+    [data-css-goqw7i] {
+        filter: blur(20px);
+    }
+}
+
+@media (max-width: 240em) {
+
+    .css-goqw7i,
+    [data-css-goqw7i] {
+        filter: blur(25px);
+    }
+
+}
+
+@media (max-width: 275em) {
+
+    .css-goqw7i,
+    [data-css-goqw7i] {
+        filter: blur(30px);
+    }
 }
 
 .css-9hvpez {
@@ -522,7 +821,7 @@
 
 .css-1x1bg8g,
 [data-css-1x1bg8g] {
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.5px;
     font-family: 'Mouse Memoirs', sans-serif;
@@ -665,7 +964,7 @@
 .css-137ghns,
 [data-css-137ghns] {
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 17px;
     color: #aaa9a9;
     display: block;
     margin-bottom: 1rem;
@@ -686,7 +985,7 @@
     white-space: unset;
     text-overflow: ellipsis;
     line-height: initial;
-    font-size: 35px;
+    font-size: 22px;
 }
 
 
@@ -1272,7 +1571,7 @@
     height: 4px;
     background-blend-mode: normal, color;
     background-color: #25c505f6;
-    
+
 }
 
 .css-1n18h7c,
@@ -1383,6 +1682,7 @@
     height: calc(100% + 60px);
     filter: blur(35px);
 }
+
 .css-1hxbrwuu,
 [data-css-1hxbrwu] {
 
@@ -1537,20 +1837,23 @@
 
 @media (min-width: 65.0625em) {
 
-.css-1mdroc,
-[data-css-1mdroc] {
-    justify-content: initial;
-    -webkit-box-pack: initial;
-    -webkit-justify-content: initial;
+    .css-1mdroc,
+    [data-css-1mdroc] {
+        justify-content: initial;
+        -webkit-box-pack: initial;
+        -webkit-justify-content: initial;
     }
 }
 
-@media (min-width: 85.375rem){}
-.css-1mdroc, [data-css-1mdroc] {
+@media (min-width: 85.375rem) {}
+
+.css-1mdroc,
+[data-css-1mdroc] {
     margin-bottom: calc(1.25rem + (1.5 - 1.25) * (100vw - 85.375rem) / (160 - 85.375));
 }
 
-.css-1mdroc, [data-css-1mdroc] {
+.css-1mdroc,
+[data-css-1mdroc] {
     width: 100%;
     text-align: left;
     display: -webkit-box;
@@ -1593,15 +1896,17 @@
     -webkit-justify-content: initial;
 }
 
-@media (min-width: 85.375rem){
-.css-1tdt0c1, [data-css-1tdt0c1] {
-    font-size: calc(1rem + (1.5 - 1) * (100vw - 85.375rem) / (160 - 85.375));
-}
+@media (min-width: 85.375rem) {
+
+    .css-1tdt0c1,
+    [data-css-1tdt0c1] {
+        font-size: calc(1rem + (1.5 - 1) * (100vw - 85.375rem) / (160 - 85.375));
+    }
 }
 
 .css-1tdt0c1,
 [data-css-1tdt0c1] {
-    letter-spacing:1px;
+    letter-spacing: 1px;
     font-size: 3rem;
     font-weight: 500;
     font-family: 'Mouse Memoirs', sans-serif;
@@ -1621,17 +1926,21 @@
     -webkit-justify-content: left;
 }
 
-@media (max-width: 120em){
-.css-8svv8r, [data-css-8svv8r] {
-    letter-spacing: -2px;
-}
+@media (max-width: 120em) {
+
+    .css-8svv8r,
+    [data-css-8svv8r] {
+        letter-spacing: -2px;
+    }
 }
 
 
-@media (min-width: 85.375rem){
-.css-8svv8r, [data-css-8svv8r] {
-    font-size: calc(2.2rem + (3.75 - 2.2) * (100vw - 85.375rem) / (160 - 85.375));
-}
+@media (min-width: 85.375rem) {
+
+    .css-8svv8r,
+    [data-css-8svv8r] {
+        font-size: calc(2.2rem + (3.75 - 2.2) * (100vw - 85.375rem) / (160 - 85.375));
+    }
 }
 
 .css-8svv8r,
@@ -1649,7 +1958,7 @@
 .css-lrrpvc,
 [data-css-lrrpvc] {
     width: 25rem;
-    
+
     margin-top: 3rem;
     margin-bottom: 2rem;
     margin-left: 0rem;
@@ -1658,9 +1967,9 @@
     height: 5px;
     background-blend-mode: normal, color;
     background-color: #25c505f6;
-    
-    
-    
+
+
+
 }
 
 .css-1hf3yam,
@@ -1673,14 +1982,17 @@
     font-family: 'Mouse Memoirs', sans-serif;
 }
 
-@media (min-width: 85.375rem){
-.css-1hf3yam, [data-css-1hf3yam] {
-    font-size: calc(1.125rem + (1.5 - 1.125) * (100vw - 85.375rem) / (160 - 85.375));
-    margin-bottom: 4rem;
-}
+@media (min-width: 85.375rem) {
+
+    .css-1hf3yam,
+    [data-css-1hf3yam] {
+        font-size: calc(1.125rem + (1.5 - 1.125) * (100vw - 85.375rem) / (160 - 85.375));
+        margin-bottom: 4rem;
+    }
 }
 
-.css-1vu5cxa, [data-css-1vu5cxa] {
+.css-1vu5cxa,
+[data-css-1vu5cxa] {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1688,14 +2000,17 @@
     display: flex;
 }
 
-@media (min-width: 120em){}
-.css-8t1qeb, [data-css-8t1qeb] {
+@media (min-width: 120em) {}
+
+.css-8t1qeb,
+[data-css-8t1qeb] {
     font-size: 1.125rem;
     letter-spacing: 0.9px;
     font-weight: 700;
 }
 
-.css-8t1qeb, [data-css-8t1qeb] {
+.css-8t1qeb,
+[data-css-8t1qeb] {
     font-size: 0.9375rem;
     letter-spacing: 0.9px;
     font-weight: 700;
@@ -1707,7 +2022,8 @@
     color: #33a0f8;
 }
 
-.css-1c5mzpc, [data-css-1c5mzpc] {
+.css-1c5mzpc,
+[data-css-1c5mzpc] {
     background: none;
     border: none;
     font: inherit;
@@ -1728,13 +2044,16 @@
     -moz-transition: box-shadow 0.2s, color 0.2s ease-in-out;
 }
 
-.css-1c5mzpc .label, [data-css-1c5mzpc] .label {
+.css-1c5mzpc .label,
+[data-css-1c5mzpc] .label {
     padding-bottom: 0.44999999999999996rem;
     pointer-events: none;
 }
 
-@media (min-width: 65.0625em){}
-.css-1yndg9k, [data-css-1yndg9k] {
+@media (min-width: 65.0625em) {}
+
+.css-1yndg9k,
+[data-css-1yndg9k] {
     flex-basis: 50%;
     height: 100%;
     order: 1;
@@ -1742,36 +2061,44 @@
     -webkit-order: 1;
 }
 
-.css-1yndg9k, [data-css-1yndg9k] {
+.css-1yndg9k,
+[data-css-1yndg9k] {
     position: relative;
 }
 
-@media (min-width: 65.0625em){}
-.css-51r16h, [data-css-51r16h] {
+@media (min-width: 65.0625em) {}
+
+.css-51r16h,
+[data-css-51r16h] {
     height: 100%;
 }
 
-.css-51r16h, [data-css-51r16h] {
+.css-51r16h,
+[data-css-51r16h] {
     height: 25.5rem;
 }
 
 
 @keyframes slide1 {
     25% {
-      opacity: 1;
+        opacity: 1;
     }
-    50% {
-      opacity: 3;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-.css-1u13b7d, [data-css-1u13b7d] {
+    50% {
+        opacity: 3;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.css-1u13b7d,
+[data-css-1u13b7d] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1780,13 +2107,14 @@
     background-size: cover;
     background-position: center center;
     animation: slide1 5s infinite;
-    
+
 }
 
 
 
 
-.css-1rtysnp, [data-css-1rtysnp] {
+.css-1rtysnp,
+[data-css-1rtysnp] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1797,7 +2125,8 @@
     animation: slide1 5s infinite;
 }
 
-.css-luwnau, [data-css-luwnau] {
+.css-luwnau,
+[data-css-luwnau] {
     position: absolute;
     inset: 0px;
     opacity: 3;
@@ -1807,9 +2136,11 @@
     background-position: center center;
     visibility: hidden;
     animation: slide1 5s infinite;
-    
+
 }
-.css-zh2z45, [data-css-zh2z45] {
+
+.css-zh2z45,
+[data-css-zh2z45] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1821,7 +2152,8 @@
 }
 
 
-.css-aca8iq, [data-css-aca8iq] {
+.css-aca8iq,
+[data-css-aca8iq] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1833,7 +2165,8 @@
 }
 
 
-.css-aca8iqq, [data-css-aca8iqq] {
+.css-aca8iqq,
+[data-css-aca8iqq] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1844,7 +2177,8 @@
     animation: slide1 3s infinite;
 }
 
-.css-aca8iqqq, [data-css-aca8iqq] {
+.css-aca8iqqq,
+[data-css-aca8iqq] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1854,7 +2188,9 @@
     background-position: center center;
     animation: slide1 3s infinite;
 }
-.css-zh2z455, [data-css-zh2z45] {
+
+.css-zh2z455,
+[data-css-zh2z45] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1865,7 +2201,8 @@
     animation: slide1 4s infinite;
 }
 
-.css-zh2z4555, [data-css-zh2z45] {
+.css-zh2z4555,
+[data-css-zh2z45] {
     position: absolute;
     inset: 0px;
     opacity: 2;
@@ -1876,7 +2213,8 @@
     animation: slide1 4s infinite;
 }
 
-.css-1rtysnpq, [data-css-1rtysnp] {
+.css-1rtysnpq,
+[data-css-1rtysnp] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1887,7 +2225,8 @@
     animation: slide1 5s infinite;
 }
 
-.css-1rtysnpqq, [data-css-1rtysnp] {
+.css-1rtysnpqq,
+[data-css-1rtysnp] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1898,8 +2237,10 @@
     animation: slide1 5s infinite;
 }
 
-@media (min-width: 65.0625em){}
-.css-j6lk59, [data-css-j6lk59] {
+@media (min-width: 65.0625em) {}
+
+.css-j6lk59,
+[data-css-j6lk59] {
     flex-basis: 50%;
     height: 100%;
     order: 2;
@@ -1907,11 +2248,13 @@
     -webkit-order: 2;
 }
 
-.css-j6lk59, [data-css-j6lk59] {
+.css-j6lk59,
+[data-css-j6lk59] {
     position: relative;
 }
 
-.css-57g655, [data-css-57g655] {
+.css-57g655,
+[data-css-57g655] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1922,7 +2265,8 @@
     transition: opacity 0.5s ease 0s;
 }
 
-.css-57g6555, [data-css-57g655] {
+.css-57g6555,
+[data-css-57g655] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1933,7 +2277,8 @@
     transition: opacity 0.5s ease 0s;
 }
 
-.css-kdb8sc, [data-css-kdb8sc] {
+.css-kdb8sc,
+[data-css-kdb8sc] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1944,7 +2289,8 @@
     transition: opacity 0.5s ease 0s;
 }
 
-.css-kdb8scc, [data-css-kdb8sc] {
+.css-kdb8scc,
+[data-css-kdb8sc] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -1957,24 +2303,28 @@
 
 
 
-.css-13bn7r8, [data-css-13bn7r8] {
+.css-13bn7r8,
+[data-css-13bn7r8] {
     position: relative;
     overflow: hidden;
 }
 
-.css-1hg2lzs, [data-css-1hg2lzs] {
+.css-1hg2lzs,
+[data-css-1hg2lzs] {
     list-style: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
 
-.css-tlpo5e:first-child, [data-css-tlpo5e]:first-child {
+.css-tlpo5e:first-child,
+[data-css-tlpo5e]:first-child {
     position: relative;
     float: left;
 }
 
-.css-tlpo5e, [data-css-tlpo5e] {
+.css-tlpo5e,
+[data-css-tlpo5e] {
     position: absolute;
     width: 100%;
     opacity: 1;
@@ -1984,11 +2334,12 @@
     -webkit-transition: opacity 0.75s;
     -moz-transition: opacity 0.75s;
 }
- 
-.css-7m85p4, [data-css-7m85p4] {
+
+.css-7m85p4,
+[data-css-7m85p4] {
     opacity: 1;
     background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-S02-RELOADED-008-B.jpg);
-    
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2000,7 +2351,8 @@
     align-items: center;
 }
 
-.css-1h4didn, [data-css-1h4didn] {
+.css-1h4didn,
+[data-css-1h4didn] {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -2009,13 +2361,15 @@
     background: rgba(0, 0, 0, 0.25);
 }
 
-.css-1byn0p5, [data-css-1byn0p5] {
+.css-1byn0p5,
+[data-css-1byn0p5] {
     color: #FFF;
     padding: 12.5vw;
     z-index: 1;
 }
 
-.css-13e19bh, [data-css-13e19bh] {
+.css-13e19bh,
+[data-css-13e19bh] {
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -2025,7 +2379,8 @@
     -moz-transition: opacity 0.75s;
 }
 
-.css-eofkfk, [data-css-eofkfk] {
+.css-eofkfk,
+[data-css-eofkfk] {
     opacity: 1;
     background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-S02-RELOADED-007-B.jpg);
     background-repeat: no-repeat;
@@ -2039,7 +2394,8 @@
     align-items: center;
 }
 
-.css-hl68yx, [data-css-hl68yx] {
+.css-hl68yx,
+[data-css-hl68yx] {
     font-weight: 400;
     line-height: 1.35;
     letter-spacing: -0.6px;
@@ -2048,7 +2404,8 @@
     margin-top: 1.5rem;
 }
 
-.css-1a9ake3, [data-css-1a9ake3] {
+.css-1a9ake3,
+[data-css-1a9ake3] {
     opacity: 1;
     background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-S02-RELOADED-006-B.jpg);
     background-repeat: no-repeat;
@@ -2062,7 +2419,8 @@
     align-items: center;
 }
 
-.css-hsw4b1, [data-css-hsw4b1] {
+.css-hsw4b1,
+[data-css-hsw4b1] {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -2075,7 +2433,8 @@
     -webkit-transform: translate(-50%, 0);
 }
 
-.css-il3peo, [data-css-il3peo] {
+.css-il3peo,
+[data-css-il3peo] {
     display: inline-block;
     position: relative;
     width: 3rem;
@@ -2086,7 +2445,8 @@
     cursor: pointer;
 }
 
-.css-1mswlf3, [data-css-1mswlf3] {
+.css-1mswlf3,
+[data-css-1mswlf3] {
     background: none;
     border: none;
     padding: 0;
@@ -2095,7 +2455,8 @@
     text-align: left;
 }
 
-.css-n7qrt1, [data-css-n7qrt1] {
+.css-n7qrt1,
+[data-css-n7qrt1] {
     position: absolute;
     top: -0.75rem;
     bottom: -0.75rem;
@@ -2104,7 +2465,8 @@
     background: transparent;
 }
 
-.css-53j11p, [data-css-53j11p] {
+.css-53j11p,
+[data-css-53j11p] {
     position: absolute;
     top: 0;
     left: 0;
@@ -2114,7 +2476,8 @@
     background: #FFF;
 }
 
-.css-sv3oam, [data-css-sv3oam] {
+.css-sv3oam,
+[data-css-sv3oam] {
     display: inline-block;
     position: relative;
     width: 3rem;
@@ -2126,7 +2489,8 @@
 }
 
 
-.css-57g65, [data-css-57g655] {
+.css-57g65,
+[data-css-57g655] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2138,7 +2502,8 @@
 }
 
 
-.css-kdb8sccc, [data-css-kdb8sc] {
+.css-kdb8sccc,
+[data-css-kdb8sc] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2150,7 +2515,8 @@
 }
 
 
-.css-57gg65, [data-css-57g655] {
+.css-57gg65,
+[data-css-57g655] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2162,7 +2528,8 @@
 }
 
 
-.css-kdb8s, [data-css-kdb8sc] {
+.css-kdb8s,
+[data-css-kdb8sc] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2190,19 +2557,20 @@
 }
 
 
-.carousel-item{
+.carousel-item {
     height: 40vw;
     width: 100% !important;
-    
-    
-    
+
+
+
 
 }
 
 
 
 
-.css-57gg75, [data-css-57g655] {
+.css-57gg75,
+[data-css-57g655] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2213,7 +2581,8 @@
     transition: opacity 0.5s ease 0s;
 }
 
-.css-kdb8a, [data-css-kdb8sc] {
+.css-kdb8a,
+[data-css-kdb8sc] {
     position: absolute;
     inset: 0px;
     opacity: 1;
@@ -2225,9 +2594,12 @@
 }
 
 
-.imgg{
+.imgg {
     object-fit: cover;
     width: 100%;
     height: 100% !important;
     padding: 20px;
-  }
+}
+.indexhead{
+
+}

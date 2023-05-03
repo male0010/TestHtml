@@ -127,7 +127,7 @@ a {
 }
 
 .h1 {
-  font-size: 21px !important;
+  font-size: 2px !important;
   color: white !important;
   font-family: 'Bebas Neue', cursive;
 
@@ -166,23 +166,25 @@ a {
 
 
 .hh1 {
-  font-size: 50px;
+  font-size:2.5rem !important;
   color: rgb(255, 255, 255);
   font-weight: 500 !important;
-  font-family: 'Mouse Memoirs', sans-serif;
+  
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px !important;
+  text-align: center;
 
 
 }
 
 .h3 {
-  font-size: 34px !important;
+  font-size: 1.5rem !important;
   color: rgb(255, 255, 255);
-  font-family: 'Mouse Memoirs', sans-serif;
-  letter-spacing: 1.5px;
+  
+  letter-spacing: 0.5px;
   padding: 2px;
   font-weight: 500 !important;
+  text-align: center;
 
 
 }
@@ -191,11 +193,12 @@ a {
 .lead1 {
   border-radius: 3rem !important;
   padding: 1em;
-  font-size: 1em !important;
+  font-size: 0.5rem !important;
   text-transform: uppercase !important;
   font-weight: 700 !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 0.5px !important;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center !important;
 }
 
 .lead2 {

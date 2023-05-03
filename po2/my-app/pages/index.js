@@ -33,6 +33,9 @@ import wo from "../public/image/wom.jpg"
 import TESTFOOT from "./testfoot"
 import na from "../public/image/COD.jpg"
 import cyy from "../public/image/cy.jpg"
+import bd from "../public/image/007.jpg"
+import cc from "../public/image/006.jpg"
+import ee from "../public/image/005.jpg"
 
 import Footer3 from "../public/componant/footer.js"
 
@@ -121,9 +124,9 @@ export default function Home() {
             <div className="css-11ls71j">
               <a className='css-b06u1v' href='warfare'>
                 <div className="css-1p3f1wx">
-                  <div className='css-2x76mi'>
-                    <h1>WARFARE® II </h1>
-                    <h3>RELOADED — HIMMELMATT EXPO MAP INTEL</h3>
+                  <div className='css-2x76mi text-sm-start'>
+                    <h1 className=''>WARFARE® II </h1>
+                    <h3 className='mi'>RELOADED — HIMMELMATT EXPO MAP INTEL</h3>
                   </div>
                 </div>
               </a>
@@ -139,7 +142,7 @@ export default function Home() {
                 <div className="css-1p3f1wx">
                   <div className='css-2x76mi'>
                     <h1>Full AWARENES</h1>
-                    <h3>YOUR GET IN THERE, SOLDIER</h3>
+                    <h3 className='mi'>YOUR GET IN THERE, SOLDIER</h3>
                   </div>
                 </div>
               </a>
@@ -153,8 +156,8 @@ export default function Home() {
               <a className='css-b06u1v' href='skin'>
                 <div className="css-1p3f1wx">
                   <div className='css-2x76mi'>
-                    <h1>SKINS In MODERN WARFARE 2</h1>
-                    <h3>Messi, Pogba & Neymar Skins Release Date For MW2 & Warzone 2</h3>
+                    <h1>SKINS In  WARFARE 2</h1>
+                    <h3 className='mi'>Messi, Pogba & Neymar </h3>
                   </div>
                 </div>
               </a>
@@ -166,18 +169,18 @@ export default function Home() {
 
 
 
-
-      <section data-reactid="288" data-css-oqffr1>
-        <div className="ccss-1mm9hv1" data-reactid="289"></div>
+<div className='youu'>
+      <section data-reactid="288"  data-css-oqffr1 >
+        <div className='css-goqw7i'></div>
         <div className="css-z6wpf2">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</div>
         <div className='css-1hxbrw'></div>
         <div className='css-9hvpez' data-reactid="291" >
           <div className='css-9hvv' data-reactid="291">
-            <iframe width="1000" height="550" src="https://www.youtube.com/embed/EwoXZw1RKUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className='you' width="100%" height="500" src="https://www.youtube.com/embed/EwoXZw1RKUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </section>
-
+</div>
 
 
 
@@ -246,7 +249,7 @@ export default function Home() {
       </section>
 
       
-
+     
 
 
       <section className='css-1welzgn'>
@@ -263,8 +266,8 @@ export default function Home() {
                     <section class="css-6os4en ">
                       <div className='css-1c6tbi4'></div>
                       <div className='css-1mm9hv1 '>
-                        <span className='css-137ghns'>SEPTEMBER 15, 2022</span>
-                        <h1 className='css-141i1s7'>  BATTLE PASS AND BUNDLES FOR CALL OF DUTY® </h1>
+                        <span className='css-137ghns card-text'>SEPTEMBER 15, 2022</span>
+                        <h1 className='css-141i1s7 card-title'>  BATTLE PASS AND BUNDLES FOR CALL OF DUTY® </h1>
                       </div>
                     </section>
                   </a>
@@ -275,8 +278,8 @@ export default function Home() {
                     <section class="css-6os4en">
                       <div className='css-1osijr9'></div>
                       <div className='css-1mm9hv1'>
-                        <span className='css-137ghns'>FEBRUARY 14, 2023</span>
-                        <h1 className='css-141i1s7'>NEXT: ANNOUNCING CALL OF DUTY®: WARZONE™</h1>
+                        <span className='css-137ghns card-text'>FEBRUARY 14, 2023</span>
+                        <h1 className='css-141i1s7 card-title'>NEXT: ANNOUNCING CALL OF DUTY®: WARZONE™</h1>
                       </div>
                     </section>
                   </a>
@@ -287,8 +290,8 @@ export default function Home() {
                     <section class="css-6os4en">
                       <div className='css-12simwh'></div>
                       <div className='css-1mm9hv1'>
-                        <span className='css-137ghns'>DECEMBER 13, 2022</span>
-                        <h1 className='css-141i1s7'> WHAT TO KNOW ABOUT CALL OF DUTY®:  LIVE DECEMBER 14-23</h1>
+                        <span className='css-137ghns card-text'>DECEMBER 13, 2022</span>
+                        <h1 className='css-141i1s7 card-title'> WHAT TO KNOW ABOUT CALL OF DUTY®:  LIVE DECEMBER 14-23</h1>
                       </div>
                     </section>
                   </a>
@@ -300,8 +303,8 @@ export default function Home() {
                     <section class="css-6os4en">
                       <div className='css-1pkevbo'></div>
                       <div className='css-1mm9hv1'>
-                        <span className='css-137ghns'>FEBRUARY 09, 2023</span>
-                        <h1 className='css-141i1s7'>SEASON 02 : OVERVIEW ASHIKA ISLAND, DMZ, AND MORE</h1>
+                        <span className='css-137ghns card-text'>FEBRUARY 09, 2023</span>
+                        <h1 className='css-141i1s7 card-title'>SEASON 02 : OVERVIEW ASHIKA ISLAND, DMZ, AND MORE</h1>
                       </div>
                     </section>
                   </a>
@@ -314,8 +317,8 @@ export default function Home() {
                     <section class="css-6os4en">
                       <div className='css-1ke7anx'></div>
                       <div className='css-1mm9hv1'>
-                        <span className='css-137ghns'>FEBRUARY 23, 2023</span>
-                        <h1 className='css-141i1s7'>SUPPORT VETERANS WITH THE CALL OF DUTY ENDOWMENT (C.O.D.E.)</h1>
+                        <span className='css-137ghns card-text'>FEBRUARY 23, 2023</span>
+                        <h1 className='css-141i1s7 card-title'>SUPPORT VETERANS WITH THE CALL OF DUTY ENDOWMENT (C.O.D.E.)</h1>
                       </div>
                     </section>
                   </a>
@@ -326,8 +329,8 @@ export default function Home() {
                     <section class="css-6os4en">
                       <div className='css-871aqv'></div>
                       <div className='css-1mm9hv1'>
-                        <span className='css-137ghns'>JANUARY 25, 2023</span>
-                        <h1 className='css-141i1s7'>THE PATH TO SEASON 02 COMMUNITY UPDATE</h1>
+                        <span className='css-137ghns card-text'>JANUARY 25, 2023</span>
+                        <h1 className='css-141i1s7 card-title'>THE PATH TO SEASON 02 COMMUNITY UPDATE</h1>
                       </div>
                     </section>
                   </a>
@@ -361,18 +364,13 @@ export default function Home() {
        
         <div className='css-1iwdce8'>
           <span className='css-u36hqk'></span>
-          <h1 className='css-kovv1o'>
+          <h1 className='css-kovv1o '>
             EVERYTHING YOU NEED TO KNOW ABOUT SEASON 02 RELOADED
           <br></br>
               for  Season 02 of Call of Duty®: Warzone™ 2.0
           </h1>
           <div>
-          <span className='css-1ojjt41'>
-            <span >
-              <a className="css-1lmvk87" href=''>Learn More</a>
-            </span>
-
-          </span>
+          
         </div>
 
         </div>
