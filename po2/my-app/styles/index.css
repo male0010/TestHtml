@@ -12,7 +12,8 @@
 
 
 .mi {
-    font-size: 1.2rem;
+    font-size: 2rem;
+
 }
 
 
@@ -56,7 +57,8 @@
 }
 }
 
-
+.mi{
+    font-family: 'Mouse Memoirs', sans-serif;}
 
 @media (max-width: 65.0625em) {
 
@@ -81,6 +83,7 @@
     height: 19vw;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
+    font-family: 'Mouse Memoirs', sans-serif;
 
 }
 
@@ -337,7 +340,8 @@
     font-family: 'Mouse Memoirs', sans-serif;
     display: inline-block;
     text-align: center;
-    margin-bottom: 3.25rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     text-transform: uppercase;
     color: #eee;
     letter-spacing: 1px;
