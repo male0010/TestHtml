@@ -142,6 +142,8 @@ a {
     letter-spacing: -2.5px;
     margin-bottom: 2px;
     line-height: 1.1;
+    font-family: 'Mouse Memoirs', sans-serif !important;
+
   }
 }
 
@@ -166,10 +168,10 @@ a {
 
 
 .hh1 {
-  font-size:2.5rem !important;
+  font-size:3rem !important;
   color: rgb(255, 255, 255);
   font-weight: 500 !important;
-  
+  font-family: 'Mouse Memoirs', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 1px !important;
   text-align: center;
@@ -178,9 +180,9 @@ a {
 }
 
 .h3 {
-  font-size: 1.5rem !important;
+  font-size: 2.5rem !important;
   color: rgb(255, 255, 255);
-  
+  font-family: 'Mouse Memoirs', sans-serif !important;
   letter-spacing: 0.5px;
   padding: 2px;
   font-weight: 500 !important;

@@ -129,7 +129,7 @@ export default function Home() {
                     <div className="css-1p3f1wx">
                       <div className='css-2x76mi text-sm-start'>
                         <h1 className=''>WARFARE® II </h1>
-                        <h3 className='mi'>RELOADED — HIMMELMATT EXPO MAP INTEL</h3>
+                        <h3 className='mi'>RELOADED — HIMMELMATT</h3>
                       </div>
                     </div>
                   </a>
