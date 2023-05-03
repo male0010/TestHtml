@@ -40,7 +40,7 @@ export default function cam() {
                 <div className="container accordion-body cam1">
                     <div className="card cam1">
                         <div className="card-body">
-                            <h3 className="card-text textcam ">
+                            <h3 className=" card-title textcam ">
                                 Global Changes
                             </h3>
                         </div>
@@ -97,12 +97,12 @@ export default function cam() {
                         </div>
                         <hr className="divider" />
                         <div className="card-body">
-                            <h3 className="card-text textcam ">
+                            <h3 className="card-title textcam ">
                                 Battle Royale
                             </h3>
                         </div>
 
-                        <Image className=" accordion-flush imgg" src={cam2} height={500} width={1200} alt="#" ></Image>
+                        <Image className=" accordion-flush imgg  text-e" src={cam2} height={500} width={1200} alt="#" ></Image>
                         <div className="card-body">
                             <h4 className="card-title">The Gulag</h4>
                             <p className="card-text camtextsm">1v1 Gulag will be returning with the launch of Season 02.
@@ -155,12 +155,10 @@ export default function cam() {
                             </p>
 
                         </div>
-                        <div className="row">
-                            <div className="col"></div>
-
-                            <div className="col"> </div>
-                            <div className="col"> <Link href="/" className="btnnn text-lg-center">back to home</Link></div>
-                        </div>
+                        
+                    </div>
+                    <div className="cam2">
+                        <Link href="/" className="btnnn card-title text-center justify-content-end ">back to home</Link>
                     </div>
                     <hr className="divider" />
                 </div>
