@@ -47,18 +47,18 @@
 
 @media (max-width: 55em) {
 
-    .css-12eyf74
-    {
+    .css-12eyf74 {
 
-    margin-top: 1px;
-    flex-direction: column;
-    height: auto;
+        margin-top: 1px;
+        flex-direction: column;
+        height: auto;
 
+    }
 }
-}
 
-.mi{
-    font-family: 'Mouse Memoirs', sans-serif;}
+.mi {
+    font-family: 'Mouse Memoirs', sans-serif;
+}
 
 @media (max-width: 65.0625em) {
 
@@ -346,15 +346,50 @@
     color: #eee;
     letter-spacing: 1px;
 }
+.yam{
+    font-size:1rem;
+    padding-left: 5px;
+
+}
+.tdt{
+
+font-size: 2rem;
+padding-left: 5px;
+padding-top: 1px;
+
+}
 
 @media (min-width: 1800px) {
+    .yam{
+        font-size:35px !important;
+        
+    
+    }
+    .tdt{
+    
+    font-size: 60px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    
+    }
+    .videeee{
+        width: 1090px;
+        height: 605px;
+    }
     .css-kovv1o {
 
         height: 302px !important;
     }
 }
+@media (max-width: 1800px) and (min-width: 1400px) {
+ 
 
+}
 @media (min-width: 1200px)and (max-width: 1400px) {
+    .videeee{
+        width: 790px;
+        height: 405px;
+    }
     .you {
         height: 370px;
         padding-top: 1px;
@@ -370,9 +405,42 @@
         height: 302px !important;
     }
 
+    .css-kovv1o.has {
+        font-size: xx-large !important;
+        height: 50px !important;
+    }
+
 }
 
 @media (min-width: 992px)and (max-width: 1200px) {
+    .yam{
+        font-size:22px !important;
+        padding-left: 5px;
+    
+    }
+    .tdt{
+    
+    font-size: 38px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    
+    }
+    .videeee{
+        width: 590px;
+        height: 325px;
+    }
+    .css-5crigr {
+        margin-bottom: 5px !important;
+    }
+
+    .css-etavmd.eta {
+        font-size: 15px !important;
+    }
+    .css-jpy5xg.jpy {
+        font-size: 24px !important;
+
+    }
+
     .you {
         height: 320px;
         padding-top: 1px;
@@ -400,6 +468,12 @@
         height: 302px !important;
     }
 
+    .css-kovv1o.has {
+        font-size: xx-large !important;
+        height: 50px !important;
+    }
+
+
     p.hh1 {
         font-size: 32px !important;
     }
@@ -410,6 +484,37 @@
 }
 
 @media (min-width: 768px)and (max-width: 992px) {
+    .css-57gg65{
+        background-image: none !important;
+    }
+    .yam{
+        font-size: 19px !important;
+        padding-left: 5px;
+    
+    }
+    .tdt{
+    
+    font-size: 30px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    
+    }
+    .videeee{
+        width: 450px;
+        height: 255px;
+    }
+    .css-5crigr {
+        margin-bottom: 5px !important;
+    }
+
+    .css-etavmd.eta {
+        font-size: 12px !important;
+    }
+    .css-jpy5xg.jpy {
+        font-size: 18px !important;
+
+    }
+
     .you {
         height: 245px;
     }
@@ -436,6 +541,12 @@
         height: 302px !important;
     }
 
+    .css-kovv1o.has {
+        font-size: xx-large !important;
+        height: 50px !important;
+    }
+
+
     .menu ul a {
         font-size: xx-small;
 
@@ -453,9 +564,51 @@
         font-size: 20px !important;
     }
 
+    iframe.videooo {
+        width: 728px;
+    }
+
 }
 
 @media (min-width: 576px)and (max-width: 768px) {
+
+    .css-57gg65{
+        background-image: none !important;
+    }
+    .yam{
+        font-size: 16px !important;
+        padding-left: 5px;
+    
+    }
+    .tdt{
+    
+    font-size: 22px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    
+    }
+    .videeee{
+        width: 340px;
+        height: 195px;
+    }
+    .css-5crigr {
+        margin-bottom: 5px !important;
+    }
+
+    .css-etavmd.eta {
+        font-size: 9px !important;
+    }
+
+    .css-jpy5xg.jpy {
+        font-size: 13px !important;
+
+    }
+
+    iframe.videooo {
+        width: 522px !important;
+        height: 300px !important;
+    }
+
     .you {
         height: 190px;
     }
@@ -481,6 +634,12 @@
         font-size: medium !important;
         height: 302px !important;
     }
+
+    .css-kovv1o.has {
+        font-size: xx-large !important;
+        height: 50px !important;
+    }
+
 
     .menu ul a {
         font-size: 1px !important;
@@ -538,9 +697,70 @@
         width: 190px !important;
     }
 
+    .css-27novx.has {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 576px) {
+    .css-57gg65{
+        background-image: none !important;
+    }
+    .css-195u9ee{
+        height: 140px;
+    }
+    .yam{
+        font-size: 10px !important;
+        padding-left: 5px;
+    
+    }
+    .tdt{
+    
+    font-size: 10px !important;
+    padding-left: 5px;
+    padding-top: 1px;
+    
+    }
+    .videeee{
+        width: 210px;
+        height: 120px;
+    }
+    .css-5crigr {
+        margin-bottom: 5px !important;
+    }
+
+    .css-etavmd.eta {
+        font-size: 6px !important;
+    }
+
+    .css-jpy5xg.jpy {
+        font-size: 7px !important;
+
+    }
+
+    .css-197clu5 {
+        font-size: 1rem !important;
+    }
+
+    .css-jfjjx4 {
+        font-size: 1rem !important;
+    }
+
+    .css-kovv1o.has {
+        font-size: 30px !important;
+        height: 20px !important;
+    }
+
+    .css-27novx.has {
+        font-size: 1rem;
+    }
+
+    iframe.videooo {
+        width: 345px !important;
+        height: 300px !important;
+        justify-content: center !important;
+    }
+
     .you {
         height: 120px;
     }
@@ -574,6 +794,8 @@
         font-size: small !important;
         height: 302px !important;
     }
+
+
 
     .menu ul a {
         font-size: xx-small !important;
@@ -1222,9 +1444,9 @@
 [data-css-1lmvk87] {
 
     font-family: 'Mouse Memoirs', sans-serif;
-    font-size: 20px !important;
+    font-size: 1rem !important;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -1233,7 +1455,7 @@
     border-radius: 3rem;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5em;
+    padding: 5px;
     color: #FFF;
     background-color: #2B98F0;
 
@@ -1498,7 +1720,7 @@
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: left;
-    padding: 10px;
+    padding: 3px;
     font-size: 20px;
     font-weight: 500;
     list-style-type: circle;
@@ -1601,7 +1823,7 @@
 .css-197clu5,
 [data-css-197clu5] {
     letter-spacing: normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     font-family: 'Mouse Memoirs', sans-serif;
     text-transform: uppercase;
@@ -1613,9 +1835,9 @@
 
 .css-jfjjx4,
 [data-css-jfjjx4] {
-    font-size: 4rem;
-    font-weight: 500;
-    letter-spacing: -2.4px;
+    font-size: 2rem;
+
+    letter-spacing: 2.4px;
     font-family: 'Mouse Memoirs', sans-serif;
     text-transform: uppercase;
     display: -webkit-box;
@@ -1662,6 +1884,8 @@
 
 .css-bov5wr,
 [data-css-bov5wr] {
+
+    padding: 1px !important;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1678,7 +1902,7 @@
 
 .css-ov78et,
 [data-css-ov78et] {
-    max-width: 20.84%;
+    max-width: 30%;
     text-align: left;
 }
 
@@ -1689,14 +1913,14 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 5px;
     margin-left: unset;
 }
 
 .css-jpy5xg,
 [data-css-jpy5xg] {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Mouse Memoirs', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1707,6 +1931,7 @@
 
 .css-etavmd,
 [data-css-etavmd] {
+    padding-bottom: 100px !important;
     letter-spacing: 1px;
     font-family: 'Mouse Memoirs', sans-serif;
     line-height: normal;
@@ -1805,12 +2030,12 @@
 [data-css-161yl81] {
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
+    background-position:  center;
     position: relative;
     display: flex;
-    width: 50vw;
-    height: 30vw;
-    margin: auto;
+
+    
+    padding: 10px;
     cursor: pointer;
     -webkit-box-align: center;
     align-items: center;
@@ -1967,13 +2192,7 @@
     -webkit-justify-content: initial;
 }
 
-@media (min-width: 85.375rem) {
 
-    .css-1tdt0c1,
-    [data-css-1tdt0c1] {
-        font-size: calc(1rem + (1.5 - 1) * (100vw - 85.375rem) / (160 - 85.375));
-    }
-}
 
 .css-1tdt0c1,
 [data-css-1tdt0c1] {
@@ -1988,11 +2207,11 @@
     display: -webkit-flex;
     display: flex;
     justify-content: left;
-    margin: auto;
-    margin-bottom: 1.9rem;
+    
+   
     text-align: center;
-    max-width: 630px;
-    color: #6F6F6F;
+    
+    color: rgb(235, 232, 232);
     -webkit-box-pack: left;
     -webkit-justify-content: left;
 }
@@ -2049,18 +2268,12 @@
     letter-spacing: 0.5px;
     line-height: 1.5;
     color: #8b8989;
-    font-size: 26px !important;
+    font-size: 26px ;
     font-family: 'Mouse Memoirs', sans-serif;
+    margin-bottom: 5px !important;
 }
 
-@media (min-width: 85.375rem) {
 
-    .css-1hf3yam,
-    [data-css-1hf3yam] {
-        font-size: calc(1.125rem + (1.5 - 1.125) * (100vw - 85.375rem) / (160 - 85.375));
-        margin-bottom: 4rem;
-    }
-}
 
 .css-1vu5cxa,
 [data-css-1vu5cxa] {
@@ -2103,23 +2316,19 @@
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.9px;
-    padding: 0.375em;
+    padding: 1px;
     transition: box-shadow 0.2s, color 0.2s ease-in-out;
-    font-size: 0.9375rem;
+    font-size: 0.25rem;
     text-transform: uppercase;
     display: block;
     text-align: left;
-    padding-right: 1.5rem;
+    
     padding-top: 0px;
     -webkit-transition: box-shadow 0.2s, color 0.2s ease-in-out;
     -moz-transition: box-shadow 0.2s, color 0.2s ease-in-out;
 }
 
-.css-1c5mzpc .label,
-[data-css-1c5mzpc] .label {
-    padding-bottom: 0.44999999999999996rem;
-    pointer-events: none;
-}
+
 
 @media (min-width: 65.0625em) {}
 

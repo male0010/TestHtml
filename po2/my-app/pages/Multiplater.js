@@ -58,9 +58,9 @@ export default function Multiplayer() {
 
                             </p>
                             <p>All of that is built around the Modern Warfare II engine, which makes Multiplayer a great place to learn some new tactics.</p>
-                            <p>
-                                <iframe width="850" height="500" src="https://www.youtube.com/embed/tnsOrbljnK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </p>
+                            <div className='videooo justify-content-center'>
+                                <iframe className='videooo justify-content-center' width="850" height="500" src="https://www.youtube.com/embed/tnsOrbljnK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                             <p></p>
                             <h5>Core Map Modes (6v6)</h5>
                             <Image className='imgg' src={k} height={500} width={1200} alt="#" />
