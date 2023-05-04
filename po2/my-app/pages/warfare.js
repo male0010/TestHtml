@@ -19,11 +19,7 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
-<<<<<<< HEAD
                         <h1 className='css-kovv1oo'>
-=======
-                        <h1 className='css-kovv1o   has'>
->>>>>>> 9e96a8c5f04e41d8981a0a887573d3d51b5aece1
                             Warzone Third Anniversary
                             <br></br></h1>
                         <h3 className='css-27novx  has my-4'>Season 02 of Call of Duty®: Warzone™ 2.0
@@ -355,11 +351,7 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
-<<<<<<< HEAD
                         <h1 className='css-kovv1oo'>
-=======
-                        <h1 className='css-kovv1o has'>
->>>>>>> 9e96a8c5f04e41d8981a0a887573d3d51b5aece1
                             Warzone Third Anniversary
                             <br></br></h1>
                         <h3 className='css-27novx has my-4'>Season 02 of Call of Duty®: Warzone™ 2.0
