@@ -88,7 +88,7 @@ export default function Full() {
                     <div className='css-z6wpf2'>Holiday Shipment Available for a Limited Time</div>
                     <div className='css-161yl81 justify-content-center d-flex'>
                         <div className='css-9hvv ' data-reactid="291">
-                            <iframe className=' videeee p-1' width="750" height="355" src="https://www.youtube.com/embed/R5dYH2jVEig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className=' videeee p-1' width="750" height="355" src="https://www.youtube.com/embed/R5dYH2jVEig?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>
@@ -209,7 +209,7 @@ export default function Full() {
                     <div className='css-z6wpf2'>Holiday Shipment Available for a Limited Time</div>
                     <div className='css-161yl81 justify-content-center d-flex'>
                         <div className='css-9hvv' data-reactid="291">
-                            <iframe width="1000" className=' videeee p-1' height="550" src="https://www.youtube.com/embed/TApEYyd9tgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="1000" className=' videeee p-1' height="550" src="https://www.youtube.com/embed/TApEYyd9tgY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>

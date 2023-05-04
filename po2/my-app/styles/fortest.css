@@ -220,6 +220,7 @@
 }
 
 .coo {
+  line-height: 20px;
   display: flex;
   /* ใช้ flexbox */
   flex-direction: row;
@@ -261,7 +262,7 @@
 .btnnn {
   grid-gap: 4em !important;
   border: 1rem !important;
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   color: #eaebea !important;
   font-family: 'Bangers', cursive !important;
   background-color: rgb(82, 159, 6);
@@ -269,7 +270,7 @@
   align-items: center !important;
   /* จัดให้ element อยู่ตรงกลางแนวตั้ง */
   width: auto;
-  height: auto;
+  line-height: 10px;
   text-decoration: none;
   text-align: center !important;
   justify-content: center;

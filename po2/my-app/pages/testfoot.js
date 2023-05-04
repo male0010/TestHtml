@@ -6,17 +6,21 @@ export default function TESTFOOT() {
         <footer className="container footertest card-footer fff ">
             <div className="row card-body  justify-content-between ">
                 <div className="grid col-sm-3 card-title lll">
-                    <h3 className='link '>HOME</h3>
+                <Link className='link linkk2' href={"/"} >
+                    <h3 className='link '>HOME</h3></Link>
                     <br></br>
                     <ul className='card-text linkk  link lll'>
                         <Link className='link linkk2' href={"/pro"} >
                             <li >PRODUCTS</li></Link>
                         <br></br>
-                        <li>CAMPAIGN</li>
+                        <Link className='link linkk2' href={"/cam"} >
+                        <li>CAMPAIGN</li></Link>
                         <br></br>
-                        <li>MULTIPLAYER</li>
+                        <Link className='link linkk2' href={"/multi"} >
+                        <li>MULTIPLAYER</li></Link>
                         <br></br>
-                        <li>COMMUNITY</li>
+                        <Link className='link linkk2' href={"/cam"} >
+                        <li>COMMUNITY</li></Link>
                     </ul>
                 </div>
                 
@@ -39,11 +43,14 @@ export default function TESTFOOT() {
                         <h3>ITEM</h3></Link>
                     <br></br>
                     <ul className='card-text'>
-                        <li>GUN</li>
+                    <Link className='link ' href={"/item"} >
+                        <li>GUN</li></Link>
                         <br></br>
-                        <li>CHARACTER</li>
+                        <Link className='link ' href={"/item"} >
+                        <li>CHARACTER</li></Link>
                         <br></br>
-                        <li>CAR</li>
+                        <Link className='link ' href={"/item"} >
+                        <li>CAR</li></Link>
                         <br></br>
                     </ul>
                 </div>
