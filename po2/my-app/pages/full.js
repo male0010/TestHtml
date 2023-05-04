@@ -63,7 +63,7 @@ export default function Full() {
                                     </div>
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
-                                            <span className='css-jpy5xg jpy'>Preparing for the Raid
+                                            <span className='css-jpy5xg jpy'>Preparing for Raid
 
                                             </span>
                                         </div>
