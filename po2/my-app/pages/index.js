@@ -179,7 +179,7 @@ export default function Home() {
           <div className='css-1hxbrw'></div>
           <div className='css-9hvpez' data-reactid="291" >
             <div className='css-9hvv' data-reactid="291">
-              <iframe allow="autoplay" className='you' width="100%" height="500" src="https://www.youtube.com/embed/EwoXZw1RKUA?autoplay=1&mute=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe  className='you' width="100%" height="500" src="https://www.youtube.com/embed/EwoXZw1RKUA?autoplay=1&mute=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         </section>
