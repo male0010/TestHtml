@@ -19,7 +19,7 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
-                        <h1 className='css-kovv1o'>
+                        <h1 className='css-kovv1oo'>
                             Warzone Third Anniversary
                             <br></br></h1>
                         <h3 className='css-27novx'>Season 02 of Call of Duty®: Warzone™ 2.0
@@ -73,7 +73,7 @@ export default function Warfare() {
                         </div>
                     </section>
                 </div>
-                <section className='css-oqffr1'>
+                {/* <section className='css-oqffr1'>
                     <div className='css-1hxbrwu'></div>
                     <div className='css-z6wpf2'> Celebration, Free Gifts</div>
                     <div className='css-161yl81'>
@@ -83,7 +83,7 @@ export default function Warfare() {
                             </iframe>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
 
 
@@ -351,7 +351,7 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
-                        <h1 className='css-kovv1o'>
+                        <h1 className='css-kovv1oo'>
                             Warzone Third Anniversary
                             <br></br></h1>
                         <h3 className='css-27novx'>Season 02 of Call of Duty®: Warzone™ 2.0

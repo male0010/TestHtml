@@ -47,18 +47,18 @@
 
 @media (max-width: 55em) {
 
-    .css-12eyf74
-    {
+    .css-12eyf74 {
 
-    margin-top: 1px;
-    flex-direction: column;
-    height: auto;
+        margin-top: 1px;
+        flex-direction: column;
+        height: auto;
 
+    }
 }
-}
 
-.mi{
-    font-family: 'Mouse Memoirs', sans-serif;}
+.mi {
+    font-family: 'Mouse Memoirs', sans-serif;
+}
 
 @media (max-width: 65.0625em) {
 
@@ -352,6 +352,11 @@
 
         height: 302px !important;
     }
+
+    .css-kovv1oo {
+
+        height: 100px !important;
+    }
 }
 
 @media (min-width: 1200px)and (max-width: 1400px) {
@@ -368,6 +373,11 @@
     .css-kovv1o {
         font-size: xx-large !important;
         height: 302px !important;
+    }
+
+    .css-kovv1oo {
+        font-size: xx-large !important;
+
     }
 
 }
@@ -400,6 +410,11 @@
         height: 302px !important;
     }
 
+    .css-kovv1oo {
+        font-size: xx-large !important;
+
+    }
+
     p.hh1 {
         font-size: 32px !important;
     }
@@ -407,6 +422,8 @@
     p.h3 {
         font-size: 24px !important;
     }
+
+
 }
 
 @media (min-width: 768px)and (max-width: 992px) {
@@ -429,6 +446,11 @@
 
     .css-1mm9hv1 {
         min-height: 125px !important;
+    }
+
+    .css-kovv1oo {
+        font-size: larger !important;
+
     }
 
     .css-kovv1o {
@@ -476,6 +498,12 @@
     .css-1mm9hv1 {
         min-height: 95px !important;
     }
+
+    .css-kovv1oo {
+        font-size: medium !important;
+
+    }
+
 
     .css-kovv1o {
         font-size: medium !important;
@@ -541,6 +569,8 @@
 }
 
 @media (max-width: 576px) {
+
+
     .you {
         height: 120px;
     }
@@ -573,6 +603,11 @@
     .css-kovv1o {
         font-size: small !important;
         height: 302px !important;
+    }
+
+    .css-kovv1oo {
+        font-size: small !important;
+
     }
 
     .menu ul a {
@@ -1198,11 +1233,21 @@
     margin-bottom: 5rem;
 }
 
-.css-kovv1o,
-[data-css-kovv1o] {
+
+@media (max-width: 120em) {
+
+    .css-kovv1oo,
+    [data-css-kovv1o] {
+        font-size: 4rem;
+        letter-spacing: -4px;
+    }
+}
+
+.css-kovv1oo,
+[data-css-kovv1oo] {
     font-weight: 700;
     letter-spacing: 1.5px;
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-family: 'Mouse Memoirs', sans-serif;
     line-height: 1;
     margin: auto;
@@ -1211,11 +1256,28 @@
     text-transform: uppercase;
 }
 
+@media (min-width: 85.375rem) {
+
+    .css-1ojjt41,
+    [data-css-1ojjt41] {
+        font-size: calc(0.9rem + (1 - 0.9) * (100vw - 85.375rem) / (160 - 85.375));
+    }
+}
+
 .css-1ojjt41,
 [data-css-1ojjt41] {
     text-align: center;
     margin: 20px;
 
+}
+
+@media (min-width: 30.0625em) {
+
+    .css-1lmvk87,
+    [data-css-1lmvk87] {
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+    }
 }
 
 .css-1lmvk87,
@@ -1520,6 +1582,14 @@
 
 }
 
+@media (max-width: 120em) {
+
+    .css-136ow7o,
+    [data-css-136ow7o] {
+        height: 50vw;
+    }
+}
+
 .css-136ow7o {
     opacity: 1;
 
@@ -1556,6 +1626,15 @@
     min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 120em) {
+
+    .css-27novx,
+    [data-css-27novx] {
+        font-size: 1.23rem;
+        letter-spacing: -0.8px;
+    }
 }
 
 .css-27novx,
@@ -1633,6 +1712,36 @@
     -webkit-justify-content: center;
 }
 
+@media (max-width: 120em) {
+
+    .css-17d1bj6,
+    [data-css-17d1bj6] {
+        margin: 4rem auto 5rem;
+        height: 2px;
+        width: 14.88%;
+    }
+}
+
+@media (max-width: 240em) {
+
+    .css-17d1bj6,
+    [data-css-17d1bj6] {
+        margin: 7rem auto 8rem;
+        width: 14.88%;
+    }
+}
+
+
+@media (max-width: 275em) {
+
+    .css-17d1bj6,
+    [data-css-17d1bj6] {
+        height: 3px;
+        margin: 11rem auto 12rem;
+        width: 16%;
+    }
+}
+
 .css-17d1bj6,
 [data-css-17d1bj6] {
     width: 25%;
@@ -1644,6 +1753,17 @@
     background-color: #25c505f6;
 
 }
+
+
+@media (min-width: 85.375rem) {
+
+    .css-1n18h7c,
+    [data-css-1n18h7c] {
+        padding-top: calc(3rem + (8.5 - 3) * (100vw - 85.375rem) / (160 - 85.375));
+        padding-bottom: calc(3rem + (5 - 3) * (100vw - 85.375rem) / (160 - 85.375));
+    }
+}
+
 
 .css-1n18h7c,
 [data-css-1n18h7c] {
@@ -1682,6 +1802,31 @@
     text-align: left;
 }
 
+@media (max-width: 120em) {
+
+    .css-5crigr,
+    [data-css-5crigr] {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 240em) {
+
+    .css-5crigr,
+    [data-css-5crigr] {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 275em) {
+
+    .css-5crigr,
+    [data-css-5crigr] {
+        margin-bottom: 2.5rem;
+    }
+}
+
+
 .css-5crigr,
 [data-css-5crigr] {
     display: -webkit-box;
@@ -1693,16 +1838,26 @@
     margin-left: unset;
 }
 
+
+@media (max-width: 120em) {
+
+    .css-jpy5xg,
+    [data-css-jpy5xg] {
+        font-size: 1.40625rem;
+        letter-spacing: -1.125px;
+    }
+}
+
 .css-jpy5xg,
 [data-css-jpy5xg] {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Mouse Memoirs', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
     color: #FFF;
-    white-space: nowrap;
+
 }
 
 .css-etavmd,
@@ -1801,6 +1956,8 @@
     position: absolute;
 }
 
+
+
 .css-161yl81,
 [data-css-161yl81] {
     background-repeat: no-repeat;
@@ -1857,12 +2014,13 @@
     position: relative;
 }
 
-@media (min-width: 85.375rem) {}
+@media (min-width: 85.375rem) {
 
-.css-zz68r5,
-[data-css-zz68r5] {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    .css-zz68r5,
+    [data-css-zz68r5] {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
 }
 
 
@@ -1883,27 +2041,28 @@
     padding-right: 1.5rem;
 }
 
-@media (min-width: 90em) {}
+@media (min-width: 90em) {
 
-.css-195u9ee,
-[data-css-195u9ee] {
-    max-width: 39.825rem;
+    .css-195u9ee,
+    [data-css-195u9ee] {
+        max-width: 39.825rem;
+    }
 }
 
+@media (min-width: 65.0625em) {
 
-@media (min-width: 65.0625em) {}
-
-.css-195u9ee,
-[data-css-195u9ee] {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-height: calc(0px + 100vh);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 36rem;
-    text-align: left;
-    -webkit-transform: translate(-50%, -50%);
+    .css-195u9ee,
+    [data-css-195u9ee] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: calc(0px + 100vh);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 36rem;
+        text-align: left;
+        -webkit-transform: translate(-50%, -50%);
+    }
 }
 
 @media (min-width: 65.0625em) {
@@ -1916,11 +2075,12 @@
     }
 }
 
-@media (min-width: 85.375rem) {}
+@media (min-width: 85.375rem) {
 
-.css-1mdroc,
-[data-css-1mdroc] {
-    margin-bottom: calc(1.25rem + (1.5 - 1.25) * (100vw - 85.375rem) / (160 - 85.375));
+    .css-1mdroc,
+    [data-css-1mdroc] {
+        margin-bottom: calc(1.25rem + (1.5 - 1.25) * (100vw - 85.375rem) / (160 - 85.375));
+    }
 }
 
 .css-1mdroc,
@@ -2121,27 +2281,16 @@
     pointer-events: none;
 }
 
-@media (min-width: 65.0625em) {}
 
-.css-1yndg9k,
-[data-css-1yndg9k] {
-    flex-basis: 50%;
-    height: 100%;
-    order: 1;
-    -webkit-flex-basis: 50%;
-    -webkit-order: 1;
-}
 
-.css-1yndg9k,
-[data-css-1yndg9k] {
-    position: relative;
-}
 
-@media (min-width: 65.0625em) {}
 
-.css-51r16h,
-[data-css-51r16h] {
-    height: 100%;
+@media (min-width: 65.0625em) {
+
+    .css-51r16h,
+    [data-css-51r16h] {
+        height: 100%;
+    }
 }
 
 .css-51r16h,
@@ -2671,5 +2820,3 @@
     height: 100% !important;
     padding: 20px;
 }
-
-.indexhead {}
