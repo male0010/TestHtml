@@ -218,9 +218,12 @@
 
 
 }
+.linnn{
+  line-height: 1.5 !important;
+}
 
 .coo {
-  line-height: 20px;
+  line-height: 1.5 !important;
   display: flex;
   /* ใช้ flexbox */
   flex-direction: row;
