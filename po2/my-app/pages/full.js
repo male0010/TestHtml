@@ -74,7 +74,7 @@ export default function Full() {
 
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
-                                            <span className='css-jpy5xg jpy'>Shipment to Arrive in Multiplayer</span>
+                                            <span className='css-jpy5xg jpy'> Arrive in Multiplayer</span>
                                         </div>
                                         <span className='css-etavmd eta'>One of the most iconic maps in Call of Duty history is reimagined for Modern Warfare II Multiplayer.</span>
                                     </div>

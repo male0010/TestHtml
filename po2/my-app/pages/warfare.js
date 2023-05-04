@@ -19,7 +19,7 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
-                        <h1 className='css-kovv1oo'>
+                        <h1 className='css-kovv1o has'>
                             Warzone Third Anniversary
                             <br></br></h1>
                         <h3 className='css-27novx  has my-4'>Season 02 of Call of Duty®: Warzone™ 2.0
