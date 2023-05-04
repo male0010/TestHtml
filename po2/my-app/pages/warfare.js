@@ -19,15 +19,19 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
+<<<<<<< HEAD
                         <h1 className='css-kovv1oo'>
+=======
+                        <h1 className='css-kovv1o   has'>
+>>>>>>> 9e96a8c5f04e41d8981a0a887573d3d51b5aece1
                             Warzone Third Anniversary
                             <br></br></h1>
-                        <h3 className='css-27novx'>Season 02 of Call of Duty®: Warzone™ 2.0
+                        <h3 className='css-27novx  has my-4'>Season 02 of Call of Duty®: Warzone™ 2.0
                         </h3>
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <Link className="css-1lmvk87" href='/'>Learn More</Link>
+                                    <Link className="css-1lmvk87 my-0  " href='/'>Learn More</Link>
                                 </span>
 
                             </span>
@@ -49,24 +53,24 @@ export default function Warfare() {
                             <div className='false'>
                                 <div className='css-bov5wr'>
                                     <div className='css-ov78et'>
-                                        <div className='css-5crigr'>
-                                            <span className='css-jpy5xg'>GENERAL OVERVIEW </span>
+                                        <div className='css-5crigr jpy'>
+                                            <span className='css-jpy5xg jpy'>GENERAL OVERVIEW </span>
                                         </div>
-                                        <span className='css-etavmd'>Raid Episode 02. Take control of Captain Price, Farah, and Gaz as <Link href=''>they progress through Atomgrad</Link> in search of a deadly warhead.</span>
+                                        <span className='css-etavmd eta'>Raid Episode 02. Take control of Captain Price, Farah, and Gaz as <Link href=''>they progress through Atomgrad</Link> in search of a deadly warhead.</span>
                                     </div>
 
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
-                                            <span className='css-jpy5xg'>Premium quality</span>
+                                            <span className='css-jpy5xg jpy'>Premium quality</span>
                                         </div>
-                                        <span className='css-etavmd'>Thanks to its incredible quality and depth, Megascans makes work fun & easy for the world s top AAA and <Link href=''>VFX studios..</Link></span>
+                                        <span className='css-etavmd eta'>Thanks to its incredible quality and depth, Megascans makes work fun & easy for the world s top AAA and <Link href=''>VFX studios..</Link></span>
 
                                     </div>
                                     <div className='css-ov78et'>
                                         <div className='css-5crigr'>
-                                            <span className='css-jpy5xg'>Warzone Third Anniversary</span>
+                                            <span className='css-jpy5xg jpy'>Warzone Third Anniversary</span>
                                         </div>
-                                        <span className='css-etavmd'>Check the in-game Store daily to claim your rewards throughout <Link href=' '>Season 02 Reloaded</Link>. Here s to many more years of Warzone!</span>
+                                        <span className='css-etavmd eta'>Check the in-game Store daily to claim your rewards throughout <Link href=' '>Season 02 Reloaded</Link>. Here s to many more years of Warzone!</span>
                                     </div>
                                 </div>
                             </div>
@@ -76,9 +80,9 @@ export default function Warfare() {
                 {/* <section className='css-oqffr1'>
                     <div className='css-1hxbrwu'></div>
                     <div className='css-z6wpf2'> Celebration, Free Gifts</div>
-                    <div className='css-161yl81'>
+                    <div className='css-161yl81 justify-content-center d-flex'>
                         <div className='css-9hvv' data-reactid="291">
-                            <iframe width="1000" height="550"
+                            <iframe width="1000" height="550" className=' videeee p-1'
                                 src="https://www.youtube.com/embed/WX1ubMg52lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                             </iframe>
                         </div>
@@ -94,17 +98,17 @@ export default function Warfare() {
                                 <div className='css-195u9ee'>
                                     <div className='css-1mdroc'>
                                         <div>
-                                            <div className='css-1tdt0c1'>the Ronin </div>
-                                            <h1 className='css-8svv8r'>Path of the Ronin Event Camo Challenges</h1>
-                                            <hr className="css-lrrpvc" data-reactid="298"></hr>
+                                            <div className='tdt css-1tdt0c1'>the Ronin </div>
+                                            <h1 className='tdt css-8svv8r'>Path of the Ronin Event Camo Challenges</h1>
+                                            <hr className="css-lrrpvc my-1" data-reactid="298"></hr>
                                         </div>
                                     </div>
 
-                                    <p className='css-1hf3yam'>Whether you re finished with the journey to Orion or only have a few weapons with Gold camouflage, there are some new Camo Challenges for you to complete with the Path of the Ronin event expansion, available in both </p>
+                                    <p className='yam css-1hf3yam'>Whether you re finished with the journey to Orion or only have a few weapons with Gold camouflage, there are some new Camo Challenges for you to complete with the Path of the Ronin event expansion, available in both </p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
                                             <Link href=' ' className='css-1c5mzpc'>
-                                                <span className='label'>EXPERIENCE Warzone 2.0. </span>
+                                                <span className='yam label'>EXPERIENCE Warzone 2.0. </span>
                                             </Link>
                                         </span>
                                     </div>
@@ -135,18 +139,18 @@ export default function Warfare() {
                             <div className='css-zz68r5'>
                                 <div className='css-195u9ee'>
                                     <div className='css-1mdroc'>
-                                        <div >
-                                            <div className='css-1tdt0c1'> Shredder</div>
-                                            <h1 className='css-8svv8r'>The man, the myth, the villain.</h1>
-                                            <hr class="css-lrrpvc" data-reactid="298"></hr>
+                                        <div  className='tdt'>
+                                            <div className='tdt tdt css-1tdt0c1'> Shredder</div>
+                                            <h1 className='tdt tdt css-8svv8r'>The man, the myth, the villain.</h1>
+                                            <hr class="css-lrrpvc my-1" data-reactid="298"></hr>
                                         </div>
                                     </div>
 
-                                    <p className='css-1hf3yam'>Making his deadly debut in the first Teenage Mutant Ninja Turtles comic in 1984, Shredder is the notorious leader of the Foot Clan that uses his bladed armor to empower his expert ninjutsu and martial arts techniques. Now he is coming to Call of Duty, ready to slice and dice any Operator who stands in his way of victory.</p>
+                                    <p className='yam css-1hf3yam'>Making his deadly debut in the first Teenage Mutant Ninja Turtles comic in 1984, Shredder is the notorious leader of the Foot Clan that uses his bladed armor to empower his expert ninjutsu and martial arts techniques. Now he is coming to Call of Duty, ready to slice and dice any Operator who stands in his way of victory.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
                                             <Link href=' ' className='css-1c5mzpc'>
-                                                <span className='label'>EXPERIENCE Warzone 2.0. </span>
+                                                <span className='yam label'>EXPERIENCE Warzone 2.0. </span>
                                             </Link>
                                         </span>
                                     </div>
@@ -168,17 +172,17 @@ export default function Warfare() {
                                 <div className='css-195u9ee'>
                                     <div className='css-1mdroc'>
                                         <div>
-                                            <div className='css-1tdt0c1'>Additional Bundle</div>
-                                            <h1 className='css-8svv8r'>St. Patrick s Day Festivities</h1>
-                                            <hr className="css-lrrpvc" data-reactid="298"></hr>
+                                            <div className='tdt css-1tdt0c1'>Additional Bundle</div>
+                                            <h1 className='tdt css-8svv8r'>St. Patrick s Day Festivities</h1>
+                                            <hr className="css-lrrpvc my-1" data-reactid="298"></hr>
                                         </div>
                                     </div>
 
-                                    <p className='css-1hf3yam'>What else is in Store for Season 02 Reloaded? The first-ever Bundles for some Task Force 141 Operators outside of the Vault Edition, a golden opportunity to get a badass weapon blueprint and new Ghost skin, and a Bundle that will more than prepare you for the green rivers flowing in Al Mazrah to celebrate a mid-March feast day.</p>
+                                    <p className='yam css-1hf3yam'>What else is in Store for Season 02 Reloaded? The first-ever Bundles for some Task Force 141 Operators outside of the Vault Edition, a golden opportunity to get a badass weapon blueprint and new Ghost skin, and a Bundle that will more than prepare you for the green rivers flowing in Al Mazrah to celebrate a mid-March feast day.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
                                             <Link href=' ' className='css-1c5mzpc'>
-                                                <span className='label'>EXPERIENCE Warzone 2.0. </span>
+                                                <span className='yam label'>EXPERIENCE Warzone 2.0. </span>
                                             </Link>
                                         </span>
                                     </div>
@@ -282,17 +286,17 @@ export default function Warfare() {
                                 <div className='css-195u9ee'>
                                     <div className='css-1mdroc'>
                                         <div >
-                                            <div className='css-1tdt0c1'>  Marksman Rifle</div>
-                                            <h1 className='css-8svv8r'>New Weapon: Tempus Torrent.</h1>
-                                            <hr className="css-lrrpvc" data-reactid="298"></hr>
+                                            <div className='tdt css-1tdt0c1'>  Marksman Rifle</div>
+                                            <h1 className='tdt css-8svv8r'>New Weapon: Tempus Torrent.</h1>
+                                            <hr className="css-lrrpvc my-1" data-reactid="298"></hr>
                                         </div>
                                     </div>
 
-                                    <p className='css-1hf3yam'>Season 02 Reloaded brings a new Marksman Rifle to the table — the Tempus Torrent. This weapon offers impressive damage and a fast-firing mechanism, making it a great Primary Weapon choice when deploying to the new Himmelmatt Expo Multiplayer map or to Ashika Island.</p>
+                                    <p className='yam css-1hf3yam'>Season 02 Reloaded brings a new Marksman Rifle to the table — the Tempus Torrent. This weapon offers impressive damage and a fast-firing mechanism, making it a great Primary Weapon choice when deploying to the new Himmelmatt Expo Multiplayer map or to Ashika Island.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
                                             <Link href=' ' className='css-1c5mzpc'>
-                                                <span className='label'>EXPERIENCE Warzone 2.0. </span>
+                                                <span className='yam label'>EXPERIENCE Warzone 2.0. </span>
                                             </Link>
                                         </span>
                                     </div>
@@ -314,17 +318,17 @@ export default function Warfare() {
                                 <div className='css-195u9ee'>
                                     <div className='css-1mdroc'>
                                         <div>
-                                            <div className='css-1tdt0c1'>Party Queuing</div>
-                                            <h1 className='css-8svv8r'>New Social Feature: Party Queuing</h1>
-                                            <hr className="css-lrrpvc" data-reactid="298"></hr>
+                                            <div className='tdt css-1tdt0c1'>Party Queuing</div>
+                                            <h1 className='tdt css-8svv8r'>New Social Feature: Party Queuing</h1>
+                                            <hr className="css-lrrpvc my-1" data-reactid="298"></hr>
                                         </div>
                                     </div>
 
-                                    <p className='css-1hf3yam'> Party queuing allows players to automatically join a friend s party once they are finished with their active match. Just like inviting friends to a party or channel, you can access party queuing via the in-game social menu.</p>
+                                    <p className='yam css-1hf3yam'> Party queuing allows players to automatically join a friend s party once they are finished with their active match. Just like inviting friends to a party or channel, you can access party queuing via the in-game social menu.</p>
                                     <div className='css-1vu5cxa'>
                                         <span className='css-8t1qeb'>
                                             <Link href=' ' className='css-1c5mzpc'>
-                                                <span className='label'>EXPERIENCE Warzone 2.0. </span>
+                                                <span className='yam label'>EXPERIENCE Warzone 2.0. </span>
                                             </Link>
                                         </span>
                                     </div>
@@ -351,15 +355,19 @@ export default function Warfare() {
                         </video>
                     </div>
                     <div className='css-1iwdce8'>
+<<<<<<< HEAD
                         <h1 className='css-kovv1oo'>
+=======
+                        <h1 className='css-kovv1o has'>
+>>>>>>> 9e96a8c5f04e41d8981a0a887573d3d51b5aece1
                             Warzone Third Anniversary
                             <br></br></h1>
-                        <h3 className='css-27novx'>Season 02 of Call of Duty®: Warzone™ 2.0
+                        <h3 className='css-27novx has my-4'>Season 02 of Call of Duty®: Warzone™ 2.0
                         </h3>
                         <div>
                             <span className='css-1ojjt41'>
                                 <span >
-                                    <Link className="css-1lmvk87" href=''>Learn More</Link>
+                                    <Link className="css-1lmvk87 my-0" href=''>Learn More</Link>
                                 </span>
 
                             </span>

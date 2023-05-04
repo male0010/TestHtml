@@ -56,9 +56,9 @@ export default function RELOADED() {
                             <p>The Tracer Pack: Paul Pogba Operator Bundle has the French midfielder Paul Pogba as a playable Operator, as well as the “Series A” Weapon Blueprint meant for silent support and the “Counter Attack” Weapon Blueprint for getting high shots on target.</p>
                             <p>Finally, the Tracer Pack: Messi Operator Bundle gives you the legendary Leo Messi as an Operator, along with the sleek “Atomic Flea” Weapon Blueprint and the all-around solid “Blue Thunder” Weapon Blueprint.</p>
                             
-                            <p>
-                            <iframe width="850" height="500" src="https://www.youtube.com/embed/EwoXZw1RKUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </p>
+                            <div className='videooo justify-content-center'>
+                            <iframe className='videooo' width="850" height="500" src="https://www.youtube.com/embed/EwoXZw1RKUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                             <p>Stay frosty.</p>
                             <p>© 2019-2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
                             

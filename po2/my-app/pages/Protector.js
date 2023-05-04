@@ -53,7 +53,7 @@ export default function Protector() {
                             <p></p>
                             <h5>Purchase the Protector Pack to immediately unlock the following in-game items:
 
-</h5>
+                            </h5>
                             <ul>
                                 <li className='lli'>“The Protector” Operator Skin for Hutch</li>
                                 <li className='lli'>“The Protector s Companion” Rifle Blueprint</li>
@@ -72,9 +72,9 @@ export default function Protector() {
                                 <li className='lli'>1 Hour Double Weapon XP Token
                                 </li>
                             </ul>
-                            <p>
-                            <iframe width="850" height="500" src="https://www.youtube.com/embed/R3ePqy9K1Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </p>
+                            <div className='videooo justify-content-center'>
+                                <iframe className='videooo justify-content-center' width="850" height="500" src="https://www.youtube.com/embed/R3ePqy9K1Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
 
                             <h5>Meet Hutch, the Protector Pack s Featured Operator</h5>
                             <Image className='imgg' src={b} height={500} width={1200} alt="#" />
@@ -84,13 +84,14 @@ export default function Protector() {
                             <p>A physical beast, Hutch s size, strength, and athleticism made him a standout in the Corps, but his love of computers and technology uniquely qualified him to combine his hardened body and sharp mind, pursuing a path as a Marine network and data specialist. His role exposed him to many facets of securing digital data, configuring cyber services, and advising new developments in digital encryption and cyber capabilities.</p>
                             <h5>More About the Call of Duty Endowment</h5>
                             <Image className='imgg' src={c} height={500} width={1200} alt="#" />
-                           <p></p>
+                            <p></p>
 
-                            <Image className='imgg' src={ak} height={500} width={1200} alt="#" /><p>
-                            <p></p>
-                            <iframe width="850" height="500" src="https://www.youtube.com/embed/Foca7Pa4AF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </p>
-                            <p></p>
+                            <Image className='imgg' src={ak} height={500} width={1200} alt="#" />
+                            <div className='videooo justify-content-center'>
+                                
+                                <iframe className='videooo justify-content-center'  width="850" height="500" src="https://www.youtube.com/embed/Foca7Pa4AF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            
                             <p>The Call of Duty Endowment is a nonprofit organization that seeks to help U.S. and U.K. veterans find high-quality careers by supporting groups that prepare them for the job market and by raising awareness of the value vets bring to the workplace. To date, the Endowment has funded the placement of more than 110,000 veterans into good jobs. For more information about the Call of Duty Endowment, please visit <Link href=''>www.callofdutyendowment.org. </Link></p>
                             <p>Season 02 Now Live</p>
 
@@ -98,7 +99,7 @@ export default function Protector() {
 
                             <p>Stay frosty.</p>
                             <p>© 2019-2022 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL OF DUTY WARZONE, and MODERN WARFARE are trademarks of Activision Publishing, Inc. All other trademarks and trade names are the property of their respective owners.</p>
-                            
+
                             <p>For more information, please visit<Link href=''> www.callofduty.com</Link> and <Link href=''>www.youtube.com</Link>/callofduty, and follow <Link href=' '>@Activision</Link> and <Link href=''>@CallofDuty</Link> on Twitter, Instagram, and Facebook.</p>
 
 
