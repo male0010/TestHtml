@@ -65,7 +65,7 @@ export default function Login() {
                 <title>Login</title>
             </Head>
             <Header1 />
-            <body className=" vh-100 lg ">
+            <body className=" vh-100 lg my-5    ">
                 <br></br>
                 <br></br>
                 <div className="container accordion-body   lgback">
@@ -96,15 +96,15 @@ export default function Login() {
                                     </div>
 
                                     <div className=" align-content-end row-8   ">
-                                        <button className=" col-md-3 btn btn-secondary me-2 but  align-self-end butc " type="submit" value="Login" >
+                                        <button className=" btn btn-primary me-2 but butc " type="submit" value="Login" >
                                             {" "}
                                             Login{" "}
                                         </button>
 
-                                        <button className="col-md-3 btn btn-secondary but align-self-end butc ">
-                                            <a href="register" className="a ">
+                                        <button className="btn btn-primary me-2 but butc ">
+                                            <Link href="register" className="a ">
                                                 register
-                                            </a>
+                                            </Link>
                                         </button>
                                     </div>
                                     <br></br>

@@ -10,7 +10,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from "react";
-
+import Link from "next/link"
 
 // import styles from '@/styles/globals.css'
 
@@ -18,55 +18,48 @@ import { useState } from "react";
 export default function header() {
   return (
     <>
-
-      <nav className="menu accordion-header menu2">
-        <div className="container-fluid navbar navbar-expand-lg menu2"><a href="/">
-          <Image src={img4} alt="" width="240" height="70" /></a>
-
-          <div className="menu accordion-header menu2" id="navbarSupportedContent">
-            <ul className="navbar navbar-expand-lg ">
-              <li className="">
-                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
+        <div class="container-fluid">
+          <Link href='/'>  <Image src={img4} alt="" width="240" height="70" /></Link>
+          <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nti"></span>
+          </button>
+          <div class="collapse navbar-collapse da" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="d-flex justify-content-end  ">
+                <a className="nav-link bg-black menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                   GAMES
                 </a>
               </li>
-              <li className=" ">
-                <a className="" href="/item" >
+              <li class="d-flex justify-content-end  ">
+              <a className="bg-black nav-link  menu2" href="/item" >
                   ITEM
                 </a>
-
               </li>
-              <li className="">
-                <a className="nav-link  menu2" href="category">
-                CATEGORY
+              <li class="d-flex justify-content-end  ">
+              <a className="nav-link bg-black menu2" href="category">
+                  CATEGORY
                 </a>
-
               </li>
-              <li className="">
-                <a className="nav-link  menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="d-flex justify-content-end  ">
+              <a className="nav-link bg-black menu2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SHOP
                 </a>
-
               </li>
+           
+
             </ul>
-            {/* <form className="d-flex menu2">
-              <input className="form-control me-2 search menu4" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-primary lead2" type="submit">Search</button>
-            </form> */}
-
-            
-          </div>
           
-
-
+          </div>
         </div>
       </nav>
       
-      
 
-      
 
-      
+
+
+
+
     </>
   )
 }
