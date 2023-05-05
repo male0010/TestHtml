@@ -1,11 +1,13 @@
-
-
+import b from "../public/image/kkpp.jpg"
+import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
 import Header1 from "../public/header2";
 import Head from "next/head";
 import { useEffect } from "react";
-
+import TESTFOOT from "./testfoot"
+import footer from "@/public/componant/footer";
+import Image from "next/image";
 export default function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -60,11 +62,11 @@ export default function Login() {
             <body className="lg ">
                 <br></br>
                 <br></br>
-                <div className="container accordion-body  lgback">
-                    <div className="row lgback">
+                <div className="container accordion-body   lgback">
+                    <div className="row lgback justify-content-center">
                         <br></br>
 
-                        <div className="col-md-5 m-auto colmd ">
+                        <div className="col-md-5  colmd card   px-0  ">
                             <br></br>
                             <br></br>
                             <h1 className="display-4 text-xl-center ">Warzone™</h1>
@@ -103,9 +105,46 @@ export default function Login() {
                                 </form>
                             </div>
                         </div>
+                        <div className="col-md-3  ">
+                            <div class="card casd  m-2 linnn">
+                                {/* <Image src="..." class="card-img-top" alt="..."/> */}
+                                <div class="card-body ">
+                                    <h5 class="card-title css-z6wpf22 fs-4 ">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</h5>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EwoXZw1RKUA?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-footer">
+                                    <small class=" card-title fs-6 css-z6wpf22 ">SEASON 03 RELOADED FEATURES ALBORAN HATCHERY,
+                                        RAID EPISODE 03, WARZONE RANKED PLAY, AND MORE.</small>
+                                </div>
+                            </div>
+                            <div class="card casd m-2 linnn">
+                                <Image className='imgg' src={b} height={500} width={1200} alt="#" />
+                                <div class="card-body linnn">
+                                    <h5 class="card-title fs-2 css-z6wpf22">NEW</h5>
+                                    <small class=" card-title fs-6  ">The <Link href=''>new Battle Pass for Season 02</Link> features 100+ rewards across 20 Sectors, including three new functional weapons and the Operator Ronin The Season 02 Battle Pass launches at the start of the season on February 15. Upgrade to the full Battle Pass for access to all of Season 02 s Battle Pass items or purchase the Battle Pass Bundle to earn additional Battle Token Tier Skips and get a head start on conquering the map</small>
+
+                                </div>
+                                <div class="card-footer">
+                                    <ul>
+                                        <li className='tag-item'>
+                                            NEWS
+                                        </li>
+                                        <li className='tag-item'>
+                                            Mode Recon
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+                <footer className="footerrr   ">
+                    <TESTFOOT className=' py-5' />
+                </footer>
             </body>
+
         </>
     );
 }
