@@ -3,7 +3,7 @@ import Home from './pro';
 import Link from 'next/link';
 export default function TESTFOOT() {
     return (
-        <footer className="container footertest card-footer fff ">
+        <footer className="container footertest card-footer  py-5 fff ">
             <div className="row card-body  justify-content-between ">
                 <div className="grid col-sm-3 card-title lll">
                 <Link className='link linkk2' href={"/"} >
@@ -43,13 +43,13 @@ export default function TESTFOOT() {
                         <h3>ITEM</h3></Link>
                     <br></br>
                     <ul className='card-text'>
-                    <Link className='link ' href={"/item"} >
+                    <Link className='link linkk2' href={"/item"} >
                         <li>GUN</li></Link>
                         <br></br>
-                        <Link className='link ' href={"/item"} >
+                        <Link className='link linkk2' href={"/item"} >
                         <li>CHARACTER</li></Link>
                         <br></br>
-                        <Link className='link ' href={"/item"} >
+                        <Link className='link linkk2' href={"/item"} >
                         <li>CAR</li></Link>
                         <br></br>
                     </ul>

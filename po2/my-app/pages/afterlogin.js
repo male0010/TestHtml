@@ -49,6 +49,7 @@ import img8 from "../public/image/w2.jpg"
 import Head from "next/head.js";
 import Link from "next/link.js";
 import { useEffect, useState } from "react";
+import TESTFOOT from "./testfoot"
 
 export default function NextPage() {
     const [username, setUsername] = useState("");
@@ -193,92 +194,138 @@ export default function NextPage() {
     }
     return (
         <>
-            <div className="header navbar fixed-top navbarr">
-                <div className=" Ima row-1 ">
-                    <Image src={img8} alt="" height="80" className=" img-fluid   " /></div>
-                <input className="  search col "
-                    placeholder="Search.... "
-                    onChange={(event) => {
-                        setsearch(event.target.value)
-                    }}
-                />
+            <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
+                <div class="container-fluid">
+                    <Link href='/'> <Image className="oos" src={img8} alt="" height="85" /></Link>
+                    <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon nti"></span>
+                    </button>
+                    <div class="collapse navbar-collapse da" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="d-flex justify-content-end
+                             ">
+                                <input className="  search col-2 justify-content-end "
+                                    placeholder="Search.... "
+                                    onChange={(event) => {
+                                        setsearch(event.target.value)
+                                    }}
+                                />
+                            </li>
+                            <li class="d-flex justify-content-end">
+                                <select className='d-flex  all col-1  mx-2 ' onChange={(event) => {
+                                    combine(event.target.value, finalsort)
+                                }}>
 
-                <div className="profile">
-                    {username && (
-                        <>
-                            <span className="username">{username}</span>
-                        </>
-                    )}
-                </div>
-                <button className="logout-btn  btn btn-secondary but " onClick={handleLogout}>
-                    Logout
-                </button>
+                                    <option value={0}>ALL</option>
+                                    <option value={1}>GUN</option>
+                                    <option value={2}>CHARACTER</option>
+                                    <option value={3}>CAR</option>
 
-            </div>
+                                </select>
+                                <select className='d-flex all col-2 ' onChange={(event) => {
+                                    combine(finalfilter, event.target.value)
+                                }}>
 
-            <nav class="navbar fixed-top navbarr row-4">
-                <div className=" Ima col-1 ">
-                    <Image src={img8} alt="" height="100" /></div>
-                <div class="container col-9 ">
-                    <div className="col ">
-                        <input className="  search col-2 "
-                            placeholder="Search.... "
-                            onChange={(event) => {
-                                setsearch(event.target.value)
-                            }}
-                        />
+                                    <option value="0">Sort</option>
+                                    <option value="1">a-z</option>
+                                    <option value="2">z-a</option>
+                                </select>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex justify-content-end">
+                            <div className="profile">
+                                {username && (
+                                    <>
+                                        <span className="username">{username}</span>
+                                    </>
+                                )}
+                            </div>
+                            <button className="logout-btn  btn btn-secondary but " onClick={handleLogout}>
+                                Logout
+                            </button>
+                        </form>
                     </div>
-
-                    <div class="col-md-2 headerr ">
-                        <div className="profile">
-                            {username && (
-                                <>
-                                    <span className="username">{username}</span>
-                                </>
-                            )}
-                        </div>
-                        <button className="logout-btn  btn btn-secondary but " onClick={handleLogout}>
-                            Logout
-                        </button>
-                    </div>
-
-
-
-                    <div className="d-flex col-6 sortt">
-                        <select className='d-flex all col-sm-2 ' onChange={(event) => {
-                            combine(event.target.value, finalsort)
-                        }}>
-
-                            <option value={0}>ALL</option>
-                            <option value={1}>gun</option>
-                            <option value={2}>character</option>
-                            <option value={3}>car</option>
-
-                        </select>
-                        -
-                        <select className='d-flex all col-sm-2' onChange={(event) => {
-                            combine(finalfilter, event.target.value)
-                        }}>
-
-                            <option value="0">Sort</option>
-                            <option value="1">a-z</option>
-                            <option value="2">z-a</option>
-                        </select>
-                    </div>
-
                 </div>
             </nav>
 
 
+
             <Sidebar1 />
-            <br></br>
-           <br></br>
-             <br></br>
-            <br></br>
-            <br></br><br></br>
-            <div className="container">
+            <div className="container con">
+
+                <br></br>
+                <br></br>
                 <div>
-                    <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+                    {/* <div className="row">
+        <input className="  search col-1"
+            placeholder="Search.... "
+            onChange={(event) => {
+                setsearch(event.target.value)
+            }}
+        />
+    </div>
+    <br></br> */}
+
+                    {/* <div className="d-flex row ">
+        <select className='d-flex all col-sm-2 ' onChange={(event) => {
+            combine(event.target.value, finalsort)
+        }}>
+
+            <option value={0}>ALL</option>
+            <option value={1}>gun</option>
+            <option value={2}>character</option>
+            <option value={3}>car</option>
+
+        </select>
+    -
+        <select className='d-flex all col-sm-2' onChange={(event) => {
+            combine(finalfilter, event.target.value)
+        }}>
+
+            <option value="0">Sort</option>
+            <option value="1">a-z</option>
+            <option value="2">z-a</option>
+        </select>
+    </div> */}
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div>
+                        {/* <div className="row">
+            <input className="  search col-1"
+                placeholder="Search.... "
+                onChange={(event) => {
+                    setsearch(event.target.value)
+                }}
+            />
+        </div> */}
+                        <br></br>
+
+                        {/* <div className="d-flex row ">
+            <select className='d-flex all col-sm-2 ' onChange={(event) => {
+                combine(event.target.value, finalsort)
+            }}>
+
+                <option value={0}>ALL</option>
+                <option value={1}>gun</option>
+                <option value={2}>character</option>
+                <option value={3}>car</option>
+
+            </select>
+            -
+            <select className='d-flex all col-sm-2' onChange={(event) => {
+                combine(finalfilter, event.target.value)
+            }}>
+
+                <option value="0">Sort</option>
+                <option value="1">a-z</option>
+                <option value="2">z-a</option>
+            </select>
+        </div> */}
+                        <br></br>
+                    </div>
+                    <div className='row row-cols-sm-2 row-cols-md-3 row-cols-lg-5  row-cols-xl-5  row-cols-xxl-6 g-2 g-lg-5 itemss'>
                         {sort?.filter((item) => {
                             if (search == "") {
                                 return item
@@ -287,41 +334,41 @@ export default function NextPage() {
                             }
                         }).map((item, index) => {
                             return (
-                                <div key={index} className="col">
-                                    <div className="card" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
-                                        <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
-                                            className="card-Image-top " alt="..." />
-                                        <div className="card-body itemm">
-                                            <h5 className="itemm">
-                                                {/* {(item.file_name).replace(".jpg", '')} */}
-                                                {(item.Name_data).toUpperCase()}
-                                            </h5>
+
+                                <div className="card its" key={index} data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
+                                    <Image width={245} height={200} src={"https://www.imgen.site/imgen2" + item.path}
+                                        className="card-Image-top  imgite   " alt="..." />
+                                    <div className="card-body itemm">
+                                        <h5 className="itemm ">
+                                            {/* {(item.file_name).replace(".jpg", '')} */}
+                                            {(item.Name_data).toUpperCase()}
+                                        </h5>
 
 
 
 
-                                            <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div className="modal-dialog ">
+                                        <div className="modal fade p-0 " id={"exampleModal" + item.id_data} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div className="modal-dialog modal-dialog-centered ">
 
-                                                    <div className="modal-content  text-center  ">
-                                                        <Image className="card" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
-                                                            alt="..." />
-                                                        <div className="modal-body itemm">
-                                                            {/* {(item.file_name).replace(".jpg", '')} */}
-                                                            {(item.Name_data).toUpperCase()}
-                                                        </div>
+                                                <div className="modal-content   text-center  ">
+                                                    <Image className=" card-img" width={500} height={350} src={"https://www.imgen.site/imgen2" + item.path}
+                                                        alt="..." />
+                                                    <div className="modal-body itemm">
+                                                        {/* {(item.file_name).replace(".jpg", '')} */}
+                                                        {(item.Name_data).toUpperCase()}
+                                                    </div>
 
-                                                        <div className="modal-footer   border border-0 footer ">
-                                                            <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn btn-primary">download</button>
+                                                    <div className="modal-footer   border border-0 footer ">
+                                                        <button onClick={(e) => { loadfile(e, item.path, item.file_name) }} className="btn bta  btn-primary">Download</button>
 
-                                                            <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        </div>
+                                                        <button on type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             )
                         })}
 
@@ -330,6 +377,10 @@ export default function NextPage() {
                     </div>
                 </div>
             </div>
+
+            <br></br>
+            <br></br>
+            <TESTFOOT />
 
         </>
     );
