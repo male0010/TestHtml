@@ -43,13 +43,13 @@ export default function TESTFOOT() {
                         <h3>ITEM</h3></Link>
                     <br></br>
                     <ul className='card-text'>
-                    <Link className='link ' href={"/item"} >
+                    <Link className='link linkk2' href={"/item"} >
                         <li>GUN</li></Link>
                         <br></br>
-                        <Link className='link ' href={"/item"} >
+                        <Link className='link linkk2' href={"/item"} >
                         <li>CHARACTER</li></Link>
                         <br></br>
-                        <Link className='link ' href={"/item"} >
+                        <Link className='link linkk2' href={"/item"} >
                         <li>CAR</li></Link>
                         <br></br>
                     </ul>
