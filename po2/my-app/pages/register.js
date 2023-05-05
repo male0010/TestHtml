@@ -9,8 +9,19 @@ import Head from 'next/head';
 import Link from "next/link.js";
 import axios from "axios";
 import TESTFOOT from "./testfoot"
-import Image from "next/image";
+import Image from 'next/image'
+import n from "../public/image/neew.png"
+import e from "../public/image/neww.jpg"
+import w from "../public/image/newww.jpg"
+import z from "../public/image/nw.jpg"
+import E from "../public/image/se.jpg"
+import se from "../public/image/see.jpg"
+import es from "../public/image/seee.png"
+
+
+
 export default function Register() {
+
 
     async function Register(e) {
         e.preventDefault();
@@ -123,6 +134,60 @@ export default function Register() {
                         </div>
                     </div>
                 </div>
+
+
+
+                <br></br>
+                <br></br>
+                <br></br>
+
+
+
+                <div className="card text-center colmd m-2 py-1 px-1" >
+                    <div className="card-title m-2 w-100">
+                        <div class="  px-4 py-2 text-center">
+                            <div class="py-3">
+                                <h1 class="display-5  css">ENLIST NOW</h1>
+                                <div class="col-lg-4 mx-auto">
+                                    <p class="fs-5 mb-4 scs">GET THE LATEST INTEL: Your source for the most current news, get alerts for new events or updates, and view heatmaps.</p>
+                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                        <a href="https://www.callofduty.com/warzone" class="btn btn-primary lead2">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className=" card-body m-2">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <Image className="img-fluid" src={E} width={1400} height={800} alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <Image className="img-fluid" src={se} width={1400} height={800} alt="..." />
+
+                                </div>
+                                <div class="carousel-item">
+                                    <Image className="img-fluid" src={es} width={1400} height={800} alt="..." />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
                 <footer className="footerrr   ">
                     <TESTFOOT className=' py-5' />
                 </footer>
