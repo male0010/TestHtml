@@ -5,6 +5,11 @@ import axios from "axios";
 import Header1 from "../public/header2";
 import Head from "next/head";
 import { useEffect } from "react";
+import Image from 'next/image'
+import n from "../public/image/neew.png"
+import e from "../public/image/neww.jpg"
+import w from "../public/image/newww.jpg"
+import z from "../public/image/nw.jpg"
 
 export default function Login() {
     const [username, setUsername] = useState("");
@@ -57,7 +62,7 @@ export default function Login() {
                 <title>Login</title>
             </Head>
             <Header1 />
-            <body className="lg ">
+            <body className=" vh-100 lg ">
                 <br></br>
                 <br></br>
                 <div className="container accordion-body  lgback">
@@ -67,19 +72,19 @@ export default function Login() {
                         <div className="col-md-5 m-auto colmd ">
                             <br></br>
                             <br></br>
-                            <h1 className="display-4 text-xl-center ">Warzone™</h1>
+                            <h1 className="display-4 text-xl-center css">Warzone™</h1>
                             <br></br>
-                            <p className="lead text-start ">Sign In to your account</p>
+                            <p className="lead text-start sc ">Sign In To Your Account</p>
                             <div className="card-body ">
                                 <form onSubmit={Login}>
-                                    <div className="mb-3">
+                                    <div className="mb-3 ssc" >
                                         <label for="" className="form-label">
                                             Username
                                         </label>
                                         <input className="form-control" type="username" name="username" value={username}
                                             onChange={(e) => setUsername(e.target.value)} placeholder="" required />
                                     </div>
-                                    <div className="mb-3">
+                                    <div className="mb-3 ssc">
                                         <label for="" className="form-label">
                                             Password
                                         </label>
@@ -87,13 +92,13 @@ export default function Login() {
                                             onChange={(e) => setPassword(e.target.value)} placeholder="" required />
                                     </div>
 
-                                    <div className=" align-content-end row-8  ">
-                                        <button className=" col-md-3 btn btn-secondary me-2 but  align-self-end " type="submit" value="Login" >
+                                    <div className=" align-content-end row-8   ">
+                                        <button className=" col-md-3 btn btn-secondary me-2 but  align-self-end butc " type="submit" value="Login" >
                                             {" "}
                                             Login{" "}
                                         </button>
 
-                                        <button className="col-md-3 btn btn-secondary but align-self-end">
+                                        <button className="col-md-3 btn btn-secondary but align-self-end butc ">
                                             <a href="register" className="a ">
                                                 register
                                             </a>
@@ -105,6 +110,87 @@ export default function Login() {
                         </div>
                     </div>
                 </div>
+
+<br></br>
+<br></br>
+
+<br></br>
+
+
+
+
+
+<hr className="css-17d1bj66"></hr>
+<section class=" text-center container">
+    <div class="row  ">
+      <div class="col-lg-4 col-md-5 mx-auto">
+        <h1 class="fw-light css">GET THE GAME</h1>
+        
+      </div>
+    </div>
+  </section>
+
+  <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    
+                    <div class="col">
+                        <div class="card h-100">
+                        <Image className="img-fluid" src={n} alt="..." />
+                                <div className="card-body csc">
+                                <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text ccs">Call of Duty®: Modern Warfare® II & Warzone™ 2.0 Season 01 Patch Notes</p>
+                                </div>
+                               
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <Image className="img-fluid" src={e} alt="..." />
+                                <div className="card-body csc">
+                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text  ccs">CALL OF DUTY®: MODERN WARFARE® II & WARZONE™ 2.0 SEASON 03 PATCH NOTES</p>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    {/* <div class="col">
+                        <div class="card h-100">
+                        <Image className="img-fluid" src={w} alt="..." />
+                                <div className="card-body csc">
+                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE I</h5>
+                                    <p className="card-text ccs">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notes</p>
+                                </div>
+                                
+                        </div>
+                    </div> */}
+                       <div class="col">
+                        <div class="card h-100">
+                        <Image className="img-fluid" src={w} alt="..." />
+                                <div className="card-body csc">
+                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE I</h5>
+                                    <p className="card-text ccs">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notess</p>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100">
+                        <Image className="img-fluid" src={z} alt="..." />
+                                <div className="card-body csc">
+                                    <h5 className="card-title cs">CALL OF DUTY: WARZONE</h5>
+                                    <p className="card-text ccs">SQUAD UP, DROP IN! CALL OF DUTY®: WARZONE™ 2.0 TACTICAL OVERVIEW NEW FEATURES, DMZ, AND MORE</p>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+               
+                </div>
+
+                <br></br>
+                
             </body>
         </>
     );
