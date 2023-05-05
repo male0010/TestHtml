@@ -37,9 +37,9 @@ export default function skin() {
                     <div class="container coo accordion-body cam1  ">
                         <div>
 
-                            <h2 className="card-title text-start">GET UP TO
+                            <h2 className="card-title text-start linnn">GET UP TO
                                 1400 CP BACK</h2>
-                            <h6 className="card-text ">Play through all 20 sectors and earn up to 1400 Call of Duty® Points back. Plus, instantly unlock a new operator, Ronin.</h6>
+                            <h6 className="card-text linnn">Play through all 20 sectors and earn up to 1400 Call of Duty® Points back. Plus, instantly unlock a new operator, Ronin.</h6>
                         </div>
                         <div>
                             <Image className="accordion-flush imggg " src={cam2} height={250} width={400} alt="#" />
@@ -54,16 +54,16 @@ export default function skin() {
                             <Image className="accordion-flush imgggg " src={s3} height={250} width={400} alt="#" />
 
                         </div>
-                        <div>
-                            <h2 className="card-title text-start">BATTLE PASS</h2>
-                            <h6 className="card-text ">Grants access to unlock:
+                        <div >
+                            <h2 className="card-title text-start linnn">BATTLE PASS</h2>
+                            <h6 className="card-text linnn">Grants access to unlock:
 
                                 New Operator: Ronin
 
                                 + 100 Battle Pass Items
 
                                 Up to 1400 COD Points back</h6>
-                            <p className="card-text text-lg-end">1100 CP - PURCHASE ON IN-GAME STORE</p>
+                            <p className="card-text text-lg-end linnn">1100 CP - PURCHASE ON IN-GAME STORE</p>
 
                         </div>
 
@@ -74,9 +74,9 @@ export default function skin() {
                     <div class="container coo accordion-body cam1 ">
                         <div>
 
-                            <h2 className="card-title text-start">BATTLE PASS
+                            <h2 className="card-title text-start linnn">BATTLE PASS
                                 BUNDLE</h2>
-                            <h6 className="card-text ">Includes the Battle Pass
+                            <h6 className="card-text linnn">Includes the Battle Pass
                                 and 20 Battle Token Tier Skips*
 
                                 PlayStation® Exclusive** - additional

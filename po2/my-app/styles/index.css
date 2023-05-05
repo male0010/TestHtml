@@ -481,7 +481,7 @@ padding-top: 1px;
     p.h3 {
         font-size: 24px !important;
     }
-    
+
 }
 
 @media (min-width: 768px)and (max-width: 992px) {
@@ -642,10 +642,7 @@ padding-top: 1px;
     }
 
 
-    .menu ul a {
-        font-size: 1px !important;
-
-    }
+   
 
     .menu ul li {
         padding: 6px;
@@ -731,12 +728,11 @@ padding-top: 1px;
     }
 
     .css-etavmd.eta {
-        font-size: 6px !important;
+        font-size: 5px !important;
     }
 
     .css-jpy5xg.jpy {
-        font-size: 7px !important;
-        
+        font-size: 5px !important;
 
     }
 
@@ -1868,6 +1864,17 @@ padding-top: 1px;
     background-color: #25c505f6;
 
 }
+
+.css-17d1bj66{
+    width: 100%;
+    margin: 1rem auto;
+    display: block;
+    border: none;
+    height: 3px;
+    background-blend-mode: normal, color;
+    background-color: #03ec3df6;
+}
+
 
 .css-1n18h7c,
 [data-css-1n18h7c] {
