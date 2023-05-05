@@ -65,16 +65,15 @@ export default function Login() {
                 <title>Login</title>
             </Head>
             <Header1 />
-            <body className=" vh-100 lg my-5    ">
+            <main className=" vh-100 lg  px-0   ">
                 <br></br>
                 <br></br>
-                <div className="container accordion-body   lgback">
+                <div className="container accordion-body my-5  lgback">
                     <div className="row lgback justify-content-center">
                         <br></br>
 
                         <div className="col-md-6 col-lg-5  colmd card   px-0  ">
-                            <br></br>
-                            <br></br>
+                        <div class="card casd  m-2 p-5 linnn">
                             <h1 className="display-4 text-xl-center css">Warzone™</h1>
                             <br></br>
                             <p className="lead text-start sc ">Sign In To Your Account</p>
@@ -84,7 +83,7 @@ export default function Login() {
                                         <label for="" className="form-label">
                                             Username
                                         </label>
-                                        <input className="form-control" type="username" name="username" value={username}
+                                        <input className="form-control px-5" type="username" name="username" value={username}
                                             onChange={(e) => setUsername(e.target.value)} placeholder="" required />
                                     </div>
                                     <div className="mb-3 ssc">
@@ -111,6 +110,9 @@ export default function Login() {
                                 </form>
                             </div>
                         </div>
+                        </div>
+
+
                         <div className="col-lg-3 col-md-5  mx-2 ">
                             <div class="card casd  m-2 linnn">
                                 <h5 class="card-title css-z6wpf22 fs-1 ">NEWS</h5>
@@ -157,7 +159,7 @@ export default function Login() {
 
 
 
-                <hr className="css-17d1bj66"></hr>
+                <hr className="css-17d1bj66 "></hr>
                 <section class=" text-center container">
                     <div class="row  ">
                         <div class="col-lg-4 col-md-5 my-2 mx-auto">
@@ -168,7 +170,7 @@ export default function Login() {
                 </section>
 
                 <div>
-                    <div class="row">
+                    <div class="row m-2 ">
 
                         <div class="col ">
                             <div class="card h-100">
@@ -234,7 +236,7 @@ export default function Login() {
                 <footer className="footerrr   ">
                     <TESTFOOT className=' ' />
                 </footer>
-            </body>
+            </main>
 
         </>
     );

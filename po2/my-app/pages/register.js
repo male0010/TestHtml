@@ -62,16 +62,17 @@ export default function Register() {
                     <div className="row lgback  justify-content-center ">
                         < br></br>
                         <div className="col-md-5  mx-2 colmd card  px-0 " >
+                        <div class="card casd   p-5 linnn">
                             <h1 className="display-4 text-center css">Warzone™</h1>
                             <h2 className="lead text-start sc ">Sign up to your account</h2>
-                            <form className="card-body ssc px-0  w-50" onSubmit={Register}>
-                                <div className="mb-3 fs-5 ">
+                            <form className="card-body ssc px-0 " onSubmit={Register}>
+                                <div className="mb-3 d-flex flex-column fs-5 ">
                                     <label for="" className="form-label ">Username</label>
-                                    <input className="form-control  searchh " type="username" name="username" placeholder="" required />
+                                    <input className="form-control d-flex searchh px-5" type="username" name="username" placeholder="" required />
                                 </div>
                                 <div className="mb-3 fs-5 ">
                                     <label for="" className="form-label">Password</label>
-                                    <input className="form-control searchh" type="password" name="password" placeholder="" required />
+                                    <input className="form-control  searchh" type="password" name="password" placeholder="" required />
                                 </div>
                                 <div className="mb-3 fs-5">
                                     <label for="" className="form-label">Email</label>
@@ -98,6 +99,7 @@ export default function Register() {
                                 </div>
                                 <br></br>
                             </form>
+                            </div>
                         </div>
                         <div className="col-lg-4 col-md-5  mx-2" >
                             <div class="card casd  m-2 linnn" >
