@@ -72,7 +72,7 @@ export default function Login() {
                     <div className="row lgback justify-content-center">
                         <br></br>
 
-                        <div className="col-md-5 col-lg-5  colmd card   px-0  ">
+                        <div className="col-md-6 col-lg-5  colmd card   px-0  ">
                             <br></br>
                             <br></br>
                             <h1 className="display-4 text-xl-center css">Warzone™</h1>
@@ -111,23 +111,25 @@ export default function Login() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-md-3  ">
+                        <div className="col-lg-3 col-md-5  mx-2 ">
                             <div class="card casd  m-2 linnn">
-                                {/* <Image src="..." class="card-img-top" alt="..."/> */}
-                                <div class="card-body ">
-                                    <h5 class="card-title css-z6wpf22 fs-4 ">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</h5>
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EwoXZw1RKUA?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </div>
-                                <div class="card-footer">
-                                    <small class=" card-title fs-6 css-z6wpf22 ">SEASON 03 RELOADED FEATURES ALBORAN HATCHERY,
-                                        RAID EPISODE 03, WARZONE RANKED PLAY, AND MORE.</small>
-                                </div>
+                                <h5 class="card-title css-z6wpf22 fs-1 ">NEWS</h5>
                             </div>
-                            <div class="card casd m-2 linnn">
-                                <Image className='imgg' src={b} height={500} width={1200} alt="#" />
+                            <Link class="card casd  m-2 linnn a" href='/'>
+                                {/* <Image src="..." class="card-img-top" alt="..."/> */}
+                                <div class="card-body p-2">
+                                    <h5 class="card-title css-z6wpf22 fs-4 ">Modern Warfare FC | Call of Duty: Modern Warfare II & Warzone 2.0</h5>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dm7cJsTXm0g?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-footer p-2 px-2">
+                                    <small class=" card-title fs-6 css-z6wpf22 "> INTRODUCING THE BATTLE PASS AND BUNDLES FOR CALL OF DUTY®</small>
+                                </div>
+                            </Link>
+                            <Link class="card casd m-2 linnn a" href='battle'>
                                 <div class="card-body linnn">
                                     <h5 class="card-title fs-2 css-z6wpf22">NEW</h5>
-                                    <small class=" card-title fs-6  ">The <Link href=''>new Battle Pass for Season 02</Link> features 100+ rewards across 20 Sectors, including three new functional weapons and the Operator Ronin The Season 02 Battle Pass launches at the start of the season on February 15. Upgrade to the full Battle Pass for access to all of Season 02 s Battle Pass items or purchase the Battle Pass Bundle to earn additional Battle Token Tier Skips and get a head start on conquering the map</small>
+                                    <Image className='imgg p-1' src={b} height={500} width={1200} alt="#" />
+                                    <small class=" card-title fs-6  css-z6wpf22">The <Link href=''>new Battle Pass for Season 02</Link> features 100+ rewards across 20 Sectors, including three new functional weapons and the Operator Ronin The Season 02 Battle Pass launches at the start of the season on February 15. Upgrade to the full Battle Pass for access to all of Season 02 s Battle Pass items or purchase the Battle Pass Bundle to earn additional Battle Token Tier Skips and get a head start on conquering the map</small>
 
                                 </div>
                                 <div class="card-footer">
@@ -140,7 +142,7 @@ export default function Login() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
 
                     </div>
@@ -158,22 +160,22 @@ export default function Login() {
                 <hr className="css-17d1bj66"></hr>
                 <section class=" text-center container">
                     <div class="row  ">
-                        <div class="col-lg-4 col-md-5 mx-auto">
-                            <h1 class="fw-light css">GET THE GAME</h1>
+                        <div class="col-lg-4 col-md-5 my-2 mx-auto">
+                            <h1 class="fw-light css fs-1">GET THE GAME</h1>
 
                         </div>
                     </div>
                 </section>
 
                 <div>
-                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="row">
 
-                        <div class="col">
+                        <div class="col ">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={n} alt="..." />
-                                <div className="card-body csc">
-                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE II</h5>
-                                    <p className="card-text ccs">Call of Duty®: Modern Warfare® II & Warzone™ 2.0 Season 01 Patch Notes</p>
+                                <div className="card-body  ">
+                                    <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text  fs-6 css-z6wpf22">Call of Duty®: Modern Warfare® II & Warzone™ 2.0 Season 01 Patch Notes</p>
                                 </div>
 
                             </div>
@@ -182,8 +184,8 @@ export default function Login() {
                             <div class="card h-100">
                                 <Image className="img-fluid" src={e} alt="..." />
                                 <div className="card-body csc">
-                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE II</h5>
-                                    <p className="card-text  ccs">CALL OF DUTY®: MODERN WARFARE® II & WARZONE™ 2.0 SEASON 03 PATCH NOTES</p>
+                                    <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text fs-6 css-z6wpf22">CALL OF DUTY®: MODERN WARFARE® II & WARZONE™ 2.0 SEASON 03 PATCH NOTES</p>
                                 </div>
 
                             </div>
@@ -192,8 +194,8 @@ export default function Login() {
                         <div class="card h-100">
                         <Image className="img-fluid" src={w} alt="..." />
                                 <div className="card-body csc">
-                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE I</h5>
-                                    <p className="card-text ccs">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notes</p>
+                                    <h5 className="card-title fs-2 css-z6wpf22">CALL OF DUTY: MODERN WARFARE I</h5>
+                                    <p className="card-text fs-5 css-z6wpf22">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notes</p>
                                 </div>
                                 
                         </div>
@@ -202,8 +204,8 @@ export default function Login() {
                             <div class="card h-100">
                                 <Image className="img-fluid" src={w} alt="..." />
                                 <div className="card-body csc">
-                                    <h5 className="card-title cs">CALL OF DUTY: MODERN WARFARE I</h5>
-                                    <p className="card-text ccs">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notess</p>
+                                    <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text fs-6 css-z6wpf22">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notess</p>
                                 </div>
 
                             </div>
@@ -213,8 +215,8 @@ export default function Login() {
                             <div class="card h-100">
                                 <Image className="img-fluid" src={z} alt="..." />
                                 <div className="card-body csc">
-                                    <h5 className="card-title cs">CALL OF DUTY: WARZONE</h5>
-                                    <p className="card-text ccs">SQUAD UP, DROP IN! CALL OF DUTY®: WARZONE™ 2.0 TACTICAL OVERVIEW NEW FEATURES, DMZ, AND MORE</p>
+                                    <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
+                                    <p className="card-text fs-6 css-z6wpf22">SQUAD UP, DROP IN! CALL OF DUTY®: WARZONE™ 2.0 TACTICAL OVERVIEW NEW FEATURES, DMZ, AND MORE</p>
                                 </div>
 
                             </div>
@@ -230,7 +232,7 @@ export default function Login() {
                 <hr className="css-17d1bj66"></hr>
 
                 <footer className="footerrr   ">
-                    <TESTFOOT className=' py-5' />
+                    <TESTFOOT className=' ' />
                 </footer>
             </body>
 

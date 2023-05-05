@@ -512,7 +512,9 @@ body {
 .a {
   text-decoration: none !important;
 }
-
+.a:hover{
+  color: #eaebea !important;
+}
 .pb {
   background: linear-gradient(120deg, #052203, #070000)
 }

@@ -20,7 +20,7 @@ export default function header() {
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
         <div class="container-fluid">
-          <Link href='/'>  <Image src={img4} alt="" width="240" height="70" /></Link>
+          <Link href='/'>  <Image src={img4} alt="" width="220" height="70" /></Link>
           <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon nti"></span>
           </button>
