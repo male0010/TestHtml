@@ -3,7 +3,7 @@ import Home from './pro';
 import Link from 'next/link';
 export default function TESTFOOT() {
     return (
-        <footer className="container footertest card-footer fff ">
+        <footer className="container footertest card-footer  py-5 fff ">
             <div className="row card-body  justify-content-between ">
                 <div className="grid col-sm-3 card-title lll">
                 <Link className='link linkk2' href={"/"} >

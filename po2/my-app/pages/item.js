@@ -8,7 +8,7 @@ import img8 from "../public/image/w2.jpg"
 import Head from "next/head.js";
 import Link from "next/link.js";
 import TESTFOOT from "./testfoot"
-
+import footer from "@/public/componant/footer.js";
 
 
 
@@ -387,11 +387,16 @@ export default function Item() {
 
                     </div>
                 </div>
+              
+                <TESTFOOT className=' py-5'/>
+             
+               
             </div>
-
-            <br></br>
-            <br></br>
-            <TESTFOOT />
+           
+           
+           
+           
+            
 
         </>
 

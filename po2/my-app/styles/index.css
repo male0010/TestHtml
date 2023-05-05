@@ -2008,7 +2008,14 @@ padding-top: 1px;
     filter: blur(35px);
 }
 
-
+.css-z6wpf22{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-transform: uppercase;
+    margin: auto;
+    z-index: 1;
+}
 .css-z6wpf2,
 [data-css-z6wpf2] {
     letter-spacing: normal;

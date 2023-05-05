@@ -9,6 +9,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-LAUNCH-INTEL-TOUT.jpg");
 }
 
@@ -39,7 +41,9 @@
   background-color: #141313;
 
 }
-
+.casd{
+  background-color: #211f1f !important;
+}
 /* .searchh{
     
     border: 3rem !important;
@@ -66,7 +70,13 @@
   background-color: #111111;
 
 }
-
+.colmd{
+  background-color: #ce797900 !important;
+}
+.cadd{
+  width: 50px !important;
+  
+}
 .header {
   display: flex;
 
@@ -212,7 +222,10 @@
   position: center;
 
 }
-
+.footerrr {
+  padding: 200px 15px;
+  
+}
 .imggmul {
   object-fit: cover;
 
