@@ -212,7 +212,7 @@ export default function Login() {
                         <div class="col">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={z} alt="..." />
-                                <div className="card-body csc">
+                                <div className="card-body ">
                                     <h5 className="card-title cs">CALL OF DUTY: WARZONE</h5>
                                     <p className="card-text ccs">SQUAD UP, DROP IN! CALL OF DUTY®: WARZONE™ 2.0 TACTICAL OVERVIEW NEW FEATURES, DMZ, AND MORE</p>
                                 </div>
