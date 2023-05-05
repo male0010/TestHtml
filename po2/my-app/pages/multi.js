@@ -27,7 +27,7 @@ export default function multi() {
                 <div className=" accordion-body">
                     <div className="bggmui">
                         <div className="mm">
-                            <Image className=" accordion-flush imggmul" src={aaa} height={250} width={400} alt="#" ></Image>
+                            <Image className=" accordion-flush imggmul" src={aaa} height={250} width={500} alt="#" ></Image>
                         </div>
                     </div>
                 </div>
