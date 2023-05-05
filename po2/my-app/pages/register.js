@@ -7,6 +7,7 @@ import Header1 from "../public/header2"
 import Head from 'next/head';
 import Link from "next/link.js";
 import axios from "axios";
+import TESTFOOT from "./testfoot"
 export default function Register() {
 
     async function Register(e) {
@@ -41,15 +42,15 @@ export default function Register() {
                 <title>Register</title>
             </Head>
             <Header1 />
-            <body className="register body ">
+            <body className="register lg body ">
                 <br></br>
                 <br></br>
-                <div className="container accordion-body  lgback ">
-                    <div className="row lgback" >
+                <div className="container accordion-body my-4  lgback">
+                    <div className="row lgback justify-content-center">
                         < br></br>
-                        <div className="col-md-8 m-auto colmds" >
-                            <h1 className="display-4 text-center ">Warzone™</h1>
-                            <h2 className="lead text-start ">Sign up to your account</h2>
+                        <div className="col-md-8 m-auto colmds card   px-0" >
+                            <h1 className="display-4 text-center css">Warzone™</h1>
+                            <h2 className="lead text-start sc ">Sign up to your account</h2>
                             <form className="card-body " onSubmit={Register}>
                                 <div className="mb-3 ">
                                     <label for="" className="form-label">Username</label>
@@ -83,11 +84,14 @@ export default function Register() {
                                         value="Register">Sign Up</button>
                                 </div>
                                 <br></br>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </body>
+                <footer className="footerrr   ">
+                    <TESTFOOT className=' py-5' />
+                </footer>
+            </body>
 
         </>
     )
