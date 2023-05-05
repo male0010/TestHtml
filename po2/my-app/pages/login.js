@@ -170,9 +170,9 @@ export default function Login() {
                 </section>
 
                 <div>
-                    <div class="row m-2 ">
+                    <div class="row m-2 justify-content-center">
 
-                        <div class="col ">
+                        <div class="col-md-3 m-2">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={n} alt="..." />
                                 <div className="card-body  ">
@@ -182,41 +182,30 @@ export default function Login() {
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-3 m-2">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={e} alt="..." />
-                                <div className="card-body csc">
+                                <div className="card-body ">
                                     <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
                                     <p className="card-text fs-6 css-z6wpf22">CALL OF DUTY®: MODERN WARFARE® II & WARZONE™ 2.0 SEASON 03 PATCH NOTES</p>
                                 </div>
 
                             </div>
                         </div>
-                        {/* <div class="col">
-                        <div class="card h-100">
-                        <Image className="img-fluid" src={w} alt="..." />
-                                <div className="card-body csc">
-                                    <h5 className="card-title fs-2 css-z6wpf22">CALL OF DUTY: MODERN WARFARE I</h5>
-                                    <p className="card-text fs-5 css-z6wpf22">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notes</p>
-                                </div>
-                                
-                        </div>
-                    </div> */}
-                        <div class="col">
+                        <div class="col-md-3 m-2">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={w} alt="..." />
-                                <div className="card-body csc">
+                                <div className="card-body ">
                                     <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
                                     <p className="card-text fs-6 css-z6wpf22">Call of Duty®: Warzone™ Season Five Mid-Season Patch Notess</p>
                                 </div>
 
                             </div>
                         </div>
-
-                        <div class="col">
+                        <div class="col-md-3 m-2">
                             <div class="card h-100">
                                 <Image className="img-fluid" src={z} alt="..." />
-                                <div className="card-body csc">
+                                <div className="card-body ">
                                     <h5 className="card-title fs-3 css-z6wpf22">CALL OF DUTY: MODERN WARFARE II</h5>
                                     <p className="card-text fs-6 css-z6wpf22">SQUAD UP, DROP IN! CALL OF DUTY®: WARZONE™ 2.0 TACTICAL OVERVIEW NEW FEATURES, DMZ, AND MORE</p>
                                 </div>
