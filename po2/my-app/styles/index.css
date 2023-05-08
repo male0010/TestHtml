@@ -1620,7 +1620,7 @@ padding-top: 1px;
     max-width: 57em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    margin: 3em auto 6em;
+    margin-top: 24px;
     text-align: center;
 }
 
@@ -1634,7 +1634,9 @@ padding-top: 1px;
     font-family: 'Mouse Memoirs', sans-serif;
 
 }
-
+.batta{
+    margin-top: 90px;
+}
 .PGIVj9NTYRWLNncBni330 a {
     color: #2b98f0;
     transition: color .2s;
@@ -1643,7 +1645,7 @@ padding-top: 1px;
 
 .PGIVj9NTYRWLNncBni330 h1 {
     font-size: 3.5em;
-    font-weight: 600;
+
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1;

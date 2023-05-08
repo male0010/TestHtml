@@ -162,7 +162,7 @@ export default function Login() {
                 <hr className="css-17d1bj66 "></hr>
                 <section class=" text-center container">
                     <div class="row  ">
-                        <div class="col-lg-4 col-md-5 my-2 mx-auto">
+                        <div class="col-lg-4 col-md-5 my-2 mx-auto fg">
                             <h1 class="fw-light css fs-1">GET THE GAME</h1>
 
                         </div>

@@ -60,12 +60,13 @@ export default function MyPage() {
 
             <Header1 />
 
+            <div className="container justify-content-center cam1 batta">
             <div className="card text-center" >
                 <div className="card-body row-cols-1">
                     <button className="btn  col btnn" type="button"
                     >SMG</button>
-                    <div className=' row row-cols-2'>
-                        {subtype1Array.map((item) => (
+                    <div className=' row row-cols-2 justify-content-center'>
+                        {subtype2Array.map((item) => (
                             <div key={item.id_data} className="row" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
                                 <div className=" card-body" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
                                     <Image width={500} height={350} src={`https://www.imgen.site/imgen2${item.path}`} className="card-img-top img-fluid" alt="..." />
@@ -101,6 +102,7 @@ export default function MyPage() {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
             </div>
 

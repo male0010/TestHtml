@@ -195,7 +195,7 @@ export default function Category() {
 
             <Header1 />
             <div className="card text-center" >
-                        <div className="card text-center">
+                        <div className="card text-center batta">
                             <Image src={header} className="img-fluid" alt="..." />
                         </div>
                     </div>
@@ -206,26 +206,22 @@ export default function Category() {
 
             <div className="contentBelowBanner___1csYL"  >
                 <div>
-                    <p className="sw">
-                        <button className="btn btt"
+                    <p className="mx-4">
+                        <button className="btn fs-1 btt"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             GUN
                         </button>
                     </p>
                     <div className="collapse  " id="collapseExample" >
                         <div className="card text-center">
-                            <div className="card-body">
+                            <div className="card-body ">
                                 <p className="row " >
-                                    <Link href={"/subtype/para1?subtype=1"} className="btn  col btnn">PISTON <button type="button"
-                                    ></button></Link>
-                                    <Link href={"/subtype/para2?subtype=2"} className="btn  col btnn">SMG <button type="button"
-                                    ></button></Link>
-                                    <Link href={"/subtype/para3?subtype=3"} className="btn  col btnn">ASSAULT RIFLE <button type="button"
-                                    ></button></Link>
-                                    <Link href={"/subtype/para4?subtype=4"} className="btn  col btnn">SNIPER RIFLE <button type="button"
-                                    ></button></Link>
-                                    <Link href={"/subtype/5?subtype=5"} className="btn  col btnn">SHOTGUN<button type="button"
-                                    ></button></Link>
+                                    <Link href={"/subtype/para1?subtype=1"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">PISTON 
+                                   </Link>
+                                    <Link href={"/subtype/para2?subtype=2"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">SMG </Link>
+                                    <Link href={"/subtype/para3?subtype=3"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">ASSAULT RIFLE </Link>
+                                    <Link href={"/subtype/para4?subtype=4"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">SNIPER RIFLE </Link>
+                                    <Link href={"/subtype/5?subtype=5"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">SHOTGUN</Link>
                                 </p>
                             </div>
                         </div>
@@ -233,7 +229,7 @@ export default function Category() {
                     </div>
                 </div>
             </div>
-            <div className="sw">
+            <div className="mx-4">
                 <Swiper
                     style={{
                         "--swiper-navigation-color": "#fff",
@@ -245,26 +241,26 @@ export default function Category() {
                     navigation={true}
                     thumbs={{ swiper: thumbsSwiper }}
                     modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper2"
+                    className=" mySwiper2"
                 >
                     {type1Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card-a">
+                            <div key={item.id_data} className="card-a m-2">
                                 <div
-                                    className="card"
+                                    className="card-body"
 
                                 >
                                     <img
                                         
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid dd"
+                                        className="card-img img-fluid dd"
                                         alt="..." />
 
-                                    <div className="card-body itemm">
-                                        <h5 className="itemm">
+                                    <div className="card-body py-1 itemm">
+                                        <h5 className="itemm fs-3">
                                             {item.Name_data.toUpperCase()}
-                                            <h6 className="card-subtitle mb-2 text-muted">
+                                            <h6 className="fs-5 card-subtitle mb-2 text-muted">
                                                 {item.name_subtype}
                                             </h6>
                                         </h5>
@@ -278,8 +274,8 @@ export default function Category() {
             <br></br>
             <br></br>
             <div>
-                <p className="sw">
-                    <button className="btn btt"
+                <p className="mx-4">
+                    <button className="btn fs-1 btt"
                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                         CHARACTER
                     </button>
@@ -288,10 +284,8 @@ export default function Category() {
                     <div className="card text-center">
                         <div className="card-body">
                             <p className="row " >
-                                <Link href={"/subtype/para9?subtype=9"} className="btn  col btnn">MALE<button type="button"
-                                ></button></Link>
-                                <Link href={"/subtype/para10?subtype=10"} className="btn  col btnn">FEMALE<button type="button"
-                                ></button></Link>
+                                <Link href={"/subtype/para9?subtype=9"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">MALE</Link>
+                                <Link href={"/subtype/para10?subtype=10"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">FEMALE</Link>
                             </p>
                         </div>
 
@@ -299,7 +293,7 @@ export default function Category() {
 
                 </div>
             </div>
-            <div className="sw">
+            <div className="mx-4">
                 <Swiper
                     style={{
                         "--swiper-navigation-color": "#fff",
@@ -316,22 +310,21 @@ export default function Category() {
                     {type2Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card-a">
+                             <div key={item.id_data} className="card-a m-2">
                                 <div
-                                    className="card b"
-                                    data-bs-toggle="modal"
-                                    data-bs-target={`#exampleModal${item.id_data}`}
+                                    className="card-body"
+
                                 >
                                     <img
-                                        width={500}
-                                        height={350}
+                                        
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid-d"
+                                        className="card-img img-fluid dd"
                                         alt="..." />
-                                    <div className="card-body itemm">
-                                        <h5 className="itemm">
+
+                                    <div className="card-body py-1 itemm">
+                                        <h5 className="itemm fs-3">
                                             {item.Name_data.toUpperCase()}
-                                            <h6 className="card-subtitle mb-2 text-muted">
+                                            <h6 className="fs-5 card-subtitle mb-2 text-muted">
                                                 {item.name_subtype}
                                             </h6>
                                         </h5>
@@ -343,11 +336,8 @@ export default function Category() {
                 </Swiper>
             </div>
             <br></br>
-
-
-
             <div>
-                <p className="sw">
+                <p className="mx-2">
                     <button className="btn btt"
                         type="button" value={0} data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                         CAR
@@ -357,18 +347,15 @@ export default function Category() {
                     <div className="card text-center">
                         <div className="card-body">
                             <p className="row ">
-                                <Link href={"/subtype/para6?subtype=6"} className="btn  col btnn">BIKER <button type="button"
-                                ></button></Link>
-                                <Link href={"/subtype/para7?subtype=7"} className="btn  col btnn">CAR <button type="button"
-                                ></button></Link>
-                                <Link href={"/subtype/para8?subtype=8"} className="btn  col btnn">FLY<button type="button"
-                                ></button></Link>
+                                <Link href={"/subtype/para6?subtype=6"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">BIKER </Link>
+                                <Link href={"/subtype/para7?subtype=7"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">CAR </Link>
+                                <Link href={"/subtype/para8?subtype=8"} className="btn m-2 col btnnn text-center justify-content-center linn fs-3">FLY</Link>
                             </p>
                         </div>
                     </div>
 
                 </div>
-            </div><div className="sw">
+            </div><div className=" mx-2">
                 <Swiper
                    style={{
                     "--swiper-navigation-color": "#fff",
@@ -385,20 +372,21 @@ export default function Category() {
                     {type3Array.map((item) => (
                         <SwiperSlide key={item.id_data} data-bs-toggle="modal"
                             data-bs-target={`#exampleModal${item.id_data}`}>
-                            <div key={item.id_data} className="card-a">
+                            <div key={item.id_data} className="card-a m-2">
                                 <div
-                                    className="card "
+                                    className="card-body"
+
                                 >
                                     <img
-                                        width={500}
-                                        height={350}
+                                        
                                         src={"https://www.imgen.site/imgen2" + item.path}
-                                        className="card-img-top img-fluid dd"
+                                        className="card-img img-fluid dd"
                                         alt="..." />
-                                    <div className="card-body itemm">
-                                        <h5 className="itemm">
+
+                                    <div className="card-body py-1 itemm">
+                                        <h5 className="itemm fs-3">
                                             {item.Name_data.toUpperCase()}
-                                            <h6 className="card-subtitle mb-2 text-muted">
+                                            <h6 className="fs-5 card-subtitle mb-2 text-muted">
                                                 {item.name_subtype}
                                             </h6>
                                         </h5>

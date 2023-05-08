@@ -59,12 +59,12 @@ export default function MyPage() {
             </Head>
 
             <Header1 />
-
+            <div className="container justify-content-center cam1 batta">
             <div className="card text-center" >
                 <div className="card-body row-cols-1">
                     <button className="btn  col btnn" type="button"
                     >PISTON</button>
-                    <div className=' row row-cols-2'>
+                    <div className=' row row-cols-2 justify-content-center'>
                         {subtype1Array.map((item) => (
                             <div key={item.id_data} className="row" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id_data}>
                                 <div className=" card-body" data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id_data}`}>
@@ -101,6 +101,7 @@ export default function MyPage() {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
             </div>
 
