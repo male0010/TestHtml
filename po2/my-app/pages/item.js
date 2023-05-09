@@ -212,7 +212,7 @@ export default function Item() {
                 </div>
 
             </nav> */}
-            <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top  ">
                 <div class="container-fluid">
                    <Link href='/'> <Image className="oos" src={img8} alt="" height="85"  /></Link>
                     <button class="navbar-toggler nt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
