@@ -30,16 +30,16 @@ export default function BATTLE() {
             </Head>
             <Header1 />
             <main className='p-0 batta align-content-center '>
-                <div className=' card _2jwgMFDkSKSr-foNIF_7f9'>
+                <div className=' card'>
 
                     <Image className='p-0 img-fluid _2yWxQtB7xJRsFyvEkRLyW_' src={bat} alt="#" />
 
-                    <section className='PGIVj9NTYRWLNncBni330  container-xxlg accordion-body cam1  px-4  justify-content-center'>
+                    <section className='  container-xxlg accordion-body cam1  px-4  justify-content-center PGIVj9NTYRWLNncBni330'>
                        
-                            <h3 className='fs-4 card-title _2rgIsi3tJYjXp_0uWKfrBZ'>FEBRUARY 14, 2023</h3>
-                            <h1 className=' fs-1 '> INTRODUCING THE BATTLE PASS AND BUNDLES FOR CALL OF DUTY®</h1>
+                            <h3 className='fs-4   text-secondary'>FEBRUARY 14, 2023</h3>
+                            <h1 className=' fs-1 card-title'> INTRODUCING THE BATTLE PASS AND BUNDLES FOR CALL OF DUTY®</h1>
                         
-                        <div className='nOk1K0s0zezhHodo4OuM3'>
+                        <div className='text-secondary'>
                             <div>
                                 <ul>
                                     <li className='tag-item fs-5'>

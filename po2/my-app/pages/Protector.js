@@ -26,16 +26,16 @@ export default function Protector() {
             </Head>
             <Header1 />
         <div className='p-0 batta  align-content-center'>
-            <article className='card _2jwgMFDkSKSr-foNIF_7f9'>
+            <article className='card'>
 
                 <Image className='p-0  img-fluid  _2yWxQtB7xJRsFyvEkRLyW' src={bb} alt="#" />
 
-                <section className='container-xxlg accordion-body cam1 justify-content-center PGIVj9NTYRWLNncBni330 px-4 '>
+                <section className='container accordion-body cam1 justify-content-center PGIVj9NTYRWLNncBni330 px-4 '>
                     
-                        <h3 className='_2rgIsi3tJYjXp_0uWKfrBZ fs-4'>FEBRUARY 23, 2023</h3>
+                        <h3 className=' text-secondary fs-4'>FEBRUARY 23, 2023</h3>
                         <h1 className='fs-1'>SUPPORT VETERANS WITH THE CALL OF DUTY ENDOWMENT (C.O.D.E.) PROTECTOR PACK FOR CALL OF DUTY®: MODERN WARFARE® II AND CALL OF DUTY®: WARZONE™ 2.0 </h1>
                     
-                    <div className='nOk1K0s0zezhHodo4OuM3'>
+                    <div className='text-secondary'>
                         <div>
                             <ul>
                                 <li className='tag-item fs-4'>

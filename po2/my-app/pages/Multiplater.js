@@ -38,16 +38,16 @@ export default function Multiplayer() {
             </Head>
             <Header1 />
         <div className='p-0 batta  align-content-center '>
-            <article className='card _2jwgMFDkSKSr-foNIF_7f9'>
+            <article className='card '>
 
                 <Image className='p-0  img-fluid  _2yWxQtB7xJRsFyvEkRLyW' src={pp} alt="#" />
 
-                <section className='container-xxlg accordion-body cam1 justify-content-center PGIVj9NTYRWLNncBni330 px-4 '>
+                <section className='container-xxlg accordion-body cam1 justify-content-center PGIVj9NTYRWLNncBni330  '>
                     
-                        <h3 className='_2rgIsi3tJYjXp_0uWKfrBZ fs-4'>OCTOBER 25, 2022</h3>
+                        <h3 className='text-secondary fs-4'>OCTOBER 25, 2022</h3>
                         <h1 className='fs-1'> CALL OF DUTY®: MODERN WARFARE® II MULTIPLAYER OVERVIEW — EVERYTHING AVAILABLE AT LAUNCH</h1>
                     
-                    <div className='nOk1K0s0zezhHodo4OuM3'>
+                    <div className='text-secondary'>
                         <div>
                             <ul>
                                 <li className='tag-item fs-4'>

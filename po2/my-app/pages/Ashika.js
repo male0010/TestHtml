@@ -27,16 +27,16 @@ export default function Ashika() {
             </Head>
             <Header1 />
             <main className='p-0 batta  align-content-center '>
-                <div className='card _2jwgMFDkSKSr-foNIF_7f9'>
+                <div className='card '>
 
                     <Image className='p-0 img-fluid  _2yWxQtB7xJRsFyvEkRLyW' src={k} alt="#" />
 
-                    <section className=' container-xxlg accordion-body cam1 justify-content-center PGIVj9NTYRWLNncBni330 px-4  ' >
+                    <section className=' container accordion-body cam1 justify-content-center text-secondary PGIVj9NTYRWLNncBni330 px-4  ' >
                        
-                            <h3 className='fs-4 card-title _2rgIsi3tJYjXp_0uWKfrBZ'>FEBRUARY 09, 2023</h3>
+                            <h3 className='fs-4 card-title  text-secondary text-'>FEBRUARY 09, 2023</h3>
                             <h1 className=' fs-1 '>SEASON 02 TACTICAL OVERVIEW — ASHIKA ISLAND, DMZ, AND MORE</h1>
                         
-                        <div className='nOk1K0s0zezhHodo4OuM3'>
+                        <div className='text-secondary'>
                             <div > 
                                 <p className=' fs-3'>The new Ashika Island map debuts in Battle Royale Resurgence and DMZ, the 1v1 Gulag returns, and more challenges and rewards await you in Season 02. Get a tactical grip on what s coming to <Link href=''>WarzoneTM 2.0</Link> when the season launches February 15.</p>
                                 <ul className=' fs-5'>
