@@ -102,9 +102,55 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg3'>
-          <div>
-            <Image src={imghead} />
+        <div className='bg3 justify-content-center text-center'>
+          <div className=' py-5'>
+            <Image className='my-5' src={imghead} height={50} />
+            <p className="fs-1 fw-bold ">BOOTSTRAP® </p>
+          </div>
+          <div className='d-flex text-center flex-column m-2 flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4'>
+            <div className='d-inline-block fs-5 px-2 ff'>
+              <input className='form-control mx-2 ' placeholder="Enter Email Address">
+              </input>
+
+            </div>
+            <div className=' d-inline-block fs-5 mx-2 ff' >
+              <p className="lead1">
+                <a href="https://www.callofduty.com/warzone" class="btn btn-primary fs-6 fw-bold ff">READ MORE</a>
+              </p>
+            </div>
+          </div>
+
+          <div className='container py-5 my-5'>
+            <div class="row noborder">
+              <div class="col-sm-4 p-4">
+                <div class="card text-center al justify-content-center  text-black ff noborder">
+                <Image src={imghead} class=""  height={30} alt="..."/>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 p-4">
+                <div class="card text-black ff noborder">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 p-4">
+                <div class="card text-black ff noborder">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
