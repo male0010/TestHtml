@@ -10,9 +10,9 @@ export default function head() {
      
 
     
-        <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top ">
-          <div class="container-fluid mx-5 ff">
-            <a class="navbar-brand ff fw" href="/">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top navbar-shrink">
+          <div class="container-fluid mx-3 ff">
+            <a class="navbar-brand ff fs-5 fw" href="/">
               <Image src={imghead} alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
               Start Bootstrap
             </a>
