@@ -12,7 +12,7 @@ export default function head() {
     
         <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top navbar-shrink">
           <div class="container-fluid mx-3 ff">
-            <a class="navbar-brand ff fs-5 fw" href="/">
+            <a class="navbar-brand ff fs-5 fw" href="#h">
               <Image src={imghead} alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
               Start Bootstrap
             </a>
@@ -26,17 +26,17 @@ export default function head() {
               </ul>
               <ul class="navbar-nav  ">
                 <li class="d-flex justify-content-end  ">
-                  <a className="nav-link active fw" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  <a className="nav-link active fw" href="#a" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                     About
                   </a>
                 </li>
                 <li class="d-flex justify-content-end  ">
-                  <a className="nav-link active fw" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  <a className="nav-link active fw" href="#p" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                     Project
                   </a>
                 </li>
                 <li class="d-flex justify-content-end  ">
-                  <a className="nav-link active fw" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  <a className="nav-link active fw" href="#c" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                     Contact
                   </a>
                 </li>

@@ -19,24 +19,58 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top navbar-shrink">
+        <div class="container-fluid mx-3 ff">
+          <a class="navbar-brand ff fs-5 fw" href="#h">
+            <Image src={imghead} alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+            Start Bootstrap
+          </a>
+          <button class="navbar-toggler nt text-black fs ff" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <span class="navbar-toggler-icon nti"></span>
+          </button>
+          <div class="collapse navbar-collapse   " id="navbarSupportedContent">
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+
+            </ul>
+            <ul class="navbar-nav ms-auto  ">
+              <li class="d-flex justify-content-end  ">
+                <a className="nav-link active fw" href="About" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  About
+                </a>
+              </li>
+              <li class="d-flex justify-content-end  ">
+                <a className="nav-link active fw" href="pro" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  Project
+                </a>
+              </li>
+              <li class="d-flex justify-content-end  ">
+                <a className="nav-link active fw" href="con" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
       <main className=''>
-        <div className='bg  ff'>
+        <div className='bg  ff ' id='h'>
           <div className='container position-relative overflow-hidden prr  text-center'>
-            <div className="container font-monospace py-5 lh-base mx-auto my-5 text-white">
-              <h1 className=" fw-bold ">BOOTSTRAP® </h1>
-              <p className="fs-6 fw-bold ">  Build fast, responsive sites with Bootstrap</p>
+            <div className="container  py-5 lh-base mx-auto my-5 text-white">
+              <h1 className="text-uppercase  fw-bold display-1">BOOTSTRAP® </h1>
+              <p className="display-5 fw-bold text-white-75 mx-auto ">  Build fast, responsive sites with Bootstrap</p>
               <p className="lead1">
                 <a href="https://www.callofduty.com/warzone" class="btn btn-success rounded-0 fs-6 fw-bold ff">READ MORE</a>
               </p>
             </div>
           </div>
         </div>
-        <div className='bg2 '>
-          <div className='container position-relative overflow-hidden   d-flex justify-content-center flex-column h-100  text-center'>
+        <div className='bg2 ' >
+          <div className='container position-relative overflow-hidden   d-flex justify-content-center flex-column h-100  text-center' id='About'>
             <div className="container font-monospace py-5 lh-base mx-auto my-5 text-white">
-              <p className="fs-1 fw-bold ">Build fast, responsive sites with Bootstrap </p>
-              <p className="fs-6 fw-bold ">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+              <p className="fs-1 text-uppercase fw-bold ">Build fast, responsive sites with Bootstrap </p>
+              <p className="fs-5 fw-bold text-white-75 mx-auto ">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
               <p className="lead1">
                 <a href="https://www.callofduty.com/warzone" class="btn btn-success rounded-0 fs-6 fw-bold ff">READ MORE</a>
               </p>
@@ -44,11 +78,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='container p-2'>
-          <div className='row featurette my-5 mx-2'>
-            <div className='col-md-7 order-md-2'>
+        <div className='container mt-5 pt-2  px-1' id='pro'>
+          <div className='row mt-5 pt-2 my-5 mx-2 mb-5 pb-5'>
+            <div className='col-md-7 h-100  order-md-2'>
               <div class="card rounded-0 text-bg-dark">
-                <Image src={s1} height={450} class="card-img" alt="..." />
+                <Image src={s1} height={450} class="card-img image-fluid" alt="..." />
 
               </div>
             </div>
@@ -66,10 +100,10 @@ export default function Home() {
 
           </div>
 
-          <div className=' row featurette justify-content-center my-5 mx-2'>
+          <div className=' row mt-5 featurette justify-content-center pt-5 pb-5 mb-5 mx-2'>
             <div className='col-md-6 order-md-1 px-0'>
               <div class="card rounded-0 text-bg-dark">
-                <Image src={s2} height={450} class="card-img" alt="..." />
+                <Image src={s2} class="card-img image-fluid" alt="..." />
               </div>
 
             </div>
@@ -84,7 +118,7 @@ export default function Home() {
 
             <div className='col-md-6 order-md-4 px-0'>
               <div class="card rounded-0 text-bg-dark">
-                <Image src={s3} height={450} class="card-img" alt="..." />
+                <Image src={s3} class="card-img image-fluid" alt="..." />
               </div>
 
             </div>
@@ -102,28 +136,29 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg3 justify-content-center text-center'>
-          <div className=' py-5'>
+        <div className='bg3 justify-content-center text-center' id='con'>
+          <div className='container py-5'>
             <Image className='my-5' src={imghead} height={50} />
             <p className="fs-1 fw-bold ">BOOTSTRAP® </p>
           </div>
-          <div className='d-flex text-center flex-column m-2 flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4'>
-            <div className='d-inline-block fs-5  mx-0 ff'>
-              <input className='form-control mx-1 ' placeholder="Enter Email Address">
+          <div className='container  align-self-center'>
+          <div className='row  input-group-newsletter '>
+            <div className='col mb-2 mx-2 ff'>
+              <input className='form-control ' placeholder="Enter Email Address">
               </input>
 
             </div>
-            <div className=' d-inline-block fs-5 mx-2 ff' >
+            <div className=' col-auto ff' >
               <p className="lead1">
                 <a href="https://www.callofduty.com/warzone" class="btn btn-success rounded-0 fs-6 fw-bold ff">VOTIFY ME</a>
               </p>
             </div>
           </div>
-
-          <div className=' py-5 my-5'>
-            <div class="row card-group mx-4  rounded-0">
+          </div>
+          <div className='container py-5 my-5 ' >
+            <div class="row gx-4 gx-lg-5  rounded-0">
               <div class="col-sm-4 p-4">
-                <div class="card text-center  justify-content-center  text-black ff rounded-0">
+                <div class="card text-center h-100 justify-content-center  text-black ff rounded-0">
                   <div class="card-body py-auto px-3">
                     <svg height={30} xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="address"><path d="M19.82,9H16.88A5.06,5.06,0,0,0,17,8,5,5,0,0,0,7,8a5.06,5.06,0,0,0,.12,1H4.18L1.78,21H22.22ZM12,5a3,3,0,0,1,3,3c0,1.73-1.78,4.14-3,5.53C10.78,12.14,9,9.73,9,8A3,3,0,0,1,12,5ZM4.22,19l1.6-8h2a20.2,20.2,0,0,0,3.47,4.71l.71.71.71-.71A20.2,20.2,0,0,0,16.17,11h2l1.6,8Z"></path><rect width="2" height="2" x="11" y="7"></rect></svg>  <h5 class="card-title fs-5 fw-bold">ADDRESS</h5>
                     <p class="card-text"> Chiang Mai 50200</p>
@@ -132,7 +167,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col-sm-4 p-4">
-                <div class="card text-center  justify-content-center  text-black ff rounded-0">
+                <div class="card text-center h-100  justify-content-center  text-black ff rounded-0">
                   <div class="card-body py-auto px-3">
                     <svg height={30} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="email"><path fill="#222" d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"></path><path fill="#222" d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"></path><path fill="#222" d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"></path></svg>  <h5 class="card-title fs-5 fw-bold">EMAIL</h5>
                     <p class="card-text " >xxx@xxx.com</p>
@@ -141,7 +176,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col-sm-4 p-4">
-                <div class="card text-center al justify-content-center  text-black ff rounded-0">
+                <div class="card text-center h-100  justify-content-center  text-black ff rounded-0">
                   <div class="card-body py-auto px-3">
                     <svg height={30} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="phone"><path d="M23.45 20.93a3 3 0 0 0-4.25 0l-1.45 1.45a26.14 26.14 0 0 1-4.51-3.62 26.62 26.62 0 0 1-3.62-4.51l1.45-1.45a3 3 0 0 0 0-4.25L8.24 5.73a2.93 2.93 0 0 0-2.11-.88h0A3 3 0 0 0 4 5.73L2.64 7.08A6.37 6.37 0 0 0 1 12.33c.32 3.75 2.78 8.26 6.57 12.06S15.92 30.64 19.67 31a7.87 7.87 0 0 0 .84 0 6.07 6.07 0 0 0 4.41-1.64L26.27 28a3 3 0 0 0 .88-2.13 2.93 2.93 0 0 0-.88-2.11zm1.41 5.66L23.5 27.94a4.57 4.57 0 0 1-3.66 1c-3.25-.28-7.39-2.58-10.81-6S3.31 15.41 3 12.16a4.53 4.53 0 0 1 1-3.66L5.41 7.14a1 1 0 0 1 .71-.29h0a1 1 0 0 1 .71.29L9.66 10a1 1 0 0 1 0 1.41l-2 2a1 1 0 0 0-.16 1.21 27.49 27.49 0 0 0 4.33 5.58 27.49 27.49 0 0 0 5.58 4.33 1 1 0 0 0 1.21-.16l2-2a1 1 0 0 1 1.41 0l2.83 2.83h0a1 1 0 0 1 .29.71A1 1 0 0 1 24.86 26.59zM26.6 5.39A14.92 14.92 0 0 0 16 1a1 1 0 1 0 0 2A13 13 0 0 1 29 16.11a1 1 0 0 0 1 1h0a1 1 0 0 0 1-1A14.91 14.91 0 0 0 26.6 5.39z"></path><path d="M20.91,11.11a6,6,0,0,1,1.77,4.31,1,1,0,0,0,1,1h0a1,1,0,0,0,1-1,8,8,0,0,0-8-8.1,1,1,0,1,0,0,2A6,6,0,0,1,20.91,11.11Z"></path></svg> <h5 class="card-title fs-5 fw-bold">PHONE</h5>
                     <p class="card-text">0xx-xxx-xxxx</p>
@@ -151,7 +186,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='d-flex text-center  flex-column m-2 flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4'>
+          <div className='social d-flex justify-content-center'>
             <div className='  row'>
               <div className='col-4 p-2'>
                 <svg height="30" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 128 128" id="connection"><circle cx="64" cy="64" r="60" fill="none" stroke="#38a8e0" stroke-miterlimit="10" stroke-width="8"></circle><path fill="#38a8e0" d="M99 44.29a28.71 28.71 0 0 1-8.25 2.26 14.4 14.4 0 0 0 6.31-7.95 28.75 28.75 0 0 1-9.12 3.48 14.37 14.37 0 0 0-24.47 13.1 40.77 40.77 0 0 1-29.6-15 14.38 14.38 0 0 0 4.44 19.17 14.3 14.3 0 0 1-6.5-1.8v.18a14.37 14.37 0 0 0 11.52 14.09 14.39 14.39 0 0 1-6.49.25A14.38 14.38 0 0 0 50.26 82a28.81 28.81 0 0 1-17.84 6.15A29.14 29.14 0 0 1 29 88a40.65 40.65 0 0 0 22 6.45c26.42 0 40.86-21.88 40.86-40.86v-1.86A29.18 29.18 0 0 0 99 44.29Z"></path></svg>
@@ -172,3 +207,4 @@ export default function Home() {
     </>
   )
 }
+//
