@@ -3,10 +3,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link';
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
+    
     import("bootstrap/dist/js/bootstrap");
   }, []);
+ 
   return (
     <>
       <Head>
@@ -27,4 +30,5 @@ export default function App({ Component, pageProps }) {
 
         )
 }
+
 
