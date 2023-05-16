@@ -4,10 +4,21 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link';
 
+import AOS from "aos";
+
+import "aos/dist/aos.css";
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     
     import("bootstrap/dist/js/bootstrap");
+  }, []);
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
   }, []);
  
   return (
@@ -23,6 +34,7 @@ export default function App({ Component, pageProps }) {
             <Link rel="preconnect" href="https://fonts.googleapis.com" />
             <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <Link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet"></Link>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
           </Head>
 
           <Component {...pageProps} />
@@ -30,5 +42,6 @@ export default function App({ Component, pageProps }) {
 
         )
 }
+
 
 
