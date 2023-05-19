@@ -10,8 +10,16 @@ import s2 from '../pages/img/ss2.png'
 import s3 from '../pages/img/ss3.png'
 import s4 from '../pages/img/ss4.png'
 import s5 from '../pages/img/ss5.png'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
 import { useEffect, useRef, useState } from 'react';
+
 export default function Home() {
+  const { t } = useTranslation();
+  const handleChangeLang = (lang) => {
+    i18n.changeLanguage(lang);
+  }
   return (
     <>
       <Head>
@@ -22,6 +30,7 @@ export default function Home() {
       </Head>
 
       <main className='ff lh-base'>
+
         <nav class="navbar navbar-expand-lg preview__header text-white bg-black  fixed-top ">
           <div class="container ">
             <svg baseProfile="tiny" height={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 36"><path fill="#81B441" d="M22.038 6.715c-.865-.48-3.344-.183-6.322.738-5.212 3.562-9.61 8.811-9.917 17.238-.056.202-.57-.027-.672-.09-1.407-2.697-1.965-5.538-.79-9.635.219-.365-.497-.814-.626-.685-.258.258-1.333 1.404-2.047 2.642-3.54 6.141-1.225 14.009 4.968 17.453 6.192 3.449 14.011 1.224 17.459-4.97 3.989-7.148.285-21.385-2.053-22.691z" /><g fill="#fff"><path d="M44.202 10.145c-7.342 0-12.671 5.458-12.671 12.978 0 7.582 5.315 12.877 12.927 12.877 3.845 0 6.888-1.202 9.309-3.677.723-.781.801-1.533.801-1.821 0-1.226-.912-2.117-2.168-2.117-.633 0-1.163.239-1.77.801-1.371 1.277-3.176 2.582-6.172 2.582-4.166 0-7.554-3.128-7.768-7.145h16.581c1.803 0 2.679-.843 2.679-2.576 0-.51 0-.879-.103-1.605-.893-6.447-5.246-10.297-11.645-10.297zm0 4.026c3.981 0 6.536 2.537 6.693 6.632h-14.2c.373-3.789 3.577-6.632 7.507-6.632zM71.785 10.145c-3.335 0-6.637 1.918-7.927 4.581v-1.646c0-2.55-1.976-2.679-2.372-2.679-1.171 0-2.423.704-2.423 2.679v19.881c0 2.648 2.104 2.782 2.525 2.782.421 0 2.526-.134 2.526-2.782v-10.657c0-4.637 2.628-7.876 6.39-7.876 3.644 0 5.416 2.391 5.416 7.312v11.222c0 2.648 2.105 2.782 2.526 2.782.421 0 2.525-.134 2.525-2.782v-12.81c0-4.838-2.414-10.007-9.186-10.007zM103.825 10.402c-1.167 0-2.014.681-2.518 2.02l-6.911 17.378-6.858-17.378c-.537-1.36-1.377-2.02-2.569-2.02-1.393 0-2.526 1.087-2.526 2.423 0 .331.038.759.317 1.429l7.942 18.753c.946 2.262 2.503 2.737 3.643 2.737 1.139 0 2.696-.475 3.645-2.736l7.994-18.857c.273-.662.315-1.147.315-1.377 0-1.352-1.065-2.372-2.474-2.372zM118.513 10.145c-3.231 0-6.24.9-8.472 2.532-.757.522-1.125 1.174-1.125 1.993 0 1.128.861 2.012 1.963 2.012.476 0 1.01-.19 1.499-.532 1.919-1.279 3.722-1.876 5.673-1.876 3.735 0 5.879 1.899 5.879 5.212v.549c-8.384.009-16.91 1.022-16.91 8.315 0 5.249 4.486 7.599 8.932 7.599 3.54 0 6.368-1.403 8.182-4.059v1.277c0 1.902 1.277 2.576 2.373 2.576.231 0 2.269-.072 2.269-2.576v-13.373c-.002-6.042-3.839-9.649-10.263-9.649zm4.354 13.609h1.063v1.164c0 4.256-2.71 7.006-6.903 7.006-1.138 0-4.852-.265-4.852-3.676-.001-4.029 6.101-4.494 10.692-4.494zM141.928 14.991c2.21 0 2.322-1.72 2.322-2.064 0-1.023-.61-2.116-2.322-2.116h-4.545v-4.596c0-2.053-1.332-2.782-2.474-2.782-.421 0-2.525.134-2.525 2.782v21.829c0 5.037 2.485 7.7 7.187 7.7 1.217 0 2.402-.215 3.178-.576.889-.444 1.398-1.173 1.398-2 0-1.167-.847-2.014-2.014-2.014-.225 0-.546.056-.9.158-.433.108-.726.15-1.046.15-1.913 0-2.804-1.249-2.804-3.931v-12.54h4.545zM158.631 10.145c-7.64 0-13.183 5.415-13.183 12.875 0 3.632 1.343 6.942 3.78 9.321 2.419 2.359 5.758 3.659 9.402 3.659 7.544 0 13.234-5.58 13.234-12.979.001-7.461-5.566-12.876-13.233-12.876zm0 21.573c-5.239 0-7.979-4.375-7.979-8.697 0-5.939 4.136-8.644 7.979-8.644s7.979 2.705 7.979 8.644c0 5.975-4.136 8.697-7.979 8.697z" /></g><g fill="#81B441"><path d="M211.554 11.937c-.739-.805-1.655-1.403-2.725-1.777-1.951-.68-4.619-.735-6.739-.061-.994.316-1.909.754-2.722 1.302-.815.552-1.53 1.207-2.126 1.947-.187.231-.363.47-.527.715-.52-1.284-1.285-2.283-2.288-2.978-1.401-.972-3.205-1.465-5.363-1.465-1.102 0-2.146.176-3.105.522-.947.342-1.823.815-2.604 1.404-.767.579-1.448 1.273-2.023 2.061v-2.787c0-.418-.339-.757-.757-.757h-1.219c-.418 0-.757.339-.757.757v23.98c0 .418.339.757.757.757h1.219c.418 0 .757-.339.757-.757v-15.087c.14-.709.395-1.502.759-2.359.368-.865.874-1.691 1.504-2.451.617-.744 1.387-1.373 2.288-1.871.872-.481 1.92-.725 3.114-.725.873 0 1.69.102 2.426.305.689.19 1.266.511 1.763.982.493.469.886 1.122 1.169 1.94.296.854.446 1.967.446 3.309v15.957c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757l-.002-15.906c.025-.361.117-.778.272-1.238.16-.473.387-.957.675-1.44.292-.49.654-.975 1.077-1.445.41-.457.902-.872 1.464-1.233.559-.36 1.203-.655 1.911-.879.705-.221 1.502-.339 2.368-.353l.155-.001c.806 0 1.562.101 2.247.303.688.202 1.264.541 1.761 1.04.496.495.892 1.196 1.178 2.08.299.925.451 2.121.451 3.557v15.515c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-15.515c0-1.664-.187-3.111-.555-4.302-.377-1.224-.94-2.249-1.671-3.046zM235.82 33.56c-.07-.337-.129-.697-.178-1.083-.05-.392-.089-.804-.117-1.239-.029-.434-.043-.857-.043-1.27v-12.012c0-1.355-.234-2.573-.697-3.62-.467-1.055-1.129-1.945-1.969-2.646-.828-.689-1.823-1.215-2.957-1.561-2.266-.689-5.181-.69-7.45.098-1.161.401-2.186.958-3.045 1.656-.869.708-1.554 1.542-2.035 2.481-.489.953-.737 1.968-.737 3.015 0 .407.322.741.729.756l1.197.044c.202.016.404-.069.553-.211.148-.142.232-.339.232-.545 0-.705.161-1.344.494-1.953.339-.62.814-1.166 1.413-1.623.615-.47 1.354-.843 2.197-1.111.852-.27 1.797-.407 2.807-.407 2.149 0 3.805.496 4.92 1.474 1.101.967 1.637 2.31 1.637 4.108v2.745h-4.984c-1.783 0-3.413.191-4.847.568-1.45.383-2.701.925-3.721 1.612-1.049.708-1.863 1.575-2.421 2.575-.564 1.011-.85 2.127-.85 3.316 0 1.061.197 2.05.584 2.939.389.895.953 1.676 1.674 2.323.716.642 1.585 1.143 2.583 1.491.986.344 2.095.519 3.297.519 1.255 0 2.417-.139 3.451-.414 1.031-.272 1.979-.651 2.817-1.125.839-.475 1.585-1.033 2.22-1.66l.275-.281.024.315c.071.837.195 1.568.371 2.175.093.324.39.547.727.547h1.374c.418 0 .757-.339.757-.757v-.199c0-.104-.022-.208-.064-.303-.081-.187-.155-.435-.218-.737zm-11.734-.248c-.825 0-1.58-.122-2.247-.365-.66-.239-1.235-.571-1.708-.987-.466-.409-.833-.891-1.091-1.43-.253-.531-.38-1.107-.38-1.714 0-.768.189-1.455.578-2.102.396-.658.978-1.234 1.731-1.715.783-.499 1.758-.895 2.9-1.177 1.163-.287 2.503-.433 3.985-.433h4.917v4.774c-.357.761-.799 1.452-1.315 2.058-.546.641-1.189 1.198-1.913 1.658-.722.459-1.547.816-2.452 1.061-.913.246-1.924.372-3.005.372zM250.599 9.913c-.244-.094-.527-.166-.863-.218-.319-.051-.687-.076-1.093-.076-2.123 0-3.924.544-5.352 1.615-.644.482-1.216 1.046-1.715 1.688v-2.102c0-.418-.339-.757-.757-.757h-1.197c-.418 0-.757.339-.757.757v23.98c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-15.646c.18-.986.466-1.908.851-2.744.383-.833.875-1.564 1.463-2.172.579-.598 1.273-1.074 2.062-1.416.787-.341 1.692-.514 2.691-.514.251 0 .492.013.723.039l.735.088c.198.024.4-.031.558-.153.158-.123.261-.304.287-.503l.133-1.064c.042-.347-.155-.677-.48-.802zM260.642 21.099l10.484-9.725c.228-.212.303-.541.19-.832-.114-.289-.393-.48-.704-.48h-1.707c-.19 0-.374.072-.513.202l-10.911 10.09-1.538 1.454v-21.051c0-.418-.339-.757-.757-.757h-1.197c-.418 0-.757.339-.757.757v34.043c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-9.582l2.687-2.31 10.541 12.383c.144.169.355.266.576.266h1.573c.418 0 .757-.339.757-.757 0-.244-.116-.461-.295-.599l-11.14-13.102zM288.498 12.708c-.873-.976-1.929-1.745-3.139-2.281-2.474-1.098-5.643-1.093-8.216.154-1.307.633-2.462 1.528-3.435 2.66-.964 1.121-1.738 2.475-2.299 4.024-.559 1.547-.843 3.256-.843 5.079v.975c0 1.827.292 3.531.869 5.064.577 1.539 1.384 2.888 2.396 4.008 1.016 1.127 2.22 2.019 3.578 2.651 1.366.635 2.853.957 4.42.957 1.015 0 1.963-.104 2.815-.309.853-.206 1.645-.495 2.353-.861.713-.369 1.361-.818 1.925-1.333.557-.509 1.056-1.081 1.486-1.701.235-.341.154-.807-.184-1.047l-.842-.598c-.33-.236-.788-.169-1.036.154-.462.597-.945 1.091-1.437 1.47-.491.379-1.009.686-1.54.911-.532.227-1.096.388-1.675.481-1.725.278-3.632.16-5.208-.618-1.041-.514-1.957-1.223-2.72-2.109-.77-.893-1.384-1.961-1.823-3.177-.441-1.219-.664-2.547-.664-3.943v-.551h17.218c.418 0 .757-.339.757-.757v-1.396c0-1.602-.243-3.09-.721-4.422-.485-1.342-1.169-2.514-2.035-3.485zm-4.19.263c.876.432 1.632 1.024 2.248 1.757.625.747 1.117 1.63 1.461 2.623.298.858.47 1.767.512 2.707h-15.079c.155-.911.406-1.775.75-2.58.444-1.037 1.027-1.954 1.734-2.722.699-.759 1.518-1.36 2.435-1.789 1.795-.838 4.188-.855 5.939.004zM303.675 33.715c-.071-.401-.446-.661-.852-.617-.403.058-.778.106-1.124.141-.654.069-1.575.107-2.316-.108-.303-.087-.566-.255-.806-.518-.251-.272-.459-.683-.617-1.219-.17-.577-.257-1.363-.257-2.335v-16.264h4.696c.418 0 .757-.339.757-.757v-1.219c0-.418-.339-.757-.757-.757h-4.696v-5.715c0-.418-.339-.757-.757-.757h-1.219c-.418 0-.757.339-.757.757v5.715h-3.676c-.418 0-.757.339-.757.757v1.219c0 .418.339.757.757.757h3.676v16.265c0 1.26.121 2.335.36 3.195.252.907.631 1.649 1.128 2.207.511.573 1.142.983 1.877 1.215.677.215 1.448.324 2.29.324l.583-.012c.234-.008.475-.024.732-.047l.713-.08c.275-.037.522-.095.735-.172.345-.126.55-.481.487-.843l-.2-1.132z" /></g>
@@ -96,9 +105,12 @@ export default function Home() {
                   </li>
                 </ul>
                 <form class="d-flex " role="search">
-                  <a class="nav-link active fw-bold p-4" aria-current="page" href="#">Login</a>
+                  <button class="theme-btn-five my-2 px-4 me-3"
+                    onClick={() => handleChangeLang('en')}
+                  >Eng</button>
 
-                  <button class="theme-btn-five my-2" type="submit">Create your event</button>
+                  <button class="theme-btn-five my-2 px-4" onClick={() => handleChangeLang('th')}
+                  >Thai</button>
                 </form>
               </div>
             </div>
@@ -153,12 +165,16 @@ export default function Home() {
                   <p classname='fadeInLeft'>Over 150,000+ client  all over the world.</p>
                 </div>
               </div>
+
+
+
               <div class="col-lg-6  fadeInLeft order-lg-first ">
                 <div class="text-wrapper ">
                   <p class=" display-1 fade-in-image fw-bold">
                     Event ticket
                     organiser & seller.
                   </p>
+
                   <p className='fs-3 fade-in-image py-3'>
                     For hassale free event, we are here to help you by creating online ticket.
                   </p>
@@ -299,7 +315,8 @@ export default function Home() {
                       <div class="accordion" id="accordionExample">
                         <div class=" card p-4">
                           <h5 class="accordion-header mb-2  " id="headingOne">
-                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
+                              style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Register and create your first.
                             </button>
                           </h5>
@@ -311,7 +328,8 @@ export default function Home() {
                         </div>
                         <div class="card p-4">
                           <h5 class="accordion-header mb-2" id="headingTwo">
-                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
+                              style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               Manage your client easily
                             </button>
                           </h5>
@@ -324,7 +342,8 @@ export default function Home() {
                         </div>
                         <div class="card p-4">
                           <h5 class="accordion-header mb-2" id="headingThree">
-                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
+                              style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Start selling ticket
                             </button>
                           </h5>
@@ -350,12 +369,12 @@ export default function Home() {
         </div>
         <div class="pricing-section-three my-5">
           <div class="container">
-            <div class="title-style-five text-center mb-50 md-mb-40">
-              <h6>Our Pricing
+            <div class="title-style-five text-center ff  mb-50 md-mb-40">
+              <h6 >Our Pricing
               </h6>
               <div class="row">
-                <div class="col-lg-9 m-auto">
-                  <h2>Unbeatable prices, no contracts, simple &amp; easy
+                <div class="col-lg-9 m-auto ">
+                  <h2 class='ff'>Unbeatable prices, no contracts, simple &amp; easy
                   </h2>
                 </div>
                 <div class="pricing-table-area-three">
@@ -363,54 +382,78 @@ export default function Home() {
                     <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-duration="1200"
                       data-aos-delay="0">
                       <div class="pr-table-wrapper skew-right">
-                        <div class="pack-name font-slab pc1">
+                        <div class="pack-name ff fs-4">
                           <span>Free Event</span>
                         </div>
                         <div class="price font-slab">$0</div>
                         <p class="user-condition">per user/month</p>
 
-                        <ul><li class="">60-day chat history</li>
-                          <li class="">Basic widget customization</li>
-                          <li class="">Ticketing system</li>
-                          <li class="">Data security</li>
+                        <ul><li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                        </svg>60-day chat history</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Basic widget customization</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Ticketing system</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Data security</li>
                         </ul>
-                        <a href="#" class="subscribe-btn font-rubik">Subscribe Now</a>
+                        <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 " data-aos="fade-up"
                       data-aos-duration="1200" data-aos-delay="100">
                       <div class="pr-table-wrapper skew-left">
-                        <div class="pack-name font-slab pc2">
+                        <div class="pack-name ff fs-4">
                           <span>Pre Day</span>
                         </div>
                         <div class="price font-slab">$0.32</div>
                         <p class="user-condition">per user/month</p>
 
                         <ul>
-                          <li class="">60-day chat history</li>
-                          <li class="">Basic widget customization</li>
-                          <li class="">Ticketing system</li>
-                          <li class="">Data security</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>60-day chat history</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Basic widget customization</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Ticketing system</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Data security</li>
                         </ul>
-                        <a href="#" class="subscribe-btn font-rubik">Subscribe Now</a>
+                        <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 " data-aos="fade-up"
                       data-aos-duration="1200" data-aos-delay="200">
                       <div class="pr-table-wrapper skew-right">
-                        <div class="pack-name font-slab pc3">
+                        <div class="pack-name ff fs-4">
                           <span>Pay As You Go</span>
                         </div>
                         <div class="price font-slab">$0.65</div>
                         <p class="user-condition">per user/month</p>
 
                         <ul>
-                          <li class="">60-day chat history</li>
-                          <li class="">Basic widget customization</li>
-                          <li class="">Ticketing system</li>
-                          <li class="">Data security</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>60-day chat history</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Basic widget customization</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Ticketing system</li>
+                          <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                          </svg>Data security</li>
                         </ul>
-                        <a href="#" class="subscribe-btn font-rubik">Subscribe Now</a>
+                        <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
                     </div>
                   </div>
@@ -457,7 +500,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div class=''>
+                  <div class='' data-aos="fade-up" data-aos-duration="1200">
                     <svg xmlns="http://www.w3.org/2000/svg" height="100" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
                     </svg>
@@ -472,7 +515,7 @@ export default function Home() {
                         </h2>
                       </div>
                     </div>
-                    <div class="mt-4 ">
+                    <div class="mt-4 " data-aos="fade-up" data-aos-duration="1200">
                       <svg xmlns="http://www.w3.org/2000/svg" height="77" fill="currentColor" class="bi bi-chat-square-quote-fill" viewBox="0 0 16 16">
                         <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
                       </svg></div>
@@ -516,7 +559,7 @@ export default function Home() {
                         <div data-accordion-component="AccordionItem " class="bg-white mb-4 py-0">
                           <div data-accordion-component="AccordionItemHeading" class="card-header " role="heading" aria-level="3">
                             <div class=" fw-bold fs-2 md-5 text-black hhbt   accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-a" aria-expanded="true"
-                              aria-disabled="false" aria-controls="accordion__panel-a" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                              style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-a" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
 
                               How does the free trial work?
 
@@ -532,7 +575,7 @@ export default function Home() {
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-b" aria-expanded="true"
-                              aria-disabled="false" aria-controls="accordion__panel-b" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                              style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-b" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
 
                               How do you weigh different criteria in your process?
 
@@ -547,7 +590,7 @@ export default function Home() {
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-c" aria-expanded="true"
-                              aria-disabled="false" aria-controls="accordion__panel-c" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                              style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-c" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
 
                               What does First Round look for in an idea?
 
@@ -562,7 +605,7 @@ export default function Home() {
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt c  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-d" aria-expanded="true"
-                              aria-disabled="false" aria-controls="accordion__panel-d" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                              style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-d" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
 
                               What do you look for in a founding team?
 
@@ -577,7 +620,7 @@ export default function Home() {
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-e" aria-expanded="true"
-                              aria-disabled="false" aria-controls="accordion__panel-e" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
+                              style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-e" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
                               Do you recommend Pay as you go or Pre pay?
 
                             </div>
@@ -639,7 +682,7 @@ export default function Home() {
                     <svg baseProfile="tiny" height={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 36"><path fill="#81B441" d="M22.038 6.715c-.865-.48-3.344-.183-6.322.738-5.212 3.562-9.61 8.811-9.917 17.238-.056.202-.57-.027-.672-.09-1.407-2.697-1.965-5.538-.79-9.635.219-.365-.497-.814-.626-.685-.258.258-1.333 1.404-2.047 2.642-3.54 6.141-1.225 14.009 4.968 17.453 6.192 3.449 14.011 1.224 17.459-4.97 3.989-7.148.285-21.385-2.053-22.691z" /><g fill="#fff"><path d="M44.202 10.145c-7.342 0-12.671 5.458-12.671 12.978 0 7.582 5.315 12.877 12.927 12.877 3.845 0 6.888-1.202 9.309-3.677.723-.781.801-1.533.801-1.821 0-1.226-.912-2.117-2.168-2.117-.633 0-1.163.239-1.77.801-1.371 1.277-3.176 2.582-6.172 2.582-4.166 0-7.554-3.128-7.768-7.145h16.581c1.803 0 2.679-.843 2.679-2.576 0-.51 0-.879-.103-1.605-.893-6.447-5.246-10.297-11.645-10.297zm0 4.026c3.981 0 6.536 2.537 6.693 6.632h-14.2c.373-3.789 3.577-6.632 7.507-6.632zM71.785 10.145c-3.335 0-6.637 1.918-7.927 4.581v-1.646c0-2.55-1.976-2.679-2.372-2.679-1.171 0-2.423.704-2.423 2.679v19.881c0 2.648 2.104 2.782 2.525 2.782.421 0 2.526-.134 2.526-2.782v-10.657c0-4.637 2.628-7.876 6.39-7.876 3.644 0 5.416 2.391 5.416 7.312v11.222c0 2.648 2.105 2.782 2.526 2.782.421 0 2.525-.134 2.525-2.782v-12.81c0-4.838-2.414-10.007-9.186-10.007zM103.825 10.402c-1.167 0-2.014.681-2.518 2.02l-6.911 17.378-6.858-17.378c-.537-1.36-1.377-2.02-2.569-2.02-1.393 0-2.526 1.087-2.526 2.423 0 .331.038.759.317 1.429l7.942 18.753c.946 2.262 2.503 2.737 3.643 2.737 1.139 0 2.696-.475 3.645-2.736l7.994-18.857c.273-.662.315-1.147.315-1.377 0-1.352-1.065-2.372-2.474-2.372zM118.513 10.145c-3.231 0-6.24.9-8.472 2.532-.757.522-1.125 1.174-1.125 1.993 0 1.128.861 2.012 1.963 2.012.476 0 1.01-.19 1.499-.532 1.919-1.279 3.722-1.876 5.673-1.876 3.735 0 5.879 1.899 5.879 5.212v.549c-8.384.009-16.91 1.022-16.91 8.315 0 5.249 4.486 7.599 8.932 7.599 3.54 0 6.368-1.403 8.182-4.059v1.277c0 1.902 1.277 2.576 2.373 2.576.231 0 2.269-.072 2.269-2.576v-13.373c-.002-6.042-3.839-9.649-10.263-9.649zm4.354 13.609h1.063v1.164c0 4.256-2.71 7.006-6.903 7.006-1.138 0-4.852-.265-4.852-3.676-.001-4.029 6.101-4.494 10.692-4.494zM141.928 14.991c2.21 0 2.322-1.72 2.322-2.064 0-1.023-.61-2.116-2.322-2.116h-4.545v-4.596c0-2.053-1.332-2.782-2.474-2.782-.421 0-2.525.134-2.525 2.782v21.829c0 5.037 2.485 7.7 7.187 7.7 1.217 0 2.402-.215 3.178-.576.889-.444 1.398-1.173 1.398-2 0-1.167-.847-2.014-2.014-2.014-.225 0-.546.056-.9.158-.433.108-.726.15-1.046.15-1.913 0-2.804-1.249-2.804-3.931v-12.54h4.545zM158.631 10.145c-7.64 0-13.183 5.415-13.183 12.875 0 3.632 1.343 6.942 3.78 9.321 2.419 2.359 5.758 3.659 9.402 3.659 7.544 0 13.234-5.58 13.234-12.979.001-7.461-5.566-12.876-13.233-12.876zm0 21.573c-5.239 0-7.979-4.375-7.979-8.697 0-5.939 4.136-8.644 7.979-8.644s7.979 2.705 7.979 8.644c0 5.975-4.136 8.697-7.979 8.697z" /></g><g fill="#81B441"><path d="M211.554 11.937c-.739-.805-1.655-1.403-2.725-1.777-1.951-.68-4.619-.735-6.739-.061-.994.316-1.909.754-2.722 1.302-.815.552-1.53 1.207-2.126 1.947-.187.231-.363.47-.527.715-.52-1.284-1.285-2.283-2.288-2.978-1.401-.972-3.205-1.465-5.363-1.465-1.102 0-2.146.176-3.105.522-.947.342-1.823.815-2.604 1.404-.767.579-1.448 1.273-2.023 2.061v-2.787c0-.418-.339-.757-.757-.757h-1.219c-.418 0-.757.339-.757.757v23.98c0 .418.339.757.757.757h1.219c.418 0 .757-.339.757-.757v-15.087c.14-.709.395-1.502.759-2.359.368-.865.874-1.691 1.504-2.451.617-.744 1.387-1.373 2.288-1.871.872-.481 1.92-.725 3.114-.725.873 0 1.69.102 2.426.305.689.19 1.266.511 1.763.982.493.469.886 1.122 1.169 1.94.296.854.446 1.967.446 3.309v15.957c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757l-.002-15.906c.025-.361.117-.778.272-1.238.16-.473.387-.957.675-1.44.292-.49.654-.975 1.077-1.445.41-.457.902-.872 1.464-1.233.559-.36 1.203-.655 1.911-.879.705-.221 1.502-.339 2.368-.353l.155-.001c.806 0 1.562.101 2.247.303.688.202 1.264.541 1.761 1.04.496.495.892 1.196 1.178 2.08.299.925.451 2.121.451 3.557v15.515c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-15.515c0-1.664-.187-3.111-.555-4.302-.377-1.224-.94-2.249-1.671-3.046zM235.82 33.56c-.07-.337-.129-.697-.178-1.083-.05-.392-.089-.804-.117-1.239-.029-.434-.043-.857-.043-1.27v-12.012c0-1.355-.234-2.573-.697-3.62-.467-1.055-1.129-1.945-1.969-2.646-.828-.689-1.823-1.215-2.957-1.561-2.266-.689-5.181-.69-7.45.098-1.161.401-2.186.958-3.045 1.656-.869.708-1.554 1.542-2.035 2.481-.489.953-.737 1.968-.737 3.015 0 .407.322.741.729.756l1.197.044c.202.016.404-.069.553-.211.148-.142.232-.339.232-.545 0-.705.161-1.344.494-1.953.339-.62.814-1.166 1.413-1.623.615-.47 1.354-.843 2.197-1.111.852-.27 1.797-.407 2.807-.407 2.149 0 3.805.496 4.92 1.474 1.101.967 1.637 2.31 1.637 4.108v2.745h-4.984c-1.783 0-3.413.191-4.847.568-1.45.383-2.701.925-3.721 1.612-1.049.708-1.863 1.575-2.421 2.575-.564 1.011-.85 2.127-.85 3.316 0 1.061.197 2.05.584 2.939.389.895.953 1.676 1.674 2.323.716.642 1.585 1.143 2.583 1.491.986.344 2.095.519 3.297.519 1.255 0 2.417-.139 3.451-.414 1.031-.272 1.979-.651 2.817-1.125.839-.475 1.585-1.033 2.22-1.66l.275-.281.024.315c.071.837.195 1.568.371 2.175.093.324.39.547.727.547h1.374c.418 0 .757-.339.757-.757v-.199c0-.104-.022-.208-.064-.303-.081-.187-.155-.435-.218-.737zm-11.734-.248c-.825 0-1.58-.122-2.247-.365-.66-.239-1.235-.571-1.708-.987-.466-.409-.833-.891-1.091-1.43-.253-.531-.38-1.107-.38-1.714 0-.768.189-1.455.578-2.102.396-.658.978-1.234 1.731-1.715.783-.499 1.758-.895 2.9-1.177 1.163-.287 2.503-.433 3.985-.433h4.917v4.774c-.357.761-.799 1.452-1.315 2.058-.546.641-1.189 1.198-1.913 1.658-.722.459-1.547.816-2.452 1.061-.913.246-1.924.372-3.005.372zM250.599 9.913c-.244-.094-.527-.166-.863-.218-.319-.051-.687-.076-1.093-.076-2.123 0-3.924.544-5.352 1.615-.644.482-1.216 1.046-1.715 1.688v-2.102c0-.418-.339-.757-.757-.757h-1.197c-.418 0-.757.339-.757.757v23.98c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-15.646c.18-.986.466-1.908.851-2.744.383-.833.875-1.564 1.463-2.172.579-.598 1.273-1.074 2.062-1.416.787-.341 1.692-.514 2.691-.514.251 0 .492.013.723.039l.735.088c.198.024.4-.031.558-.153.158-.123.261-.304.287-.503l.133-1.064c.042-.347-.155-.677-.48-.802zM260.642 21.099l10.484-9.725c.228-.212.303-.541.19-.832-.114-.289-.393-.48-.704-.48h-1.707c-.19 0-.374.072-.513.202l-10.911 10.09-1.538 1.454v-21.051c0-.418-.339-.757-.757-.757h-1.197c-.418 0-.757.339-.757.757v34.043c0 .418.339.757.757.757h1.197c.418 0 .757-.339.757-.757v-9.582l2.687-2.31 10.541 12.383c.144.169.355.266.576.266h1.573c.418 0 .757-.339.757-.757 0-.244-.116-.461-.295-.599l-11.14-13.102zM288.498 12.708c-.873-.976-1.929-1.745-3.139-2.281-2.474-1.098-5.643-1.093-8.216.154-1.307.633-2.462 1.528-3.435 2.66-.964 1.121-1.738 2.475-2.299 4.024-.559 1.547-.843 3.256-.843 5.079v.975c0 1.827.292 3.531.869 5.064.577 1.539 1.384 2.888 2.396 4.008 1.016 1.127 2.22 2.019 3.578 2.651 1.366.635 2.853.957 4.42.957 1.015 0 1.963-.104 2.815-.309.853-.206 1.645-.495 2.353-.861.713-.369 1.361-.818 1.925-1.333.557-.509 1.056-1.081 1.486-1.701.235-.341.154-.807-.184-1.047l-.842-.598c-.33-.236-.788-.169-1.036.154-.462.597-.945 1.091-1.437 1.47-.491.379-1.009.686-1.54.911-.532.227-1.096.388-1.675.481-1.725.278-3.632.16-5.208-.618-1.041-.514-1.957-1.223-2.72-2.109-.77-.893-1.384-1.961-1.823-3.177-.441-1.219-.664-2.547-.664-3.943v-.551h17.218c.418 0 .757-.339.757-.757v-1.396c0-1.602-.243-3.09-.721-4.422-.485-1.342-1.169-2.514-2.035-3.485zm-4.19.263c.876.432 1.632 1.024 2.248 1.757.625.747 1.117 1.63 1.461 2.623.298.858.47 1.767.512 2.707h-15.079c.155-.911.406-1.775.75-2.58.444-1.037 1.027-1.954 1.734-2.722.699-.759 1.518-1.36 2.435-1.789 1.795-.838 4.188-.855 5.939.004zM303.675 33.715c-.071-.401-.446-.661-.852-.617-.403.058-.778.106-1.124.141-.654.069-1.575.107-2.316-.108-.303-.087-.566-.255-.806-.518-.251-.272-.459-.683-.617-1.219-.17-.577-.257-1.363-.257-2.335v-16.264h4.696c.418 0 .757-.339.757-.757v-1.219c0-.418-.339-.757-.757-.757h-4.696v-5.715c0-.418-.339-.757-.757-.757h-1.219c-.418 0-.757.339-.757.757v5.715h-3.676c-.418 0-.757.339-.757.757v1.219c0 .418.339.757.757.757h3.676v16.265c0 1.26.121 2.335.36 3.195.252.907.631 1.649 1.128 2.207.511.573 1.142.983 1.877 1.215.677.215 1.448.324 2.29.324l.583-.012c.234-.008.475-.024.732-.047l.713-.08c.275-.037.522-.095.735-.172.345-.126.55-.481.487-.843l-.2-1.132z" /></g>
                     </svg>
                   </Link>
-                  <ul class="font-rubik  ">
+                  <ul class="ff ">
                     <li>
                       <a href="mailto:deskiinc@gmail.com">deskiinc@gmail.com</a>
                     </li>
@@ -648,46 +691,46 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 footer-list">
-                  <h5 class="footer-title font-slab">Links</h5>
+                <div class="col-lg-3 col-md-4 footer-list ff">
+                  <h5 class="footer-title  ff">Links</h5>
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/" class='ff'>Home</a>
                     </li>
                     <li>
-                      <a href="/product-customer-support">Product</a>
+                      <a href="/product-customer-support" class='ff'>Product</a>
                     </li>
                     <li>
-                      <a href="/pricing-pm">Pricing</a>
+                      <a href="/pricing-pm" class='ff'>Pricing</a>
                     </li>
                     <li>
-                      <a href="/about-pm">About us</a>
+                      <a href="/about-pm" class='ff'>About us</a>
                     </li>
                     <li>
-                      <a href="/solution-management">Features</a>
+                      <a href="/solution-management" class='ff'>Features</a>
                     </li>
                     <li>
-                      <a href="/blog-v4">Blog</a>
+                      <a href="/blog-v4" class='ff'>Blog</a>
                     </li>
                     <li>
-                      <a href="/login">Help &amp; Support</a>
+                      <a href="/login" class='ff'>Help &amp; Support</a>
                     </li>
                     <li>
-                      <a href="/doc-full-width">API documentation</a>
+                      <a href="/doc-full-width" class='ff'>API documentation</a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 footer-list">
-                  <h5 class="footer-title font-slab">Legal</h5>
+                  <h5 class="footer-title ff">Legal</h5>
                   <ul>
                     <li>
-                      <a href="/terms-conditions">Terms of use</a>
+                      <a href="/terms-conditions" class='ff'>Terms of use</a>
                     </li>
                     <li>
-                      <a href="/terms-conditions">Terms &amp; conditions</a>
+                      <a href="/terms-conditions" class='ff'>Terms &amp; conditions</a>
                     </li>
                     <li>
-                      <a href="/terms-conditions">Privacy policy</a>
+                      <a href="/terms-conditions" class='ff'>Privacy policy</a>
                     </li>
                     <li>
                       <a href="/">Cookie policy</a>
@@ -695,25 +738,25 @@ export default function Home() {
                   </ul>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4 footer-list">
-                  <h5 class="footer-title font-slab">Products</h5>
+                  <h5 class="footer-title  ff">Products</h5>
                   <ul class="pe-5">
                     <li>
-                      <a href="/product-customer-support">Take the tour</a>
+                      <a href="/product-customer-support" class='ff'>Take the tour</a>
                     </li>
                     <li>
-                      <a href="/team-5">Team</a>
+                      <a href="/team-5" class='ff'>Team</a>
                     </li>
                     <li>
-                      <a href="/features-customer-support">Self Service</a>
+                      <a href="/features-customer-support" class='ff'>Self Service</a>
                     </li>
                     <li>
-                      <a href="/blog-v3">News</a>
+                      <a href="/blog-v3" class='ff'>News</a>
                     </li>
                     <li>
-                      <a href="/about-doc">About us</a>
+                      <a href="/about-doc" class='ff'>About us</a>
                     </li>
                     <li>
-                      <a href="/contact-cs">Contact</a>
+                      <a href="/contact-cs" class='ff'>Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -721,9 +764,9 @@ export default function Home() {
             </div>
           </div>
           <div class="container">
-            <div class="bottom-footer-content p-3">
-              <p>Copyright @2023
-                <a href="https://themeforest.net/user/ib-themes/portfolio" target="_blank" rel="noreferrer">ib-themes</a> inc.
+            <div class="bottom-footer-content pt-5 mt-5 p-3">
+              <p class='ff fw-bold'>Copyright @2023
+                <a href="https://themeforest.net/user/ib-themes/portfolio" class='ff' target="_blank" rel="noreferrer">ib-themes</a> inc.
               </p>
             </div>
           </div>

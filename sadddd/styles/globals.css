@@ -624,6 +624,7 @@
   transition: all 0.3s ease-in-out;
   transform: scale(0, 1);
   transform-origin: 0 100%;
+  border:none;
 }
 
 .theme-btn-five {
@@ -636,7 +637,7 @@
   position: relative;
   text-align: center;
   z-index: 1;
-  
+  border:none;
 }
 
 .theme-btn-five:hover:before {
@@ -1670,7 +1671,7 @@ client-feedback-slider-three {
 }
 
 .theme-footer-four {
-  back
+  background: #fbe010;
   padding: 80px 0 70px;
   position: relative;
   z-index: 5;

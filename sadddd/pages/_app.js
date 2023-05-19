@@ -3,11 +3,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link';
-import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 import AOS from "aos";
-
 import "aos/dist/aos.css";
-
+import './i18n';
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     
@@ -33,7 +31,7 @@ export default function App({ Component, pageProps }) {
           <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/><Link rel="icon" href="/favicon.ico" />
             <Link rel="preconnect" href="https://fonts.googleapis.com" />
             <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
             <Link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet"></Link>
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
           </Head>
