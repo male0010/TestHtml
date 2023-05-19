@@ -24,7 +24,7 @@ function test() {
 
                 <h2>{t("Travel App")}</h2>
                 <p>{t('Around the world')}</p>
-
+                    {t('Over 150,000+')}
                 <div className="card-container">
                     <div onClick={() => handleChangeLang('en')} className="card card-small">
                         <span>en</span>

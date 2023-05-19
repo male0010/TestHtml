@@ -10,16 +10,19 @@ import s2 from '../pages/img/ss2.png'
 import s3 from '../pages/img/ss3.png'
 import s4 from '../pages/img/ss4.png'
 import s5 from '../pages/img/ss5.png'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-
 import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
   const { t } = useTranslation();
-  const handleChangeLang = (lang) => {
+  const handleChangeLang = (lang, event) => {
+    event.preventDefault();
     i18n.changeLanguage(lang);
   }
+  
+
   return (
     <>
       <Head>
@@ -104,13 +107,13 @@ export default function Home() {
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex " role="search">
-                  <button class="theme-btn-five my-2 px-4 me-3"
-                    onClick={() => handleChangeLang('en')}
-                  >Eng</button>
+                <form class="d-flex " >
+                  <botton class="theme-btn-five my-2 py-3    px-5 me-3"
+                    onClick={(event) => handleChangeLang('en', event)}
+                  >Eng</botton>
 
-                  <button class="theme-btn-five my-2 px-4" onClick={() => handleChangeLang('th')}
-                  >Thai</button>
+                  <botton class="theme-btn-five my-2 py-3 px-5" onClick={(event) => handleChangeLang('th', event)}
+                  >Thai</botton>
                 </form>
               </div>
             </div>
@@ -162,27 +165,19 @@ export default function Home() {
 		 M57.12,29.15c0.08-0.48,0.09-0.98,0.07-1.49l1.96,0.5L57.12,29.15z"></path><path d="M51.86,26.13c-0.52,0-0.94,0.42-0.94,0.94c0,0.52,0.42,0.94,0.94,0.94s0.94-0.42,0.94-0.94
 		                C52.8,26.55,52.37,26.13,51.86,26.13z"></path></svg>
                   </div>
-                  <p classname='fadeInLeft'>Over 150,000+ client  all over the world.</p>
+                  <p classname='fadeInLeft'>{t("Over 150,000+ client  all over the world.")}</p>
                 </div>
               </div>
-
-
-
               <div class="col-lg-6  fadeInLeft order-lg-first ">
                 <div class="text-wrapper ">
                   <p class=" display-1 fade-in-image fw-bold">
-                    Event ticket
-                    organiser & seller.
+                  {t("Event ticket organizer & seller.")}
                   </p>
-
-                  <p className='fs-3 fade-in-image py-3'>
-                    For hassale free event, we are here to help you by creating online ticket.
+                  <p className='fs-3 fade-in-image py-3'>{t("For hassle-free events, we are here to help you by creating online tickets.")}
                   </p>
-                  <button class="theme-btn-five my-2" type="submit">Let’s get started</button>
-
+                  <button class="theme-btn-five my-2" type="submit">{t("Let’s get started")}</button>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="fancy-feature-eight  mt-5 pt-2">
@@ -194,8 +189,8 @@ export default function Home() {
                       <div class="card-body py-auto px-3">
                         <svg height={30} xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-battery" viewBox="0 0 16 16">
                           <path d="M0 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm2-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2zm14 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z" />
-                        </svg> <h5 class="title font-rubik fs-4 fw-bold">Smart popups</h5>
-                        <p class=" fs-5"> Create customized popups and show the message at the lorem
+                        </svg> <h5 class="title font-rubik fs-4 fw-bold">{t("Smart popups")}</h5>
+                        <p class=" fs-5">{t("Create customized popups and show the message at the lorem")} 
                         </p>
 
                       </div>
@@ -206,8 +201,8 @@ export default function Home() {
                       <div class="card-body py-auto px-3">
                         <svg xmlns="http://www.w3.org/2000/svg" height={30} fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
                           <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                        </svg><h5 class="title font-rubik fs-4 fw-bold">Autoresponder</h5>
-                        <p class=" fs-5"> Send welcome email to your new subscribers with a code.  </p>
+                        </svg><h5 class="title font-rubik fs-4 fw-bold">{t("Autoresponder")} </h5>
+                        <p class=" fs-5">{t("Send welcome email to your new subscribers with a code.")} </p>
 
                       </div>
                     </div>
@@ -219,8 +214,8 @@ export default function Home() {
                           <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                           <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                        </svg><h5 class="title font-rubik fs-4 fw-bold">Embeded Forms</h5>
-                        <p class=" fs-5"> Collect website leads with embedded forms and integrate easily.</p>
+                        </svg><h5 class="title font-rubik fs-4 fw-bold">{t("Embeded Forms")}</h5>
+                        <p class=" fs-5"> {t("Collect website leads with embedded forms and integrate easily.")}</p>
 
                       </div>
                     </div>
@@ -236,21 +231,20 @@ export default function Home() {
               <div class="  text-dark">
                 <Image src={s1} class="card-img border-0 image-fluid" alt="..." />
               </div>
-
             </div>
 
             <div className='col-md-6 order-md-2 text-left  px-0' data-aos="fade-left" data-aos-duration="1200">
               <div className=' rounded-0 h-100  proh position-relative overflow-hidden  d-flex justify-content-center flex-column h-100'>
                 <div className="container ff card fs-5   lh-lg proh mx-auto border-0 ">
-                  <p classname=''>Over 150,000+ client  all over the world.</p>
+                  <p classname=''><span>{t("Over 150,000+ client  all over the world.")}</span></p>
 
-                  <p className=" display-3 fw-bold ">Best event & online ticket platform.
+                  <p className=" display-3 fw-bold ">{t('Best event & online ticket platform.')}
                   </p>
-                  <p className="fs-5  ">Things go wrong. You’ll have questions. We understand. So we have people, not bots, on hand to help.
+                  <p className="fs-5  ">{t('Things go wrong. You’ll have questions. We understand. So we have people, not bots, on hand to help.')}
                   </p>
-                  <p className="fs-5 ">We aim to answer any query in less than 10 minutes.
+                  <p className="fs-5 ">{t('We aim to answer any query in less than 10 minutes.')}
                   </p>
-                  <p className="fs-5 fw-bold ">-Mitchell Garner
+                  <p className="fs-5 fw-bold ">{t("-Mitchell Garner")}
                   </p>
                 </div>
               </div>
@@ -260,8 +254,8 @@ export default function Home() {
         <div class="fancy-feature-nine ">
           <div class="container ">
             <div class="title-style-five text-center 0">
-              <h6>GET STARTED IN MINUTES</h6>
-              <h2><span>3 simple &amp; easy step to launch.</span></h2>
+              <h6>{t("GET STARTED IN MINUTES")}</h6>
+              <h2><span>{t("3 simple & easy step to launch.")}</span></h2>
             </div>
             <div class="row justify-content-center text-center">
               <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-duration="1200">
@@ -269,9 +263,8 @@ export default function Home() {
                   <div class="illustration">
                     <Image src={s2} height={225} alt="icon" />
                   </div>
-                  <div class="title">Join Our Platform</div>
-                  <p class="font-rubik">  It only takes 5 minutes. Set up is smooth and simple fully lorem
-                    qui.</p>
+                  <div class="title">{t("Join Our Platform")}</div>
+                  <p class="font-rubik">{t("It only takes 5 minutes. Set up is smooth and simple fully lorem qui.")}  </p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
@@ -279,9 +272,8 @@ export default function Home() {
                   <div class="illustration">
                     <Image src={s3} height={225} alt="icon" />
                   </div>
-                  <div class="title">Manage you event</div>
-                  <p class="font-rubik"> Choose a price package to suit you or pay per ticket. Sell on your
-                    website,</p>
+                  <div class="title">{t("Manage you event")}</div>
+                  <p class="font-rubik">{t("Choose a price package to suit you or pay per ticket. Sell on yourwebsite,")} </p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-duration="1200">
@@ -289,12 +281,10 @@ export default function Home() {
                   <div class="illustration">
                     <Image src={s4} height={225} alt="icon" />
                   </div>
-                  <div class="title">Start selling ticket</div>
-                  <p class="font-rubik">  Get payments, detailed data on tickets sales & message guests lorem</p>
+                  <div class="title">{t("Start selling ticket")}</div>
+                  <p class="font-rubik">{t("Get payments, detailed data on tickets sales & message guests lorem")}  </p>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -304,10 +294,10 @@ export default function Home() {
               <div class="col-lg-6 " data-aos="fade-right" data-aos-duration="1200">
                 <div class="title-style-five mb-35">
                   <div class="title-style-five mb-35">
-                    <h6>Why choose us
+                    <h6>{t("Why choose us")}
                     </h6><h2>
-                      <span>Why you should
-                      </span> choose us?
+                      <span>{t("Why you should")}
+                      </span>{t("choose us?")} 
                     </h2>
                   </div>
                   <div class="accordion-style-two pe-5 pt-3">
@@ -317,40 +307,38 @@ export default function Home() {
                           <h5 class="accordion-header mb-2  " id="headingOne">
                             <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
                               style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Register and create your first.
+                             {t("Register and create your first.")} 
                             </button>
                           </h5>
                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <h6 class="card-body  fs-6 pt-2  p-0">
-                              It only takes 5 minutes. Set-up is smooth &amp; simple, with fully
-                              customisable page design to reflect your brand lorem dummy.</h6>
+                             {t("It only takes 5 minutes. Set-up is smooth & simple, with fully customisable page design to reflect your brand lorem dummy.")}  </h6>
                           </div>
                         </div>
                         <div class="card p-4">
                           <h5 class="accordion-header mb-2" id="headingTwo">
                             <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
                               style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Manage your client easily
+                              {t("Manage your client easily")} 
                             </button>
                           </h5>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <h6 class="card-body  fs-6 pt-2 p-0">
-                              It only takes 5 minutes. Set-up is smooth &amp; simple, with fully
-                              customisable page design to reflect your brand lorem dummy.
-                            </h6>
+                            {t("It only takes 5 minutes. Set-up is smooth & simple, with fully customisable page design to reflect your brand lorem dummy.")} 
+                          </h6>
                           </div>
                         </div>
                         <div class="card p-4">
                           <h5 class="accordion-header mb-2" id="headingThree">
                             <button class="card-header fw-bold fs-5 text-black accordion-button" type="button"
                               style={{ boxShadow: "none" }} data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Start selling ticket
+                               {t("Start selling ticket")} 
                             </button>
                           </h5>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <h6 class="card-body fs-6 pt-2 p-0">
-                              It only takes 5 minutes. Set-up is smooth &amp; simple, with fully
-                              customisable page design to reflect your brand lorem dummy. </h6>
+                            {t("It only takes 5 minutes. Set-up is smooth & simple, with fully customisable page design to reflect your brand lorem dummy.")} 
+                         </h6>
                           </div>
                         </div>
                       </div>
@@ -370,11 +358,12 @@ export default function Home() {
         <div class="pricing-section-three my-5">
           <div class="container">
             <div class="title-style-five text-center ff  mb-50 md-mb-40">
-              <h6 >Our Pricing
+              <h6 >
+              {t("Our Pricing")} 
               </h6>
               <div class="row">
                 <div class="col-lg-9 m-auto ">
-                  <h2 class='ff'>Unbeatable prices, no contracts, simple &amp; easy
+                  <h2 class='ff'>{t("Unbeatable prices, no contracts, simple & easy")} 
                   </h2>
                 </div>
                 <div class="pricing-table-area-three">
@@ -383,23 +372,23 @@ export default function Home() {
                       data-aos-delay="0">
                       <div class="pr-table-wrapper skew-right">
                         <div class="pack-name ff fs-4">
-                          <span>Free Event</span>
+                          <span> {t("Free Event")} </span>
                         </div>
                         <div class="price font-slab">$0</div>
-                        <p class="user-condition">per user/month</p>
+                        <p class="user-condition">{t("per user/month")}</p>
 
                         <ul><li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                        </svg>60-day chat history</li>
+                        </svg>{t("60-day chat history")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Basic widget customization</li>
+                          </svg>{t("Basic widget customization")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Ticketing system</li>
+                          </svg>{t("Ticketing system")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Data security</li>
+                          </svg>{t("Data security")}</li>
                         </ul>
                         <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
@@ -408,24 +397,24 @@ export default function Home() {
                       data-aos-duration="1200" data-aos-delay="100">
                       <div class="pr-table-wrapper skew-left">
                         <div class="pack-name ff fs-4">
-                          <span>Pre Day</span>
+                          <span>{t("Pre Day")}</span>
                         </div>
                         <div class="price font-slab">$0.32</div>
-                        <p class="user-condition">per user/month</p>
+                        <p class="user-condition">{t("per user/month")}</p>
 
                         <ul>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>60-day chat history</li>
+                          </svg>{t("60-day chat history")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Basic widget customization</li>
+                          </svg>{t("Basic widget customization")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Ticketing system</li>
+                          </svg>{t("Ticketing system")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Data security</li>
+                          </svg>{t("Data security")}</li>
                         </ul>
                         <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
@@ -434,10 +423,10 @@ export default function Home() {
                       data-aos-duration="1200" data-aos-delay="200">
                       <div class="pr-table-wrapper skew-right">
                         <div class="pack-name ff fs-4">
-                          <span>Pay As You Go</span>
+                          <span>{t("Pay As You Go")}</span>
                         </div>
                         <div class="price font-slab">$0.65</div>
-                        <p class="user-condition">per user/month</p>
+                        <p class="user-condition">{t("per user/month")}</p>
 
                         <ul>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
@@ -445,13 +434,13 @@ export default function Home() {
                           </svg>60-day chat history</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Basic widget customization</li>
+                          </svg>{t("Basic widget customization")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Ticketing system</li>
+                          </svg>{t("Ticketing system")}</li>
                           <li class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                          </svg>Data security</li>
+                          </svg>{t("Data security")}</li>
                         </ul>
                         <button class="theme-btn-five my-2 " href="#" >Subscribe Now</button>
                       </div>
@@ -460,9 +449,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
 
         <div class="client-feedback-slider-three mt-5 pt-5">
@@ -476,9 +463,9 @@ export default function Home() {
                       <div class="title-style-five text-center mb-80 md-mb-50">
                         <div class="col-lg-7 col-md-9 m-auto mt-5">
                           <h2 data-aos="fade-up" data-aos-duration="1200" class="">
-                            <span>Check what’s our client
+                            <span>{t("Check what’s our client")}
                             </span>
-                            say about us.
+                            {t("say about us.")} 
                           </h2>
                         </div>
                       </div>
@@ -489,13 +476,11 @@ export default function Home() {
                       <div class="item " data-aos="fade-up" data-aos-duration="1200"
                         data-aos-delay="100" tabindex="-1" >
 
-                        <p> Having a home based business is a wonderful asset to your life. The problem
-                          still stands it comes time advertise your business for a cheap cost. I know you
-                          have looked answer everywhere.
+                        <p>{t(" Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.")} 
                         </p>
-                        <h6 class="name">Jannatul Ekra
+                        <h6 class="name"> {t("Jannatul Ekra")} 
                         </h6>
-                        <span class="desig">Designer
+                        <span class="desig">{t("Designer")} 
                         </span>
                       </div>
                     </div>
@@ -509,10 +494,10 @@ export default function Home() {
                   >  <div class="title-style-five text-center mb-80 md-mb-50">
                       <div class="col-lg-7 col-md-9 m-auto mt-5">
                         <h2 data-aos="fade-up" data-aos-duration="1200" class="">
-                          <span>Check what’s our client
-                          </span>
-                          say about us.
-                        </h2>
+                        <span>{t("Check what’s our client")}
+                            </span>
+                            {t("say about us.")} 
+                          </h2>
                       </div>
                     </div>
                     <div class="mt-4 " data-aos="fade-up" data-aos-duration="1200">
@@ -522,12 +507,11 @@ export default function Home() {
                     <div>
                       <div class="item " data-aos="fade-up" data-aos-duration="1200"
                         data-aos-delay="100" tabindex="-1" >
-                        <p>Having a home based business is a wonderful asset to your life. The problem
-                          still stands it comes time advertise your business for a cheap cost. I know you
-                          have looked answer everywhere.</p>
-                        <h6 class="name">Bostami Hasan
+                       <p>{t(" Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.")} 
+                        </p>
+                        <h6 class="name">{t("Bostami Hasan ")} 
                         </h6>
-                        <span class="desig">Front-end Engineer
+                        <span class="desig">{t("Front-end Engineer")} 
                         </span>
                       </div>
                     </div>
@@ -543,10 +527,10 @@ export default function Home() {
           <div class="container">
             <div class="container">
               <div class="title-style-five text-center mb-80 md-mb-60">
-                <h6>FAQ
+                <h6>{t("FAQ")} 
                 </h6>
                 <h2>
-                  <span>Question &amp; Answer
+                  <span>{t("Question & Answer")} 
                   </span>
                 </h2>
               </div>
@@ -561,13 +545,12 @@ export default function Home() {
                             <div class=" fw-bold fs-2 md-5 text-black hhbt   accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-a" aria-expanded="true"
                               style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-a" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
 
-                              How does the free trial work?
-
+                              
+                              {t("How does the free trial work?")} 
                             </div>
                           </div>
                           <div id="accordion__panel-a" class="card-body collapse show fadeInUp p-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <p className=' fs-5'>mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch
-                              Et is vero incorrupte eos deserunt quaeren.</p>
+                            <p className=' fs-5'> {t("mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.")} </p>
                           </div>
 
                         </div>
@@ -576,73 +559,56 @@ export default function Home() {
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-b" aria-expanded="true"
                               style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-b" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-
-                              How do you weigh different criteria in your process?
-
+                                {t("How do you weigh different criteria in your process?")} 
                             </div>
                           </div>
                           <div id="accordion__panel-b" class="card-body collapse fadeInUp p-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <p className='fs-5'>mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch
-                              Et is vero incorrupte eos deserunt quaeren.</p>
+                            <p className='fs-5'>{t("mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.")} </p>
                           </div>
                         </div>
-
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-c" aria-expanded="true"
                               style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-c" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-
-                              What does First Round look for in an idea?
-
+                              {t("What does First Round look for in an idea?")} 
                             </div>
                           </div>
                           <div id="accordion__panel-c" class="card-body collapse fadeInUp p-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <p className='fs-5'>mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch
-                              Et is vero incorrupte eos deserunt quaeren.</p>
+                            <p className='fs-5'>{t("mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.")} </p>
                           </div>
                         </div>
-
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt c  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-d" aria-expanded="true"
                               style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-d" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-
-                              What do you look for in a founding team?
-
+                              {t("What do you look for in a founding team?")} 
                             </div>
                           </div>
                           <div id="accordion__panel-d" class="card-body collapse fadeInUp p-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <p className='fs-5'>mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch
-                              Et is vero incorrupte eos deserunt quaeren.</p>
+                            <p className='fs-5'>{t("mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.")} </p>
                           </div>
                         </div>
-
                         <div data-accordion-component="AccordionItem" class="bg-white mb-4">
                           <div data-accordion-component="AccordionItemHeading" class="card-header" role="heading" aria-level="3">
                             <div class="fw-bold fs-2 md-5 text-black hhbt  accordion-button" id="accordion__heading-a" data-bs-toggle="collapse" data-bs-target="#accordion__panel-e" aria-expanded="true"
                               style={{ boxShadow: "none" }} aria-disabled="false" aria-controls="accordion__panel-e" role="button" tabindex="0" data-accordion-component="AccordionItemButton">
-                              Do you recommend Pay as you go or Pre pay?
-
+                                {t(" Do you recommend Pay as you go or Pre pay?")} 
                             </div>
                           </div>
                           <div id="accordion__panel-e" class="card-body collapse fadeInUp p-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <p className='fs-5'>mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch
-                              Et is vero incorrupte eos deserunt quaeren.</p>
+                            <p className='fs-5'>{t("mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.")} </p>
                           </div>
                         </div>
-
-
                       </div>
-
                     </div>
                   </div>
                 </div>
               </div>
               <div class="text-center m-4  " data-aos="fade-up" data-aos-duration="1200">
-                <h3 class="font-rubik pb-3">Don’t find your answer?</h3>
+                <h3 class="font-rubik pb-3">{t("Don’t find your answer?")} 
+               </h3>
                 <a class="theme-btn-five p-3 fw" href="/contact-eo">Contact us</a>
               </div>
-
             </div>
           </div>
         </div>
@@ -651,22 +617,22 @@ export default function Home() {
           <div class="container">
             <div class="title-style-five text-center">
               <h2>
-                <span>Sign up &amp; get started</span>
+                <span>{t("Sign up & get started")} </span>
               </h2>
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-8 col-md-9 m-auto">
-                <p class="font-rubik sub-heading">Our ticketing platform is made for you - &amp; loved by everyone lorem ipsum.</p>
+                <p class="font-rubik sub-heading">{t("Our ticketing platform is made for you - & loved by everyone lorem ipsum.")}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-8 col-md-10 m-auto">
                 <form>
                   <input type="text" placeholder="Email address" />
-                  <button className='theme-btn-five fw'>Start Trial</button>
+                  <button className='theme-btn-five fw'>{t("Start Trial")}</button>
                 </form>
-                <p class="info-text">Already a member?
-                  <a href="/login">Sign in.</a>
+                <p class="info-text">{t("Already a member?")}
+                  <a href="/login">{t("Sign in.")}</a>
                 </p>
               </div>
             </div>
