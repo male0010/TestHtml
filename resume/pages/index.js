@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import me from '../pages/img/me.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,16 +15,17 @@ export default function resume() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=''>
-{/* d-md-none */}
-        <nav class="navbar bg-body-tertiary    fixed-top ">
+      <body className=' bg-body-secondary'>
+        {/*  */}
+        <nav class="navbar bg-body-tertiary  d-lg-none  fixed-top ">
           <div class="container-fluid">
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+              </span>
             </button>
-            <sidebar class="offcanvas offcanvas-start show  w-25 "   tabindex="-1" id="offcanvasNavbar"
+            <sidebar class="offcanvas offcanvas-start   " tabindex="-1" id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Resume</h5>
@@ -60,8 +62,18 @@ export default function resume() {
             </sidebar>
           </div>
         </nav>
-
-      </main>
+        
+        <sidebar class="d-flex flex-column lh-base bg-white flex-shrink-0 p-3 m-3 "style={{ width: '280px'}} >
+          <div class="d-flex align-self-center px-5 mt-3  me-0  link-body-emphasis text-decoration-none">
+          <Image src={me} class="card-img align-self-center  image-fluid bb"  height={150} alt="..." />
+          </div>
+          <div class="d-flex text-center align-self-center   mt-3  me-0   link-body-emphasis text-decoration-none">
+          <p class="fs-4 d-flex  ff">Sidebar</p>
+          </div>
+          
+          <hr></hr>
+        </sidebar>
+      </body>
     </>
   )
 }

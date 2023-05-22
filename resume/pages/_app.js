@@ -20,8 +20,7 @@ export default function App({ Component, pageProps }) {
             <Link rel="preconnect" href="https://fonts.googleapis.com" />
             <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <Link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-            <Link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet"></Link>
-           </Head>
+            </Head>
 
     <Component {...pageProps} />
 
