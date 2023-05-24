@@ -3,10 +3,18 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import me from '../pages/img/me.png'
-
-const inter = Inter({ subsets: ['latin'] })
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next";
 
 export default function resume() {
+
+  const { t } = useTranslation();
+  const handleChangeLang = (lang, event) => {
+    event.preventDefault();
+    i18n.changeLanguage(lang);
+  }
+
+
   return (
     <>
       <Head>
@@ -15,65 +23,118 @@ export default function resume() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className=' bg-body-secondary'>
+      <main >
         {/*  */}
-        <nav class="navbar bg-body-tertiary  d-lg-none  fixed-top ">
+        <nav class="navbar  bg-body-none fixed-top ">
           <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-              </span>
-            </button>
-            <sidebar class="offcanvas offcanvas-start   " tabindex="-1" id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Resume</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </sidebar>
+            <a class="navbar-brand"></a>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-dark me-2 bg-light" onClick={(event) => handleChangeLang('th', event)} > <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" id="thailand-flag">
+                <path d="M0 0h30v20H0z"></path><path fill="#ed1c24"
+                  d="M1 1h28v2H1zM1 17h28v2H1z"></path><path fill="#fff"
+                    d="M1 14h28v3H1zM1 3h28v3H1z"></path><path fill="#241d4f"
+                      d="M1 6h28v8H1z">
+                </path>
+              </svg>
+              </button>
+              <button class="btn btn-outline-dark bg-light" onClick={(event) => handleChangeLang('en', event)} >  <svg height="40" xmlns="http://www.w3.org/2000/svg" data-name="1" viewBox="0 0 128 128"
+                id="england">
+                <path d="M126 20H2a2 2 0 0 0-2 2v84a2 2 0 0 0 2 2h124a2 2 0 0 0 2-2V22a2
+                 2 0 0 0-2-2Zm-2 71.69L100.27 76H124ZM124 52h-23.41L124 36.33Zm0-20.48L93.39
+                  52H76v-3.13L113.61 24H124Zm-36.74 5.11L76 44.08V24h30.36ZM52 
+                  24v20.08l-11.26-7.45L21.64 24ZM4 24h10.39L52 48.87V52H35L4 31.51Zm0 
+                  52h23.73L4 91.69Zm0-39.69L27.73 52H4ZM4 104v-7.51L35 76h17v3.13L14.39 
+                  104Zm48 0H21.64L52 83.92Zm4 0V74a2 2 0 0 0-2-2H4V56h50a2 2 0 0 0 
+                  2-2V24h16v30a2 2 0 0 0 2 2h50v16H74a2 2 0 0 0-2 2v30Zm20-20.08L106.36 
+                  104H76ZM124 104h-10.39L76 79.13V76h17l31 20.49Z"></path>
+              </svg>
+              </button>
+            </form>
           </div>
         </nav>
-        
-        <sidebar class="d-flex flex-column lh-base bg-white flex-shrink-0 p-3 m-3 "style={{ width: '280px'}} >
-          <div class="d-flex align-self-center px-5 mt-3  me-0  link-body-emphasis text-decoration-none">
-          <Image src={me} class="card-img align-self-center  image-fluid bb"  height={150} alt="..." />
+
+
+        <div class=' bg-body-secondary   pb-5' >
+          <div class='container  pt-3 text-center'>
+            <div class="row justify-content-center pt-4">
+              <div class='col-lg-4 col-12 text-center  mt-5' style={{ maxWidth: '625px' }}>
+                <sidebar class="  card shadow  bg-white  px-3 py-4 "  >
+                  <div class="d-flex align-self-center  mt-3  me-0  link-body-emphasis text-decoration-none">
+                    <Image src={me} class="card-img align-self-center  image-fluid bb" height={150} alt="..." />
+                  </div>
+                  <div class="d-flex text-center align-self-center   mt-3  me-0   link-body-emphasis text-decoration-none">
+                    <p class="fs-5 fw-semibold d-flex  ">{t('Tinnapat Lekphet')} </p>
+                  </div>
+                  <div class="d-flex text-center align-self-center  mt-0  me-0   link-body-emphasis text-decoration-none">
+                    <p class="fs-6 fw-semibold text-secondary d-flex ">{t('Front Deweloper')}</p>
+                  </div>
+
+                  <hr></hr>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "25px" }}
+                    fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 
+                             2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 
+                             1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 
+                             18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <div class="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
+                    <p class="fs-6  fw-semibold d-flex  ">
+                      {t(' Tell: 092-835-5879')}</p>
+                  </div>
+
+                  <hr></hr>
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "32px" }} fill="currentColor" class="bi bi-wechat" viewBox="0 0 16 16">
+                    <path d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z" />
+                    <path d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z" />
+                  </svg>
+                  <div class="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
+                    <p class="fs-6 fw-semibold  d-flex  ">
+                      {t('Email: maleaf0@gmail.com')}</p>
+                  </div>
+
+                  <hr></hr>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "30px" }} fill="currentColor" class="bi bi-truck-front" viewBox="0 0 16 16">
+                    <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7ZM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5c1.208 0 2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1H4Zm0 1h8v3.9c0 .002 0 .001 0 0l-.002.004a.013.013 0 0 1-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003a.013.013 0 0 1-.005-.002L4 6.9c0 .001 0 .002 0 0V3Z" />
+                    <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2v-9ZM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1h-9Z" />
+                  </svg>
+                  <div class="d-flex text-center align-self-center px-2 mt-0  me-0  pt-3 link-body-emphasis text-decoration-none">
+                    <p class="fs-6  fw-semibold d-flex  ">
+                      {t('Address: 82/312 bangkae, bangkae, bangkok 10160')} </p>
+                  </div>
+                </sidebar>
+              </div>
+
+
+              <div class="col-lg-8  col-12   mt-5" style={{ maxWidth: '825px' }}>
+                <div class='card'>
+                  <div class="d-flex shadow lh-base card px-4 py-4 fs-3"><span></span>
+                    <h2 className='text-start fw-semibold pt-4 fs-5'>
+                      {t('About Me')}
+                    </h2>
+                    <p class='text-start pt-4 fs-6'>
+                      {t('My name tinnapat lekphet Computer Engineer. I would like to intern in IOT and I would like to use the knowledge gained from the internship in your organization to build my future. And I am ready to learn new things from this internship. And I am very interested in doing an internship at your company')} </p>
+                  </div>
+                </div>
+                <div class='card d-flex shadow lh-base card px-4 my-3 py-4 fs-3'>
+                  <div class="">
+                  <h2 className='text-start fw-semibold pt-4 fs-5'>
+                      {t('My Skill')}
+                    </h2>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-3 '>
+                       
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="d-flex text-center align-self-center   mt-3  me-0   link-body-emphasis text-decoration-none">
-          <p class="fs-4 d-flex  ff">Sidebar</p>
-          </div>
-          
-          <hr></hr>
-        </sidebar>
-      </body>
+        </div>
+      </main>
     </>
   )
 }
