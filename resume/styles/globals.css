@@ -1,8 +1,18 @@
 .offcanvas-backdrop {
   background-color: rgba(95, 158, 160, 0) !important;
+  
 }
-.ff {
-  font-family: cursive !important;
+.body{
+  font-family: 'Kanit', sans-serif  !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index:1000;
 }
 .bb{
   border-radius: 50% !important; }
@@ -35,4 +45,13 @@
 }
 .fs-7{
   font-size: 10px !important;
+}
+.diviver{
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
+
 }

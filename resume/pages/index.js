@@ -2,14 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import me from '../pages/img/me.png'
-import s1 from '../pages/img/s1.png'
-import s2 from '../pages/img/s2.png'
+import me from '../public/img/me.png'
+import s1 from '../public/img/s1.png'
+import s2 from '../public/img/s2.png'
 import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
-import s3 from '../pages/img/s3.png'
-import s4 from '../pages/img/s4.png'
-
+import s3 from '../public/img/s3.png'
+import s4 from '../public/img/s4.png'
+import s5 from '../public/img/s5.png'
+import s6 from '../public/img/s6.png'
+import cer from '../public/img/cer.png'
 export default function resume() {
 
   const { t } = useTranslation();
@@ -17,6 +19,37 @@ export default function resume() {
     event.preventDefault();
     i18n.changeLanguage(lang);
   }
+
+  const card = [
+    {
+      image: s1,
+      title: "Next.js",
+      text: "Gregor then turned to look out the window at the dull weather",
+
+    }, {
+      image: s5,
+      title: "Vue.js",
+      text: "Gregor then turned to look out the window at the dull weather",
+
+    }, {
+      image: s6,
+      title: "SQL",
+      text: "Gregor then turned to look out the window at the dull weather",
+
+    },
+    {
+      image: s2,
+      title: "CSS",
+      text: "Gregor then turned to look out the window at the dull weather",
+
+    }
+    , {
+      image: s3,
+      title: "JavaScript",
+      text: "Gregor then turned to look out the window at the dull weather",
+
+    }
+  ]
 
 
   return (
@@ -27,7 +60,7 @@ export default function resume() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main >
+      <main style={{ fontFamily: 'Kanit ,sans-serif' }}>
         {/*  */}
         <nav class="navbar  bg-body-none fixed-top ">
           <div class="container-fluid">
@@ -58,10 +91,10 @@ export default function resume() {
         </nav>
 
 
-        <div class=' bg-body-secondary   pb-5' >
+        <div class='  bg-body-secondary h-100 pb-5 justify-content-center' style={{ height: '111111px',maxWidth: '100%', backgroundRepeat: 'no-repeat',backgroundSize: "cover"}} >
           <div class='container  pt-3 text-center'>
             <div class="row justify-content-center pt-4">
-              <div class='col-lg-4 col-12 text-center  mt-5' style={{ maxWidth: '625px' }}>
+              <div class='col-lg-4 col-12 text-center  mt-5'data-aos="fade-right"data-aos-duration="1200" style={{ maxWidth: '625px' }}>
                 <sidebar class="  card shadow  bg-white  px-3 py-4 "  >
 
                   <div class="d-flex align-self-center  mt-3  me-0  link-body-emphasis text-decoration-none">
@@ -71,7 +104,7 @@ export default function resume() {
                     <p class="fs-5 fw-semibold d-flex  ">{t('Tinnapat Lekphet')} </p>
                   </div>
                   <div class="d-flex text-center align-self-center  mt-0  me-0   link-body-emphasis text-decoration-none">
-                    <p class="fs-6 fw-semibold text-secondary d-flex ">{t('Front Deweloper')}</p>
+                    <p class="fs-6 fw-semibold text-secondary d-flex ">{t('Front Developer')}</p>
                   </div>
 
                   <hr></hr>
@@ -111,11 +144,9 @@ export default function resume() {
 
                 </sidebar>
               </div>
-
-
               <div class="col-lg-8  col-12   mt-5" style={{ maxWidth: '825px' }}>
-                <div class='card'>
-                  <div class=" shadow lh-base card px-4 py-4 fs-3"><span></span>
+                <div class='card  ' data-aos="fade-left" data-aos-duration="1200">
+                  <div class="  lh-base card px-4 py-4 fs-3"><span></span>
                     <h2 className='text-start fw-bold pt-4 pb-3 fs-5'>
                       {t('About Me')}
                     </h2>
@@ -123,91 +154,104 @@ export default function resume() {
                       {t('My name tinnapat lekphet Computer Engineer. I would like to intern in IOT and I would like to use the knowledge gained from the internship in your organization to build my future. And I am ready to learn new things from this internship. And I am very interested in doing an internship at your company')} </p>
                   </div>
                 </div>
-                <div class='card  shadow lh-base card px-4 my-3 py-4 fs-3'>
+                <div class='card  shadow lh-base card px-4 my-3 py-4 fs-3'data-aos="fade-left" data-aos-duration="1200">
 
                   <h2 className='text-start fw-bold pt-4 pb-3 h-100 fs-5'>
                     {t('My Skill')}
                   </h2>
 
-                  <div class='row justify-content-center mb-3 '>
-                    <div class=' card-group col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
-                      <div class="card  shadow lh-base mb-1 me-0" >
-                        <Image src={s1} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
-                        <div class="card-body text-start">
-                          <h5 class="card-title fw-bold fs-6">HTML</h5>
-                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
-                      <div class="card  shadow lh-base me-0" >
-                        <Image src={s2} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
-                        <div class="card-body text-start">
-                          <h5 class="card-title fw-bold fs-6">CSS</h5>
-                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
-                        </div>
-                      </div>
-                    </div>
+                  <div class='row  justify-content-center mb-3 h-100 '>
 
-                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
-                      <div class="card  shadow lh-base me-0" >
-                        <Image src={s3} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={70} alt="..." />
-                        <div class="card-body text-start">
-                          <h5 class="card-title fw-bold fs-6">JavaScript</h5>
-                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
+                    {card?.map((item, index) => (
+                      <div class='  col-md-4 col-sm-6 mb-3 text-center align-self-center  ' style={{ maxWidth: '222px' }}>
+                        <div class="card hvr-grow-rotate shadow lh-base mb-1 me-0" >
+                          <div class='card-img-top text-start align-self-start'>
+                            <Image src={item.image} class="  ps-3 pt-3 border-0 " width={80} height={80} alt="..." />
+                          </div>
+                          <div class="card-body text-start">
+                            <h5 class="card-title fw-bold fs-6">{item.title}</h5>
+                            <h6 class="card-subtitle mb-2 fs-7 text-body-secondary">{t('Gregor then turned to look out the window at the dull weather')}</h6>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
-                      <div class="card  shadow lh-base me-0" >
-                        <Image src={s4} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
-                        <div class="card-body text-start">
-                          <h5 class="card-title fw-bold fs-6">PHP</h5>
-                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
-               
-                <div class='row justify-content-center '>
-                  <div class='col-md-7   col-sm-12  ' >
-                  <div class='  card p-3 '>
-                    <div class='  lh-base  '>
-                      <h2 className='text-start fw-bold ps-2 pt-4 pb-4 fs-5'>
-                        EDUCATION
-                      </h2>
-                    </div>
-                    <div class='  lh-base  '>
-                      <ul class=' information'>
-                        <li class='liform'>
-                        </li>
-                        <li class=' liform'>
-                          <button class=' btn licrcle btn-primary '>
-                            <svg xmlns="http://www.w3.org/2000/svg"  height="26" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-</svg></button>
-                          <h6 class="li-title text-start fw-bold fs-6">Mae fah Luang University</h6>
-                        </li>
-                        <li class='liform'>
-                          <h6 class="li-title text-start fw-bold   fs-7">Bachelor's Bachelor of Engineering
-                            (Computer Engineering) </h6>  
-                            <h6 class="ps-5 fw-bold  text-start text-secondary  fs-7">GPAX 2.78 </h6>
-                        </li>
-                      </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='col-md-5  col-sm-12 '>
-                    <div class='  shadow lh-base  px-4 my-3 py-4 fs-3'>
-                      <div class='  lh-base  '>
 
+                <div class='row justify-content-center '>
+                  <div class='col-md-7   my-3  col-sm-12  ' data-aos="fade-up" data-aos-duration="1200">
+                    <div class='shadow  card d-flex justify-content-center flex-colom p-3 '>
+                      <div class='  lh-base  '>
+                        <h2 className='text-start fw-bold ps-2 pt-4 pb-4 fs-5'>
+                          {t('EDUCATION')}
+                        </h2>
+                      </div>
+                      <div class='  lh-base  '>
+                        <ul class=' information'>
+                          <li class='liform'>
+                          </li>
+                          <li class=' liform'>
+                            <button class=' btn licrcle btn-primary '>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                              </svg></button>
+                            <h6 class="li-title text-start fw-bold fs-6">{t('EDUCATION')}
+                       </h6>
+                          </li>
+                          <li class='liform'>
+                            <h6 class="li-title text-start fw-bold   fs-7">{t('Bachelor is Bachelor of Engineering (Computer Engineering) ')}</h6>
+                            <h6 class="ps-5 fw-bold  text-start text-secondary  fs-7">GPAX 2.78 </h6>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-             
-              </div>
+                  <div class='col-md-5 d-flex flex-fill my-3 col-sm-12 'data-aos="fade-up" data-aos-duration="1200">
+                    <div class='card w-100 hvr-grow-rotate shadow lh-base  px-2 pt-3 pb-3' >
+                      <div class=' card-head text-start fw-bold ps-2 pt-4 pb-3 fs-5  '>
+                        {t('CERTIFICATION')}
+                      </div>
+                      <div class=' card-img  lh-base' data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <Image src={cer} class=" img-fluid"  width={190} alt="..." />  
+                            </div>
+
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalToggleLabel">  {t('CERTIFICATE OF PARTICIPATION')}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body justify-content-center ">
+                          <Image src={cer} class=" img-fluid"  width={850} alt="..." />  
+                          </div>
+                          <div class="modal-body text-start">{t('for participant in Data Analyst course and examination on Oct 25,2021')}
+                          
+                          </div>
+                          <div class="modal-footer">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>

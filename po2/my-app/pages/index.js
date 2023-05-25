@@ -67,7 +67,7 @@ export default function Home() {
   //   },
   //   {
   //     image: img,
-  //     title: "Card title",
+  //     title: "myskil",
   //     text: "dhjshdjshdjk",
   //     dow: "download"
   //   }
@@ -78,7 +78,7 @@ export default function Home() {
   //     dow: "download"
   //   }
 
-  // ]
+  // ] 
 
   return (
     <div>

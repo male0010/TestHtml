@@ -1,13 +1,25 @@
 import '@/styles/globals.css'
+import '@/styles/hover.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import './i18n'
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
+ 
   return (<>
     <Head>
       <title>App</title>
@@ -16,11 +28,14 @@ export default function App({ Component, pageProps }) {
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Bootstrap demo</title>
-      <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/><Link rel="icon" href="/favicon.ico" />
-            <Link rel="preconnect" href="https://fonts.googleapis.com" />
-            <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <Link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-            </Head>
+      <Link rel="preconnect" href="https://fonts.googleapis.com" />
+      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <Link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+      <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" /><Link rel="icon" href="/favicon.ico" />
+      <Link rel="preconnect" href="https://fonts.googleapis.com" />
+      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <Link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </Head>
 
     <Component {...pageProps} />
 
