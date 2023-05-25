@@ -4,11 +4,11 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import me from '../pages/img/me.png'
 import s1 from '../pages/img/s1.png'
-import s2 from '../pages/img/s2.PNG'
+import s2 from '../pages/img/s2.png'
 import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
-import s3 from '../pages/img/s3.PNG'
-import s4 from '../pages/img/s4.PNG'
+import s3 from '../pages/img/s3.png'
+import s4 from '../pages/img/s4.png'
 
 export default function resume() {
 
