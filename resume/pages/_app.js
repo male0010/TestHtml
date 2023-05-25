@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Link from 'next/link';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import './i18n'
+import './component/i18n'
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
