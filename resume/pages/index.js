@@ -62,11 +62,11 @@ export default function resume() {
       </Head>
       <main style={{ fontFamily: 'Kanit ,sans-serif' }}>
         {/*  */}
-        <nav class="navbar  bg-body-none fixed-top ">
-          <div class="container-fluid">
-            <a class="navbar-brand"></a>
-            <form class="d-flex" role="search">
-              <button class="btn btn-outline-dark me-2 bg-light" onClick={(event) => handleChangeLang('th', event)} > <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" id="thailand-flag">
+        <nav className="navbar  bg-body-none fixed-top ">
+          <div className="container-fluid">
+            <a className="navbar-brand"></a>
+            <form className="d-flex" role="search">
+              <button className="btn btn-outline-dark me-2 bg-light" onClick={(event) => handleChangeLang('th', event)} > <svg height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" id="thailand-flag">
                 <path d="M0 0h30v20H0z"></path><path fill="#ed1c24"
                   d="M1 1h28v2H1zM1 17h28v2H1z"></path><path fill="#fff"
                     d="M1 14h28v3H1zM1 3h28v3H1z"></path><path fill="#241d4f"
@@ -74,7 +74,7 @@ export default function resume() {
                 </path>
               </svg>
               </button>
-              <button class="btn btn-outline-dark bg-light" onClick={(event) => handleChangeLang('en', event)} >  <svg height="40" xmlns="http://www.w3.org/2000/svg" data-name="1" viewBox="0 0 128 128"
+              <button className="btn btn-outline-dark bg-light" onClick={(event) => handleChangeLang('en', event)} >  <svg height="40" xmlns="http://www.w3.org/2000/svg" data-name="1" viewBox="0 0 128 128"
                 id="england">
                 <path d="M126 20H2a2 2 0 0 0-2 2v84a2 2 0 0 0 2 2h124a2 2 0 0 0 2-2V22a2
                  2 0 0 0-2-2Zm-2 71.69L100.27 76H124ZM124 52h-23.41L124 36.33Zm0-20.48L93.39
@@ -91,86 +91,86 @@ export default function resume() {
         </nav>
 
 
-        <div class='  bg-body-secondary h-100 pb-5 justify-content-center' style={{ height: '111111px',maxWidth: '100%', backgroundRepeat: 'no-repeat',backgroundSize: "cover"}} >
-          <div class='container  pt-3 text-center'>
-            <div class="row justify-content-center pt-4">
-              <div class='col-lg-4 col-12 text-center  mt-5'data-aos="fade-right"data-aos-duration="1200" style={{ maxWidth: '625px' }}>
-                <sidebar class="  card shadow  bg-white  px-3 py-4 "  >
+        <div className='  bg-body-secondary h-100 pb-5 justify-content-center' style={{ height: '111111px',maxWidth: '100%', backgroundRepeat: 'no-repeat',backgroundSize: "cover"}} >
+          <div className='container  pt-3 text-center'>
+            <div className="row justify-content-center pt-4">
+              <div className='col-lg-4 col-12 text-center  mt-5'data-aos="fade-right"data-aos-duration="1200" style={{ maxWidth: '625px' }}>
+                <sidebar className="  card shadow  bg-white  px-3 py-4 "  >
 
-                  <div class="d-flex align-self-center  mt-3  me-0  link-body-emphasis text-decoration-none">
-                    <Image src={me} class="card-img align-self-center  image-fluid bb" height={150} alt="..." />
+                  <div className="d-flex align-self-center  mt-3  me-0  link-body-emphasis text-decoration-none">
+                    <Image src={me} className="card-img align-self-center  image-fluid bb" height={150} alt="..." />
                   </div>
-                  <div class="d-flex text-center align-self-center   mt-3  me-0   link-body-emphasis text-decoration-none">
-                    <p class="fs-5 fw-semibold d-flex  ">{t('Tinnapat Lekphet')} </p>
+                  <div className="d-flex text-center align-self-center   mt-3  me-0   link-body-emphasis text-decoration-none">
+                    <p className="fs-5 fw-semibold d-flex  ">{t('Tinnapat Lekphet')} </p>
                   </div>
-                  <div class="d-flex text-center align-self-center  mt-0  me-0   link-body-emphasis text-decoration-none">
-                    <p class="fs-6 fw-semibold text-secondary d-flex ">{t('Front Developer')}</p>
+                  <div className="d-flex text-center align-self-center  mt-0  me-0   link-body-emphasis text-decoration-none">
+                    <p className="fs-6 fw-semibold text-secondary d-flex ">{t('Front Developer')}</p>
                   </div>
 
                   <hr></hr>
 
                   <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "25px" }}
-                    fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                    fill="currentColor" className="bi bi-telephone-fill " viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 
                              2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 
                              1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 
                              18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                   </svg>
-                  <div class="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
-                    <p class="fs-6  fw-semibold d-flex  ">
+                  <div className="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
+                    <p className="fs-6  fw-semibold d-flex  ">
                       {t(' Tell: 092-835-5879')}</p>
                   </div>
 
                   <hr></hr>
-                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "32px" }} fill="currentColor" class="bi bi-wechat" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "32px" }} fill="currentColor" className="bi bi-wechat" viewBox="0 0 16 16">
                     <path d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z" />
                     <path d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z" />
                   </svg>
-                  <div class="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
-                    <p class="fs-6 fw-semibold  d-flex  ">
+                  <div className="d-flex text-center align-self-center px-2 mt-0 pt-3 me-0   link-body-emphasis text-decoration-none">
+                    <p className="fs-6 fw-semibold  d-flex  ">
                       {t('Email: maleaf0@gmail.com')}</p>
                   </div>
 
                   <hr></hr>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "30px" }} fill="currentColor" class="bi bi-truck-front" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{ height: "30px" }} fill="currentColor" className="bi bi-truck-front" viewBox="0 0 16 16">
                     <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7ZM4 2a1 1 0 0 0-1 1v3.9c0 .625.562 1.092 1.17.994C5.075 7.747 6.792 7.5 8 7.5c1.208 0 2.925.247 3.83.394A1.008 1.008 0 0 0 13 6.9V3a1 1 0 0 0-1-1H4Zm0 1h8v3.9c0 .002 0 .001 0 0l-.002.004a.013.013 0 0 1-.005.002h-.004C11.088 6.761 9.299 6.5 8 6.5s-3.088.26-3.99.406h-.003a.013.013 0 0 1-.005-.002L4 6.9c0 .001 0 .002 0 0V3Z" />
                     <path d="M1 2.5A2.5 2.5 0 0 1 3.5 0h9A2.5 2.5 0 0 1 15 2.5v9c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2v-9ZM3.5 1A1.5 1.5 0 0 0 2 2.5v9A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 12.5 1h-9Z" />
                   </svg>
-                  <div class="d-flex text-center align-self-center px-2 mt-0  me-0  pt-3 link-body-emphasis text-decoration-none">
-                    <p class="fs-6  fw-semibold d-flex  ">
+                  <div className="d-flex text-center align-self-center px-2 mt-0  me-0  pt-3 link-body-emphasis text-decoration-none">
+                    <p className="fs-6  fw-semibold d-flex  ">
                       {t('Address: 82/312 bangkae, bangkae, bangkok 10160')} </p>
                   </div>
 
                 </sidebar>
               </div>
-              <div class="col-lg-8  col-12   mt-5" style={{ maxWidth: '825px' }}>
-                <div class='card  ' data-aos="fade-left" data-aos-duration="1200">
-                  <div class="  lh-base card px-4 py-4 fs-3"><span></span>
+              <div className="col-lg-8  col-12   mt-5" style={{ maxWidth: '825px' }}>
+                <div className='card  ' data-aos="fade-left" data-aos-duration="1200">
+                  <div className="  lh-base card px-4 py-4 fs-3"><span></span>
                     <h2 className='text-start fw-bold pt-4 pb-3 fs-5'>
                       {t('About Me')}
                     </h2>
-                    <p class='text-start  fs-6'>
+                    <p className='text-start  fs-6'>
                       {t('My name tinnapat lekphet Computer Engineer. I would like to intern in IOT and I would like to use the knowledge gained from the internship in your organization to build my future. And I am ready to learn new things from this internship. And I am very interested in doing an internship at your company')} </p>
                   </div>
                 </div>
-                <div class='card  shadow lh-base card px-4 my-3 py-4 fs-3'data-aos="fade-left" data-aos-duration="1200">
+                <div className='card  shadow lh-base card px-4 my-3 py-4 fs-3'data-aos="fade-left" data-aos-duration="1200">
 
                   <h2 className='text-start fw-bold pt-4 pb-3 h-100 fs-5'>
                     {t('My Skill')}
                   </h2>
 
-                  <div class='row  justify-content-center mb-3 h-100 '>
+                  <div className='row  justify-content-center mb-3 h-100 '>
 
                     {card?.map((item, index) => (
-                      <div class='  col-md-4 col-sm-6 mb-3 text-center align-self-center  ' style={{ maxWidth: '222px' }}>
-                        <div class="card hvr-grow-rotate shadow lh-base mb-1 me-0" >
-                          <div class='card-img-top text-start align-self-start'>
-                            <Image src={item.image} class="  ps-3 pt-3 border-0 " width={80} height={80} alt="..." />
+                      <div className='  col-md-4 col-sm-6 mb-3 text-center align-self-center  ' style={{ maxWidth: '222px' }}>
+                        <div className="card hvr-grow-rotate shadow lh-base mb-1 me-0" >
+                          <div className='card-img-top text-start align-self-start'>
+                            <Image src={item.image} className="  ps-3 pt-3 border-0 " width={80} height={80} alt="..." />
                           </div>
-                          <div class="card-body text-start">
-                            <h5 class="card-title fw-bold fs-6">{item.title}</h5>
-                            <h6 class="card-subtitle mb-2 fs-7 text-body-secondary">{t('Gregor then turned to look out the window at the dull weather')}</h6>
+                          <div className="card-body text-start">
+                            <h5 className="card-title fw-bold fs-6">{item.title}</h5>
+                            <h6 className="card-subtitle mb-2 fs-7 text-body-secondary">{t('Gregor then turned to look out the window at the dull weather')}</h6>
                           </div>
                         </div>
                       </div>
@@ -178,72 +178,72 @@ export default function resume() {
                   </div>
                 </div>
 
-                <div class='row justify-content-center '>
-                  <div class='col-md-7   my-3  col-sm-12  ' data-aos="fade-up" data-aos-duration="1200">
-                    <div class='shadow  card d-flex justify-content-center flex-colom p-3 '>
-                      <div class='  lh-base  '>
+                <div className='row justify-content-center '>
+                  <div className='col-md-7   my-3  col-sm-12  ' data-aos="fade-up" data-aos-duration="1200">
+                    <div className='shadow  card d-flex justify-content-center flex-colom p-3 '>
+                      <div className='  lh-base  '>
                         <h2 className='text-start fw-bold ps-2 pt-4 pb-4 fs-5'>
                           {t('EDUCATION')}
                         </h2>
                       </div>
-                      <div class='  lh-base  '>
-                        <ul class=' information'>
-                          <li class='liform'>
+                      <div className='  lh-base  '>
+                        <ul className=' information'>
+                          <li className='liform'>
                           </li>
-                          <li class=' liform'>
-                            <button class=' btn licrcle btn-primary '>
-                              <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                          <li className=' liform'>
+                            <button className=' btn licrcle btn-primary '>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="currentColor" className="bi bi-book-half" viewBox="0 0 16 16">
                                 <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
                               </svg></button>
-                            <h6 class="li-title text-start fw-bold fs-6">{t('EDUCATION')}
+                            <h6 className="li-title text-start fw-bold fs-6">{t('EDUCATION')}
                        </h6>
                           </li>
-                          <li class='liform'>
-                            <h6 class="li-title text-start fw-bold   fs-7">{t('Bachelor is Bachelor of Engineering (Computer Engineering) ')}</h6>
-                            <h6 class="ps-5 fw-bold  text-start text-secondary  fs-7">GPAX 2.78 </h6>
+                          <li className='liform'>
+                            <h6 className="li-title text-start fw-bold   fs-7">{t('Bachelor is Bachelor of Engineering (Computer Engineering) ')}</h6>
+                            <h6 className="ps-5 fw-bold  text-start text-secondary  fs-7">GPAX 2.78 </h6>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class='col-md-5 d-flex flex-fill my-3 col-sm-12 'data-aos="fade-up" data-aos-duration="1200">
-                    <div class='card w-100 hvr-grow-rotate shadow lh-base  px-2 pt-3 pb-3' >
-                      <div class=' card-head text-start fw-bold ps-2 pt-4 pb-3 fs-5  '>
+                  <div className='col-md-5 d-flex flex-fill my-3 col-sm-12 'data-aos="fade-up" data-aos-duration="1200">
+                    <div className='card w-100 hvr-grow-rotate shadow lh-base  px-2 pt-3 pb-3' >
+                      <div className=' card-head text-start fw-bold ps-2 pt-4 pb-3 fs-5  '>
                         {t('CERTIFICATION')}
                       </div>
-                      <div class=' card-img  lh-base' data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <Image src={cer} class=" img-fluid"  width={190} alt="..." />  
+                      <div className=' card-img  lh-base' data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
+                          <div className="carousel-inner">
+                            <div className="carousel-item active">
+                            <Image src={cer} className=" img-fluid"  width={190} alt="..." />  
                             </div>
 
                           </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
                           </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
                           </button>
                         </div>
                       </div>
                     </div>
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalToggleLabel">  {t('CERTIFICATE OF PARTICIPATION')}</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h1 className="modal-title fs-5 fw-bold" id="exampleModalToggleLabel">  {t('CERTIFICATE OF PARTICIPATION')}</h1>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
-                          <div class="modal-body justify-content-center ">
-                          <Image src={cer} class=" img-fluid"  width={850} alt="..." />  
+                          <div className="modal-body justify-content-center ">
+                          <Image src={cer} className=" img-fluid"  width={850} alt="..." />  
                           </div>
-                          <div class="modal-body text-start">{t('for participant in Data Analyst course and examination on Oct 25,2021')}
+                          <div className="modal-body text-start">{t('for participant in Data Analyst course and examination on Oct 25,2021')}
                           
                           </div>
-                          <div class="modal-footer">
+                          <div className="modal-footer">
                             </div>
                         </div>
                       </div>
