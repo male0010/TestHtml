@@ -3,8 +3,12 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import me from '../pages/img/me.png'
+import s1 from '../pages/img/s1.png'
+import s2 from '../pages/img/s2.PNG'
 import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
+import s3 from '../pages/img/s3.PNG'
+import s4 from '../pages/img/s4.PNG'
 
 export default function resume() {
 
@@ -59,6 +63,7 @@ export default function resume() {
             <div class="row justify-content-center pt-4">
               <div class='col-lg-4 col-12 text-center  mt-5' style={{ maxWidth: '625px' }}>
                 <sidebar class="  card shadow  bg-white  px-3 py-4 "  >
+
                   <div class="d-flex align-self-center  mt-3  me-0  link-body-emphasis text-decoration-none">
                     <Image src={me} class="card-img align-self-center  image-fluid bb" height={150} alt="..." />
                   </div>
@@ -103,33 +108,106 @@ export default function resume() {
                     <p class="fs-6  fw-semibold d-flex  ">
                       {t('Address: 82/312 bangkae, bangkae, bangkok 10160')} </p>
                   </div>
+
                 </sidebar>
               </div>
 
 
               <div class="col-lg-8  col-12   mt-5" style={{ maxWidth: '825px' }}>
                 <div class='card'>
-                  <div class="d-flex shadow lh-base card px-4 py-4 fs-3"><span></span>
-                    <h2 className='text-start fw-semibold pt-4 fs-5'>
+                  <div class=" shadow lh-base card px-4 py-4 fs-3"><span></span>
+                    <h2 className='text-start fw-bold pt-4 pb-3 fs-5'>
                       {t('About Me')}
                     </h2>
-                    <p class='text-start pt-4 fs-6'>
+                    <p class='text-start  fs-6'>
                       {t('My name tinnapat lekphet Computer Engineer. I would like to intern in IOT and I would like to use the knowledge gained from the internship in your organization to build my future. And I am ready to learn new things from this internship. And I am very interested in doing an internship at your company')} </p>
                   </div>
                 </div>
-                <div class='card d-flex shadow lh-base card px-4 my-3 py-4 fs-3'>
-                  <div class="">
-                  <h2 className='text-start fw-semibold pt-4 fs-5'>
-                      {t('My Skill')}
-                    </h2>
-                  </div>
-                  <div class='row'>
-                    <div class='col-md-3 '>
-                       
+                <div class='card  shadow lh-base card px-4 my-3 py-4 fs-3'>
+
+                  <h2 className='text-start fw-bold pt-4 pb-3 h-100 fs-5'>
+                    {t('My Skill')}
+                  </h2>
+
+                  <div class='row justify-content-center mb-3 '>
+                    <div class=' card-group col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
+                      <div class="card  shadow lh-base mb-1 me-0" >
+                        <Image src={s1} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
+                        <div class="card-body text-start">
+                          <h5 class="card-title fw-bold fs-6">HTML</h5>
+                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
+                        </div>
+                      </div>
                     </div>
-                    
+                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
+                      <div class="card  shadow lh-base me-0" >
+                        <Image src={s2} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
+                        <div class="card-body text-start">
+                          <h5 class="card-title fw-bold fs-6">CSS</h5>
+                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
+                      <div class="card  shadow lh-base me-0" >
+                        <Image src={s3} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={70} alt="..." />
+                        <div class="card-body text-start">
+                          <h5 class="card-title fw-bold fs-6">JavaScript</h5>
+                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class=' col-md-3 col-sm-6 mb-3 text-center align-self-center ' style={{ maxWidth: '222px' }}>
+                      <div class="card  shadow lh-base me-0" >
+                        <Image src={s4} class="align-self-start img-fluid ps-3 pt-3 border-0 " height={80} alt="..." />
+                        <div class="card-body text-start">
+                          <h5 class="card-title fw-bold fs-6">PHP</h5>
+                          <h6 class="card-subtitle mb-2 fs-6 text-body-secondary">Gregor then turned to look out the window at the dull weather</h6>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+               
+                <div class='row justify-content-center '>
+                  <div class='col-md-7   col-sm-12  ' >
+                  <div class='  card p-3 '>
+                    <div class='  lh-base  '>
+                      <h2 className='text-start fw-bold ps-2 pt-4 pb-4 fs-5'>
+                        EDUCATION
+                      </h2>
+                    </div>
+                    <div class='  lh-base  '>
+                      <ul class=' information'>
+                        <li class='liform'>
+                        </li>
+                        <li class=' liform'>
+                          <button class=' btn licrcle btn-primary '>
+                            <svg xmlns="http://www.w3.org/2000/svg"  height="26" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+</svg></button>
+                          <h6 class="li-title text-start fw-bold fs-6">Mae fah Luang University</h6>
+                        </li>
+                        <li class='liform'>
+                          <h6 class="li-title text-start fw-bold   fs-7">Bachelor's Bachelor of Engineering
+                            (Computer Engineering) </h6>  
+                            <h6 class="ps-5 fw-bold  text-start text-secondary  fs-7">GPAX 2.78 </h6>
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-md-5  col-sm-12 '>
+                    <div class='  shadow lh-base  px-4 my-3 py-4 fs-3'>
+                      <div class='  lh-base  '>
+
+                      </div>
+                    </div>
+                  </div>
+             
+              </div>
               </div>
             </div>
           </div>

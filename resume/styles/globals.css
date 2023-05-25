@@ -6,3 +6,33 @@
 }
 .bb{
   border-radius: 50% !important; }
+.information{
+  margin: 0 auto 30px!important;
+  display: table!important;
+}
+.liform{
+  border-left: solid 2px #eee !important;
+  list-style: none!important;
+  padding: 0 0 0 20px;
+  font-size: 14px!important;
+
+}
+
+.licrcle {
+  float: left !important;
+  margin-left: -30px !important;
+  padding:2 0 25px 0px!important;
+  border-radius: 50px!important;
+  margin: -13px -45px!important;
+  height: 50px!important;
+  width: 50px!important;
+  text-align: center!important;
+  -webkit-box-decoration-break: clone!important;
+}
+.li-title{
+  margin-left: 25px!important;
+  line-height: 34px!important;
+}
+.fs-7{
+  font-size: 10px !important;
+}
